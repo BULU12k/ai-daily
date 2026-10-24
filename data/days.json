@@ -386,5 +386,20 @@
    "date": "2026-09-23T15:25:14.000Z",
    "time": "23:25"
   }
+ ],
+ "2026-10-25": [
+  {
+   "title_zh": "Block新语音模型几可乱真",
+   "summary": "Block 发布一款新语音模型，官方称其听感近乎真人。 该模型可在 MacBook M4 Max 上本地运行，无需依赖云端推理。 这意味着端侧实时语音交互的隐私与成本门槛进一步降低。",
+   "signal": "端侧语音拟真度逼近真人，本地算力已够用",
+   "point": "该语音模型可本地运行于MacBook M4 Max",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+   "date": "2026-10-24T16:00:00.000Z",
+   "time": "00:00",
+   "date_md": "10-25"
+  }
  ]
 }

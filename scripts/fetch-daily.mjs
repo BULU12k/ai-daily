@@ -182,12 +182,14 @@ const SYSTEM_PROMPT = `你是"AI前沿时讯日报"的中文编辑。你的任�
 对每一条输入（带索引 i），输出：
 1. title_zh：中文标题，不超过 20 字，不夸大；
 2. summary：中文摘要，严格不超过 3 句话，回答"发生了什么、为什么重要"；
-3. 可玩梗，但梗必须紧跟近一年的流行趋势；对拿不准时效性的梗，一律降级为平实表达；
-4. 禁止使用陈年旧梗（如 yyds、666、绝绝子、awsl 等早已过时的表达）；
-5. 禁止编造输入中不存在的事实；信息不足时只写已给内容。
+3. signal：一句话"信号解读"，严格不超过 20 个汉字（标点计入），点出这条新闻背后的产业信号或值得注意的趋势，必须具体、可感知，禁止空话套话（如"值得关注""意义重大"单独成句属于空话）；
+4. point：一句"新闻要点"，不超过 28 字，用于日报海报底部要点条，必须包含该新闻最关键的事实或数字；
+5. 可玩梗，但梗必须紧跟近一年的流行趋势；对拿不准时效性的梗，一律降级为平实表达；
+6. 禁止使用陈年旧梗（如 yyds、666、绝绝子、awsl 等早已过时的表达）；
+7. 禁止编造输入中不存在的事实；信息不足时只写已给内容。
 
-中文输出是硬约束：title_zh 与 summary 必须全部为中文（专有名词保留原文）。
-只输出 JSON 数组，形如 [{"i":0,"title_zh":"...","summary":"..."}]，不要输出任何其他文字或代码围栏。`;
+中文输出是硬约束：title_zh、summary、signal、point 必须全部为中文（专有名词与数字保留原文）。
+只输出 JSON 数组，形如 [{"i":0,"title_zh":"...","summary":"...","signal":"...","point":"..."}]，不要输出任何其他文字或代码围栏。`;
 
 async function llmSummarize(items, cfg) {
   const payload = {
@@ -230,10 +232,15 @@ async function llmSummarize(items, cfg) {
   const map = new Map();
   for (const e of arr) {
     if (typeof e?.i === 'number' && e.title_zh && e.summary) {
+      const signal = e.signal ? String(e.signal).trim() : '';
+      const point = e.point ? String(e.point).trim() : '';
       map.set(e.i, {
         title_zh: truncateTitle(String(e.title_zh), 60),
         // LLM 输出同样做整句边界处理与中文校验，杜绝英文/断句泄漏
         summary: takeSentences(String(e.summary), 3),
+        // 信号解读限 22 字（含标点），要点限 30 字，超限按词/字边界截断
+        signal: signal ? truncateTitle(signal, 22) : '',
+        point: point ? truncateTitle(point, 30) : '',
         by_llm: true,
       });
     }
@@ -381,21 +388,25 @@ async function fallbackEntry(item) {
   const titleText = item.title;
   const descSents = takeSentences(item.desc || '', 3);
 
+  // 无可用描述时直接丢弃本条：宁可少推，也不输出"发布了新内容，详情见原文"这类无信息量文案
+  if (!descSents) {
+    log(`降级丢弃（无可用描述，避免无信息量文案）: ${truncateTitle(item.title, 40)}`);
+    return null;
+  }
+
   let titleZh = isMostlyChinese(titleText) ? titleText : await translateToZh(titleText);
-  let summary;
   if (titleZh === null) {
     return null; // 标题无法中文化 → 本条放弃，保证日报全中文
   }
-  if (descSents) {
-    const descZh = isMostlyChinese(descSents) ? descSents : await translateToZh(descSents);
-    if (descZh === null) return null;
-    summary = takeSentences(descZh, 3);
-  } else {
-    summary = `${item.source} 发布了新内容，详情见原文。`;
-  }
+  const descZh = isMostlyChinese(descSents) ? descSents : await translateToZh(descSents);
+  if (descZh === null) return null;
+  const summary = takeSentences(descZh, 3);
   return {
     title_zh: truncateTitle(titleZh, 60),
     summary,
+    // 无 LLM 时信号解读留空为"—"，要点用摘要首句压缩，保持信息量而非套话
+    signal: '—',
+    point: truncateTitle(takeSentences(summary, 1), 30),
     by_llm: false,
     degraded: true,
   };
@@ -418,6 +429,7 @@ a:hover { text-decoration: underline; }
 .card p { margin: 6px 0; }
 .card .src { font-size: 12px; color: var(--sub); }
 .card .src .meme { margin-left: 8px; }
+img.poster { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:12px; margin:16px 0; }
 .tag { display:inline-block; background:#232838; color:var(--accent); border-radius:6px; padding:1px 8px; font-size:12px; margin-right:8px; }
 ul.dates { list-style:none; padding:0; }
 ul.dates li { padding: 10px 0; border-bottom: 1px solid var(--line); }
@@ -449,6 +461,7 @@ function renderDaily(cfg, dateStr, items) {
 <body><div class="wrap">
 ${siteHeader(cfg)}
 <p class="meta">日报日期 ${escapeHtml(dateStr)}（Asia/Shanghai）· 共 ${items.length} 条${escapeHtml(degradeNote)} · 生成时间 ${escapeHtml(shanghaiTime())}</p>
+<img class="poster" src="../poster/${dateStr}-p1.png" alt="当日日报海报" onerror="this.remove()">
 ${items.map(itemCard).join('\n')}
 <footer><a href="../index.html">← 返回往期</a> ｜ 手机推送：订阅 ntfy 主题 <code>${escapeHtml(cfg.ntfy_topic)}</code></footer>
 </div></body></html>`;
@@ -499,11 +512,34 @@ for (const it of all) {
 }
 log(`抓取合计 ${all.length} 条，去重后新增 ${fresh.length} 条`);
 
-// 全部标记为已见（含超出每日条数上限的），避免重复出现
+// 全部标记为已见（含被时效过滤淘汰的），避免同一旧闻在后续运行反复被处理
 for (const it of fresh) seen.items[it.hash] = nowIso;
 
+// 时效红线：必须带可解析发布时间，且距运行时刻 ≤ max_age_hours。
+// 无时间戳条目一律不入页、不推送；过期条目同样剔除，杜绝旧闻混入。
+const maxAgeMs = Number(CONFIG.max_age_hours ?? 24) * 3600_000;
+const nowMs = Date.now();
+const inTime = [];
+let droppedStale = 0;
+let droppedNoTime = 0;
+for (const it of fresh) {
+  if (!it.date) {
+    droppedNoTime++;
+    continue;
+  }
+  if (nowMs - new Date(it.date).getTime() > maxAgeMs) {
+    droppedStale++;
+    continue;
+  }
+  inTime.push(it);
+}
+log(
+  `时效过滤（≤ ${maxAgeMs / 3600_000} 小时）：入选 ${inTime.length} 条；` +
+    `剔除旧闻 ${droppedStale} 条、无时间戳 ${droppedNoTime} 条`,
+);
+
 // 按时间倒序，取每日上限条目进入日报
-const picked = [...fresh]
+const picked = [...inTime]
   .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''))
   .slice(0, CONFIG.max_items_per_day);
 
@@ -535,12 +571,15 @@ for (let i = 0; i < picked.length; i++) {
   items.push({
     title_zh: en.title_zh,
     summary: en.summary,
+    signal: en.signal || '—',
+    point: en.point || truncateTitle(takeSentences(en.summary, 1), 30),
     by_llm: !!en.by_llm,
     degraded: !!en.degraded,
     source: it.source,
     link: it.link,
     date: it.date,
     time: it.date ? shanghaiTime(new Date(it.date)) : '',
+    date_md: it.date ? shanghaiDate(new Date(it.date)).slice(5) : '', // 月-日，如 10-24
   });
 }
 if (droppedNonChinese > 0) {
@@ -578,16 +617,45 @@ log('已重建索引: docs/index.html');
 
 // 持久化去重状态与待推送清单
 await fs.writeFile(path.join(DATA_DIR, 'seen.json'), JSON.stringify(seen, null, 1), 'utf8');
-const outbox = items.slice(0, 5).map((it) => ({
-  title_zh: it.title_zh,
-  // 推送正文只取第一个完整句（整句边界，禁止句中截断），附原文链接
-  summary: takeSentences(it.summary, 1),
-  link: it.link,
-}));
+
+// 待推送清单（海报驱动）：
+// - pages 描述本次应生成的海报页（由 scripts/render-poster.mjs 渲染为 docs/poster/*.png）；
+// - notify.mjs 优先以海报 PNG 附件推送（每页一条消息，最多 max_pages 条）；
+//   海报文件缺失时降级为一条纯文本消息；无新条目时 pages 为空、notify 不发送任何消息。
+const posterCfg = CONFIG.poster ?? {};
+const perPage = Math.max(1, Number(posterCfg.items_per_page ?? 4));
+const maxPages = Math.max(1, Number(posterCfg.max_pages ?? 2));
+const posterItems = items.slice(0, perPage * maxPages);
+const pageCount = posterItems.length > 0 ? Math.min(maxPages, Math.ceil(posterItems.length / perPage)) : 0;
+const pages = [];
+for (let p = 0; p < pageCount; p++) {
+  pages.push({
+    index: p + 1,
+    total: pageCount,
+    file: `docs/poster/${today}-p${p + 1}.png`,
+    count: Math.min(perPage, posterItems.length - p * perPage),
+  });
+}
+const outbox = {
+  date: today,
+  pushed: false,
+  headline: `AI日报 ${today.slice(5)} ${shanghaiTime()} · ${items.length}条新知`,
+  pages,
+  points: items.slice(0, 4).map((it) => it.point).filter(Boolean),
+  items: posterItems.map((it) => ({
+    title_zh: it.title_zh,
+    summary: takeSentences(it.summary, 2),
+    signal: it.signal,
+    point: it.point,
+    source: it.source,
+    link: it.link,
+    date_md: it.date_md,
+  })),
+};
 await fs.writeFile(
   path.join(DATA_DIR, 'outbox.json'),
-  JSON.stringify({ date: today, pushed: false, items: outbox }, null, 2),
+  JSON.stringify(outbox, null, 2),
   'utf8',
 );
-log(`待推送 ${outbox.length} 条 -> data/outbox.json`);
+log(`待推送海报 ${pages.length} 页（${posterItems.length} 条）-> data/outbox.json`);
 log('完成。');

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.63.2"
+  },
+  "name": "ai-daily",
+  "private": true,
+  "type": "module",
+  "description": "AI 前沿时讯日报：抓取、摘要、建页、海报渲染与 ntfy 推送"
+}

@@ -2,8 +2,8 @@ name: AI Daily
 
 on:
   schedule:
-    # 每 3 小时一次（UTC；日报按 Asia/Shanghai 时区分日）
-    - cron: '0 */3 * * *'
+    # 每半小时运行一次（UTC；日报按 Asia/Shanghai 时区分日）
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -25,6 +25,28 @@ jobs:
         with:
           node-version: 22
 
+      - name: Cache CJK poster fonts
+        uses: actions/cache@v4
+        with:
+          path: .fonts
+          key: noto-sans-sc-ttf-v41-2026-10
+
+      - name: Download CJK fonts (poster rendering)
+        run: |
+          mkdir -p .fonts
+          if [ ! -f .fonts/NotoSansSC-Regular.ttf ]; then
+            curl -fsSL --retry 3 -o .fonts/NotoSansSC-Regular.ttf \
+              "https://fonts.gstatic.com/s/notosanssc/v41/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FnYw.ttf"
+          fi
+          if [ ! -f .fonts/NotoSansSC-Bold.ttf ]; then
+            curl -fsSL --retry 3 -o .fonts/NotoSansSC-Bold.ttf \
+              "https://fonts.gstatic.com/s/notosanssc/v41/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaGzjCnYw.ttf"
+          fi
+          ls -la .fonts
+
+      - name: Install render dependencies
+        run: npm ci
+
       - name: Fetch feeds, summarize, build pages
         env:
           # 优先级：ZAI/ZHIPU/GLM -> OPENAI -> GitHub Models（免费，用内置 GITHUB_TOKEN）
@@ -37,7 +59,14 @@ jobs:
           NTFY_TOPIC: ${{ vars.NTFY_TOPIC }}
         run: node scripts/fetch-daily.mjs
 
-      - name: Commit generated pages and dedupe state
+      - name: Render poster PNG
+        env:
+          FONT_DIR: .fonts
+        run: node scripts/render-poster.mjs
+        # 渲染失败不阻塞日报页面发布；notify 会自动降级为纯文本推送
+        continue-on-error: true
+
+      - name: Commit generated pages, posters and dedupe state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -49,7 +78,7 @@ jobs:
             git push
           fi
 
-      - name: Push new items to ntfy
+      - name: Push poster to ntfy
         env:
           NTFY_SERVER: ${{ vars.NTFY_SERVER }}
           NTFY_TOPIC: ${{ vars.NTFY_TOPIC }}

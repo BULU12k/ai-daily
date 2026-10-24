@@ -1,7 +1,13 @@
 {
   "site_name": "AI 前沿时讯日报",
-  "site_desc": "每天三小时一班的 AI 领域要闻速览：发生了什么，为什么重要。",
+  "site_desc": "每天高频班次的 AI 领域要闻速览：发生了什么，为什么重要。",
   "ntfy_server": "https://ntfy.sh",
   "ntfy_topic": "ai-daily-f02c73ab",
-  "max_items_per_day": 12
+  "max_items_per_day": 12,
+  "max_age_hours": 24,
+  "poster": {
+    "width": 1080,
+    "items_per_page": 4,
+    "max_pages": 2
+  }
 }

@@ -1,2 +1,4 @@
+node_modules/
+.fonts/
 Thumbs.db
 .DS_Store

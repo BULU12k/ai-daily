@@ -161,8 +161,9 @@ function llmConfig() {
   if (env.OPENAI_API_KEY) {
     return {
       label: 'openai',
-      url: 'https://api.openai.com/v1/chat/completions',
-      model: env.LLM_MODEL || 'gpt-4o-mini',
+      // 支持 OpenAI 兼容接口（如 DeepSeek：OPENAI_BASE_URL=https://api.deepseek.com/v1/chat/completions）
+      url: env.OPENAI_BASE_URL || 'https://api.openai.com/v1/chat/completions',
+      model: env.LLM_MODEL || (env.OPENAI_BASE_URL ? 'deepseek-chat' : 'gpt-4o-mini'),
       key: env.OPENAI_API_KEY,
     };
   }

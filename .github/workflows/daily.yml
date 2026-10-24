@@ -54,6 +54,7 @@ jobs:
           ZHIPUAI_API_KEY: ${{ secrets.ZHIPUAI_API_KEY }}
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NTFY_TOPIC: ${{ vars.NTFY_TOPIC }}

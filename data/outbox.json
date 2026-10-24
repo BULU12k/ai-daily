@@ -1,27 +1,8 @@
 {
   "date": "2026-10-25",
   "pushed": false,
-  "headline": "AI日报 10-25 00:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-25-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "该语音模型可本地运行于MacBook M4 Max"
-  ],
-  "items": [
-    {
-      "title_zh": "Block新语音模型几可乱真",
-      "summary": "Block 发布一款新语音模型，官方称其听感近乎真人。 该模型可在 MacBook M4 Max 上本地运行，无需依赖云端推理。",
-      "signal": "端侧语音拟真度逼近真人，本地算力已够用",
-      "point": "该语音模型可本地运行于MacBook M4 Max",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-      "date_md": "10-25"
-    }
-  ]
+  "headline": "AI日报 10-25 00:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

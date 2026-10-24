@@ -389,6 +389,19 @@
  ],
  "2026-10-25": [
   {
+   "title_zh": "AI墓园：那些关停与延期的项目",
+   "summary": "TechCrunch 整理了一份持续更新的“AI 墓园”清单，收录已关停或未达预期的 AI 项目与创业公司。 名单里包括苹果多次延期的 Siri AI，以及 OpenAI 颇为混乱的“超级应用”发布。 这份清单提醒，热潮之下失败与延期同样是行业常态。",
+   "signal": "AI热潮下，失败清单也在变长",
+   "point": "Siri AI多次延期，OpenAI超级应用发布混乱",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "date": "2026-10-24T19:00:00.000Z",
+   "time": "03:00",
+   "date_md": "10-25"
+  },
+  {
    "title_zh": "Block新语音模型几可乱真",
    "summary": "Block 发布一款新语音模型，官方称其听感近乎真人。 该模型可在 MacBook M4 Max 上本地运行，无需依赖云端推理。 这意味着端侧实时语音交互的隐私与成本门槛进一步降低。",
    "signal": "端侧语音拟真度逼近真人，本地算力已够用",

@@ -100,7 +100,8 @@ function parseFeed(xml) {
     const id = cleanText(pick('guid', b)) || cleanText(pick('id', b)) || link;
     const dateRaw = pick('pubDate', b) || pick('published', b) || pick('updated', b) || pick('dc:date', b);
     const date = dateRaw ? new Date(cleanText(dateRaw)) : null;
-    const desc = cleanText(pick('description', b)).slice(0, 400);
+    // 不在解析阶段截断：完整描述保留给句子级处理（摘要按整句边界选取）
+    const desc = cleanText(pick('description', b));
     if (title && link) items.push({ title, link, id, date: date && !Number.isNaN(date.getTime()) ? date.toISOString() : null, desc });
   }
   return items;
@@ -185,6 +186,7 @@ const SYSTEM_PROMPT = `你是"AI前沿时讯日报"的中文编辑。你的任�
 4. 禁止使用陈年旧梗（如 yyds、666、绝绝子、awsl 等早已过时的表达）；
 5. 禁止编造输入中不存在的事实；信息不足时只写已给内容。
 
+中文输出是硬约束：title_zh 与 summary 必须全部为中文（专有名词保留原文）。
 只输出 JSON 数组，形如 [{"i":0,"title_zh":"...","summary":"..."}]，不要输出任何其他文字或代码围栏。`;
 
 async function llmSummarize(items, cfg) {
@@ -199,7 +201,8 @@ async function llmSummarize(items, cfg) {
             i,
             source: it.source,
             title: it.title,
-            desc: it.desc || '',
+            // 送入 LLM 的描述同样按整句裁剪，控制 payload 且保证输出可整句组织
+            desc: takeSentences(it.desc || '', 3),
             published: it.date || '',
           })),
         ),
@@ -228,27 +231,173 @@ async function llmSummarize(items, cfg) {
   for (const e of arr) {
     if (typeof e?.i === 'number' && e.title_zh && e.summary) {
       map.set(e.i, {
-        title_zh: String(e.title_zh).slice(0, 40),
-        summary: String(e.summary).slice(0, 220),
+        title_zh: truncateTitle(String(e.title_zh), 60),
+        // LLM 输出同样做整句边界处理与中文校验，杜绝英文/断句泄漏
+        summary: takeSentences(String(e.summary), 3),
         by_llm: true,
       });
     }
   }
-  if (map.size === 0) throw new Error('LLM 返回为空');
+  for (const [k, v] of map) {
+    if (!isMostlyChinese(v.title_zh) || !isMostlyChinese(v.summary)) {
+      log(`LLM 第 ${k} 条输出非中文，转降级处理`);
+      map.delete(k);
+    }
+  }
   log(`LLM(${cfg.label}/${cfg.model}) 润色成功：${map.size}/${items.length} 条`);
   return map;
 }
 
-/** 无 LLM 时的降级：平实摘要（同样 ≤3 句），不玩梗 */
-function fallbackSummary(item) {
-  const head = item.desc ? item.desc.slice(0, 140) : '';
-  const summary = head
-    ? `${head}${/[。！？.!?][""」]?\s*$/.test(head) ? '' : '……'}（来源：${item.source}）`
-    : `${item.source} 发布了新内容，详情见原文。`;
+/* ---------------- 中文输出工具（截断规则：标题按边界、摘要按整句） ---------------- */
+
+const CJK_RE = /[\u4e00-\u9fff]/;
+
+/** 中文字符占比是否达到"可视为中文输出"的程度 */
+function isMostlyChinese(s) {
+  const compact = String(s ?? '').replace(/\s/g, '');
+  if (!compact) return false;
+  const cjk = (compact.match(/[\u4e00-\u9fff]/g) ?? []).length;
+  return cjk / compact.length >= 0.3;
+}
+
+/** 按句末标点切分整句（。！？!? 或英文句点+空白）；无任何句末标点时整段视为一句 */
+function splitSentences(text) {
+  const s = String(text ?? '').trim();
+  if (!s) return [];
+  const parts = [];
+  let cur = '';
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    cur += c;
+    const next = s[i + 1] ?? '';
+    const isCnEnd = '。！？!?'.includes(c);
+    const isEnEnd = c === '.' && /\s/.test(next);
+    if (isCnEnd || isEnEnd) {
+      parts.push(cur.trim());
+      cur = '';
+    }
+  }
+  if (cur.trim()) parts.push(cur.trim());
+  return parts.filter(Boolean);
+}
+
+/**
+ * 取完整句子（默认 ≤3 句，总量软上限 maxLen 只用于整句取舍，绝不句中截断）。
+ * 单句超长时整句保留——摘要长度让位于"禁止句中截断"的硬规则。
+ */
+function takeSentences(text, maxCount = 3, maxLen = 260) {
+  const sents = splitSentences(text);
+  if (sents.length === 0) return String(text ?? '').trim();
+  const out = [];
+  let len = 0;
+  for (const s of sents) {
+    if (out.length >= maxCount) break;
+    if (out.length > 0 && len + s.length > maxLen) break;
+    out.push(s);
+    len += s.length + 1;
+  }
+  if (out.length === 0) out.push(sents[0]); // 第一句无论多长都整句保留
+  return out.join(' ');
+}
+
+const TITLE_BREAK_RE = /[\s，。、；：！？,.;:!?\-—()（）"'“”「」』…·|/]+/g;
+
+/**
+ * 标题截断：优先保留完整语义；确需限长时在词/标点边界截断并加省略号，
+ * 禁止断词。中日韩连续文本无空白词界，按字符单元截断（CJK 每字即一词）。
+ */
+function truncateTitle(text, max = 60) {
+  const t = String(text ?? '').trim();
+  const units = [...t];
+  if (units.length <= max) return t;
+  const cut = units.slice(0, max).join('');
+  let last = -1;
+  TITLE_BREAK_RE.lastIndex = 0;
+  for (const m of cut.matchAll(TITLE_BREAK_RE)) {
+    if (m.index > 0 && m.index < cut.length - 1) last = m.index; // 边界位于分隔符前
+  }
+  if (last > max * 0.5) return cut.slice(0, last).trimEnd() + '…';
+  return cut.trimEnd() + '…';
+}
+
+/* ---------------- 免费翻译降级链（无密钥；保证降级路径仍输出中文） ---------------- */
+
+const TRANSLATORS = [
+  {
+    name: 'google-gtx',
+    async run(text) {
+      const url =
+        'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q=' +
+        encodeURIComponent(text);
+      const res = await fetch(url, { signal: AbortSignal.timeout(15_000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const out = (data?.[0] ?? []).map((x) => x?.[0] ?? '').join('');
+      if (!out) throw new Error('空结果');
+      return out;
+    },
+  },
+  {
+    name: 'mymemory',
+    async run(text) {
+      // MyMemory 免费通道单次 ≤500 字节，且需显式语言对；输入已按整句裁剪，长度可控
+      const q = text.length > 480 ? text.slice(0, 480) : text; // 仅影响送翻文本，输出仍整句组织
+      const url =
+        'https://api.mymemory.translated.net/get?langpair=en|zh-CN&q=' + encodeURIComponent(q);
+      const res = await fetch(url, { signal: AbortSignal.timeout(15_000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const out = data?.responseData?.translatedText ?? '';
+      if (!out || /MYMEMORY WARNING|QUERY LENGTH LIMIT/i.test(out)) throw new Error('配额或空结果');
+      return out;
+    },
+  },
+];
+
+const transCache = new Map();
+let translatorFailureLogged = false;
+
+async function translateToZh(text) {
+  const key = sha256(text).slice(0, 16);
+  if (transCache.has(key)) return transCache.get(key);
+  for (const t of TRANSLATORS) {
+    try {
+      await new Promise((r) => setTimeout(r, 300)); // 免费通道温和限速
+      const out = await t.run(text);
+      transCache.set(key, out);
+      return out;
+    } catch (err) {
+      if (!translatorFailureLogged) {
+        log(`翻译通道 ${t.name} 失败(${err.message})，尝试下一个`);
+        translatorFailureLogged = true;
+      }
+    }
+  }
+  return null; // 全部翻译通道不可用
+}
+
+/** 降级路径：中文源直接整句组织；非中文先经免费翻译；翻译全挂则返回 null（调用方决定丢弃该条） */
+async function fallbackEntry(item) {
+  const titleText = item.title;
+  const descSents = takeSentences(item.desc || '', 3);
+
+  let titleZh = isMostlyChinese(titleText) ? titleText : await translateToZh(titleText);
+  let summary;
+  if (titleZh === null) {
+    return null; // 标题无法中文化 → 本条放弃，保证日报全中文
+  }
+  if (descSents) {
+    const descZh = isMostlyChinese(descSents) ? descSents : await translateToZh(descSents);
+    if (descZh === null) return null;
+    summary = takeSentences(descZh, 3);
+  } else {
+    summary = `${item.source} 发布了新内容，详情见原文。`;
+  }
   return {
-    title_zh: item.title.slice(0, 40),
-    summary: summary.replace(/\s+/g, ' ').trim(),
+    title_zh: truncateTitle(titleZh, 60),
+    summary,
     by_llm: false,
+    degraded: true,
   };
 }
 
@@ -280,7 +429,7 @@ function siteHeader(cfg) {
 }
 
 function itemCard(it) {
-  const flag = it.by_llm ? '' : '<span class="meme">平实摘要（LLM 未启用，自动降级）</span>';
+  const flag = it.by_llm ? '' : '<span class="meme">平实摘要（LLM 未启用，中文整理）</span>';
   return `<div class="card">
   <h2>${escapeHtml(it.title_zh)}</h2>
   <p>${escapeHtml(it.summary)}</p>
@@ -289,13 +438,17 @@ function itemCard(it) {
 }
 
 function renderDaily(cfg, dateStr, items) {
+  const allDegraded = items.length > 0 && items.every((it) => it.degraded);
+  const degradeNote = allDegraded
+    ? ' · 本期为降级模式：LLM 不可用，条目经免费翻译/中文源整理，全中文输出'
+    : '';
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(dateStr)} · ${escapeHtml(cfg.site_name)}</title><style>${BASE_CSS}</style></head>
 <body><div class="wrap">
 ${siteHeader(cfg)}
-<p class="meta">日报日期 ${escapeHtml(dateStr)}（Asia/Shanghai）· 共 ${items.length} 条 · 生成时间 ${escapeHtml(shanghaiTime())}</p>
+<p class="meta">日报日期 ${escapeHtml(dateStr)}（Asia/Shanghai）· 共 ${items.length} 条${escapeHtml(degradeNote)} · 生成时间 ${escapeHtml(shanghaiTime())}</p>
 ${items.map(itemCard).join('\n')}
 <footer><a href="../index.html">← 返回往期</a> ｜ 手机推送：订阅 ntfy 主题 <code>${escapeHtml(cfg.ntfy_topic)}</code></footer>
 </div></body></html>`;
@@ -354,31 +507,45 @@ const picked = [...fresh]
   .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''))
   .slice(0, CONFIG.max_items_per_day);
 
-// LLM 润色（可用则用，失败降级）
+// LLM 润色（可用则用）；未覆盖或产出非中文的条目一律走"免费翻译→仅中文源"降级链，
+// 任何链路都保证日报全中文、摘要整句、单条 ≤3 句。
 const cfgLlm = llmConfig();
 const enrichedMap = new Map();
 if (picked.length && cfgLlm) {
   try {
-    Object.assign(enrichedMap, {});
     const m = await llmSummarize(picked, cfgLlm);
     for (const [k, v] of m) enrichedMap.set(k, v);
   } catch (err) {
-    log(`LLM 调用失败，降级为平实摘要: ${err.message}`);
+    log(`LLM 调用失败，全部条目转入降级链: ${err.message}`);
   }
 }
 
-const items = picked.map((it, i) => {
-  const en = enrichedMap.get(i) || fallbackSummary(it);
-  return {
+let droppedNonChinese = 0;
+let degradedCount = 0;
+const items = [];
+for (let i = 0; i < picked.length; i++) {
+  const it = picked[i];
+  const en = enrichedMap.get(i) ?? (await fallbackEntry(it));
+  if (!en) {
+    droppedNonChinese++;
+    log(`条目已丢弃（翻译通道不可用且非中文源）: ${it.source} | ${truncateTitle(it.title, 40)}`);
+    continue;
+  }
+  if (en.degraded) degradedCount++;
+  items.push({
     title_zh: en.title_zh,
     summary: en.summary,
     by_llm: !!en.by_llm,
+    degraded: !!en.degraded,
     source: it.source,
     link: it.link,
     date: it.date,
     time: it.date ? shanghaiTime(new Date(it.date)) : '',
-  };
-});
+  });
+}
+if (droppedNonChinese > 0) {
+  log(`降级模式：${droppedNonChinese} 条非中文且无法翻译的条目已排除，本期仅保留可中文化条目`);
+}
 
 // 合并进当日条目库（data/days.json 持久化，同日多次运行自动追加，按时间倒序）
 const dailyFile = path.join(DAILY_DIR, `${today}.html`);
@@ -413,7 +580,8 @@ log('已重建索引: docs/index.html');
 await fs.writeFile(path.join(DATA_DIR, 'seen.json'), JSON.stringify(seen, null, 1), 'utf8');
 const outbox = items.slice(0, 5).map((it) => ({
   title_zh: it.title_zh,
-  summary: it.summary.length > 90 ? `${it.summary.slice(0, 90)}…` : it.summary,
+  // 推送正文只取第一个完整句（整句边界，禁止句中截断），附原文链接
+  summary: takeSentences(it.summary, 1),
   link: it.link,
 }));
 await fs.writeFile(

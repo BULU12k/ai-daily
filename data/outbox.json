@@ -1,56 +1,71 @@
 {
   "date": "2026-10-24",
   "pushed": false,
-  "headline": "AI日报 10-24 18:19 · 4条新知",
+  "headline": "AI日报 10-24 18:57 · 5条新知",
   "pages": [
     {
       "index": 1,
-      "total": 1,
+      "total": 2,
       "file": "docs/poster/2026-10-24-p1.png",
       "count": 4
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-10-24-p2.png",
+      "count": 1
     }
   ],
   "points": [
-    "OpenAI 停止互联网训练 AI 模型。",
-    "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来…",
-    "此次全天活动由 TechCrunch 与…",
-    "OpenAI 缩放 ChatGPT 存储服务。"
+    "OpenAI 以重大风险为由切断模型联网训练",
+    "Microduck 机器人售出两万台，黄仁勋把玩",
+    "峰会聚焦找客户、搭团队等落地议题",
+    "Habitat 让 ChatGPT 读取速度提升 12 倍"
   ],
   "items": [
     {
-      "title_zh": "OpenAI 停止使用互联网训练 AI 模型",
-      "summary": "OpenAI 因安全风险停止使用互联网训练 AI 模型，继工程师提出解决方案无效后采取行动。",
-      "signal": "AI 安全风险意识提升，训练模式转变。",
-      "point": "OpenAI 停止互联网训练 AI 模型。",
+      "title_zh": "OpenAI 将停用实时互联网训练模型",
+      "summary": "OpenAI 宣布不再让前沿模型直接在实时互联网上训练，理由是存在“重大风险”。 而就在数周前，其工程师还称这一方案行不通。",
+      "signal": "前沿模型与实时网络之间开始筑墙",
+      "point": "OpenAI 以重大风险为由切断模型联网训练",
       "source": "TechCrunch AI",
       "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
       "date_md": "10-24"
     },
     {
-      "title_zh": "圣诞节最热门的玩具？ Nvidia CEO 玩可爱的 Microduck 机器人，销量达 20,000 个",
-      "summary": "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来，倒地“小睡”，然后根据语音指令进行翻跟斗。",
-      "signal": "—",
-      "point": "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来…",
+      "title_zh": "黄仁勋把玩的机器鸭卖出两万台",
+      "summary": "英伟达 CEO 黄仁勋与 Microduck 机器人互动，这款玩具已售出两万台。 机器人踩着碎步、发出类似 R2-D2 的声音，能按语音指令坐下、倒地“午睡”和翻跟头。",
+      "signal": "具身智能正下沉到平价玩具货架",
+      "point": "Microduck 机器人售出两万台，黄仁勋把玩",
       "source": "TechCrunch AI",
       "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
       "date_md": "10-24"
     },
     {
-      "title_zh": "从 Toast 到 Bessemer：创始人将在 2026 年 TechCrunch 创始人峰会上听到谁的发言",
-      "summary": "此次全天活动由 TechCrunch 与 Fidelity Private Shares 合作主办，不仅限于筹款和人工智能，还探讨了在传统创业中心内外寻找客户、建立团队、加强宣传、培养创始人领导力以及扩大公司规模的现实。",
-      "signal": "—",
-      "point": "此次全天活动由 TechCrunch 与…",
+      "title_zh": "TechCrunch 创业者峰会公布嘉宾阵容",
+      "summary": "TechCrunch 与 Fidelity Private Shares 合作举办为期一天的 Founder Summit 2026，Toast、Bessemer 等机构将到场。 议题除了融资与 AI，还涵盖找客户、搭团队、打磨路演与规模化经营。",
+      "signal": "创业叙事从融资转向落地执行",
+      "point": "峰会聚焦找客户、搭团队等落地议题",
       "source": "TechCrunch AI",
       "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
       "date_md": "10-24"
     },
     {
-      "title_zh": "OpenAI 缩放在线存储服务 ChatGPT 用户超 10 亿",
-      "summary": "OpenAI 通过 Habitat、多租户、全球缓存和 Azure Cosmos DB 缩放在线存储，为 ChatGPT 提供 12 倍更快读取速度。",
-      "signal": "AI 服务大规模扩展，技术基础设施升级。",
-      "point": "OpenAI 缩放 ChatGPT 存储服务。",
+      "title_zh": "OpenAI 存储架构撑起十亿用户",
+      "summary": "OpenAI 详解 Habitat 存储系统如何靠多租户、全球缓存与 Azure Cosmos DB 支撑超 10 亿 ChatGPT 用户。 该架构让 ChatGPT 的读取速度提升 12 倍。",
+      "signal": "模型之外，存储成本成新战场",
+      "point": "Habitat 让 ChatGPT 读取速度提升 12 倍",
       "source": "OpenAI Blog",
       "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "date_md": "10-24"
+    },
+    {
+      "title_zh": "LitPivot 帮研究者在文献中找选题",
+      "summary": "Hugging Face 博客介绍 LitPivot，它通过动态上下文化，帮助研究者在文献全景中形成研究想法。 目前公开信息仅限方法定位，暂无更多细节。",
+      "signal": "文献工具从检索走向选题生成",
+      "point": "LitPivot 用文献动态上下文化生成选题",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/allenai/litpivot",
       "date_md": "10-24"
     }
   ]

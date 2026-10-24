@@ -1,8 +1,57 @@
 {
   "date": "2026-10-24",
   "pushed": false,
-  "headline": "AI日报 10-24 18:15 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-24 18:19 · 4条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-24-p1.png",
+      "count": 4
+    }
+  ],
+  "points": [
+    "OpenAI 停止互联网训练 AI 模型。",
+    "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来…",
+    "此次全天活动由 TechCrunch 与…",
+    "OpenAI 缩放 ChatGPT 存储服务。"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI 停止使用互联网训练 AI 模型",
+      "summary": "OpenAI 因安全风险停止使用互联网训练 AI 模型，继工程师提出解决方案无效后采取行动。",
+      "signal": "AI 安全风险意识提升，训练模式转变。",
+      "point": "OpenAI 停止互联网训练 AI 模型。",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "date_md": "10-24"
+    },
+    {
+      "title_zh": "圣诞节最热门的玩具？ Nvidia CEO 玩可爱的 Microduck 机器人，销量达 20,000 个",
+      "summary": "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来，倒地“小睡”，然后根据语音指令进行翻跟斗。",
+      "signal": "—",
+      "point": "机器人跺着小脚，发出微小的 R2-D2 声音，坐下来…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "date_md": "10-24"
+    },
+    {
+      "title_zh": "从 Toast 到 Bessemer：创始人将在 2026 年 TechCrunch 创始人峰会上听到谁的发言",
+      "summary": "此次全天活动由 TechCrunch 与 Fidelity Private Shares 合作主办，不仅限于筹款和人工智能，还探讨了在传统创业中心内外寻找客户、建立团队、加强宣传、培养创始人领导力以及扩大公司规模的现实。",
+      "signal": "—",
+      "point": "此次全天活动由 TechCrunch 与…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+      "date_md": "10-24"
+    },
+    {
+      "title_zh": "OpenAI 缩放在线存储服务 ChatGPT 用户超 10 亿",
+      "summary": "OpenAI 通过 Habitat、多租户、全球缓存和 Azure Cosmos DB 缩放在线存储，为 ChatGPT 提供 12 倍更快读取速度。",
+      "signal": "AI 服务大规模扩展，技术基础设施升级。",
+      "point": "OpenAI 缩放 ChatGPT 存储服务。",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "date_md": "10-24"
+    }
+  ]
 }

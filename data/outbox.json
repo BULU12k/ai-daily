@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-24",
+  "pushed": true,
+  "items": [
+    {
+      "title_zh": "OpenAI says it will no longer train its ",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers sai…",
+      "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+    },
+    {
+      "title_zh": "Hottest toy for Christmas? Nvidia CEO pl",
+      "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead f…",
+      "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/"
+    },
+    {
+      "title_zh": "From Toast to Bessemer: Who founders wil",
+      "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes …",
+      "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/"
+    },
+    {
+      "title_zh": "Rapidly scaling online storage to serve ",
+      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cos…",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+    },
+    {
+      "title_zh": "Securing our frontier model training env",
+      "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation…",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment"
+    }
+  ]
+}

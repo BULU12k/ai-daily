@@ -1,0 +1,112 @@
+{
+ "2026-10-24": [
+  {
+   "title_zh": "OpenAI says it will no longer train its ",
+   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+   "date": "2026-10-23T23:05:49.000Z",
+   "time": "07:05"
+  },
+  {
+   "title_zh": "Hottest toy for Christmas? Nvidia CEO pl",
+   "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+   "date": "2026-10-23T21:59:19.000Z",
+   "time": "05:59"
+  },
+  {
+   "title_zh": "From Toast to Bessemer: Who founders wil",
+   "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities……（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+   "date": "2026-10-23T19:06:23.000Z",
+   "time": "03:06"
+  },
+  {
+   "title_zh": "Rapidly scaling online storage to serve ",
+   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.（来源：OpenAI Blog）",
+   "by_llm": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "date": "2026-10-23T17:00:00.000Z",
+   "time": "01:00"
+  },
+  {
+   "title_zh": "Securing our frontier model training env",
+   "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute ……（来源：OpenAI Blog）",
+   "by_llm": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "date": "2026-10-23T10:00:00.000Z",
+   "time": "18:00"
+  },
+  {
+   "title_zh": "百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径",
+   "summary": "10月21日，百度官方公众号发文披露了百度世界2026分论坛的更多议程信息。（来源：量子位）",
+   "by_llm": false,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504901.html",
+   "date": "2026-10-23T07:35:51.000Z",
+   "time": "15:35"
+  },
+  {
+   "title_zh": "Uber rival inDrive eyes 2027 robotaxi te",
+   "summary": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+   "date": "2026-10-23T04:00:00.000Z",
+   "time": "12:00"
+  },
+  {
+   "title_zh": "Left alone with nothing to do, AI agents",
+   "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting be……（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+   "date": "2026-10-23T00:45:37.000Z",
+   "time": "08:45"
+  },
+  {
+   "title_zh": "OpenAI and Poland’s NASK partner to adva",
+   "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient……（来源：OpenAI Blog）",
+   "by_llm": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+   "date": "2026-10-23T00:00:00.000Z",
+   "time": "08:00"
+  },
+  {
+   "title_zh": "OpenAI working on new $30B raise at $1.2",
+   "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+   "date": "2026-10-22T22:08:24.000Z",
+   "time": "06:08"
+  },
+  {
+   "title_zh": "1Password launches a way for AI agents t",
+   "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those ac……（来源：TechCrunch AI）",
+   "by_llm": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+   "date": "2026-10-22T19:07:09.000Z",
+   "time": "03:07"
+  },
+  {
+   "title_zh": "Build more responsive apps with the Deci",
+   "summary": "Fast, focused, low-cost decisions for any application.（来源：OpenAI Blog）",
+   "by_llm": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/decisions-api",
+   "date": "2026-10-22T19:00:00.000Z",
+   "time": "03:00"
+  }
+ ]
+}

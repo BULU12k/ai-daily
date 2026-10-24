@@ -1,0 +1,57 @@
+name: AI Daily
+
+on:
+  schedule:
+    # 每 3 小时一次（UTC；日报按 Asia/Shanghai 时区分日）
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-daily
+  cancel-in-progress: false
+
+jobs:
+  build-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch feeds, summarize, build pages
+        env:
+          # 优先级：ZAI/ZHIPU/GLM -> OPENAI -> GitHub Models（免费，用内置 GITHUB_TOKEN）
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          ZHIPUAI_API_KEY: ${{ secrets.ZHIPUAI_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NTFY_TOPIC: ${{ vars.NTFY_TOPIC }}
+        run: node scripts/fetch-daily.mjs
+
+      - name: Commit generated pages and dedupe state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "daily: $(TZ=Asia/Shanghai date +%F) $(TZ=Asia/Shanghai date +%H:%M)"
+            git push
+          fi
+
+      - name: Push new items to ntfy
+        env:
+          NTFY_SERVER: ${{ vars.NTFY_SERVER }}
+          NTFY_TOPIC: ${{ vars.NTFY_TOPIC }}
+        run: node scripts/notify.mjs
+        continue-on-error: true # 推送失败不阻塞日报发布，但会在日志中留 warning

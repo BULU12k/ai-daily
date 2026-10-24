@@ -1,27 +1,8 @@
 {
   "date": "2026-10-25",
   "pushed": false,
-  "headline": "AI日报 10-25 03:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-25-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Siri AI多次延期，OpenAI超级应用发布混乱"
-  ],
-  "items": [
-    {
-      "title_zh": "AI墓园：那些关停与延期的项目",
-      "summary": "TechCrunch 整理了一份持续更新的“AI 墓园”清单，收录已关停或未达预期的 AI 项目与创业公司。 名单里包括苹果多次延期的 Siri AI，以及 OpenAI 颇为混乱的“超级应用”发布。",
-      "signal": "AI热潮下，失败清单也在变长",
-      "point": "Siri AI多次延期，OpenAI超级应用发布混乱",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "date_md": "10-25"
-    }
-  ]
+  "headline": "AI日报 10-25 03:42 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

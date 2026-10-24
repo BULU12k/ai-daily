@@ -14,6 +14,7 @@
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import zlib from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
@@ -103,6 +104,80 @@ function richText(text, baseStyle) {
   );
 }
 
+/* ---------------- 画布高度：内容紧致（估算加裕量渲染 -> 像素实测 -> 二次渲染收尾） ----------------
+ * 背景：旧版 Math.max(height, 1100) 强制最小高度，单条时下半张全是白；而近正方形海报
+ * 在 ntfy 固定高度容器里按 cover 居中裁切，顶部标题区（站名+日期+分隔线）会被裁掉。
+ * 方案：先按估算高度 +600px 裕量渲染（防止估算偏矮裁字），解码 PNG 从底部向上找最后
+ * 一行非纯白像素得到内容实际底边，再以"内容底边 + 底部留白"二次渲染，底部不再有空白。
+ */
+
+/** 极简 PNG 解码（仅支持 resvg 输出的 8-bit RGB/RGBA 非隔行），返回像素缓冲 */
+function decodePng(buf) {
+  let off = 8;
+  let width = 0;
+  let height = 0;
+  let bitDepth = 0;
+  let colorType = 0;
+  const idat = [];
+  while (off + 8 <= buf.length) {
+    const len = buf.readUInt32BE(off);
+    const type = buf.toString('ascii', off + 4, off + 8);
+    const data = buf.subarray(off + 8, off + 8 + len);
+    if (type === 'IHDR') {
+      width = data.readUInt32BE(0);
+      height = data.readUInt32BE(4);
+      bitDepth = data[8];
+      colorType = data[9];
+    } else if (type === 'IDAT') idat.push(data);
+    else if (type === 'IEND') break;
+    off += 12 + len;
+  }
+  if (bitDepth !== 8 || (colorType !== 6 && colorType !== 2)) {
+    throw new Error(`不支持的 PNG 格式 bitDepth=${bitDepth} colorType=${colorType}`);
+  }
+  const ch = colorType === 6 ? 4 : 3;
+  const stride = width * ch;
+  const raw = zlib.inflateSync(Buffer.concat(idat));
+  const out = Buffer.alloc(height * stride);
+  let pos = 0;
+  for (let y = 0; y < height; y++) {
+    const filter = raw[pos++];
+    const row = raw.subarray(pos, pos + stride);
+    pos += stride;
+    const dst = y > 0 ? out.subarray((y - 1) * stride + stride, y * stride + stride) : out.subarray(0, stride);
+    for (let x = 0; x < stride; x++) {
+      const a = x >= ch ? dst[x - ch] : 0;
+      const b = y > 0 ? out[(y - 1) * stride + x] : 0;
+      const c = x >= ch && y > 0 ? out[(y - 1) * stride + x - ch] : 0;
+      let v = row[x];
+      if (filter === 1) v = (v + a) & 0xff;
+      else if (filter === 2) v = (v + b) & 0xff;
+      else if (filter === 3) v = (v + ((a + b) >> 1)) & 0xff;
+      else if (filter === 4) {
+        const p = a + b - c;
+        const pa = Math.abs(p - a);
+        const pb = Math.abs(p - b);
+        const pc = Math.abs(p - c);
+        v = (v + (pa <= pb && pa <= pc ? a : pb <= pc ? b : c)) & 0xff;
+      }
+      dst[x] = v;
+    }
+  }
+  return { width, height, pixels: out, stride, ch };
+}
+
+/** 从底部向上找最后一行非纯白像素（通道 < 250 视为内容），返回内容底边行号（含） */
+function lastContentRow(png) {
+  const { width, height, pixels, stride, ch } = png;
+  for (let y = height - 1; y >= 0; y--) {
+    const row = pixels.subarray(y * stride, (y + 1) * stride);
+    for (let x = 0; x < width * ch; x += ch) {
+      if (row[x] < 250 || row[x + 1] < 250 || row[x + 2] < 250) return y;
+    }
+  }
+  return height - 1;
+}
+
 /* ---------------- satori 元素辅助 ---------------- */
 
 const el = (type, style, children, extra = {}) => ({
@@ -123,10 +198,12 @@ PAGE.leftW = Math.round(PAGE.contentW * 0.635);
 PAGE.rightW = PAGE.contentW - PAGE.leftW - 44;
 PAGE.itemsPerpage = Math.max(1, Number(CONFIG.poster?.items_per_page ?? 4));
 
-function posterTree(outbox, pageIndex) {
+function posterTree(outbox, pageIndex, heightOverride) {
   const per = PAGE.itemsPerpage;
   const items = (outbox.items ?? []).slice((pageIndex - 1) * per, pageIndex * per);
   if (items.length === 0) return null;
+  // 海报内条目按时间由早到晚自上而下（date_md 升序；outbox 条目无时刻字段，同日保持原顺序）
+  items.sort((a, b) => String(a.date_md ?? '').localeCompare(String(b.date_md ?? '')));
 
   const dateMd = (outbox.date ?? '').slice(5); // MM-DD
   const leftW = PAGE.leftW;
@@ -153,7 +230,8 @@ function posterTree(outbox, pageIndex) {
   height += 25 * 1.4; // "新闻要点" 标签
   for (const p of points) height += 12 + estLines(p, 25, PAGE.contentW - 60) * 25 * 1.55;
   if (points.length === 0) height += 12 + 25 * 1.55;
-  height = Math.round(Math.max(height, 1100));
+  // 不再强制最小高度 1100：高度紧贴内容，避免底部大面积留白与近正方形裁切伤标题
+  height = heightOverride ? Math.round(heightOverride) : Math.round(height);
 
   // ---- 元素树 ----
   const itemNodes = [];
@@ -293,24 +371,39 @@ const fonts = [
 
 let ok = 0;
 let fail = 0;
+
+async function renderPng(built) {
+  const svg = await satori(built.tree, {
+    width: PAGE.width,
+    height: built.height,
+    fonts,
+  });
+  return new Resvg(svg, {
+    fitTo: { mode: 'width', value: PAGE.width },
+    font: { loadSystemFonts: false },
+  })
+    .render()
+    .asPng();
+}
+
 for (const page of pages) {
-  const built = posterTree(outbox, page.index);
-  if (!built) {
+  const estimate = posterTree(outbox, page.index);
+  if (!estimate) {
     log(`第 ${page.index} 页无条目，跳过`);
     continue;
   }
   try {
-    const svg = await satori(built.tree, {
-      width: PAGE.width,
-      height: built.height,
-      fonts,
-    });
-    const png = new Resvg(svg, {
-      fitTo: { mode: 'width', value: PAGE.width },
-      font: { loadSystemFonts: false },
-    })
-      .render()
-      .asPng();
+    // 第一遍：估算高度 + 裕量，防止估算偏矮把内容裁掉
+    let built = posterTree(outbox, page.index, estimate.height + 600);
+    let png = await renderPng(built);
+    // 第二遍：像素实测内容底边，高度收紧为"内容底边 + 底部留白"
+    const measured = lastContentRow(decodePng(png)) + 1;
+    if (measured >= built.height - 8) {
+      log(`第 ${page.index} 页内容贴近第一遍画布底部（${measured}/${built.height}），保留裕量防裁切`);
+    } else {
+      built = posterTree(outbox, page.index, measured + PAGE.padBottom);
+      png = await renderPng(built);
+    }
     const outPath = path.join(ROOT, page.file);
     await fs.mkdir(path.dirname(outPath), { recursive: true });
     await fs.writeFile(outPath, png);

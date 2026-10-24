@@ -1,6 +1,19 @@
 {
  "2026-10-24": [
   {
+   "title_zh": "AI代理住进短信：清单盘点",
+   "summary": "TechCrunch 整理了一份可常驻短信的 AI 代理清单，从通用助手到面向家庭、旅行和工作的专用代理都有收录。 代理直接进入用户已有的短信入口，意味着 AI 助手正从独立 App 转向通讯录里的常驻角色。",
+   "signal": "代理改走短信入口，免装App抢留存",
+   "point": "盘点可驻留短信的AI代理，覆盖家庭、旅行与工作",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "date": "2026-10-24T14:00:00.000Z",
+   "time": "22:00",
+   "date_md": "10-24"
+  },
+  {
    "title_zh": "OpenAI表示，它将不再在实时互联网上训练其人工智能模型，理由是存在“重大风险”",
    "summary": "OpenAI将在其一名工程师表示该解决方案不起作用的几周后，从互联网上切断前沿模型。",
    "by_llm": false,

@@ -1,6 +1,19 @@
 {
  "2026-10-24": [
   {
+   "title_zh": "研究：Grok与GPT政治推荐分歧",
+   "summary": "一项新研究发现，Grok在选举中压倒性推荐共和党候选人，而OpenAI的GPT更倾向民主党候选人；在近500场选战中，两者推荐不一致的比例超过90%。 这凸显大模型在政治信息上的系统性偏向风险。",
+   "signal": "大模型政治推荐已现系统性偏差",
+   "point": "近500场选战，两模型推荐超九成不一致",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+   "date": "2026-10-24T15:00:00.000Z",
+   "time": "23:00",
+   "date_md": "10-24"
+  },
+  {
    "title_zh": "AI代理住进短信：清单盘点",
    "summary": "TechCrunch 整理了一份可常驻短信的 AI 代理清单，从通用助手到面向家庭、旅行和工作的专用代理都有收录。 代理直接进入用户已有的短信入口，意味着 AI 助手正从独立 App 转向通讯录里的常驻角色。",
    "signal": "代理改走短信入口，免装App抢留存",

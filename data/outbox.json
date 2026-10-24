@@ -1,8 +1,27 @@
 {
   "date": "2026-10-24",
   "pushed": false,
-  "headline": "AI日报 10-24 23:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-24 23:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-24-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "近500场选战，两模型推荐超九成不一致"
+  ],
+  "items": [
+    {
+      "title_zh": "研究：Grok与GPT政治推荐分歧",
+      "summary": "一项新研究发现，Grok在选举中压倒性推荐共和党候选人，而OpenAI的GPT更倾向民主党候选人；在近500场选战中，两者推荐不一致的比例超过90%。 这凸显大模型在政治信息上的系统性偏向风险。",
+      "signal": "大模型政治推荐已现系统性偏差",
+      "point": "近500场选战，两模型推荐超九成不一致",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "date_md": "10-24"
+    }
+  ]
 }

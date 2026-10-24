@@ -1,31 +1,8 @@
 {
   "date": "2026-10-24",
   "pushed": false,
-  "items": [
-    {
-      "title_zh": "LitPivot：通过文学景观中的动态情境化发展研究思路",
-      "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
-      "link": "https://huggingface.co/blog/allenai/litpivot"
-    },
-    {
-      "title_zh": "科大讯飞首发星辰TaaS平台，让Token真正成为千行百业的生产力",
-      "summary": "10月22日，2026科大讯飞全球1024开发者节在北京国家会议中心开幕",
-      "link": "https://www.qbitai.com/2026/10/505083.html"
-    },
-    {
-      "title_zh": "企业AI需要两个世界模型",
-      "summary": "特赞想让企业Agent真正懂业务",
-      "link": "https://www.qbitai.com/2026/10/505032.html"
-    },
-    {
-      "title_zh": "一张5090跑起34B实时世界模型，国产玩家拿下英伟达大奖！",
-      "summary": "房间秒变草原，抬手就能下雪",
-      "link": "https://www.qbitai.com/2026/10/504931.html"
-    },
-    {
-      "title_zh": "国产5B生图模型海外突然爆火，4天超百万下载",
-      "summary": "量子位 发布了新内容，详情见原文。",
-      "link": "https://www.qbitai.com/2026/10/504930.html"
-    }
-  ]
+  "headline": "AI日报 10-24 17:51 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

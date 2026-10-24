@@ -41,6 +41,16 @@
    "time": "01:00"
   },
   {
+   "title_zh": "LitPivot：通过文学景观中的动态情境化发展研究思路",
+   "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/allenai/litpivot",
+   "date": "2026-10-23T16:15:50.000Z",
+   "time": "00:15"
+  },
+  {
    "title_zh": "保护我们的前沿模型培训环境",
    "summary": "OpenAI解释了我们如何加强对前沿模型培训和评估的遏制，包括离线环境和高计算红队。",
    "by_llm": false,
@@ -49,6 +59,76 @@
    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
    "date": "2026-10-23T10:00:00.000Z",
    "time": "18:00"
+  },
+  {
+   "title_zh": "科大讯飞首发星辰TaaS平台，让Token真正成为千行百业的生产力",
+   "summary": "10月22日，2026科大讯飞全球1024开发者节在北京国家会议中心开幕",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505083.html",
+   "date": "2026-10-23T09:21:41.000Z",
+   "time": "17:21"
+  },
+  {
+   "title_zh": "企业AI需要两个世界模型",
+   "summary": "特赞想让企业Agent真正懂业务",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505032.html",
+   "date": "2026-10-23T09:07:25.000Z",
+   "time": "17:07"
+  },
+  {
+   "title_zh": "一张5090跑起34B实时世界模型，国产玩家拿下英伟达大奖！",
+   "summary": "房间秒变草原，抬手就能下雪",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504931.html",
+   "date": "2026-10-23T09:03:37.000Z",
+   "time": "17:03"
+  },
+  {
+   "title_zh": "国产5B生图模型海外突然爆火，4天超百万下载",
+   "summary": "量子位 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504930.html",
+   "date": "2026-10-23T08:50:16.000Z",
+   "time": "16:50"
+  },
+  {
+   "title_zh": "南京物理AI上大分！三位图灵奖得主发声，50个应用场景亮相",
+   "summary": "让AI真正走进真实世界",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504915.html",
+   "date": "2026-10-23T08:45:43.000Z",
+   "time": "16:45"
+  },
+  {
+   "title_zh": "iRTE2026：声网CEO赵斌提出五级对话能力框架，实时互动迈入对话 AGI 时代",
+   "summary": "10月23日，iRTE2026实时智能大会在北京举行。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504913.html",
+   "date": "2026-10-23T08:45:30.000Z",
+   "time": "16:45"
+  },
+  {
+   "title_zh": "高德发布首个基于开放世界行为的全身基座模型λ0，推动机器人从“局部学习”迈向“全身动作对齐”",
+   "summary": "阿里巴巴集团旗下高德正式发布首个基于开放世界行为的全身基座模型λ0",
+   "by_llm": false,
+   "degraded": true,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/504905.html",
+   "date": "2026-10-23T08:40:57.000Z",
+   "time": "16:40"
   },
   {
    "title_zh": "百度世界2026前瞻：10+重磅分论坛，全面解码AI时代的智能组织进化路径",
@@ -91,6 +171,26 @@
    "time": "08:00"
   },
   {
+   "title_zh": "您的模型在 AWS Trainium 上运行吗？查找一下",
+   "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/torch-neuronx-model-support",
+   "date": "2026-10-23T00:00:00.000Z",
+   "time": "08:00"
+  },
+  {
+   "title_zh": "将数据库评分转化为 RL 奖励：使用 ThinkingBox 进行训练后智能体",
+   "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+   "date": "2026-10-22T22:24:34.000Z",
+   "time": "06:24"
+  },
+  {
    "title_zh": "OpenAI在IPO之前以$ 1.25 T的估值进行新的$ 300亿加息",
    "summary": "如果OpenAI在这轮融资中获得超过1万亿美元的估值，它将打破有史以来估值最高的私人公司的纪录。",
    "by_llm": false,
@@ -129,6 +229,26 @@
    "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
    "date": "2026-10-22T14:30:24.000Z",
    "time": "22:30"
+  },
+  {
+   "title_zh": "使用 IBM Granite 时间序列模型进行集合预测",
+   "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+   "date": "2026-10-22T07:51:31.000Z",
+   "time": "15:51"
+  },
+  {
+   "title_zh": "NVIDIA Kumo Relational 在关系数据上的表现优于监督式机器学习，无需培训",
+   "summary": "Hugging Face Blog 发布了新内容，详情见原文。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "date": "2026-10-21T18:26:30.000Z",
+   "time": "02:26"
   },
   {
    "title_zh": "使用Google Antigravity加速寻找抗菌肽",

@@ -1,27 +1,8 @@
 {
   "date": "2026-10-24",
   "pushed": false,
-  "headline": "AI日报 10-24 22:44 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-24-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "盘点可驻留短信的AI代理，覆盖家庭、旅行与工作"
-  ],
-  "items": [
-    {
-      "title_zh": "AI代理住进短信：清单盘点",
-      "summary": "TechCrunch 整理了一份可常驻短信的 AI 代理清单，从通用助手到面向家庭、旅行和工作的专用代理都有收录。 代理直接进入用户已有的短信入口，意味着 AI 助手正从独立 App 转向通讯录里的常驻角色。",
-      "signal": "代理改走短信入口，免装App抢留存",
-      "point": "盘点可驻留短信的AI代理，覆盖家庭、旅行与工作",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "date_md": "10-24"
-    }
-  ]
+  "headline": "AI日报 10-24 22:52 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

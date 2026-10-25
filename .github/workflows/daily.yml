@@ -67,6 +67,9 @@ jobs:
         # 渲染失败不阻塞日报页面发布；notify 会自动降级为纯文本推送
         continue-on-error: true
 
+      - name: Maintain actual poster index (including empty batches)
+        run: node scripts/maintain-posters.mjs
+
       - name: Commit generated pages, posters and dedupe state
         run: |
           git config user.name "github-actions[bot]"

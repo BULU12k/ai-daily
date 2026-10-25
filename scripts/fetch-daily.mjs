@@ -490,64 +490,6 @@ ${days.map((d) => `<li><a href="daily/${escapeHtml(d.date)}.html">${escapeHtml(d
 </div></body></html>`;
 }
 
-/* ---------------- 海报索引与清理 ---------------- */
-
-const POSTER_INDEX_KEEP_DAYS = 3; // poster-index.json 只保留最近 3 天（含今天）的文件名
-const POSTER_CLEANUP_KEEP_DAYS = 7; // docs/poster 删除日期早于 7 天的 PNG
-
-/** 海报文件名中的日期部分（两种命名均以 YYYY-MM-DD 开头；旧命名 <date>-pN.png，新命名 <date>-<HHmm>-pN.png） */
-function posterFileDate(name) {
-  const m = String(name).match(/^(\d{4}-\d{2}-\d{2})/);
-  return m ? m[1] : null;
-}
-
-/** Asia/Shanghai 某日往前数 days-1 天得到的日期（YYYY-MM-DD） */
-function shanghaiCutoffDate(todayStr, days) {
-  const base = new Date(`${todayStr}T00:00:00+08:00`);
-  return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai' }).format(
-    new Date(base.getTime() - (days - 1) * 86400_000),
-  );
-}
-
-/** 索引维护（纯函数）：追加本班文件名（去重），裁剪到最近 3 天，按文件名排序 */
-function updatePosterIndex(existing, newFiles, todayStr) {
-  const set = new Set(Array.isArray(existing?.posters) ? existing.posters : []);
-  for (const f of newFiles) set.add(f);
-  const cutoff = shanghaiCutoffDate(todayStr, POSTER_INDEX_KEEP_DAYS);
-  const posters = [...set]
-    .filter((f) => {
-      const d = posterFileDate(f);
-      return d !== null && d >= cutoff;
-    })
-    .sort();
-  return { posters };
-}
-
-/** 删除 docs/poster 中文件名日期早于 7 天的 PNG；无法识别日期的文件不动。返回删除的文件名列表 */
-async function cleanupOldPosters() {
-  const cutoff = shanghaiCutoffDate(shanghaiDate(), POSTER_CLEANUP_KEEP_DAYS + 1);
-  const removed = [];
-  let entries = [];
-  try {
-    entries = await fs.readdir(POSTER_DIR);
-  } catch {
-    return removed;
-  }
-  for (const name of entries) {
-    if (!name.endsWith('.png')) continue;
-    const d = posterFileDate(name);
-    if (!d || d >= cutoff) continue;
-    try {
-      await fs.rm(path.join(POSTER_DIR, name));
-      removed.push(name);
-    } catch (err) {
-      log(`清理旧海报失败 ${name}: ${err.message}`);
-    }
-  }
-  if (removed.length > 0) log(`已清理过期海报 ${removed.length} 个（日期早于 ${cutoff}）`);
-  return removed;
-}
-
 /* ---------------- 主流程 ---------------- */
 
 const today = shanghaiDate();
@@ -666,8 +608,8 @@ await fs.writeFile(daysStorePath, JSON.stringify(daysStore, null, 1), 'utf8');
 
 // 待推送海报页（海报驱动）：
 // - pages 描述本次应生成的海报页（由 scripts/render-poster.mjs 渲染为 docs/poster/*.png）；
-// - 文件名带本班时刻（<date>-<HHmm>-pN.png，Asia/Shanghai），每班海报永久独立，
-//   同日后续班次不再覆盖前班次的文件，Pages 上的"永久链接"名副其实；
+// - 文件名带本班时刻（<date>-<HHmm>-pN.png，Asia/Shanghai），每班海报独立，
+//   同日后续班次不再覆盖前班次的文件，在线链接仅在海报保留期内有效；
 // - notify.mjs 优先以海报 PNG 附件推送（每页一条消息，最多 max_pages 条）；
 //   海报文件缺失时降级为一条纯文本消息；无新条目时 pages 为空、notify 不发送任何消息。
 const posterCfg = CONFIG.poster ?? {};
@@ -705,26 +647,7 @@ log('已重建索引: docs/index.html');
 // 持久化去重状态与待推送清单
 await fs.writeFile(path.join(DATA_DIR, 'seen.json'), JSON.stringify(seen, null, 1), 'utf8');
 
-// 海报索引（docs/poster/index.json）：每班把本次 pages 的文件名追加进去（去重），
-// 只保留最近 3 天（含今天）；随仓库提交并由 Pages 发布，供 save-posters.mjs
-// 从 {pages_base_url}/poster/index.json 拉取（与海报同域，不依赖 raw.githubusercontent.com）。
-// 删除 docs/poster 中日期早于 7 天的 PNG（旧日期无时刻的文件按其日期判断；git 历史仍可追溯）。
-if (pages.length > 0) {
-  let posterIndex = {};
-  try {
-    posterIndex = JSON.parse(await fs.readFile(path.join(POSTER_DIR, 'index.json'), 'utf8'));
-  } catch {
-    /* 首次运行无索引 */
-  }
-  const updated = updatePosterIndex(posterIndex, pages.map((p) => path.basename(p.file)), today);
-  await fs.writeFile(
-    path.join(POSTER_DIR, 'index.json'),
-    JSON.stringify(updated, null, 1),
-    'utf8',
-  );
-  log(`海报索引已更新：共 ${updated.posters.length} 个文件名`);
-}
-await cleanupOldPosters();
+// PNG 索引与清理由渲染后的 maintain-posters.mjs 扫描实际文件维护。
 
 // 待推送清单
 const outbox = {

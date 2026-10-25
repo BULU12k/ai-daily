@@ -1,6 +1,6 @@
 # AI 前沿时讯日报
 
-个人专用的 AI 领域要闻日报站：GitHub Actions 每 3 小时自动抓取精选 AI 资讯源，用 LLM 生成"发生了什么、为什么重要"的中文短摘要（单条 ≤3 句），发布为 GitHub Pages 静态站，并把新增条目推送到 ntfy.sh 主题——手机（App 后台推送）和电脑（浏览器/App 订阅）都能收到，不依赖电脑开机。
+个人专用的 AI 领域要闻日报站：GitHub Actions 每半小时自动抓取精选 AI 资讯源，用 LLM 生成"发生了什么、为什么重要"的中文短摘要（单条 ≤3 句），发布为 GitHub Pages 静态站，并把新增条目推送到 ntfy.sh 主题——手机（App 后台推送）和电脑（浏览器/App 订阅）都能收到，不依赖电脑开机。
 
 无账号、无多用户、无商业化。密钥全部走 GitHub Secrets，仓库内不含任何密钥。
 
@@ -10,7 +10,7 @@
 RSS/Atom 源（≥5 个）
   OpenAI Blog / Anthropic News / Google DeepMind / Meta AI /
   Hugging Face Blog / TechCrunch AI / 量子位
-        │  GitHub Actions（cron 每 3 小时 + 手动触发）
+        │  GitHub Actions（cron 每半小时 + 手动触发）
         ▼
 scripts/fetch-daily.mjs
   抓取 → 按 URL/guid 的 SHA-256 哈希去重（状态持久化在 data/seen.json，随仓库提交）
@@ -37,7 +37,7 @@ LLM 通道优先级（全部通过环境变量注入，仓库内零硬编码）�
 - **电脑端（覆盖电脑不在网站前的情况）**：
   - 最快方式：浏览器打开 `https://ntfy.sh/ai-daily-f02c73ab`，点击 Subscribe（保持标签页开着即可收到）；
   - 桌面常驻：安装 [ntfy 桌面版](https://ntfy.sh/docs/subscribe/desktop/) 或用 CLI `ntfy subscribe ai-daily-f02c73ab`。
-- 通知内容为条目标题 + 一句话摘要 + 原文链接。
+- 通知优先为海报图片附件，并附在线链接；缺图时降级为本班文字和日报链接。
 
 > 想换主题名：修改 `config/site.json` 的 `ntfy_topic`，或在仓库 Settings → Variables and secrets → Actions 里加 `NTFY_TOPIC` 变量覆盖。
 
@@ -64,19 +64,29 @@ LLM 通道优先级（全部通过环境变量注入，仓库内零硬编码）�
 ## 定制
 
 - **换/加资讯源**：编辑 `scripts/fetch-daily.mjs` 顶部 `FEEDS` 数组（RSS/Atom 均可）。单个源抓取失败会被跳过并记日志，不影响其余源。
-- **每日条目上限**：`config/site.json` 的 `max_items_per_day`（默认 12，推送最多取前 5 条，避免刷屏）。
+- **每日条目上限**：`config/site.json` 的 `max_items_per_day`（默认每次取 12 条进入日报；海报及推送取前 4 条，最多 2 页）。
 - **LLM 模型**：仓库 Variables 加 `LLM_MODEL` 可覆盖默认模型。
-- **cron 时间**：编辑 `.github/workflows/daily.yml`（现为每 3 小时整点一次）。
+- **cron 时间**：编辑 `.github/workflows/daily.yml`（现为每小时的 00、30 分）。
 
 ## 文件结构
 
 ```
 .github/workflows/daily.yml   定时 + 手动触发的工作流
 scripts/fetch-daily.mjs        抓取 / 去重 / 摘要 / 建页（无第三方依赖，Node 22）
-scripts/notify.mjs             ntfy.sh JSON 推送
+scripts/notify.mjs             ntfy.sh 海报附件及缺图文字降级推送
 config/site.json               站点与推送主题配置
 data/seen.json                 去重状态（Actions 自动提交回仓库持久化）
 data/days.json                 近 30 天每日条目库（同日多次运行自动追加）
 data/outbox.json               本期待推送清单（流水线内部产物）
 docs/                          GitHub Pages 站点根（index.html + daily/*.html，均为生成物）
 ```
+
+## 海报与电脑本地归档
+
+每班最多 4 条新闻，每张最多 2 条、最多 2 张，文件名为 `YYYY-MM-DD-HHmm-pN.png`，不同班次互不覆盖。仅抓取最近 24 小时有明确日期的新闻；没有新增条目时不会发通知。
+
+工作流先抓取建页、再渲染 PNG，随后运行 `node scripts/maintain-posters.mjs`。即使空班或渲染失败也扫描真实有效 PNG，发布 `docs/poster/index.json`；索引按上海日期保留含今天最近 3 天，日期严格早于 7 天的 PNG 清理。日报文字页与图片保留期不同，海报在线链接不保证保留期外仍可用。
+
+`node scripts/save-posters.mjs [目标目录]` 默认保存到 `D:\ntfy\AI日报海报`。现有 Windows 后台计划任务定期执行，不依赖 git pull。脚本从 Pages 索引逐张下载，校验文件名与 PNG 结构，原子保存，并维护 `saved-manifest.json`。实际有效文件存在就不覆盖；文件缺失或损坏时即使有 manifest 也会重新下载。索引、HTTP、网络或内容错误均写入目标目录 `save-posters.log`，失败退出非零，下一周期重试。电脑离线超过索引保留期可能漏归档；本地已归档文件不随在线清理删除。
+
+通知优先发送可用海报；部分或全部海报不可用时另发本班文字与日报链接，避免漏掉缺页新闻。文字版通过请求正文发送，按 UTF-8 字节限制在 4096 字节内，保留全部新闻的编号标题和日报链接，超长标题或摘要会明确省略；完整内容和原文链接可在日报查看。HTTP 200/202 且含合法消息 id 才记成功，任何消息失败均非零退出且不标记整班已推送。工作流通知失败不会回滚已发布页面，需查看步骤日志；自动测试只使用 localhost mock，不实际发 ntfy 消息。定时调度可能延迟，Pages 缓存也可能导致归档晚一周期。

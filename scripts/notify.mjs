@@ -1,146 +1,97 @@
 #!/usr/bin/env node
-/**
- * ntfy.sh 推送（海报驱动）：
- * - 优先把 data/outbox.json 中 pages 描述的海报 PNG 以"图片附件"形式推送，
- *   每页一条消息（最多 max_pages 条），手机端免点开直接看图；
- * - 海报文件缺失时降级为一条纯文本消息（标题 + 摘要 + 链接）；
- * - 无新条目（pages 为空且无 items）时不发送任何消息，仅日志留痕，避免刷屏。
- *
- * 使用 ntfy 原生附件上传：PUT 二进制正文 + Filename/Title/Message/Tags 头。
- * 成功判定：HTTP 200/202，响应 JSON 含消息 id。任一条失败以非零码退出。
- * 主题名可被环境变量 NTFY_TOPIC 覆盖（secret 或仓库变量皆可），默认取 config/site.json。
- */
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-
+import { posterName, validatePng } from './poster-files.mjs';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const CONFIG = JSON.parse(await fs.readFile(path.join(ROOT, 'config', 'site.json'), 'utf8'));
-
-const server = (process.env.NTFY_SERVER || CONFIG.ntfy_server || 'https://ntfy.sh').replace(/\/+$/, '');
-const topic = process.env.NTFY_TOPIC || CONFIG.ntfy_topic;
-const outboxPath = path.join(ROOT, 'data', 'outbox.json');
-// GitHub Pages 永久链接基址：ntfy 免费附件数小时后过期，消息正文给出
-// Pages 上永不失效的海报地址（config/site.json 的 pages_base_url）。
-const PAGES_BASE = String(CONFIG.pages_base_url || '').replace(/\/+$/, '');
-const posterLink = (filename) =>
-  PAGES_BASE ? `\n\n🔗 海报永久链接: ${PAGES_BASE}/poster/${filename}` : '';
-
+const config = JSON.parse(await fs.readFile(path.join(ROOT, 'config/site.json'), 'utf8'));
+const outboxPath = path.join(ROOT, 'data/outbox.json');
 const outbox = JSON.parse(await fs.readFile(outboxPath, 'utf8'));
-if (outbox.pushed) {
-  console.log('[notify] outbox 已标记为已推送，跳过。');
+if (outbox.pushed) { console.log('[notify] 已推送，跳过'); process.exit(0); }
+if (!(outbox.items ?? []).length && !(outbox.pages ?? []).length) {
+  console.log('[notify] 本期无新条目，不推送');
+  await fs.writeFile(outboxPath, JSON.stringify({ ...outbox, pushed: true }, null, 2));
   process.exit(0);
 }
+const server = String(process.env.NTFY_SERVER || config.ntfy_server || 'https://ntfy.sh').replace(/\/+$/, '');
+const topic = process.env.NTFY_TOPIC || config.ntfy_topic;
+if (!/^ai-daily-[0-9a-z]{6,16}$/.test(topic)) throw new Error('主题名非法');
+const base = String(config.pages_base_url || '').replace(/\/+$/, '');
+const dailyLink = base ? `\n\n🔗 日报: ${base}/daily/${encodeURIComponent(outbox.date)}.html` : '';
+const scrub = (s) => String(s ?? '').replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, '');
+const headline = scrub(outbox.headline || `AI日报 ${outbox.date}`);
+let ok = 0, fail = 0;
 
-if (!topic || !/^ai-daily-[0-9a-z]{6,16}$/.test(topic)) {
-  console.error(`[notify] 主题名非法: "${topic}"`);
-  process.exit(1);
-}
-
-// 双保险：清除任何可能残留的孤立代理项（ntfy 解析遇非法 UTF-8 会返回 400）
-const scrub = (s) =>
-  String(s ?? '').replace(
-    /[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g,
-    '',
-  );
-
-const headline = scrub(outbox.headline || `AI日报 ${outbox.date ?? ''}`);
-let ok = 0;
-let fail = 0;
-
-/** 发送一条消息并记录响应 id；body 为 Buffer 时即图片附件（PUT）。
- *  标题/正文/文件名经 URL 查询参数传递（UTF-8 安全）：
- *  Node 的 undici 禁止非 ASCII HTTP 头（ByteString 限制），而 ntfy 官方支持
- *  ?title=&message=&filename=&tags= 查询参数发布，效果与请求头等价。 */
-async function send({ title, message, filename, body, contentType }) {
-  const q = new URLSearchParams();
-  q.set('title', scrub(title));
-  q.set('tags', 'newspaper');
-  if (message != null) q.set('message', scrub(message));
-  if (filename) q.set('filename', filename);
-  const res = await fetch(`${server}/${encodeURIComponent(topic)}?${q.toString()}`, {
-    method: 'PUT',
-    headers: contentType ? { 'Content-Type': contentType } : undefined,
-    body: body ?? '',
-    signal: AbortSignal.timeout(60_000),
-  });
-  const text = await res.text().catch(() => '');
-  if (res.status === 200 || res.status === 202) {
-    let id = '';
-    try {
-      id = JSON.parse(text)?.id ?? '';
-    } catch {
-      /* 非代理响应，忽略 */
-    }
-    ok++;
-    console.log(`[notify] OK ${res.status} id=${id || '(无)'} <- ${title}`);
-  } else {
-    fail++;
-    console.error(`[notify] FAIL ${res.status} <- ${title}: ${text.slice(0, 160)}`);
+// ntfy's limits are UTF-8 bytes, not JavaScript UTF-16 code units.
+function limitUtf8(value, maxBytes) {
+  const text = scrub(value);
+  if (Buffer.byteLength(text, 'utf8') <= maxBytes) return text;
+  if (maxBytes < 3) return '';
+  let result = '', used = 0;
+  for (const ch of text) {
+    const size = Buffer.byteLength(ch, 'utf8');
+    if (used + size > maxBytes - 3) break;
+    result += ch; used += size;
   }
+  return result + '…';
 }
 
-// 组装待发送页面：海报文件存在者用附件；全部缺失但有条目则降级为一条纯文本
-const pages = [];
-for (const p of outbox.pages ?? []) {
-  const file = path.join(ROOT, p.file);
+function fallbackText() {
+  const prefix = `海报${missing.length ? ` ${missing.map(p => p.index).join('、')} 页` : ''}暂不可用，以下为本班文字版：\n`;
+  const footer = `\n\n摘要可能省略，完整内容及原文链接见日报。${dailyLink}`;
+  const items = outbox.items ?? [];
+  const titles = items.map((it, i) => `${i + 1}. ${limitUtf8(it.title_zh, 512)}`);
+  // Reserve all titles and the complete daily URL before allocating summaries.
+  const fixedBytes = Buffer.byteLength(prefix + titles.join('\n\n') + footer, 'utf8');
+  const summaryBudget = Math.floor((4096 - fixedBytes) / Math.max(1, items.length)) - 1;
+  if (summaryBudget < 0) throw new Error('文字版标题与日报链接超过 4096 字节');
+  return prefix + titles.map((title, i) => {
+    const summary = limitUtf8(items[i].summary, summaryBudget);
+    return summary ? `${title}\n${summary}` : title;
+  }).join('\n\n') + footer;
+}
+
+async function send({ title, message, filename, body }) {
   try {
-    const png = await fs.readFile(file);
-    pages.push({ index: p.index, total: p.total, png, filename: path.basename(p.file) });
-  } catch {
-    console.warn(`[notify] 海报文件缺失，跳过附件: ${p.file}`);
-  }
-}
-
-if (pages.length === 0) {
-  if ((outbox.items ?? []).length === 0) {
-    console.log('[notify] 本期无新条目，不推送任何消息（日志留痕）。');
-    await fs.writeFile(outboxPath, JSON.stringify({ ...outbox, pushed: true }, null, 2), 'utf8');
-    process.exit(0);
-  }
-  // 降级：纯文本一条（标题 + 要点 + 首条摘要链接），杜绝逐条刷屏
-  const it = outbox.items[0];
-  const points = (outbox.points ?? []).map((p) => `· ${p}`).join('\n');
-  // 海报 PNG 缺失仍给 Pages 永久链接（按日期构造第 1 页），附件过期也不丢图
-  const degradedLink = outbox.date ? posterLink(`${outbox.date}-p1.png`) : '';
-  const message = [points, '', `${it.title_zh}`, take1(it.summary), it.link]
-    .filter((x) => x != null && x !== '')
-    .join('\n');
-  console.log('[notify] 海报缺失，降级为纯文本推送 1 条。');
-  await send({ title: headline, message: message + degradedLink });
-} else {
-  for (const p of pages) {
-    const title =
-      pages.length > 1 ? `${headline}（${p.index}/${p.total}）` : headline;
-    // 消息正文：第 1 页附新闻要点，便于通知列表直接阅读；第 2 页仅页码说明；
-    // 每页消息末尾附各自的 GitHub Pages 永久链接
-    const message =
-      (p.index === 1 && (outbox.points ?? []).length > 0
-        ? outbox.points.map((x) => `· ${x}`).join('\n')
-        : `海报第 ${p.index}/${p.total} 页`) + posterLink(p.filename);
-    try {
-      await send({
-        title,
-        message,
-        filename: p.filename,
-        body: p.png,
-        contentType: 'image/png',
-      });
-    } catch (err) {
-      fail++;
-      console.error(`[notify] ERROR <- ${title}: ${err.message}`);
+    const query = new URLSearchParams({ title: limitUtf8(title, 1024), tags: 'newspaper' });
+    if (filename) {
+      query.set('filename', filename);
+      query.set('message', limitUtf8(message, 4096));
     }
-    await new Promise((r) => setTimeout(r, 400)); // 温和限速
-  }
+    const textBody = scrub(message);
+    if (!filename && Buffer.byteLength(textBody, 'utf8') > 4096) throw new Error('文字通知超过 4096 字节');
+    const res = await fetch(`${server}/${encodeURIComponent(topic)}?${query}`, {
+      method: 'PUT', headers: { 'Content-Type': filename ? 'image/png' : 'text/plain; charset=utf-8' },
+      body: filename ? body : textBody, signal: AbortSignal.timeout(60000),
+    });
+    const text = await res.text();
+    let id;
+    try { id = JSON.parse(text)?.id; } catch { /* handled below */ }
+    if (![200, 202].includes(res.status) || typeof id !== 'string' || !/^[A-Za-z0-9_-]{1,128}$/.test(id)) throw new Error(`HTTP ${res.status}，缺少合法消息 id 或响应失败: ${text.slice(0, 160)}`);
+    ok++; console.log(`[notify] OK ${res.status} id=${id} <- ${title}`);
+  } catch (err) { fail++; console.error(`[notify] FAIL <- ${title}: ${err.message}`); }
 }
-
-console.log(`[notify] 推送完成：成功 ${ok} 条，失败 ${fail} 条（主题 ${topic}）`);
-if (fail > 0) process.exit(2);
-
-// 全部成功才标记已推送
-await fs.writeFile(outboxPath, JSON.stringify({ ...outbox, pushed: true }, null, 2), 'utf8');
-
-function take1(s) {
-  const m = String(s ?? '').match(/^[\s\S]*?[。！？!?]/);
-  return m ? m[0] : String(s ?? '');
+const available = [], missing = [];
+for (const page of outbox.pages ?? []) {
+  try {
+    const filename = path.basename(page.file);
+    if (!posterName.test(filename) || page.file !== `docs/poster/${filename}`) throw new Error('海报路径非法');
+    const png = await fs.readFile(path.join(ROOT, page.file));
+    validatePng(png);
+    available.push({ ...page, filename, png });
+  } catch (err) { missing.push(page); console.warn(`[notify] 海报不可用 ${page.file}: ${err.message}`); }
 }
+for (const page of available) {
+  const points = page.index === 1 ? (outbox.points ?? []).map(x => `· ${x}`).join('\n') : `海报第 ${page.index}/${page.total} 页`;
+  const link = base ? `\n\n🔗 海报链接（在线保留期内）: ${base}/poster/${page.filename}` : '';
+  await send({ title: `${headline}（${page.index}/${page.total}）`,
+    message: limitUtf8(points, Math.max(0, 4096 - Buffer.byteLength(link, 'utf8'))) + link,
+    filename: page.filename, body: page.png });
+}
+if (missing.length || !available.length) {
+  // Keep every title and the daily URL even when full summaries cannot fit.
+  await send({ title: headline, message: fallbackText() });
+}
+console.log(`[notify] 成功 ${ok}，失败 ${fail}`);
+if (fail) process.exitCode = 2;
+else await fs.writeFile(outboxPath, JSON.stringify({ ...outbox, pushed: true }, null, 2));

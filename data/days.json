@@ -430,6 +430,19 @@
  ],
  "2026-10-26": [
   {
+   "title_zh": "Grok发布AI生成《奥德赛》前七分钟",
+   "summary": "Grok 放出其 AI 生成《奥德赛》的首段七分钟画面。 外媒评价画面尚可，但若追求艺术性、灵感或人文趣味，会觉得吸引力有限。",
+   "signal": "AI长片竞赛先看完成度",
+   "point": "Grok释出AI《奥德赛》前7分钟",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+   "date": "2026-10-25T21:31:16.000Z",
+   "time": "05:31",
+   "date_md": "10-26"
+  },
+  {
    "title_zh": "多数企业AI投资未见财务回报",
    "summary": "阿波罗全球管理公司的经济学家指出，除科技行业之外，美国企业至今没有从人工智能投资中获得任何财务回报。 这一判断与持续涌入的巨额AI资本开支形成明显反差，也让企业端AI能否真正变现成为下一阶段的关注焦点。",
    "signal": "企业AI从买算力转向算回报账",

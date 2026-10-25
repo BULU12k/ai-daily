@@ -1,27 +1,8 @@
 {
   "date": "2026-10-25",
   "pushed": false,
-  "headline": "AI日报 10-25 22:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-25-2230-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "热门AI可穿戴清单含Muse Charm等"
-  ],
-  "items": [
-    {
-      "title_zh": "热门AI可穿戴设备盘点",
-      "summary": "TechCrunch AI 汇总了一份热门 AI 可穿戴设备清单，涵盖 Muse Charm、Bee、Friend、Plaud 等产品。 清单显示 AI 硬件正从概念走向更多随身形态。",
-      "signal": "AI硬件正转向随身可穿戴",
-      "point": "热门AI可穿戴清单含Muse Charm等",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-      "date_md": "10-25"
-    }
-  ]
+  "headline": "AI日报 10-25 22:31 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

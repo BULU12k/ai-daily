@@ -389,6 +389,19 @@
  ],
  "2026-10-25": [
   {
+   "title_zh": "热门AI可穿戴设备盘点",
+   "summary": "TechCrunch AI 汇总了一份热门 AI 可穿戴设备清单，涵盖 Muse Charm、Bee、Friend、Plaud 等产品。 清单显示 AI 硬件正从概念走向更多随身形态。",
+   "signal": "AI硬件正转向随身可穿戴",
+   "point": "热门AI可穿戴清单含Muse Charm等",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+   "date": "2026-10-25T14:10:00.000Z",
+   "time": "22:10",
+   "date_md": "10-25"
+  },
+  {
    "title_zh": "AI墓园：那些关停与延期的项目",
    "summary": "TechCrunch 整理了一份持续更新的“AI 墓园”清单，收录已关停或未达预期的 AI 项目与创业公司。 名单里包括苹果多次延期的 Siri AI，以及 OpenAI 颇为混乱的“超级应用”发布。 这份清单提醒，热潮之下失败与延期同样是行业常态。",
    "signal": "AI热潮下，失败清单也在变长",

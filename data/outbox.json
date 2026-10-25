@@ -1,8 +1,27 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 00:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-26 01:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-26-0100-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "阿波罗经济学家称，非科技企业AI回报为零"
+  ],
+  "items": [
+    {
+      "title_zh": "多数企业AI投资未见财务回报",
+      "summary": "阿波罗全球管理公司的经济学家指出，除科技行业之外，美国企业至今没有从人工智能投资中获得任何财务回报。 这一判断与持续涌入的巨额AI资本开支形成明显反差，也让企业端AI能否真正变现成为下一阶段的关注焦点。",
+      "signal": "企业AI从买算力转向算回报账",
+      "point": "阿波罗经济学家称，非科技企业AI回报为零",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "date_md": "10-26"
+    }
+  ]
 }

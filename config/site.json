@@ -8,7 +8,7 @@
   "max_age_hours": 24,
   "poster": {
     "width": 1080,
-    "items_per_page": 4,
+    "items_per_page": 2,
     "max_pages": 2
   }
 }

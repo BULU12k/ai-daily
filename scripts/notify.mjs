@@ -20,6 +20,11 @@ const CONFIG = JSON.parse(await fs.readFile(path.join(ROOT, 'config', 'site.json
 const server = (process.env.NTFY_SERVER || CONFIG.ntfy_server || 'https://ntfy.sh').replace(/\/+$/, '');
 const topic = process.env.NTFY_TOPIC || CONFIG.ntfy_topic;
 const outboxPath = path.join(ROOT, 'data', 'outbox.json');
+// GitHub Pages 永久链接基址：ntfy 免费附件数小时后过期，消息正文给出
+// Pages 上永不失效的海报地址（config/site.json 的 pages_base_url）。
+const PAGES_BASE = String(CONFIG.pages_base_url || '').replace(/\/+$/, '');
+const posterLink = (filename) =>
+  PAGES_BASE ? `\n\n🔗 海报永久链接: ${PAGES_BASE}/poster/${filename}` : '';
 
 const outbox = JSON.parse(await fs.readFile(outboxPath, 'utf8'));
 if (outbox.pushed) {
@@ -96,20 +101,23 @@ if (pages.length === 0) {
   // 降级：纯文本一条（标题 + 要点 + 首条摘要链接），杜绝逐条刷屏
   const it = outbox.items[0];
   const points = (outbox.points ?? []).map((p) => `· ${p}`).join('\n');
+  // 海报 PNG 缺失仍给 Pages 永久链接（按日期构造第 1 页），附件过期也不丢图
+  const degradedLink = outbox.date ? posterLink(`${outbox.date}-p1.png`) : '';
   const message = [points, '', `${it.title_zh}`, take1(it.summary), it.link]
     .filter((x) => x != null && x !== '')
     .join('\n');
   console.log('[notify] 海报缺失，降级为纯文本推送 1 条。');
-  await send({ title: headline, message });
+  await send({ title: headline, message: message + degradedLink });
 } else {
   for (const p of pages) {
     const title =
       pages.length > 1 ? `${headline}（${p.index}/${p.total}）` : headline;
-    // 消息正文：第 1 页附新闻要点，便于通知列表直接阅读；第 2 页仅页码说明
+    // 消息正文：第 1 页附新闻要点，便于通知列表直接阅读；第 2 页仅页码说明；
+    // 每页消息末尾附各自的 GitHub Pages 永久链接
     const message =
-      p.index === 1 && (outbox.points ?? []).length > 0
+      (p.index === 1 && (outbox.points ?? []).length > 0
         ? outbox.points.map((x) => `· ${x}`).join('\n')
-        : `海报第 ${p.index}/${p.total} 页`;
+        : `海报第 ${p.index}/${p.total} 页`) + posterLink(p.filename);
     try {
       await send({
         title,

@@ -1,27 +1,8 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 06:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-26-0600-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Grok释出AI《奥德赛》前7分钟"
-  ],
-  "items": [
-    {
-      "title_zh": "Grok发布AI生成《奥德赛》前七分钟",
-      "summary": "Grok 放出其 AI 生成《奥德赛》的首段七分钟画面。 外媒评价画面尚可，但若追求艺术性、灵感或人文趣味，会觉得吸引力有限。",
-      "signal": "AI长片竞赛先看完成度",
-      "point": "Grok释出AI《奥德赛》前7分钟",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-      "date_md": "10-26"
-    }
-  ]
+  "headline": "AI日报 10-26 06:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

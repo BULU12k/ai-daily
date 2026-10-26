@@ -1,27 +1,8 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 02:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-27-0200-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "165类工作活动，覆盖近100国"
-  ],
-  "items": [
-    {
-      "title_zh": "ChatGPT工作用途覆盖165类活动",
-      "summary": "OpenAI基于近100个国家的数据，梳理ChatGPT在165类工作活动中的使用情况。 数据显示人们正把ChatGPT用于多样化的实际工作场景，且使用方式随时间变化。",
-      "signal": "AI办公从尝鲜转向日常流程",
-      "point": "165类工作活动，覆盖近100国",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
-      "date_md": "10-26"
-    }
-  ]
+  "headline": "AI日报 10-27 02:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

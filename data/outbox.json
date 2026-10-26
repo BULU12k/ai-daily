@@ -1,37 +1,8 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 03:30 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-27-0330-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "Codex把事故调查从数小时压到几分钟",
-    "新模型主打快速可靠的电脑操作"
-  ],
-  "items": [
-    {
-      "title_zh": "Codex让故障排查缩至分钟级",
-      "summary": "OpenAI 介绍内部工程师使用 Codex Ultrafast 开展事故调查，把原本耗时数小时的流程压缩到几分钟。 除安全分析外，这一工具也用于代码重构和日常开发流程。",
-      "signal": "AI进入安全运营，响应以分钟计",
-      "point": "Codex把事故调查从数小时压到几分钟",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/openai-cut-incident-investigation",
-      "date_md": "10-26"
-    },
-    {
-      "title_zh": "GPT-6.1 Terra主打电脑操作",
-      "summary": "OpenAI 发布 GPT-6.1 Terra，官方定位是把快速、可靠的电脑操作能力带给所有人。 电脑操作是智能体真正落地的关键环节，这次升级意味着更多日常任务可以交给模型代为完成。",
-      "signal": "电脑操作成模型竞争新战场",
-      "point": "新模型主打快速可靠的电脑操作",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "date_md": "10-26"
-    }
-  ]
+  "headline": "AI日报 10-27 04:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

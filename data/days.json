@@ -666,6 +666,32 @@
  ],
  "2026-10-27": [
   {
+   "title_zh": "Anthropic披露企业客户黏性策略",
+   "summary": "Anthropic在S-1招股书中披露，年付10万美元以上的客户中已有过半同时使用Claude平台与第一方应用。 这种交叉销售打法类似亚马逊，目的是让企业客户更难流失。",
+   "signal": "大模型生意转向交叉销售锁客",
+   "point": "过半10万美元级客户同时用平台与官方应用",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "date": "2026-10-26T16:49:42.000Z",
+   "time": "00:49",
+   "date_md": "10-27"
+  },
+  {
+   "title_zh": "SpaceX获阿波罗400亿美元芯片融资",
+   "summary": "SpaceX在监管文件中披露，已锁定约400亿美元的有约束力融资承诺，用于采购AI芯片和相关数据中心设备。 融资金额显示，算力投入正被航天公司摆到与火箭同等重要的位置。",
+   "signal": "算力军备竞赛蔓延到航天领域",
+   "point": "SpaceX锁定约400亿美元融资采购AI芯片",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+   "date": "2026-10-26T16:46:36.000Z",
+   "time": "00:46",
+   "date_md": "10-27"
+  },
+  {
    "title_zh": "天禧AI大会实测个人AI跨端协同",
    "summary": "10月23日至25日，天禧AI与观猹大会在杭州茶叶博览会会议会展中心举办，主题为“见证超能发生”。 现场实测了个人AI的跨端协同体验，展示一个人借助AI能调动多大能量。",
    "signal": "个人AI正从单设备走向跨端协同",

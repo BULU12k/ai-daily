@@ -705,6 +705,19 @@
    "date_md": "10-27"
   },
   {
+   "title_zh": "ChatGPT工作用途覆盖165类活动",
+   "summary": "OpenAI基于近100个国家的数据，梳理ChatGPT在165类工作活动中的使用情况。 数据显示人们正把ChatGPT用于多样化的实际工作场景，且使用方式随时间变化。 这份数据为观察AI如何嵌入日常工作提供了跨地区样本。",
+   "signal": "AI办公从尝鲜转向日常流程",
+   "point": "165类工作活动，覆盖近100国",
+   "by_llm": true,
+   "degraded": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
+   "date": "2026-10-26T10:00:00.000Z",
+   "time": "18:00",
+   "date_md": "10-26"
+  },
+  {
    "title_zh": "天禧AI大会实测个人AI跨端协同",
    "summary": "10月23日至25日，天禧AI与观猹大会在杭州茶叶博览会会议会展中心举办，主题为“见证超能发生”。 现场实测了个人AI的跨端协同体验，展示一个人借助AI能调动多大能量。",
    "signal": "个人AI正从单设备走向跨端协同",

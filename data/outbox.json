@@ -1,27 +1,27 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 01:30 · 1条新知",
+  "headline": "AI日报 10-27 02:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-27-0130-p1.png",
+      "file": "docs/poster/2026-10-27-0200-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "335页招股书，7名联创握50.1%投票权"
+    "165类工作活动，覆盖近100国"
   ],
   "items": [
     {
-      "title_zh": "Anthropic公开335页招股书",
-      "summary": "Anthropic公开了长达335页的招股书，拟冲击史上最大IPO，同时其亏损规模也创下AI公司之最。 7名联合创始人合计仍握有50.1%的总投票权，创始团队在上市后依然掌握控制权。",
-      "signal": "AI巨头上市潮起，亏损规模创纪录",
-      "point": "335页招股书，7名联创握50.1%投票权",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/505551.html",
-      "date_md": "10-27"
+      "title_zh": "ChatGPT工作用途覆盖165类活动",
+      "summary": "OpenAI基于近100个国家的数据，梳理ChatGPT在165类工作活动中的使用情况。 数据显示人们正把ChatGPT用于多样化的实际工作场景，且使用方式随时间变化。",
+      "signal": "AI办公从尝鲜转向日常流程",
+      "point": "165类工作活动，覆盖近100国",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "date_md": "10-26"
     }
   ]
 }

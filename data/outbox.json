@@ -1,37 +1,8 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 06:00 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-27-0600-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "GPT-6.1 Sol 帮开发者审阅安全修复建议",
-    "模型在 Kakeya 猜想等三题给出结果"
-  ],
-  "items": [
-    {
-      "title_zh": "GPT-6.1 Sol 升级代码安全审查",
-      "summary": "CodeRabbit 采用 GPT-6.1 Sol，在复杂代码库中排查安全风险。 其安全智能体可协助开发者审阅问题发现与修复建议。",
-      "signal": "安全智能体正成为代码平台标配",
-      "point": "GPT-6.1 Sol 帮开发者审阅安全修复建议",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "date_md": "10-26"
-    },
-    {
-      "title_zh": "OpenAI 公开三项数理难题模型结果",
-      "summary": "OpenAI 发布模型在 Kakeya 猜想、指数时间假设与量子色动力学上的结果。 公司同时说明研究者如何验证这些结果，并在其基础上继续推进。",
-      "signal": "AI 开始为纯数学难题提供线索",
-      "point": "模型在 Kakeya 猜想等三题给出结果",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-      "date_md": "10-26"
-    }
-  ]
+  "headline": "AI日报 10-27 06:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

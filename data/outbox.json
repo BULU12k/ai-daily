@@ -1,8 +1,27 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 22:01 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-26 22:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-26-2230-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "约3万件MLB商品测试，互动率提升10%"
+  ],
+  "items": [
+    {
+      "title_zh": "AI帮球迷配齐应援穿搭",
+      "summary": "Fanatics 借助 OpenAI 的 Shop the Look 功能，帮球迷凑齐比赛日全套穿搭。 在约 3 万件 MLB 商品上的测试显示，用户互动率提升了 10%。",
+      "signal": "AI导购开始盯上零售转化率",
+      "point": "约3万件MLB商品测试，互动率提升10%",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "date_md": "10-26"
+    }
+  ]
 }

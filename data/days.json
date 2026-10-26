@@ -469,6 +469,19 @@
    "date_md": "10-26"
   },
   {
+   "title_zh": "AI帮球迷配齐应援穿搭",
+   "summary": "Fanatics 借助 OpenAI 的 Shop the Look 功能，帮球迷凑齐比赛日全套穿搭。 在约 3 万件 MLB 商品上的测试显示，用户互动率提升了 10%。 这说明生成式 AI 正从聊天工具走进电商导购与转化环节。",
+   "signal": "AI导购开始盯上零售转化率",
+   "point": "约3万件MLB商品测试，互动率提升10%",
+   "by_llm": true,
+   "degraded": false,
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "date": "2026-10-26T07:00:00.000Z",
+   "time": "15:00",
+   "date_md": "10-26"
+  },
+  {
    "title_zh": "趋境科技完成B轮融资",
    "summary": "趋境科技宣布完成B轮融资，半年内实现超十倍速增长。 公司主攻高品质AI Token的规模化交付，本轮资金将用于加速这一方向的产能建设。",
    "signal": "AI Token交付成新战场",

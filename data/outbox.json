@@ -1,27 +1,8 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 07:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-27-0700-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Greptile 如何使用 GPT-6 Astra…"
-  ],
-  "items": [
-    {
-      "title_zh": "Greptile 使用 GPT-6 Astra 使错误检测超越代码审查",
-      "summary": "Greptile 如何使用 GPT-6 Astra 来测试用户工作流程，使用 Daybreak 来增强安全性，使用 Codex 来减少返工。",
-      "signal": "—",
-      "point": "Greptile 如何使用 GPT-6 Astra…",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/greptile-code-review-codex-astra",
-      "date_md": "10-27"
-    }
-  ]
+  "headline": "AI日报 10-27 07:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

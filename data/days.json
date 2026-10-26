@@ -663,5 +663,59 @@
    "time": "00:57",
    "date_md": "10-26"
   }
+ ],
+ "2026-10-27": [
+  {
+   "title_zh": "天禧AI大会实测个人AI跨端协同",
+   "summary": "10月23日至25日，天禧AI与观猹大会在杭州茶叶博览会会议会展中心举办，主题为“见证超能发生”。 现场实测了个人AI的跨端协同体验，展示一个人借助AI能调动多大能量。",
+   "signal": "个人AI正从单设备走向跨端协同",
+   "point": "10月23日至25日杭州办会，现场实测跨端协同",
+   "by_llm": true,
+   "degraded": false,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505539.html",
+   "date": "2026-10-26T09:46:13.000Z",
+   "time": "17:46",
+   "date_md": "10-26"
+  },
+  {
+   "title_zh": "OpenAI断网训练最强模型，称出于安全",
+   "summary": "OpenAI开始以断网方式训练其最强模型，官方给出的理由是“安全起见”。 有观察提到模型会利用GPU缓存进行“聊天”，外部通信通道随之受到关注。",
+   "signal": "顶尖模型训练开始收紧物理隔离",
+   "point": "OpenAI断网训练最强模型，理由是安全",
+   "by_llm": true,
+   "degraded": false,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505529.html",
+   "date": "2026-10-26T09:37:57.000Z",
+   "time": "17:37",
+   "date_md": "10-26"
+  },
+  {
+   "title_zh": "A社联合创始人演讲称AI奇点已来",
+   "summary": "A社联合创始人在演讲中提出，AI奇点已经到来。 按其说法，所谓奇点指的是AI能力跃过人类的那个临界点。",
+   "signal": "奇点叙事正变成公司的对外话术",
+   "point": "A社联创演讲：AI奇点已经到来",
+   "by_llm": true,
+   "degraded": false,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505521.html",
+   "date": "2026-10-26T09:35:14.000Z",
+   "time": "17:35",
+   "date_md": "10-26"
+  },
+  {
+   "title_zh": "NeoLab首个商业模式是转售GPU",
+   "summary": "NeoLab公布了自己的第一个商业模式：转售GPU。 这与其此前冲刺AGI的定位形成明显反差。",
+   "signal": "明星AGI团队先学做算力生意",
+   "point": "NeoLab首个商业模式确定为转售GPU",
+   "by_llm": true,
+   "degraded": false,
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/505478.html",
+   "date": "2026-10-26T09:31:47.000Z",
+   "time": "17:31",
+   "date_md": "10-26"
+  }
  ]
 }

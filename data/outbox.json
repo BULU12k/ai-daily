@@ -1,27 +1,8 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 23:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-26-2300-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Anthropic递交IPO，营收攀升亏损扩大"
-  ],
-  "items": [
-    {
-      "title_zh": "Anthropic正式递交IPO申请",
-      "summary": "Anthropic 已正式提交 IPO 申请，文件显示公司营收快速攀升、亏损也在扩大，并已获得大型企业客户采用。 其治理结构较为特殊，旨在保留创始团队控制权并维护 AI 安全使命。",
-      "signal": "AI安全公司接受公开市场检验",
-      "point": "Anthropic递交IPO，营收攀升亏损扩大",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-      "date_md": "10-26"
-    }
-  ]
+  "headline": "AI日报 10-26 23:02 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

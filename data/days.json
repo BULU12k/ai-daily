@@ -430,6 +430,19 @@
  ],
  "2026-10-26": [
   {
+   "title_zh": "Anthropic正式递交IPO申请",
+   "summary": "Anthropic 已正式提交 IPO 申请，文件显示公司营收快速攀升、亏损也在扩大，并已获得大型企业客户采用。 其治理结构较为特殊，旨在保留创始团队控制权并维护 AI 安全使命。 此次上市进程将检验资本市场对高投入 AI 公司的估值与耐心。",
+   "signal": "AI安全公司接受公开市场检验",
+   "point": "Anthropic递交IPO，营收攀升亏损扩大",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "date": "2026-10-26T14:35:22.000Z",
+   "time": "22:35",
+   "date_md": "10-26"
+  },
+  {
    "title_zh": "中国近半新云生意被一家公司包揽",
    "summary": "据量子位报道，中国新增云业务中近50%由同一家公司承接，占比之高令人意外，但也在情理之中。 这一集中度说明云市场份额正加速向头部玩家聚拢。",
    "signal": "云市场集中度抬升，中小厂商空间收窄",

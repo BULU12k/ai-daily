@@ -13,6 +13,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { parseOfficialNews, parseOfficialDescription } from './official-news.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const DATA_DIR = path.join(ROOT, 'data');
@@ -29,11 +30,11 @@ const FEEDS = [
   { name: 'OpenAI Blog', urls: ['https://openai.com/news/rss.xml'] },
   {
     name: 'Anthropic News',
-    // Anthropic 官网无稳定官方 RSS：先试官方路径，失败再用 RSSHub 公共实例（尽力而为）
-    urls: ['https://www.anthropic.com/rss.xml', 'https://rsshub.app/anthropic/news'],
+    kind: 'anthropic',
+    urls: ['https://www.anthropic.com/news'],
   },
   { name: 'Google DeepMind Blog', urls: ['https://deepmind.google/blog/rss.xml'] },
-  { name: 'Meta AI Blog', urls: ['https://ai.meta.com/blog/rss/'] },
+  { name: 'Meta AI Blog', kind: 'meta', urls: ['https://ai.meta.com/blog/'] },
   { name: 'Hugging Face Blog', urls: ['https://huggingface.co/blog/feed.xml'] },
   { name: 'TechCrunch AI', urls: ['https://techcrunch.com/category/artificial-intelligence/feed/'] },
   { name: '量子位', urls: ['https://www.qbitai.com/feed'] },
@@ -117,9 +118,22 @@ async function fetchFeed(feed) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const xml = await res.text();
-      const items = parseFeed(xml);
+      const items = feed.kind ? parseOfficialNews(xml, feed.kind, { warn: (message) => log(`源 ${feed.name}: ${message}`) }) : parseFeed(xml);
       if (items.length === 0) throw new Error('响应不是可解析的 RSS/Atom');
       log(`源 ${feed.name}: OK (${url}), ${items.length} 条`);
+      if (feed.kind) {
+        const recent = items.filter(it => it.date && Date.now() - new Date(it.date).getTime() <= Number(CONFIG.max_age_hours ?? 24) * 3600_000).length;
+        log(`源 ${feed.name}: 官方列表解析成功，日精度日期，时效内 ${recent} 条（去重前）；不是抓取失败`);
+        // Meta cards have titles/dates but no summary. Fetch only current
+        // candidates' official descriptions for the unchanged Chinese pipeline.
+        if (feed.kind === 'meta') await Promise.all(items.filter(it => it.date && !it.desc && Date.now() - new Date(it.date).getTime() <= Number(CONFIG.max_age_hours ?? 24) * 3600_000).map(async it => {
+          try {
+            const detail = await fetch(it.link, { signal: AbortSignal.timeout(FETCH_TIMEOUT_MS), headers: { 'User-Agent': 'ai-daily-bot/1.0 (personal news digest)' } });
+            if (!detail.ok) throw new Error(`HTTP ${detail.status}`);
+            it.desc = parseOfficialDescription(await detail.text());
+          } catch (err) { log(`源 ${feed.name}: 文章描述获取失败 ${it.link} (${err.message})`); }
+        }));
+      }
       return items.map((it) => ({ ...it, source: feed.name }));
     } catch (err) {
       log(`源 ${feed.name}: ${url} 失败(${err.message})`);

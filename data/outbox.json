@@ -1,8 +1,63 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 15:37 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-26 16:00 · 10条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 2,
+      "file": "docs/poster/2026-10-26-1600-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-10-26-1600-p2.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "半年业务增长超十倍，完成B轮融资",
+    "KV Cache降99%，单卡跑512路推理",
+    "AI同事进企微，自带工作记忆",
+    "OpenAI与Gemini共同选用中国语音方案"
+  ],
+  "items": [
+    {
+      "title_zh": "趋境科技完成B轮融资",
+      "summary": "趋境科技宣布完成B轮融资，半年内实现超十倍速增长。 公司主攻高品质AI Token的规模化交付，本轮资金将用于加速这一方向的产能建设。",
+      "signal": "AI Token交付成新战场",
+      "point": "半年业务增长超十倍，完成B轮融资",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505429.html",
+      "date_md": "10-26"
+    },
+    {
+      "title_zh": "港科CMU开源新模型，吞吐提6倍",
+      "summary": "香港科技大学与CMU联合岩山科技开源新模型，把KV Cache削减99%，单卡吞吐提升6倍。 单张卡即可同时支撑512路长推理任务。",
+      "signal": "长上下文推理成本骤降",
+      "point": "KV Cache降99%，单卡跑512路推理",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505407.html",
+      "date_md": "10-26"
+    },
+    {
+      "title_zh": "WorkBuddy进驻企业微信",
+      "summary": "AI助手WorkBuddy进入企业微信，可作为“AI同事”参与协作，并自带工作记忆。 员工不必再靠手动转发文件来串联工作流。",
+      "signal": "AI同事开始进办公群聊",
+      "point": "AI同事进企微，自带工作记忆",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505365.html",
+      "date_md": "10-26"
+    },
+    {
+      "title_zh": "OpenAI与Gemini同选中国语音",
+      "summary": "一家中国公司的实时语音交互方案同时被OpenAI和Gemini选用。 文章将其视作对话式AI的风向标，实时语音正成为大模型竞争的新入口。",
+      "signal": "实时语音成对话AI新入口",
+      "point": "OpenAI与Gemini共同选用中国语音方案",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505341.html",
+      "date_md": "10-26"
+    }
+  ]
 }

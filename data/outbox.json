@@ -1,8 +1,27 @@
 {
   "date": "2026-10-26",
   "pushed": false,
-  "headline": "AI日报 10-26 21:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-26 21:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-26-2130-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Anthropic向SEC提交S-1，拟启动IPO"
+  ],
+  "items": [
+    {
+      "title_zh": "Anthropic提交S-1筹备上市",
+      "summary": "Anthropic 已向美国证券交易委员会（SEC）提交 S-1 文件，为拟议中的首次公开募股迈出正式一步。 目前公开信息仅限提交文件本身，发行规模、估值与时间表均未披露。",
+      "signal": "大模型公司开始接受公开市场检验",
+      "point": "Anthropic向SEC提交S-1，拟启动IPO",
+      "source": "Anthropic News",
+      "link": "https://www.anthropic.com/news/s1-sec",
+      "date_md": "10-26"
+    }
+  ]
 }

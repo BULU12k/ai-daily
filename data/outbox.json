@@ -1,8 +1,43 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 00:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-28 01:00 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-28-0100-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "场景可保持一致两分钟，较上代翻倍",
+    "合作范围扩大，具体条款未披露"
+  ],
+  "items": [
+    {
+      "title_zh": "谷歌发布Genie 4世界模型",
+      "summary": "谷歌DeepMind于周二以研究预览形式发布世界模型Genie 4，称其生成的场景比以往更接近照片级真实，并支持交互。 用户在模拟过程中输入文字即可改变场景，例如切换天气、调整镜头角度或加入新的人物与物体。 模型还能生成与场景匹配的实时音频，包括音乐、环境声和可交互对话。 Genie 4可让同一场景保持一致长达两分钟，是前代Genie 3的两倍，物理表现更接近真实，角色动作也更像人。 Gemini在流程中充当导演，负责规划步骤并检查画面；在一项与Gemini Robotics相关的研究实验中，Gemini 4 Argon模型把任务拆解为步骤，由Genie 4实时模拟，用于在真机之前测试机器人场景。 目前该模型仅向受信任测试者开放，未来数周将开放给Google AI Ultra订阅用户及Gemini API、Google AI Studio的早期合作方。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "世界模型竞争转向实时交互与音频",
+      "point": "场景可保持一致两分钟，较上代翻倍",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "date_md": "10-28"
+    },
+    {
+      "title_zh": "OpenAI与甲骨文扩大合作",
+      "summary": "据订阅简介，OpenAI与甲骨文正在扩大合作，计划把企业应用和AI智能体接入ChatGPT，同时为甲骨文的新产品提供支持。 由于原文无法访问（HTTP 403），本次仅有简介信息，合作的具体范围、上线时间、涉及哪些甲骨文产品或智能体能力均未披露，也无法确认是否有金额或排他性条款。 因此，目前只能确认双方合作范围在扩大，实际交付形态尚待官方细节公布。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "企业软件加速接入AI对话入口",
+      "point": "合作范围扩大，具体条款未披露",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "date_md": "10-27"
+    }
+  ]
 }

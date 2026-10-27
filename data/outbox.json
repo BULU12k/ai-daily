@@ -1,8 +1,63 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 18:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-27 18:30 · 9条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 2,
+      "file": "docs/poster/2026-10-27-1830-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-10-27-1830-p2.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "皮克斯公开点赞中国物理AI数据终端",
+    "无人在环进店实测，啃下长尾场景",
+    "缓存砍96%，页数不再设上限",
+    "同一天，OpenAI还甩出3项AI科学新发现"
+  ],
+  "items": [
+    {
+      "title_zh": "皮克斯点赞中国物理AI数据终端",
+      "summary": "乔布斯创立的皮克斯公开称赞中国团队的物理AI数据终端。 该终端被视作智能汽车玩家向物理AI延伸的入口，业内认为终局不会停在智能汽车。",
+      "signal": "车企正把数据终端做成物理AI入口",
+      "point": "皮克斯公开点赞中国物理AI数据终端",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505830.html",
+      "date_md": "10-27"
+    },
+    {
+      "title_zh": "便利店机器人自己进化上岗",
+      "summary": "Physical RSI第一站落地便利店，打工机器人无需人在环即可在真实门店实测并自我进化。 长尾场景被逐步啃下，物理AI的数据飞轮由此启动。",
+      "signal": "物理AI靠真店实测跑起数据飞轮",
+      "point": "无人在环进店实测，啃下长尾场景",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505799.html",
+      "date_md": "10-27"
+    },
+    {
+      "title_zh": "开源OCR把KV缓存压成常数",
+      "summary": "新的开源OCR模型把KV Cache压缩到常数级，页面处理数量不再设上限。 缓存开销下降96%，OCR 3.0时代随之开启。",
+      "signal": "长文档OCR的显存瓶颈被拆掉",
+      "point": "缓存砍96%，页数不再设上限",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505773.html",
+      "date_md": "10-27"
+    },
+    {
+      "title_zh": "GPT-6.1 Terra首批网友实测来了！1折价格获得Astra级电脑操作能力",
+      "summary": "同一天，OpenAI还甩出3项AI科学新发现",
+      "signal": "—",
+      "point": "同一天，OpenAI还甩出3项AI科学新发现",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505719.html",
+      "date_md": "10-27"
+    }
+  ]
 }

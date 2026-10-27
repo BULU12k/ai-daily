@@ -666,6 +666,19 @@
  ],
  "2026-10-27": [
   {
+   "title_zh": "英伟达押注印度AI提效创企",
+   "summary": "英伟达投资印度初创公司Simplismart，该公司帮助企业用更少的GPU运行AI模型。 其年化营收在六个月内增长14倍，美国市场贡献超过一半收入。 这笔投资显示，提升算力效率正成为资本关注的新方向。",
+   "signal": "算力效率成投资新赛道",
+   "point": "帮企业少用GPU跑模型，营收半年增14倍",
+   "by_llm": true,
+   "degraded": false,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+   "date": "2026-10-27T11:00:00.000Z",
+   "time": "19:00",
+   "date_md": "10-27"
+  },
+  {
    "title_zh": "皮克斯点赞中国物理AI数据终端",
    "summary": "乔布斯创立的皮克斯公开称赞中国团队的物理AI数据终端。 该终端被视作智能汽车玩家向物理AI延伸的入口，业内认为终局不会停在智能汽车。",
    "signal": "车企正把数据终端做成物理AI入口",

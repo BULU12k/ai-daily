@@ -1,8 +1,27 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 19:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-27 20:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-27-2000-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "帮企业少用GPU跑模型，营收半年增14倍"
+  ],
+  "items": [
+    {
+      "title_zh": "英伟达押注印度AI提效创企",
+      "summary": "英伟达投资印度初创公司Simplismart，该公司帮助企业用更少的GPU运行AI模型。 其年化营收在六个月内增长14倍，美国市场贡献超过一半收入。",
+      "signal": "算力效率成投资新赛道",
+      "point": "帮企业少用GPU跑模型，营收半年增14倍",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+      "date_md": "10-27"
+    }
+  ]
 }

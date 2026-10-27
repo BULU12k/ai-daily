@@ -1,8 +1,30 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 22:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-27 23:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-27-2300-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "在Meta任职八年的总监离职创业"
+  ],
+  "items": [
+    {
+      "title_zh": "Meta前总监离职做AI办公套件",
+      "summary": "在Meta工作八年后，原Meta Superintelligence Labs总监Rohit Patel离职创办Ndoc，目标是做AI原生的办公套件，替代Microsoft Office与Google Workspace。 Ndoc把演示与仪表盘、分析叙事、底层数据和Python脚本整合在同一工作区，用户可查看生成文档所用的脚本，并让AI解释公式，以核对AI产出。 平台由多种开源模型组合构建，Patel称运行成本明显低于基于前沿模型的方案，早期用户更看重端到端集中在一处。 Ndoc目前仅有三人团队且未融资，已启动企业试点并向等候名单开放限量alpha，注册免费但按使用量和token付费，计划数周内推beta、明年正式发布。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "大厂AI人才转向办公套件创业",
+      "point": "在Meta任职八年的总监离职创业",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+      "date_md": "10-27"
+    }
+  ]
 }

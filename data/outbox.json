@@ -1,30 +1,30 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 06:30 · 1条新知",
+  "headline": "AI日报 10-28 07:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-28-0630-p1.png",
+      "file": "docs/poster/2026-10-28-0700-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "我们正在通过一项新协议扩大与美国总务管理局 (GSA…"
+    "Veir称超导线缆输电距离达传统5倍"
   ],
   "items": [
     {
-      "title_zh": "扩大我们与 GSA 的合作伙伴关系，将 Claude 带到各级政府",
-      "summary": "我们正在通过一项新协议扩大与美国总务管理局 (GSA) 的合作伙伴关系，该协议为政府合作伙伴提供 Claude Enterprise、Claude for Government 和 Claude API 40% 的折扣。 折扣首次适用于所有产品表面，包括机构今天直接从我们这里购买以及未来几个月通过云提供商购买的情况。 目前大约有 500 个美国联邦、州和地方政府组织在使用 Claude。 Claude for Government 提供了 Claude 的编码和代理工作功能，并在 FedRAMP 高授权级别上提供与商业产品近乎同等的功能，已于 9 月 30 日全面上市。 Claude Enterprise 正在通过 FedRAMP 20x 计划获得 FedRAMP 中等授权，这标志着我们如何将相同的创新技术商业化提供给政府的下一步发展。",
+      "title_zh": "AI用电激增倒逼美国电网升级",
+      "summary": "AI 带来的用电需求激增正让美国老化的电网承受压力，业界担忧短期推高电费、长期可能引发停电等技术问题。 在本月早些时候举行的 TechCrunch Disrupt 上，Weavegrid 创始人兼 CEO Apoorv Bhargava、Veir CEO Tim Heidel 与 Rewiring America 政策副总裁 Kristen Eberhard 表示，新增负荷固然带来挑战，也为电网现代化打开了空间。 Bhargava 称，电网如今要同时应对可再生能源，以及电动车、数据中心、热泵等新负荷，公用事业公司真正要解决的是调度与管理；Weavegrid 的软件用于优化用电部署、降低用户账单。 Heidel 的公司 Veir 出售超导电力线，公司称其输电距离是传统线缆的 5 倍、占用空间少 20 倍，本月早些时候完成 1.1 亿美元 C 轮融资。 Eberhard 表示，AI 负荷增长让行业更愿意尝试此前搁置的方案。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "我们正在通过一项新协议扩大与美国总务管理局 (GSA…",
-      "source": "Anthropic News",
-      "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "date_md": "10-27"
+      "degraded": false,
+      "signal": "电网瓶颈催生输电与调度创新",
+      "point": "Veir称超导线缆输电距离达传统5倍",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+      "date_md": "10-28"
     }
   ]
 }

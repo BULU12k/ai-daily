@@ -1070,6 +1070,28 @@
  ],
  "2026-10-28": [
   {
+   "title_zh": "AI用电激增倒逼美国电网升级",
+   "summary": "AI 带来的用电需求激增正让美国老化的电网承受压力，业界担忧短期推高电费、长期可能引发停电等技术问题。 在本月早些时候举行的 TechCrunch Disrupt 上，Weavegrid 创始人兼 CEO Apoorv Bhargava、Veir CEO Tim Heidel 与 Rewiring America 政策副总裁 Kristen Eberhard 表示，新增负荷固然带来挑战，也为电网现代化打开了空间。 Bhargava 称，电网如今要同时应对可再生能源，以及电动车、数据中心、热泵等新负荷，公用事业公司真正要解决的是调度与管理；Weavegrid 的软件用于优化用电部署、降低用户账单。 Heidel 的公司 Veir 出售超导电力线，公司称其输电距离是传统线缆的 5 倍、占用空间少 20 倍，本月早些时候完成 1.1 亿美元 C 轮融资。 Eberhard 表示，AI 负荷增长让行业更愿意尝试此前搁置的方案。",
+   "signal": "电网瓶颈催生输电与调度创新",
+   "point": "Veir称超导线缆输电距离达传统5倍",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+   "date": "2026-10-27T22:55:41.000Z",
+   "time": "06:55",
+   "date_md": "10-28"
+  },
+  {
    "title_zh": "美银提醒勿向AI助手透露银行密码",
    "summary": "美国银行近日向客户群发题为《在AI世界中保护你的财务》的邮件，要求客户不要将用户名和密码告诉任何人或外部服务，并明确点名\"提供代为操作服务、具备AI能力的工具或代理\"。 邮件列出的风险包括：AI助手可能在客户不知情的情况下动用资金，或触发银行风控导致账户被锁定；若AI助手自身存在安全漏洞，还可能把银行凭证泄露给不法分子。 报道指出，银行与支付机构目前仍在摸索如何既允许AI工具访问账户（例如由代理自动比价、择时下单的\"代理支付\"），又能控制风险。 多数银行的账户协议规定，客户需对其交出登录凭证后产生的活动负责，美国银行在邮件中重申了这一点。 美国银行未立即回应该邮件的置评请求。",
    "signal": "AI代管账户权限风险浮现",

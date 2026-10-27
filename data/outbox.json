@@ -1,8 +1,43 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 00:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-28 00:18 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-28-0018-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "大模型判断研究新颖性仍待验证",
+    "DeepMind发布Genie 4，自称实时模拟更逼真"
+  ],
+  "items": [
+    {
+      "title_zh": "大模型能可靠判断研究想法新颖性吗",
+      "summary": "该文标题提出“能否信任大语言模型判断研究想法是否新颖”的问题，但当前仅能获取标题，缺少正文、实验设置与结论。 由于没有可见的模型清单、评测方法和样本规模，无法确认作者是否进行了系统实验，也无法核对任何准确率或错误率数字。 这个问题对应科研评审中的现实需求：在投稿或立项前用模型辅助筛选想法，降低人工评审成本。 但“新颖性”本身定义主观，跨领域标准不一，模型判断容易受提示词和训练数据影响。 在缺少公开基线和可复现实验前，不应把大模型的新颖性判断当作可靠结论。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "AI评审新颖性尚缺实证",
+      "point": "大模型判断研究新颖性仍待验证",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/allenai/novelty-bench",
+      "date_md": "10-28"
+    },
+    {
+      "title_zh": "DeepMind发布Genie 4世界模型",
+      "summary": "Google DeepMind 发布新一代世界模型 Genie 4，称其在实时模拟中实现了前所未有的真实感。 该信息来自博客订阅简介，正文未提供可核验的技术细节、评测数据或开放范围。 公司没有在可见信息中说明模型架构、训练数据、延迟与分辨率等关键指标，也未给出与前代产品的对比基线。 因此，“前所未有的真实感”目前只是公司自述，不能视为已交付能力。 该条目仅有标题和一句简介，无法确认 Genie 4 是否已开放测试、面向哪些用户以及是否提供 API。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：未提取到可信文章正文（结构变化或仅简介）；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "世界模型竞赛转向实时真实感",
+      "point": "DeepMind发布Genie 4，自称实时模拟更逼真",
+      "source": "Google DeepMind Blog",
+      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "date_md": "10-28"
+    }
+  ]
 }

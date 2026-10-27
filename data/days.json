@@ -666,6 +666,19 @@
  ],
  "2026-10-27": [
   {
+   "title_zh": "日本互联网巨头GMO称黑客发布被盗客户数据",
+   "summary": "日本的GMO互联网正在核实涉嫌黑客在云服务泄露后发布的涉嫌客户数据。",
+   "signal": "—",
+   "point": "日本的GMO互联网正在核实涉嫌黑客在云服务泄露后发布的涉嫌客…",
+   "by_llm": false,
+   "degraded": true,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
+   "date": "2026-10-27T13:32:57.000Z",
+   "time": "21:32",
+   "date_md": "10-27"
+  },
+  {
    "title_zh": "General Compute 筹集 1 亿美元 A 轮融资，反击新云灾难叙事",
    "summary": "General Compute 正在押注于 Nvidia 生态系统之外的推理芯片。",
    "signal": "—",

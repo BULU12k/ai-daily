@@ -666,6 +666,32 @@
  ],
  "2026-10-27": [
   {
+   "title_zh": "General Compute 筹集 1 亿美元 A 轮融资，反击新云灾难叙事",
+   "summary": "General Compute 正在押注于 Nvidia 生态系统之外的推理芯片。",
+   "signal": "—",
+   "point": "General Compute 正在押注于 Nvidia…",
+   "by_llm": false,
+   "degraded": true,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+   "date": "2026-10-27T13:00:00.000Z",
+   "time": "21:00",
+   "date_md": "10-27"
+  },
+  {
+   "title_zh": "Opera 推出新的 Web 标准，让用户在浏览器中本地部署 AI",
+   "summary": "新标准 WebAI 旨在与各种人工智能模型配合使用。",
+   "signal": "—",
+   "point": "新标准 WebAI 旨在与各种人工智能模型配合使用。",
+   "by_llm": false,
+   "degraded": true,
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+   "date": "2026-10-27T13:00:00.000Z",
+   "time": "21:00",
+   "date_md": "10-27"
+  },
+  {
    "title_zh": "英伟达押注印度AI提效创企",
    "summary": "英伟达投资印度初创公司Simplismart，该公司帮助企业用更少的GPU运行AI模型。 其年化营收在六个月内增长14倍，美国市场贡献超过一半收入。 这笔投资显示，提升算力效率正成为资本关注的新方向。",
    "signal": "算力效率成投资新赛道",

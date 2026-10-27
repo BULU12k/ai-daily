@@ -1315,6 +1315,22 @@
    "date": "2026-10-27T00:00:00.000Z",
    "time": "08:00",
    "date_md": "10-27"
+  },
+  {
+   "title_zh": "扩大我们与 GSA 的合作伙伴关系，将 Claude 带到各级政府",
+   "summary": "我们正在通过一项新协议扩大与美国总务管理局 (GSA) 的合作伙伴关系，该协议为政府合作伙伴提供 Claude Enterprise、Claude for Government 和 Claude API 40% 的折扣。 折扣首次适用于所有产品表面，包括机构今天直接从我们这里购买以及未来几个月通过云提供商购买的情况。 目前大约有 500 个美国联邦、州和地方政府组织在使用 Claude。 Claude for Government 提供了 Claude 的编码和代理工作功能，并在 FedRAMP 高授权级别上提供与商业产品近乎同等的功能，已于 9 月 30 日全面上市。 Claude Enterprise 正在通过 FedRAMP 20x 计划获得 FedRAMP 中等授权，这标志着我们如何将相同的创新技术商业化提供给政府的下一步发展。",
+   "signal": "—",
+   "point": "我们正在通过一项新协议扩大与美国总务管理局 (GSA…",
+   "by_llm": false,
+   "degraded": true,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [],
+   "source": "Anthropic News",
+   "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "date": "2026-10-27T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "10-27"
   }
  ]
 }

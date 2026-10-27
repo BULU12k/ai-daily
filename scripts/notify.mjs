@@ -102,8 +102,8 @@ const publicPages = await waitPublicPosters(local);
 const available = publicPages.ready.sort((a, b) => a.index - b.index);
 missing.push(...publicPages.missing);
 for (const page of available) {
-  const points = page.index === 1 ? (outbox.points ?? []).map(x => `· ${x}`).join('\n') : `海报第 ${page.index}/${page.total} 页`;
-  const link = `\n\n🔗 海报链接（在线保留期内）: ${page.url}${dailyLink}`;
+  const points = page.index === 1 ? '· ' + (outbox.points ?? []).map(x => String(x).replace(/\s+/g, ' ').trim()).filter(Boolean).join(' · ') : `海报第 ${page.index}/${page.total} 页`;
+  const link = `\n\n🔗 海报: ${page.url}${dailyLink}`;
   const sent = await send({ title: `${headline}（${page.index}/${page.total}）`,
     message: limitUtf8(points, Math.max(0, 4096 - Buffer.byteLength(link, 'utf8'))) + link,
     page });

@@ -182,7 +182,7 @@ function lastContentRow(png) {
 
 const el = (type, style, children, extra = {}) => ({
   type,
-  props: { style, children, ...extra },
+  props: { style: { flexShrink: 0, ...style }, children, ...extra },
 });
 
 /* ---------------- 版式 ---------------- */
@@ -219,7 +219,7 @@ function posterTree(outbox, pageIndex, heightOverride) {
     const sumLines = estLines(it.summary, 27, leftW);
     const sigLines = estLines(it.signal || '—', 27, rightW);
     const leftH =
-      titleLines * 38 * 1.4 + 16 + sumLines * 27 * 1.6 + 18 + 22 * 1.5;
+      titleLines * 38 * 1.4 + 16 + sumLines * 27 * 1.6 + 18 + 22 * 3;
     const rightH = 20 * 1.4 + 12 + sigLines * 27 * 1.5;
     height += Math.max(leftH, rightH) + 34 + 34 + 1; // 行内上下留白 + 分隔线
   }
@@ -252,6 +252,8 @@ function posterTree(outbox, pageIndex, heightOverride) {
         { marginTop: 18, fontSize: 22, color: SUB },
         `来源：${it.source ?? ''}${it.date_md ? ` · ${it.date_md}` : ''}`,
       ),
+      el('div', { marginTop: 8, fontSize: 20, color: SUB, lineHeight: 1.5 },
+        `${it.degraded ? '摘译 · ' : ''}${it.content_basis === 'article_body' ? '依据：可提取正文' : it.content_basis === 'article_excerpts' ? '依据：原文选段（可能不完整）' : '依据：订阅简介（信息有限）'}`),
     ].filter(Boolean));
     const right = el(
       'div',
@@ -397,9 +399,16 @@ for (const page of pages) {
     let built = posterTree(outbox, page.index, estimate.height + 600);
     let png = await renderPng(built);
     // 第二遍：像素实测内容底边，高度收紧为"内容底边 + 底部留白"
-    const measured = lastContentRow(decodePng(png)) + 1;
+    let measured = lastContentRow(decodePng(png)) + 1;
+    // Long summaries must expand the canvas rather than squeeze text or save
+    // an already clipped first pass. Bounded retries also catch layout drift.
+    for (let attempt = 0; measured >= built.height - PAGE.padBottom && attempt < 3; attempt++) {
+      built = posterTree(outbox, page.index, built.height + Math.max(800, Math.round(built.height / 2)));
+      png = await renderPng(built);
+      measured = lastContentRow(decodePng(png)) + 1;
+    }
     if (measured >= built.height - 8) {
-      log(`第 ${page.index} 页内容贴近第一遍画布底部（${measured}/${built.height}），保留裕量防裁切`);
+      throw new Error(`内容超过有界画布预算（${measured}/${built.height}），不发布裁切图片`);
     } else {
       built = posterTree(outbox, page.index, measured + PAGE.padBottom);
       png = await renderPng(built);

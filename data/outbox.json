@@ -1,43 +1,8 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 03:30 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-28-0330-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "100亿美元基金，单笔最高10亿美元",
-    "借助 OpenAI Daybreak，Check…"
-  ],
-  "items": [
-    {
-      "title_zh": "Disruptive 募集100亿美元基金",
-      "summary": "总部位于达拉斯的投资公司 Disruptive 于周二宣布设立一只 100 亿美元基金，计划投资至少 10 家晚期阶段公司，单笔投资最高可达 10 亿美元。 这是今年迄今规模最大的募资之一，资金主要投向 AI 与国防等资本密集型领域。 《华尔街日报》本月初曾报道该公司正在募集该基金，当时已获得至少 75 亿美元的出资承诺。 这也是 Disruptive 的首只盲池基金（blind pool），此前它通过逐个项目的 SPV 方式募资；公司过往投资包括 Palantir、Airbnb、Spotify，以及芯片初创公司 Groq 和 AI 语音生成公司 ElevenLabs。 据彭博报道，该公司向 LP 表示，其投入初创企业约 19 亿美元，已实现超过 60 亿美元回报；《达拉斯商业期刊》称这是得克萨斯州历史上规模最大的风投基金。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "大额晚期资金押注AI与国防",
-      "point": "100亿美元基金，单笔最高10亿美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
-      "date_md": "10-28"
-    },
-    {
-      "title_zh": "Check Point 如何利用 Daybreak 加速漏洞研究",
-      "summary": "借助 OpenAI Daybreak，Check Point 加快了新安全保护背后的研究速度，使其分析师能够更快地将漏洞情报转化为客户防御。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": true,
-      "signal": "—",
-      "point": "借助 OpenAI Daybreak，Check…",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/check-point-daybreak",
-      "date_md": "10-27"
-    }
-  ]
+  "headline": "AI日报 10-28 04:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

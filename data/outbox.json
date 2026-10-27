@@ -1,27 +1,8 @@
 {
   "date": "2026-10-27",
   "pushed": false,
-  "headline": "AI日报 10-27 22:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-27-2200-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "日本的GMO互联网正在核实涉嫌黑客在云服务泄露后发布的涉嫌客…"
-  ],
-  "items": [
-    {
-      "title_zh": "日本互联网巨头GMO称黑客发布被盗客户数据",
-      "summary": "日本的GMO互联网正在核实涉嫌黑客在云服务泄露后发布的涉嫌客户数据。",
-      "signal": "—",
-      "point": "日本的GMO互联网正在核实涉嫌黑客在云服务泄露后发布的涉嫌客…",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
-      "date_md": "10-27"
-    }
-  ]
+  "headline": "AI日报 10-27 22:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

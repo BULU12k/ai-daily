@@ -1,8 +1,43 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 05:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-28 06:00 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-28-0600-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "美银：勿向AI代理透露网银密码",
+    "创始人特殊股握50.1%投票权"
+  ],
+  "items": [
+    {
+      "title_zh": "美银提醒勿向AI助手透露银行密码",
+      "summary": "美国银行近日向客户群发题为《在AI世界中保护你的财务》的邮件，要求客户不要将用户名和密码告诉任何人或外部服务，并明确点名\"提供代为操作服务、具备AI能力的工具或代理\"。 邮件列出的风险包括：AI助手可能在客户不知情的情况下动用资金，或触发银行风控导致账户被锁定；若AI助手自身存在安全漏洞，还可能把银行凭证泄露给不法分子。 报道指出，银行与支付机构目前仍在摸索如何既允许AI工具访问账户（例如由代理自动比价、择时下单的\"代理支付\"），又能控制风险。 多数银行的账户协议规定，客户需对其交出登录凭证后产生的活动负责，美国银行在邮件中重申了这一点。 美国银行未立即回应该邮件的置评请求。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI代管账户权限风险浮现",
+      "point": "美银：勿向AI代理透露网银密码",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+      "date_md": "10-28"
+    },
+    {
+      "title_zh": "Anthropic临近IPO的复杂治理架构",
+      "summary": "随着Anthropic临近首次公开募股，其治理结构显示，普通股股东对包括董事会在内的大部分重大决策几乎没有发言权。 公司是法律上可兼顾公共使命与利润的公益公司（PBC），董事会得以按AI安全目标决策而不易被投资人起诉；长期利益信托（LTBT）持有特殊类别股票，有权选举和罢免多数董事，成员包括前美联储主席伯南克等。 七位创始人共同持有的特殊股票，让其中多数人掌握50.1%的股东投票权，可选出三名董事；董事会提名委员会还可否决LTBT对\"指定\"董事的提名或无因免职，并交由员工投票决定。 IPO十年后创始人可主动结束控制，或在在世创始人少于三人时自动终止；LTBT则需85%普通股东投票才能结束。 报道称，这套结构把员工权力正式化，但实际走向难以预测。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI安全使命压缩普通股东话语权",
+      "point": "创始人特殊股握50.1%投票权",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+      "date_md": "10-28"
+    }
+  ]
 }

@@ -1,42 +1,74 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 01:00 · 2条新知",
+  "headline": "AI日报 10-28 01:31 · 4条新知",
   "pages": [
     {
       "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-28-0100-p1.png",
+      "total": 2,
+      "file": "docs/poster/2026-10-28-0131-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-10-28-0131-p2.png",
       "count": 2
     }
   ],
   "points": [
-    "场景可保持一致两分钟，较上代翻倍",
-    "合作范围扩大，具体条款未披露"
+    "LFM3用于构建专用多模态模型",
+    "OpenAI称三个数学问题解法推翻ETH",
+    "RP1宣称全栈开源，身高135cm、24-30自由度",
+    "AI雷达内置10TOPS，点云密度提升10倍"
   ],
   "items": [
     {
-      "title_zh": "谷歌发布Genie 4世界模型",
-      "summary": "谷歌DeepMind于周二以研究预览形式发布世界模型Genie 4，称其生成的场景比以往更接近照片级真实，并支持交互。 用户在模拟过程中输入文字即可改变场景，例如切换天气、调整镜头角度或加入新的人物与物体。 模型还能生成与场景匹配的实时音频，包括音乐、环境声和可交互对话。 Genie 4可让同一场景保持一致长达两分钟，是前代Genie 3的两倍，物理表现更接近真实，角色动作也更像人。 Gemini在流程中充当导演，负责规划步骤并检查画面；在一项与Gemini Robotics相关的研究实验中，Gemini 4 Argon模型把任务拆解为步骤，由Genie 4实时模拟，用于在真机之前测试机器人场景。 目前该模型仅向受信任测试者开放，未来数周将开放给Google AI Ultra订阅用户及Gemini API、Google AI Studio的早期合作方。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "title_zh": "用LFM3构建专用多模态模型",
+      "summary": "Hugging Face Blog 发布了一篇题为《Build specialized multimodal models with LFM3》的文章，但当前条目缺少可用的正文、摘要与描述，仅能确认其主题是围绕 LFM3 构建专门化多模态模型。 由于无法读取原文，LFM3 的模型规模、训练数据、开放许可、性能指标和适用任务均无法核实，也不能确认文章是否提供代码或教程。 本条仅记录该博客的发布线索，具体技术路线、可复现条件和局限需以原文及项目页面为准，读者不应据此推断模型能力或开放范围。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
       "degraded": false,
-      "signal": "世界模型竞争转向实时交互与音频",
-      "point": "场景可保持一致两分钟，较上代翻倍",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "signal": "多模态模型走向专用化",
+      "point": "LFM3用于构建专用多模态模型",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm3",
       "date_md": "10-28"
     },
     {
-      "title_zh": "OpenAI与甲骨文扩大合作",
-      "summary": "据订阅简介，OpenAI与甲骨文正在扩大合作，计划把企业应用和AI智能体接入ChatGPT，同时为甲骨文的新产品提供支持。 由于原文无法访问（HTTP 403），本次仅有简介信息，合作的具体范围、上线时间、涉及哪些甲骨文产品或智能体能力均未披露，也无法确认是否有金额或排他性条款。 因此，目前只能确认双方合作范围在扩大，实际交付形态尚待官方细节公布。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "title_zh": "两家AI实验室称推翻ETH引学界核验",
+      "summary": "OpenAI 发布三项数学问题的解法，其中一项声称否定计算机科学中的指数时间假说（ETH）；数小时后，Anthropic 也发布了自己对 ETH 的反驳。 Anthropic 数学家 Levent Alpöge 曾质疑 OpenAI 的解法基于既有工作。 MIT 教授 Ryan Williams 受 OpenAI 邀请，与 ETH 1999 年原作者 Russell Impagliazzo、Ramamohan Paturi 等组织计算机科学界回应，并发布公开信征集反馈。 Williams 称 OpenAI 证明中有“两三处外星般”的部分，需要社区共同研究；若成立，大量依赖 ETH 的论文需重新审视，但他认为这还远非最终答案，且据其转述，OpenAI 检查后认为未导致密码系统被实际攻破。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "企业软件加速接入AI对话入口",
-      "point": "合作范围扩大，具体条款未披露",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "signal": "AI攻入计算复杂性理论核心",
+      "point": "OpenAI称三个数学问题解法推翻ETH",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+      "date_md": "10-28"
+    },
+    {
+      "title_zh": "人形机器人RP1宣布全栈开源",
+      "summary": "RoboParty 发布全栈开源人形机器人 RP1，开放范围试图覆盖机械图纸、电气系统、自研关节、底层控制、仿真、训练和部署。 RP1 身高 135cm，提供 24～30 个自由度的多种本体配置，已展示连续行走、人体动作跟踪、扰动恢复和跌倒起身等真机能力。 硬件搭载自研 ROMOMO 一体化旋转关节，官方参数表显示峰值扭矩覆盖 25～160N·m，采用 48V 供电和 CAN-FD 通信；软件配套 500Hz 控制频率与 50Hz 策略更新频率。 RP1 已公开 URDF、MJCF 及网格模型等资源，但 CAD、BOM、电路板制造文件等部分仍属内部工程记录，具体开放范围需以项目仓库为准。 开源项目能否持续维护、复现并允许二次开发，仍待后续检验。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "人形机器人开源深入硬件底层",
+      "point": "RP1宣称全栈开源，身高135cm、24-30自由度",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505865.html",
+      "date_md": "10-27"
+    },
+    {
+      "title_zh": "千里科技4D雷达内置10TOPS算力",
+      "summary": "千里科技发布一款 AI 4D 毫米波雷达，内置 10 TOPS NPU，支持边缘侧、卫星架构和兼容三种工作模式。 官方称其从天线阵列和波形设计阶段引入算法，在点云检测、测角、点云增强、目标跟踪与分类等环节采用数据驱动模型，减少人工规则和固定阈值依赖。 与上一代 DSP 方案相比，官方披露点云密度提升 10 倍、探测距离提升 40%、鬼影消除提升至 95%、空间角分辨力提升 12 倍；对静止儿童的稳定探测距离为 100 至 150 米。 卫星架构下原始数据输入量可能比传统 4D 雷达多约 100 倍，ADC 带宽做到 6Gbps，中央域控可做多源前融合，边缘侧则输出结构化结果以降低时延和通信负担。 其落地仍受域控算力、高速接口带宽和成本约束，三种模式需按车型平台与功能等级选择。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "传感器开始内置AI做特征级输出",
+      "point": "AI雷达内置10TOPS，点云密度提升10倍",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505852.html",
       "date_md": "10-27"
     }
   ]

@@ -1,30 +1,30 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 00:30 · 1条新知",
+  "headline": "AI日报 10-29 01:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-29-0030-p1.png",
+      "file": "docs/poster/2026-10-29-0100-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "Legora用OpenAI模型与Codex加速合同分析"
+    "Chrome自动填充可从Gmail提取订单号"
   ],
   "items": [
     {
-      "title_zh": "Legora构建法律智能体系统",
-      "summary": "据OpenAI博客的订阅简介，法律科技公司Legora正在构建面向法律工作的智能体操作系统，使用OpenAI的模型、ChatGPT与Codex加速法律工作流，并扩展合同分析能力。 简介称，这套做法旨在把律师从重复性事务中释放出来，转而投入更高价值的工作。 由于原文页面返回403、正文不可用，具体产品形态、客户规模与效率提升数据均无法核实，以上仅为订阅简介所述。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "title_zh": "Chrome自动填充可读取Gmail",
+      "summary": "谷歌周三宣布，Chrome 浏览器将上线进阶版自动填充功能，可依据用户的 Gmail 内容生成填写建议，用于在线表单。 谷歌称，这些建议可包括航班确认号、会员 ID、物流信息、订单号、地址、电话和信用卡号等信息。 该功能是谷歌 Personal Intelligence 能力的扩展，此前该能力已允许用户把 Google 应用接入 AI 助手 Gemini，以便调取细节来回答复杂问题。 用户可在 Chrome 设置中自行决定是否开启增强版自动填充，谷歌表示敏感数据会被加密。 该功能先向美国桌面端用户推送，并覆盖 Chrome 内 Gemini 的 iOS 与 Android 应用；谷歌未说明其他地区的上线时间。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "法律文书环节正被智能体重构",
-      "point": "Legora用OpenAI模型与Codex加速合同分析",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/legora",
-      "date_md": "10-28"
+      "signal": "谷歌把个人邮箱变成填表数据源",
+      "point": "Chrome自动填充可从Gmail提取订单号",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "date_md": "10-29"
     }
   ]
 }

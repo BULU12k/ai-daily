@@ -1602,6 +1602,22 @@
    "date": "2026-10-28T15:41:18.000Z",
    "time": "23:41",
    "date_md": "10-28"
+  },
+  {
+   "title_zh": "Legora构建法律智能体系统",
+   "summary": "据OpenAI博客的订阅简介，法律科技公司Legora正在构建面向法律工作的智能体操作系统，使用OpenAI的模型、ChatGPT与Codex加速法律工作流，并扩展合同分析能力。 简介称，这套做法旨在把律师从重复性事务中释放出来，转而投入更高价值的工作。 由于原文页面返回403、正文不可用，具体产品形态、客户规模与效率提升数据均无法核实，以上仅为订阅简介所述。",
+   "signal": "法律文书环节正被智能体重构",
+   "point": "Legora用OpenAI模型与Codex加速合同分析",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/legora",
+   "date": "2026-10-28T09:30:00.000Z",
+   "time": "17:30",
+   "date_md": "10-28"
   }
  ]
 }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN" data-reader-version="1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>海报阅读 · AI 前沿时讯日报</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;font:16px/1.5 system-ui,"Microsoft YaHei",sans-serif;background:#151820;color:#edf0f7}body{display:flex;flex-direction:column}header{flex:none;padding:10px 12px;background:#202532;border-bottom:1px solid #424a5d}h1{font-size:17px;margin:0 0 7px}nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}button,a.control{font:inherit;border:1px solid #626f8b;border-radius:7px;padding:6px 10px;color:#fff;background:#303a50;text-decoration:none;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #c6adff;outline-offset:2px}#level{min-width:50px;text-align:center}#hint{font-size:13px;color:#c4cbd8;margin:7px 0 0}#stage{flex:1;min-height:0;width:100%;overflow:auto;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom;position:relative}#poster{display:block;max-width:none;height:auto;user-select:none;-webkit-user-drag:none;background:#fff}#stage.dragging{cursor:grabbing}#status{padding:24px;font-size:17px}#status.error{color:#ffd5ca}button:disabled{opacity:.5;cursor:default}[hidden]{display:none!important}
+</style></head><body>
+<header><h1>海报阅读</h1><nav aria-label="图片缩放"><button id="minus" type="button" aria-label="缩小">−</button><span id="level" aria-live="polite">—</span><button id="plus" type="button" aria-label="放大">＋</button><button id="fit" type="button">适宽</button><button id="native" type="button">原尺寸</button><a id="raw" class="control" hidden>原图</a><a id="daily" class="control" href="index.html">日报</a></nav><p id="hint">上下滚动阅读；放大后可横向滚动。电脑可拖动图片，手机可双指缩放。</p></header>
+<main id="stage" aria-label="可滚动海报阅读区" tabindex="0"><p id="status" role="status">正在打开海报…</p><img id="poster" alt="日报海报" hidden draggable="false"></main>
+<script>
+(() => {
+  'use strict';
+  const byId = id => document.getElementById(id);
+  const stage = byId('stage'), image = byId('poster'), status = byId('status');
+  const controls = ['minus', 'plus', 'fit', 'native'].map(byId);
+  controls.forEach(button => button.disabled = true);
+  const params = new URLSearchParams(location.search), file = params.get('file');
+  const valid = /^\d{4}-\d{2}-\d{2}-(?:\d{4}-)?p[1-9]\d*\.png$/;
+  function error(text) { status.textContent = text; status.className = 'error'; status.hidden = false; image.hidden = true; controls.forEach(button => button.disabled = true); }
+  if (params.getAll('file').length !== 1 || !file || !valid.test(file)) { error('海报参数无效。请从日报中的“放大阅读”重新打开。'); return; }
+  const url = new URL(`poster/${encodeURIComponent(file)}`, location.href);
+  const version = params.get('v');
+  if (version && /^[a-f0-9]{64}$/.test(version)) url.searchParams.set('v', version);
+  byId('daily').href = `daily/${file.slice(0,10)}.html`;
+  byId('raw').href = url.href;
+  byId('raw').hidden = false;
+  let width = 0, fitMode = true, drag = null;
+  function setWidth(next, keepCenter = false) {
+    const oldWidth = width || next;
+    const x = (stage.scrollLeft + stage.clientWidth / 2) / oldWidth;
+    const y = (stage.scrollTop + stage.clientHeight / 2) / oldWidth;
+    width = Math.max(Math.min(stage.clientWidth, image.naturalWidth) / 2, Math.min(image.naturalWidth * 4, next));
+    image.style.width = `${width}px`;
+    byId('level').textContent = `${Math.round(width / image.naturalWidth * 100)}%`;
+    if (keepCenter) { stage.scrollLeft = Math.max(0, x * width - stage.clientWidth / 2); stage.scrollTop = Math.max(0, y * width - stage.clientHeight / 2); }
+  }
+  function fit() { fitMode = true; setWidth(stage.clientWidth); stage.scrollLeft = 0; }
+  image.addEventListener('load', () => { image.hidden = false; status.hidden = true; controls.forEach(button => button.disabled = false); fit(); });
+  image.addEventListener('error', () => error('海报暂时无法加载，可能已清理或网络中断。可刷新重试，或返回日报阅读文字。'));
+  byId('plus').addEventListener('click', () => { fitMode = false; setWidth(width * 1.25, true); });
+  byId('minus').addEventListener('click', () => { fitMode = false; setWidth(width / 1.25, true); });
+  byId('fit').addEventListener('click', fit);
+  byId('native').addEventListener('click', () => { fitMode = false; setWidth(image.naturalWidth, true); });
+  window.addEventListener('resize', () => { if (image.naturalWidth && fitMode) fit(); });
+  stage.addEventListener('pointerdown', event => { if (event.pointerType !== 'mouse' || event.button !== 0 || event.target !== image) return; drag = { x:event.clientX, y:event.clientY, left:stage.scrollLeft, top:stage.scrollTop }; stage.setPointerCapture(event.pointerId); stage.classList.add('dragging'); event.preventDefault(); });
+  stage.addEventListener('pointermove', event => { if (!drag) return; stage.scrollLeft = drag.left + drag.x - event.clientX; stage.scrollTop = drag.top + drag.y - event.clientY; });
+  const stop = () => { drag = null; stage.classList.remove('dragging'); };
+  stage.addEventListener('pointerup', stop); stage.addEventListener('pointercancel', stop); stage.addEventListener('lostpointercapture', stop);
+  image.src = url.href;
+})();
+</script></body></html>

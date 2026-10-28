@@ -1,8 +1,43 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 03:02 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-29 03:30 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-29-0330-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "Anthropic 二季度运营盈利，留存率 900%",
+    "两 PHP 高危漏洞波及约七成网站"
+  ],
+  "items": [
+    {
+      "title_zh": "Anthropic 推出 AI 支出报告工具",
+      "summary": "Anthropic 本周向投资者披露的数据显示，公司第二季度实现运营利润，净收入留存率达 900%，即同一批客户 2026 年第三季度的支出是 2025 年第三季度的九倍。 10 月 28 日，Anthropic 宣布推出一套报告工具，让企业客户看到 token 支出换来了什么：管理者可结合内部分析和员工调查，查看指定时间段内团队做了什么、产出多少、花费多少，以及工作流在何处中断，并获得改进建议。 Anthropic 称默认不会把这些数据用于模型训练，同时推出团队共享预算，便于管理 token 开销。 第三方机构 Jellyfish 基于 27.6 万开发者的使用数据称，Claude Code 等基于 Anthropic 模型的工具承担了提交审查的代码变更近三分之一，相关支出自年初增长 10 倍，约相当于工程总成本的 2%。 Jellyfish 方面表示，这 10 倍增长是多数 CFO 没有预料到的；对多数财富 500 强企业而言，AI 部署尚未带来明显收益，如何核算投入产出正成为大客户的核心关切。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "大客户开始核算 AI 投入产出",
+      "point": "Anthropic 二季度运营盈利，留存率 900%",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+      "date_md": "10-29"
+    },
+    {
+      "title_zh": "PHP 漏洞应急后，Wiz 警告补丁难规模化",
+      "summary": "TechCrunch 旗下 Equity 播客本期邀请谷歌旗下安全公司 Wiz 的应用安全 CTO Tomer Schwartz，谈上周开源语言 PHP 两个高危漏洞的应急修复。 PHP 支撑约 70% 的网站，漏洞披露后有组织将站点下线，直到完成修补。 发现漏洞的研究者称这只是开始，因为 AI 正在改变新漏洞被发现和被利用的速度。 Schwartz 与 OpenAI、研究团队 Calif 及 PHP 团队一同参与了此次修复。 节目还讨论初创公司如何在开发阶段就考虑安全，以及为何手工打补丁的方式难以扩展。 上述内容来自节目导语，未涉及漏洞的技术细节、受影响范围统计和完整修复时间线。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI 加快漏洞曝光，补丁难规模化",
+      "point": "两 PHP 高危漏洞波及约七成网站",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+      "date_md": "10-29"
+    }
+  ]
 }

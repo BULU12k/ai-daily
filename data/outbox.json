@@ -1,29 +1,42 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 01:00 · 1条新知",
+  "headline": "AI日报 10-29 01:30 · 2条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-29-0100-p1.png",
-      "count": 1
+      "file": "docs/poster/2026-10-29-0130-p1.png",
+      "count": 2
     }
   ],
   "points": [
-    "Chrome自动填充可从Gmail提取订单号"
+    "正文缺失，仅存标题与发布时间",
+    "谷歌开放接入，Gemini已有50余款应用"
   ],
   "items": [
     {
-      "title_zh": "Chrome自动填充可读取Gmail",
-      "summary": "谷歌周三宣布，Chrome 浏览器将上线进阶版自动填充功能，可依据用户的 Gmail 内容生成填写建议，用于在线表单。 谷歌称，这些建议可包括航班确认号、会员 ID、物流信息、订单号、地址、电话和信用卡号等信息。 该功能是谷歌 Personal Intelligence 能力的扩展，此前该能力已允许用户把 Google 应用接入 AI 助手 Gemini，以便调取细节来回答复杂问题。 用户可在 Chrome 设置中自行决定是否开启增强版自动填充，谷歌表示敏感数据会被加密。 该功能先向美国桌面端用户推送，并覆盖 Chrome 内 Gemini 的 iOS 与 Android 应用；谷歌未说明其他地区的上线时间。",
+      "title_zh": "Gemini 4 Carbon：下一代前沿模型",
+      "summary": "该条目仅能确认标题为“Gemini 4 Carbon: Our next frontier model”，来源标注为 Google DeepMind 博客，发布时间为 2026 年 10 月 28 日。 原文正文不可用：重定向已更换文章路径，无法确认与订阅原文为同一报道，订阅简介内容为空，因此模型的参数规模、能力范围、开放时间与适用条件均无法核实。 在获得可读正文前，不宜对“前沿模型”的具体能力作任何推断。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：重定向已更换文章路径，无法确认与订阅原文为同一报道；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "仅有标题，模型细节无从核实",
+      "point": "正文缺失，仅存标题与发布时间",
+      "source": "Google DeepMind Blog",
+      "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "date_md": "10-29"
+    },
+    {
+      "title_zh": "谷歌开放应用接入 Gemini 与搜索",
+      "summary": "谷歌推出 Connected Apps 平台，允许第三方开发者把自己开发的应用接入 Gemini 与谷歌搜索，并让用户借助这些应用直接完成任务，例如连接 Canva 设计海报、连接 YouTube Music 创建歌单。 开发者需先接入云端托管的 MCP 服务器，或使用 AppFunctions API 的 Android MCP，再通过 Google Connected Console 完成注册、测试与提交，并可自行选择只上架搜索、只上架 Gemini 应用，还是两者都上架。 该平台目前以公测形式向美国开发者开放，需申请等候名单，谷歌未透露更大范围开放的时间。 应用上线后，开发者可查看流量、延迟与错误率，并保留对品牌标识（如认证 logo）与认证账号的控制。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "谷歌把个人邮箱变成填表数据源",
-      "point": "Chrome自动填充可从Gmail提取订单号",
+      "signal": "AI入口争夺转向应用生态",
+      "point": "谷歌开放接入，Gemini已有50余款应用",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+      "link": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
       "date_md": "10-29"
     }
   ]

@@ -1070,6 +1070,22 @@
  ],
  "2026-10-28": [
   {
+   "title_zh": "英伟达推出 Nemotron 3.5 转写模型",
+   "summary": "英伟达在 Hugging Face 博客发布 Nemotron 3.5 Transcribe 与 Granary v2，将其定位为可提示、可适配的多语种智能转写方案。 按标题表述，这两项产品面向多语言语音转文字场景，用户可用提示词引导输出，并针对特定需求做适配调整。 本次可获得的信息仅有订阅简介，没有正文与摘要，因此模型参数量、支持语种数量、准确率对比基线、是否开放权重及调用方式均无法确认。 上述能力仅为发布方在标题中的定位，尚未经过独立验证。",
+   "signal": "多语种转写转向可提示可适配",
+   "point": "英伟达发布 Nemotron 3.5 转写与…",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+   "date": "2026-10-28T14:58:17.000Z",
+   "time": "22:58",
+   "date_md": "10-28"
+  },
+  {
    "title_zh": "TechCrunch创始人峰会倒计时7天",
    "summary": "TechCrunch 宣布，其 Founder Summit 将于 11 月 4 日在波士顿 SoWa Power Station 举办，距开幕仅剩 7 天，门票优惠最高可省 100 美元，且该优惠将在开门前截止。 按官方介绍，这是一场为期一天的“创始人入门训练营”，设两个问答分会场舞台和两个互动圆桌室，议题覆盖融资、招聘、产品市场匹配、AI 战略与增长，并包含现场路演和投资人反馈环节。 已公布的部分讲者包括 Bessemer Venture Partners 的 Kent Bennett、Cogent Security 的 Vineet Edupuganti、HqO 的 Chase Garbarino、True Ventures 的 Dave Balter 和 TDK Ventures 的 Tina Tosukhowong，分别涉及需求验证、团队建设、在硅谷之外打造品类公司、路演表达和投资人评估标准等主题。 需要说明的是，上述信息出自活动推广文章，规模、参会人数和实际效果均未披露；文中所列的议题与讲者阵容，属于主办方宣传内容，并不代表已经交付的能力。",
    "signal": "科技媒体峰会转向实操训练",

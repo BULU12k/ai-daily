@@ -63,10 +63,10 @@ async function send({ title, message, page }) {
     const textBody = scrub(message);
     if (Buffer.byteLength(textBody, 'utf8') > 4096) throw new Error('文字通知超过 4096 字节');
     const actions = [];
-    if (page) actions.push({ action: 'view', label: '查看海报', url: page.url });
+    if (page) actions.push({ action: 'view', label: '查看海报', url: page.readerUrl });
     if (dailyUrl) actions.push({ action: 'view', label: '阅读日报', url: dailyUrl });
     const payload = { topic, title: limitUtf8(title, 1024), message: textBody, tags: ['newspaper'], actions };
-    if (page) Object.assign(payload, { attach: page.url, filename: page.filename, click: page.url });
+    if (page) Object.assign(payload, { attach: page.url, filename: page.filename, click: page.readerUrl });
     else if (dailyUrl) payload.click = dailyUrl;
     const body = JSON.stringify(payload);
     if (Buffer.byteLength(body, 'utf8') > 8192) throw new Error('JSON 通知整体超过 8192 字节');
@@ -95,7 +95,10 @@ for (const page of outbox.pages ?? []) {
     const hash = createHash('sha256').update(png).digest('hex');
     // Probe and attach the exact same URL; versioning also avoids stale CDN 404s.
     url.searchParams.set('v', hash);
-    local.push({ ...page, filename, hash, url: url.href });
+    const reader = new URL(`${base}/poster-reader.html`);
+    reader.searchParams.set('file', filename);
+    reader.searchParams.set('v', hash);
+    local.push({ ...page, filename, hash, url: url.href, readerUrl: reader.href });
   } catch (err) { missing.push(page); console.warn(`[notify] 海报不可用 ${page.file}: ${err.message}`); }
 }
 const publicPages = await waitPublicPosters(local);
@@ -103,7 +106,7 @@ const available = publicPages.ready.sort((a, b) => a.index - b.index);
 missing.push(...publicPages.missing);
 for (const page of available) {
   const points = page.index === 1 ? '· ' + (outbox.points ?? []).map(x => String(x).replace(/\s+/g, ' ').trim()).filter(Boolean).join(' · ') : `海报第 ${page.index}/${page.total} 页`;
-  const link = `\n\n🔗 海报: ${page.url}${dailyLink}`;
+  const link = `\n\n🔗 海报: ${page.readerUrl}${dailyLink}`;
   const sent = await send({ title: `${headline}（${page.index}/${page.total}）`,
     message: limitUtf8(points, Math.max(0, 4096 - Buffer.byteLength(link, 'utf8'))) + link,
     page });

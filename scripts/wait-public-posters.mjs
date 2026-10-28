@@ -28,6 +28,14 @@ export async function waitPublicPosters(pages) {
         const bytes = Buffer.from(await response.arrayBuffer());
         validatePng(bytes);
         if (createHash('sha256').update(bytes).digest('hex') !== page.hash) throw new Error('公开图片与本班本地版本不符');
+        if (page.readerUrl) {
+          const reader = await fetch(page.readerUrl, {
+            headers: { 'Cache-Control': 'no-cache' },
+            signal: AbortSignal.timeout(Math.max(1, Math.min(timeout, deadline - Date.now()))),
+          });
+          if (!reader.ok || !/^text\/html(?:;|$)/i.test(reader.headers.get('content-type') || '')) throw new Error('公开阅读页尚未就绪');
+          if (!(await reader.text()).includes('data-reader-version="1"')) throw new Error('公开阅读页版本不符');
+        }
         console.log(`[notify] 公开海报已就绪 ${page.filename} attempt=${attempt}`);
         return true;
       } catch (error) {

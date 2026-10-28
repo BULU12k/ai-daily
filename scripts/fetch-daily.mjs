@@ -12,6 +12,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { renderGallery, validPosterFiles, galleryCss } from './poster-gallery.mjs';
 import { fileURLToPath } from 'node:url';
 import { parseOfficialNews, parseOfficialDescription } from './official-news.mjs';
 import { enrichArticleContext } from './article-context.mjs';
@@ -495,22 +496,21 @@ function itemCard(it) {
 </div>`;
 }
 
-function renderDaily(cfg, dateStr, items, posterFile) {
+function renderDaily(cfg, dateStr, items, posterFiles) {
   const allDegraded = items.length > 0 && items.every((it) => it.degraded);
   const degradeNote = allDegraded
     ? ' · 本期为降级模式：LLM 不可用，条目经免费翻译/中文源整理，全中文输出'
     : '';
-  // 本班海报为带时刻文件名（<date>-<HHmm>-pN.png），指向本班第一页；
-  // 仅在本班有新条目时重写当日页，历史页不受影响
-  const posterName = posterFile || `${dateStr}-p1.png`;
+  // 本页只列实际存在的海报；渲染后维护入口会刷新全天所有班次与页码。
+  const gallery = renderGallery(dateStr, posterFiles);
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${escapeHtml(dateStr)} · ${escapeHtml(cfg.site_name)}</title><style>${BASE_CSS}</style></head>
+<title>${escapeHtml(dateStr)} · ${escapeHtml(cfg.site_name)}</title><style>${BASE_CSS}</style><style id="poster-gallery-style">${galleryCss}</style></head>
 <body><div class="wrap">
 ${siteHeader(cfg)}
 <p class="meta">日报日期 ${escapeHtml(dateStr)}（Asia/Shanghai）· 共 ${items.length} 条${escapeHtml(degradeNote)} · 生成时间 ${escapeHtml(shanghaiTime())}</p>
-<img class="poster" src="../poster/${escapeHtml(posterName)}" alt="当日日报海报" onerror="this.remove()">
+${gallery}
 ${items.map(itemCard).join('\n')}
 <footer><a href="../index.html">← 返回往期</a> ｜ 手机推送：订阅 ntfy 主题 <code>${escapeHtml(cfg.ntfy_topic)}</code></footer>
 </div></body></html>`;
@@ -678,9 +678,9 @@ for (let p = 0; p < pageCount; p++) {
 }
 
 if (items.length > 0) {
-  // 当日页配图指向本班第一页的实际文件名（历史页不重写，仍指各自班的第 1 页）
-  const posterFile = pages[0] ? path.basename(pages[0].file) : `${today}-p1.png`;
-  await fs.writeFile(dailyFile, renderDaily(CONFIG, today, merged, posterFile), 'utf8');
+  // 抓取时先列实际已有图片，渲染后维护入口补入本班全部页。
+  const posterFiles = await validPosterFiles(POSTER_DIR);
+  await fs.writeFile(dailyFile, renderDaily(CONFIG, today, merged, posterFiles), 'utf8');
   log(`已写当日页面: docs/daily/${today}.html（${items.length} 条新增，共 ${merged.length} 条）`);
 } else {
   log('本期无新增条目，页面保持不变');

@@ -4,7 +4,7 @@
  *
  * 版式（用户 2026-10-24 定稿）：
  * - 黑白配色：白底黑字，表格分隔线浅灰；关键名词（产品名/模型名/数字等）紫色强调；
- * - 结构：标题区（站名 + 日期 + 页码）→ 条目表（左列"新闻事件"含来源·日期，右列"信号解读"）→
+ * - 结构：标题区（站名 + 日期 + 页码）→ 单栏新闻正文（52px）与来源·依据、下置信号解读→
  *   底部"新闻要点"总结条；不放任何署名/品牌页脚文字；
  * - 纯 Node 渲染：satori（HTML/CSS 子集 -> SVG）+ @resvg/resvg-js（SVG -> PNG），
  *   不引入浏览器级依赖；CJK 字体从本地 .fonts/（或 FONT_DIR）加载，不提交进仓库。
@@ -28,7 +28,7 @@ const log = (...a) => console.log('[render-poster]', ...a);
 
 const PURPLE = '#7C3AED'; // 关键名词强调色
 const INK = '#111111'; // 主文字
-const SUB = '#8a8f98'; // 次要信息
+const SUB = '#626b79'; // 次要信息
 const BODY = '#333333'; // 摘要正文
 const LINE = '#e8e8ec'; // 浅灰分隔线
 const BAR_BG = '#f4f4f7'; // 底部要点条底色
@@ -194,163 +194,50 @@ const PAGE = {
   padBottom: 48,
 };
 PAGE.contentW = PAGE.width - PAGE.padX * 2;
-PAGE.leftW = Math.round(PAGE.contentW * 0.635);
-PAGE.rightW = PAGE.contentW - PAGE.leftW - 44;
 PAGE.itemsPerpage = Math.max(1, Number(CONFIG.poster?.items_per_page ?? 4));
 
 function posterTree(outbox, pageIndex, heightOverride) {
-  const per = PAGE.itemsPerpage;
-  const items = (outbox.items ?? []).slice((pageIndex - 1) * per, pageIndex * per);
-  if (items.length === 0) return null;
-  // 海报内条目按时间由早到晚自上而下（date_md 升序；outbox 条目无时刻字段，同日保持原顺序）
-  items.sort((a, b) => String(a.date_md ?? '').localeCompare(String(b.date_md ?? '')));
-
-  const dateMd = (outbox.date ?? '').slice(5); // MM-DD
-  const leftW = PAGE.leftW;
-  const rightW = PAGE.rightW;
-
-  // ---- 高度估算 ----
-  let height = PAGE.padTop + PAGE.padBottom;
-  // 标题区
-  height += 52 * 1.25 + 26 * 1.5 + 24 + 3 + 10;
-  // 条目区
+  const items = (outbox.items ?? []).slice((pageIndex - 1) * PAGE.itemsPerpage, pageIndex * PAGE.itemsPerpage);
+  if (!items.length) return null;
+  items.sort((a,b) => String(a.date_md ?? '').localeCompare(String(b.date_md ?? '')));
+  // 52px keeps body >=16px even when a 360px viewport loses ~15px to a scrollbar.
+  const bodySize = 52, titleSize = 58, smallSize = 42;
+  const points = (outbox.points ?? []).slice(0,4);
+  let estimated = PAGE.padTop + PAGE.padBottom + 190;
   for (const it of items) {
-    const titleLines = estLines(it.title_zh, 38, leftW);
-    const sumLines = estLines(it.summary, 27, leftW);
-    const sigLines = estLines(it.signal || '—', 27, rightW);
-    const leftH =
-      titleLines * 38 * 1.4 + 16 + sumLines * 27 * 1.6 + 18 + 22 * 3;
-    const rightH = 20 * 1.4 + 12 + sigLines * 27 * 1.5;
-    height += Math.max(leftH, rightH) + 34 + 34 + 1; // 行内上下留白 + 分隔线
+    estimated += 140 + estLines(it.title_zh,titleSize,PAGE.contentW)*titleSize*1.35;
+    estimated += estLines(it.summary,bodySize,PAGE.contentW)*bodySize*1.6;
+    estimated += 100 + estLines(it.signal || '—',bodySize,PAGE.contentW)*bodySize*1.5;
+    estimated += estLines('来源：'+(it.source || ''),smallSize,PAGE.contentW)*smallSize*1.5 + 150;
   }
-  // 底部要点条
-  const points = (outbox.points ?? []).slice(0, 4);
-  height += 34; // marginTop
-  height += 26 * 2; // bar 上下 padding
-  height += 25 * 1.4; // "新闻要点" 标签
-  for (const p of points) height += 12 + estLines(p, 25, PAGE.contentW - 60) * 25 * 1.55;
-  if (points.length === 0) height += 12 + 25 * 1.55;
-  // 不再强制最小高度 1100：高度紧贴内容，避免底部大面积留白与近正方形裁切伤标题
-  height = heightOverride ? Math.round(heightOverride) : Math.round(height);
-
-  // ---- 元素树 ----
-  const itemNodes = [];
-  items.forEach((it, idx) => {
-    const left = el('div', { display: 'flex', flexDirection: 'column', width: leftW }, [
-      el('div', { fontSize: 38, fontWeight: 700, color: INK, lineHeight: 1.4 }, [
-        ...richText(it.title_zh),
-      ]),
-      it.summary
-        ? el(
-            'div',
-            { marginTop: 16, fontSize: 27, color: BODY, lineHeight: 1.6 },
-            richText(it.summary),
-          )
-        : null,
-      el(
-        'div',
-        { marginTop: 18, fontSize: 22, color: SUB },
-        `来源：${it.source ?? ''}${it.date_md ? ` · ${it.date_md}` : ''}`,
-      ),
-      el('div', { marginTop: 8, fontSize: 20, color: SUB, lineHeight: 1.5 },
-        `${it.degraded ? '摘译 · ' : ''}${it.content_basis === 'article_body' ? '依据：可提取正文' : it.content_basis === 'article_excerpts' ? '依据：原文选段（可能不完整）' : '依据：订阅简介（信息有限）'}`),
-    ].filter(Boolean));
-    const right = el(
-      'div',
-      { display: 'flex', flexDirection: 'column', width: rightW, marginLeft: 44 },
-      [
-        el('div', { fontSize: 20, color: SUB, letterSpacing: 3 }, '信号解读'),
-        el(
-          'div',
-          { marginTop: 12, fontSize: 27, color: INK, fontWeight: 500, lineHeight: 1.5 },
-          richText(it.signal || '—'),
-        ),
-      ],
-    );
-    itemNodes.push(
-      el('div', { display: 'flex', flexDirection: 'row', paddingTop: 34, paddingBottom: 34 }, [
-        left,
-        right,
-      ]),
-    );
-    if (idx < items.length - 1) {
-      itemNodes.push(el('div', { height: 1, backgroundColor: LINE }));
-    }
+  estimated += 140 + points.reduce((n,p)=>n+estLines(p,42,PAGE.contentW-60)*42*1.55+18,0);
+  const height = Math.round(heightOverride || estimated);
+  const nodes=[];
+  items.forEach((it,index)=>{
+    const basis = it.content_basis === 'article_body' ? '依据：可提取正文' : it.content_basis === 'article_excerpts' ? '依据：原文选段（可能不完整）' : '依据：订阅简介（信息有限）';
+    nodes.push(el('div',{display:'flex',flexDirection:'column',paddingTop:38,paddingBottom:38,width:PAGE.contentW},[
+      el('div',{fontSize:titleSize,fontWeight:700,color:INK,lineHeight:1.35},richText(it.title_zh)),
+      it.summary ? el('div',{marginTop:24,fontSize:bodySize,color:BODY,lineHeight:1.6},richText(it.summary)) : null,
+      el('div',{marginTop:28,fontSize:smallSize,color:SUB,lineHeight:1.5},'来源：'+(it.source ?? '')+(it.date_md ? ' · '+it.date_md : '')),
+      el('div',{marginTop:10,fontSize:smallSize,color:SUB,lineHeight:1.5},(it.degraded ? '摘译 · ' : '')+basis),
+      el('div',{marginTop:26,fontSize:smallSize,color:PURPLE,fontWeight:700},'信号解读'),
+      el('div',{marginTop:10,fontSize:bodySize,color:INK,lineHeight:1.5},richText(it.signal || '—')),
+    ].filter(Boolean)));
+    if(index < items.length-1) nodes.push(el('div',{height:2,backgroundColor:LINE}));
   });
-
-  const pointNodes = points.map((p) =>
-    el(
-      'div',
-      { marginTop: 12, fontSize: 25, color: INK, lineHeight: 1.55 },
-      ['· ', ...richText(p)],
-    ),
-  );
-  if (pointNodes.length === 0) {
-    pointNodes.push(el('div', { marginTop: 12, fontSize: 25, color: INK }, '· 本期要点整理中'));
-  }
-
-  return {
-    tree: el(
-      'div',
-      {
-        display: 'flex',
-        flexDirection: 'column',
-        boxSizing: 'border-box', // satori 默认 content-box：不加此项根节点实际宽 = 1080 + 左右 padding，右侧会被画布裁掉
-        width: PAGE.width,
-        height,
-        backgroundColor: '#ffffff',
-        paddingTop: PAGE.padTop,
-        paddingBottom: PAGE.padBottom,
-        paddingLeft: PAGE.padX,
-        paddingRight: PAGE.padX,
-      },
-      [
-        // 标题区：站名 + 日期页码
-        el(
-          'div',
-          {
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-          },
-          [
-            el('div', { fontSize: 52, fontWeight: 700, color: INK }, [
-              ...richText(CONFIG.site_name ?? 'AI 前沿时讯日报'),
-            ]),
-            el(
-              'div',
-              { fontSize: 26, color: SUB, paddingBottom: 6 },
-              `${dateMd} · ${pageIndex}/${outbox.pages?.length ?? 1}`,
-            ),
-          ],
-        ),
-        el('div', { height: 3, backgroundColor: INK, marginTop: 24 }),
-        // 条目表
-        el('div', { display: 'flex', flexDirection: 'column' }, itemNodes),
-        // 底部"新闻要点"总结条（无任何署名/品牌页脚）
-        el(
-          'div',
-          {
-            marginTop: 34,
-            backgroundColor: BAR_BG,
-            borderRadius: 20,
-            paddingTop: 26,
-            paddingBottom: 26,
-            paddingLeft: 30,
-            paddingRight: 30,
-            display: 'flex',
-            flexDirection: 'column',
-          },
-          [
-            el('div', { fontSize: 25, fontWeight: 700, color: PURPLE }, '新闻要点'),
-            ...pointNodes,
-          ],
-        ),
-      ],
-    ),
-    height,
-  };
+  return { height, tree:el('div',{
+    display:'flex',flexDirection:'column',boxSizing:'border-box',width:PAGE.width,height,backgroundColor:'#ffffff',
+    paddingTop:PAGE.padTop,paddingBottom:PAGE.padBottom,paddingLeft:PAGE.padX,paddingRight:PAGE.padX,
+  },[
+    el('div',{fontSize:54,fontWeight:700,color:INK},richText(CONFIG.site_name ?? 'AI 前沿时讯日报')),
+    el('div',{marginTop:14,fontSize:39,color:SUB},(outbox.date ?? '')+' · 第 '+pageIndex+'/'+(outbox.pages?.length ?? 1)+' 页'),
+    el('div',{height:3,backgroundColor:INK,marginTop:24}),
+    ...nodes,
+    el('div',{marginTop:28,backgroundColor:BAR_BG,borderRadius:20,padding:30,display:'flex',flexDirection:'column'},[
+      el('div',{fontSize:42,fontWeight:700,color:PURPLE},'新闻要点'),
+      ...points.map(p=>el('div',{marginTop:18,fontSize:42,color:INK,lineHeight:1.55},['· ',...richText(p)])),
+    ]),
+  ])};
 }
 
 /* ---------------- 主流程 ---------------- */

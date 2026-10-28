@@ -1,30 +1,8 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 09:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-28-0930-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "亚马逊持债估值979亿美元，超全部风投"
-  ],
-  "items": [
-    {
-      "title_zh": "Anthropic 递交 S-1，亚马逊或成最大赢家",
-      "summary": "Anthropic 的 S-1 显示，Menlo Ventures、红杉、Sound Ventures、Spark Capital 等风投的持股在上市后将兑现数十亿美元，但没有一家达到 5% 的主要股东披露门槛，这在科技公司 IPO 中并不常见。 原因是公司体量太大：按 9650 亿美元私募估值计算，1% 股权价值近 100 亿美元，Menlo 约 140 亿美元的持仓仅占约 1.5%。 更大受益者可能是战略投资方亚马逊：截至 6 月 30 日其可转债本金余额 62 亿美元，即 Anthropic 全部债务，但亚马逊在自身文件中将这些票据估值为 979 亿美元；票据最多可转为 18.4 亿股，并受 12% 部分稀释股本上限约束，亚马逊可放弃该上限。 票据升值使 Anthropic 在 2026 年上半年计入 724 亿美元非现金公允价值变动。 除票据外，亚马逊第二季度还以 100 亿美元认购无投票权优先股，累计投资约 180 亿美元；Anthropic 承诺未来十年在 AWS 支出至少 1100 亿美元。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "云巨头用算力换股权，回报超风投",
-      "point": "亚马逊持债估值979亿美元，超全部风投",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
-      "date_md": "10-28"
-    }
-  ]
+  "headline": "AI日报 10-28 10:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

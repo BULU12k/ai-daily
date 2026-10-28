@@ -1,8 +1,30 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 14:07 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-28 14:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-28-1430-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "智能指数44分，长程任务评测多项提升"
+  ],
+  "items": [
+    {
+      "title_zh": "蚂蚁百灵开源个人智能体模型",
+      "summary": "10月28日，蚂蚁集团旗下百灵大模型开源 Ling-3.1-flash-1019，并同步开源基础模型 Ling-3.1-flash-base。 据百灵公布，新版本在 Artificial Analysis Intelligence Index v4.3.2 中得44分，较上一版本提升3分，面向 Personal Agent 场景，重点提升复杂工作流与多步骤任务的执行表现。 具体测评中，复杂知识工作 AA-Briefcase 由约1400 Elo升至1524 Elo，GDPval-AA 由约1618 Elo升至1644 Elo，流程自动化 AutomationBench-AA 由62%升至68%，科学问题求解 CritPt 由18%升至26%，SciCode 由54%升至57%。 基础模型采用混合线性 MoE 架构，总参数约560B、每个 Token 激活约25B，以 BF16 基础权重和 MIT 许可证开放，开发者可继续预训练与领域适配。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "智能体模型转向长程任务比拼",
+      "point": "智能指数44分，长程任务评测多项提升",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/10/505928.html",
+      "date_md": "10-28"
+    }
+  ]
 }

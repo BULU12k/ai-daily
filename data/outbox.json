@@ -1,30 +1,8 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 18:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-28-1830-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Legora借OpenAI模型加速法律工作流"
-  ],
-  "items": [
-    {
-      "title_zh": "Legora打造法律智能体操作系统",
-      "summary": "据OpenAI博客的订阅简介，法律科技公司Legora正在构建面向法律工作的“智能体操作系统”，并借助OpenAI的模型、ChatGPT和Codex来加速法律工作流。 其应用重点包括扩展合同分析能力，以及把律师从重复性事务中解放出来，转向更高价值的工作。 该简介未披露具体客户数量、效率提升幅度或产品上线时间，也未说明相关能力是已交付还是仍在开发中。 由于原文无法获取，以上信息仅依据订阅简介，可能不完整。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "法律工作流成智能体落地场景",
-      "point": "Legora借OpenAI模型加速法律工作流",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
-      "date_md": "10-28"
-    }
-  ]
+  "headline": "AI日报 10-28 19:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

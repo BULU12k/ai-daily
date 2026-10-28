@@ -1,8 +1,30 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 05:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-29 05:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-29-0530-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "微软季度营收923亿美元，同比增19%"
+  ],
+  "items": [
+    {
+      "title_zh": "微软连续十季度营收创新高",
+      "summary": "微软公布季度营收923亿美元，同比增长19%，连续10个季度创纪录；净利润366亿美元，按GAAP同比增长32%。 微软云当季收入639亿美元，同比增长30%，其中Azure收入332亿美元、Microsoft 365近280亿美元；公司未披露云收入中AI的具体占比，Azure也承载大量传统软件和SaaS应用。 微软还披露来自OpenAI的收入为100亿美元；OpenAI虽拓展AWS、Oracle等平台，仍在大量使用微软云，Anthropic也运行在Azure上。 商业剩余履约义务同比增长73%至6770亿美元，微软当季资本支出超过452亿美元，再创季度新高。 分业务看，设备与消费者收入155亿美元，同比下降3%，Windows OEM与设备收入下降22%。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "云与AI合同撑起创纪录营收",
+      "point": "微软季度营收923亿美元，同比增19%",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "date_md": "10-29"
+    }
+  ]
 }

@@ -1557,5 +1557,51 @@
    "time": "08:00",
    "date_md": "10-27"
   }
+ ],
+ "2026-10-29": [
+  {
+   "title_zh": "AI高管炫耀AI育儿遭批评",
+   "summary": "前雅虎CEO、早期谷歌工程师玛丽莎·梅耶尔在介绍其新应用Dazzle（一款从相册中学习、充当AI助手的应用）时称，它帮自己为10岁女儿整理了三个生日演讲要点：有同理心、有创造力、热爱动物。 这一描述被批评像通用星座运势，进步派活动人士莉亚·格林伯格称，她愿意向记者公开这件事，说明硅谷文化已与普通人深度分化。 梅耶尔随后回应称，她只是测试原型能力，应用重新找出了女儿幼儿园时期的旧作品照片。 但她同时表示，用户可以把筹划孩子生日主题、安排玩伴聚会、决定万圣节装扮这些心力交给AI，甚至可让自家AI助手与丈夫的AI助手对接计划；被问及这种“无摩擦未来”是否令人沮丧时，她答“我没认真想过”。 皮尤研究中心调查显示，50%的美国成年人认为AI会削弱人们建立有意义关系的能力，仅5%认为会更容易；Meta CEO扎克伯格则称，美国人平均好友不足3人，而期望约15人，并预测向AI治疗师甚至AI恋人寄托情感需求将变得更被接受。",
+   "signal": "硅谷与公众认知脱节加深",
+   "point": "皮尤：50%美国人忧AI削弱人际关系",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P7",
+    "P8",
+    "P9",
+    "P11"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+   "date": "2026-10-28T15:53:52.000Z",
+   "time": "23:53",
+   "date_md": "10-28"
+  },
+  {
+   "title_zh": "韩国金融业再遭网络攻击",
+   "summary": "韩国金融机构再遭一波网络攻击。 据当地媒体报道，大信证券（Daishin Securities）承认一起攻击导致38,490名客户的姓名、邮箱和手机号等个人信息泄露；公司已通知受影响客户、配合调查，并将依法赔偿损失。 未来资产环球投资（Mirae Asset Global Investments）与加密交易所Bithumb同日（周三）各报告了一起安全事件，但均未确认客户数据被取走。 此轮攻击距9月针对韩国金融机构的一系列攻击约一个月。 安全研究人员曾将9月那波攻击与一名疑似中国黑客及其使用的AI渗透测试工具Artex联系起来，但官方表示最新事件的根因仍在调查。 韩国金融监管机构已呼吁加强网络安全措施，并计划对私营部门数十套IT系统开展安全检查；日本此前也报告了GMO Internet的安全事件，调查人员尚未确认各事件之间存在关联。",
+   "signal": "AI攻击工具拉低网络犯罪门槛",
+   "point": "大信证券3.8万客户信息泄露",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+   "date": "2026-10-28T15:41:18.000Z",
+   "time": "23:41",
+   "date_md": "10-28"
+  }
  ]
 }

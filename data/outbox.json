@@ -1,43 +1,8 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 04:30 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-29-0430-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "OpenAI 和 ServiceNow…",
-    "科学计划扩至20家机构，发放Claude额度"
-  ],
-  "items": [
-    {
-      "title_zh": "OpenAI 和 ServiceNow 扩大跨企业工作流程的合作伙伴关系",
-      "summary": "OpenAI 和 ServiceNow 扩大了合作伙伴关系，将 OpenAI 模型和代理引入 ServiceNow，并将 ServiceNow 工作流程引入 ChatGPT 和 Codex。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": true,
-      "signal": "—",
-      "point": "OpenAI 和 ServiceNow…",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "date_md": "10-28"
-    },
-    {
-      "title_zh": "Anthropic扩大科学资助范围",
-      "summary": "Anthropic 宣布扩展其 AI for Science 计划，新增 20 家科学基金会、研究机构和研究团队，向从事高影响力科研项目的研究人员免费发放 Claude 使用额度。 该计划始于 2025 年 5 月，此前以支持个体科学家为主，公司称已支持生物、医学、物理、化学、气候和数学领域的数百个项目。 新加入的资助方包括斯隆基金会、西蒙斯基金会、施密特科学、Renaissance Philanthropy 旗下的开源科学基金、美国国家科学基金会（该机构规模 90 亿美元，约占美国高校基础研究联邦支持的 25%）以及美国化学会旗下 CAS。 机构方包括负责哈勃、韦伯和罗曼望远镜科学运行的太空望远镜科学研究所、桑格研究所、弗朗西斯·克里克研究所、帝国理工生命科学系、EMBL 和 Gladstone Institutes。 项目层面，普林斯顿大学 FlyWire 脑连接组、哥伦比亚大学 LEAP 气候建模，以及 Broad 研究所汇集逾 80 万人 DNA 数据的 gnomAD 将获直接支持。",
-      "content_basis": "article_excerpts",
-      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
-      "degraded": false,
-      "signal": "科研机构成模型厂商新渠道",
-      "point": "科学计划扩至20家机构，发放Claude额度",
-      "source": "Anthropic News",
-      "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "date_md": "10-28"
-    }
-  ]
+  "headline": "AI日报 10-29 05:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

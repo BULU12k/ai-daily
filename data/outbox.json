@@ -1,8 +1,30 @@
 {
   "date": "2026-10-28",
   "pushed": false,
-  "headline": "AI日报 10-28 21:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-28 21:25 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-28-2125-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "11月4日波士顿举办，门票最高省100美元"
+  ],
+  "items": [
+    {
+      "title_zh": "TechCrunch创始人峰会倒计时7天",
+      "summary": "TechCrunch 宣布，其 Founder Summit 将于 11 月 4 日在波士顿 SoWa Power Station 举办，距开幕仅剩 7 天，门票优惠最高可省 100 美元，且该优惠将在开门前截止。 按官方介绍，这是一场为期一天的“创始人入门训练营”，设两个问答分会场舞台和两个互动圆桌室，议题覆盖融资、招聘、产品市场匹配、AI 战略与增长，并包含现场路演和投资人反馈环节。 已公布的部分讲者包括 Bessemer Venture Partners 的 Kent Bennett、Cogent Security 的 Vineet Edupuganti、HqO 的 Chase Garbarino、True Ventures 的 Dave Balter 和 TDK Ventures 的 Tina Tosukhowong，分别涉及需求验证、团队建设、在硅谷之外打造品类公司、路演表达和投资人评估标准等主题。 需要说明的是，上述信息出自活动推广文章，规模、参会人数和实际效果均未披露；文中所列的议题与讲者阵容，属于主办方宣传内容，并不代表已经交付的能力。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "科技媒体峰会转向实操训练",
+      "point": "11月4日波士顿举办，门票最高省100美元",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
+      "date_md": "10-28"
+    }
+  ]
 }

@@ -1667,6 +1667,22 @@
    "date_md": "10-28"
   },
   {
+   "title_zh": "AI如何进入企业组织架构",
+   "summary": "OpenAI博客发布题为《公司的未来》的文章，核心问题是AI将如何进入组织架构：在员工之下、在员工身旁，以及在人与人之间。 现有订阅简介只提供了这一观察框架，没有说明涉及哪些岗位、采用何种部署方式，也没有给出效果数据或适用条件。 由于原文当前无法访问（HTTP 403），无法核实文章的具体论点、案例与结论；以上摘要仅依据订阅简介，信息可能不完整。",
+   "signal": "AI被设想进入组织架构",
+   "point": "OpenAI博客探讨AI进入组织架构的位置",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/the-future-of-the-firm",
+   "date": "2026-10-28T10:00:00.000Z",
+   "time": "18:00",
+   "date_md": "10-28"
+  },
+  {
    "title_zh": "Legora构建法律智能体系统",
    "summary": "据OpenAI博客的订阅简介，法律科技公司Legora正在构建面向法律工作的智能体操作系统，使用OpenAI的模型、ChatGPT与Codex加速法律工作流，并扩展合同分析能力。 简介称，这套做法旨在把律师从重复性事务中释放出来，转而投入更高价值的工作。 由于原文页面返回403、正文不可用，具体产品形态、客户规模与效率提升数据均无法核实，以上仅为订阅简介所述。",
    "signal": "法律文书环节正被智能体重构",

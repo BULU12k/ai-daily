@@ -1560,6 +1560,27 @@
  ],
  "2026-10-29": [
   {
+   "title_zh": "AI加速漏洞挖掘，PHP危机只是开端",
+   "summary": "上周，支撑约70%网站的开源语言PHP曝出两个严重漏洞，大量机构被迫紧急修补，部分网站为等待补丁一度下线。 发现漏洞的研究人员表示，这仅仅是开始：AI正在改变新型漏洞被挖掘和利用的速度。 谷歌旗下Wiz负责暴露管理与应用安全的CTO Tomer Schwartz在TechCrunch Equity播客中复盘了这次抢修，Wiz与OpenAI、研究团队Calif及PHP团队共同参与。 他表示，没有AI，Wiz不可能找到这些漏洞，其自建工具在一个周末内测试了数十种思路。 节目还提到，其中一个漏洞在明处潜伏十余年，直到某种条件变化才变得可被利用。 以上信息来自节目简介，完整对话的细节未在正文中给出。",
+   "signal": "AI让漏洞发现从按年计变成按周计",
+   "point": "PHP两高危漏洞波及约70%网站，清理未完",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P4",
+    "P5"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/",
+   "date": "2026-10-28T18:50:39.000Z",
+   "time": "02:50",
+   "date_md": "10-29"
+  },
+  {
    "title_zh": "Gemini 4 Carbon：下一代前沿模型",
    "summary": "该条目仅能确认标题为“Gemini 4 Carbon: Our next frontier model”，来源标注为 Google DeepMind 博客，发布时间为 2026 年 10 月 28 日。 原文正文不可用：重定向已更换文章路径，无法确认与订阅原文为同一报道，订阅简介内容为空，因此模型的参数规模、能力范围、开放时间与适用条件均无法核实。 在获得可读正文前，不宜对“前沿模型”的具体能力作任何推断。",
    "signal": "仅有标题，模型细节无从核实",

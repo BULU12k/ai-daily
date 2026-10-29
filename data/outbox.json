@@ -1,30 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 05:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-30-0500-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "STEPX Neo 发布两周即升级，接入剪映与支付宝"
-  ],
-  "items": [
-    {
-      "title_zh": "阶跃STEPX Neo发布两周即首次升级",
-      "summary": "10月29日消息，阶跃终端旗下大模型原生智能体手机 STEPX Neo 在发布两周后迎来首次升级，更新覆盖视频创作、生活服务、工作任务以及底层体验优化。 升级后，用户可通过个人智能体阶跃 Amoo 调用剪映，用一句话生成 Vlog，并对图片、视频进行再创作，还能获得主动创作建议；在生活服务方面，Amoo 可主动提供支付宝神券，并通过支付宝 AI 付下单；复杂工作则可交给 WorkBuddy 完成。 系统从服务调用到日常交互也做了同步优化。 上述功能由厂商在稿件中描述，未公布版本号、推送范围与具体性能指标，实际体验仍有待用户验证。 需说明，该文由阶跃提供、量子位获授权转载，观点归原作者所有。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "智能体手机靠模型迭代持续加能力",
-      "point": "STEPX Neo 发布两周即升级，接入剪映与支付宝",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506554.html",
-      "date_md": "10-29"
-    }
-  ]
+  "headline": "AI日报 10-30 05:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

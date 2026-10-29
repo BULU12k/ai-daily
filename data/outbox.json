@@ -1,29 +1,29 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 01:00 · 1条新知",
+  "headline": "AI日报 10-30 01:30 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-30-0100-p1.png",
+      "file": "docs/poster/2026-10-30-0130-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "OpenAI称以分层监控检测模型失准与越权行为"
+    "万亿参数ML4权重开放，主打网络安全"
   ],
   "items": [
     {
-      "title_zh": "OpenAI用分层监控发现模型失准",
-      "summary": "OpenAI 在订阅简介中称，其采用分层监控来检测前沿模型的失准，以及智能体的未授权行为。 这样做的目的是让响应人员能在事件升级前介入。 由于原文无法访问，监控具体分为哪些层级、使用什么检测指标、误报率如何以及适用哪些模型，简介均未说明，相关效果也不能据此确认。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "title_zh": "Mistral开放万亿参数模型权重",
+      "summary": "法国AI公司Mistral已公开其万亿参数模型Mistral Large 4（内部绰号“Le Chonk”）的权重，企业与政府机构可自行下载并部署，权重已在Hugging Face和其API上线。 该模型本月早些时候首次发布，此次开放权重被定位为面向网络安全的“主权防御”能力：机构可在自有环境本地部署，用于检测、分析和响应代码与IT基础设施中的威胁。 Mistral称，ML4的性能与中国开源模型GLM-5.3相当，但每项任务消耗的token少47%，因而更经济；并称在Artificial Analysis的编码智能体指数上领先其他开放模型。 上述性能比较均出自公司自述，尚无第三方复现。 Mistral科学副总裁Pierre Stock表示，开放权重意味着这类前沿能力“按定义无法被切断”；他同时承认失控AI智能体等风险存在，但认为问题可解，不宜过度渲染恐慌。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "模型失准监控覆盖智能体越权",
-      "point": "OpenAI称以分层监控检测模型失准与越权行为",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "signal": "开源权重切入政府网络安全",
+      "point": "万亿参数ML4权重开放，主打网络安全",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
       "date_md": "10-29"
     }
   ]

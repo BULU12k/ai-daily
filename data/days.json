@@ -1890,6 +1890,32 @@
    "date_md": "10-29"
   },
   {
+   "title_zh": "Mistral发布万亿参数开放权重模型",
+   "summary": "Mistral 在 Hugging Face 发布 Large 4（代号 Le Chonk），采用多模态、多语言 MoE 架构，总参数约 1T、激活参数 49B，上下文窗口达 1M token，并提供开放权重。 文章称该模型在网络安全、编程智能体和多模态任务上表现突出：在 Artificial Analysis Cyber Index 的真实漏洞复现与修补测试中得分 82%，Mistral 称部分闭源前沿模型因拒绝尝试而接近零分；Cybench 的 40 项挑战解决 93%。 编程方面，DeepSWE v1.1 为 61.7%、Terminal-Bench 4 为 28.3%，综合 Coding Agent Index 为 49.8%。 截至 2026 年 10 月 29 日，它在 Artificial Analysis Intelligence Index 上列开放权重模型第五。 Transformers、vLLM、llama.cpp 提供首日支持，并可用 TRL 微调。",
+   "signal": "开放权重模型切入漏洞修复",
+   "point": "漏洞修复测试得分82%，总参数1T、激活49B",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_excerpts",
+   "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+   "evidence_paragraphs": [
+    "P1",
+    "P21",
+    "P23",
+    "P33",
+    "P34",
+    "P38",
+    "P39",
+    "P42",
+    "P58"
+   ],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/mistral-large4",
+   "date": "2026-10-29T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "10-29"
+  },
+  {
    "title_zh": "微软首次公布Azure季度营收",
    "summary": "微软在周三公布的季度财报中首次以美元金额披露Azure收入：7—9月季度营收332亿美元，同比增长48%。 这一数字比分析师预期的323亿美元高出约8.5亿美元，48%的增速也高于首席财务官Amy Hood此前给出的44%—45%指引。 Azure目前占微软当季923亿美元总营收约36%，按公司自己的口径是规模最大、增长最快的产品线。 同日发布财报的Alphabet称，谷歌云同季度营收307亿美元，Azure略高于该数字；但据TechCrunch计算，谷歌云同比约翻倍，增速约为Azure的两倍。 Azure现被归入微软本季度新设的“智能体与基础设施”部门，该部门营收768亿美元，同比增长25%。 亚马逊将于周四公布财报。",
    "signal": "云业务营收进入直接对比时代",

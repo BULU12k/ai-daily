@@ -2413,5 +2413,27 @@
    "date_md": "10-28"
   }
  ],
- "2026-10-30": []
+ "2026-10-30": [
+  {
+   "title_zh": "Dream获1700万美元种子轮融资",
+   "summary": "曾在Palantir共事十年的斯坦福室友Andy Alder与Arjun Mather创办Dream，开发面向建筑设计与工程的世界模型，并以1700万美元种子轮结束隐身状态，本轮由Andreessen Horowitz领投，SV Angel、XYZ和Zigg Capital参与。 Dream称其模型以真实物理和建筑规范为基础，训练数据取自全美许可档案中逾1亿平方英尺的建筑数据，能生成考虑管线、暖通等内部构件的结构精确设计，创始人把这一思路称为“结构认知”。 公司明确把目标对准Autodesk的AutoCAD与Revit等传统AEC工具。 据创始人介绍，产品已开始向AEC从业者与开发商销售，用于方案构思与成本估算，并在得克萨斯州和加利福尼亚州的10个在建项目中部署。 该赛道已有Motif、Snaptrude、Arcol等创业公司，创始人称Dream是唯一能瞬间设计整栋建筑的世界模型，此为公司自身说法。",
+   "signal": "世界模型开始切入传统AEC软件",
+   "point": "Dream获1700万美元种子轮，a16z领投",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P4",
+    "P6",
+    "P9",
+    "P10"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+   "date": "2026-10-29T16:21:00.000Z",
+   "time": "00:21",
+   "date_md": "10-30"
+  }
+ ]
 }

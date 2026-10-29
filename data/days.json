@@ -2415,6 +2415,29 @@
  ],
  "2026-10-30": [
   {
+   "title_zh": "美方调查中国间谍接近英伟达CEO",
+   "summary": "据《纽约时报》援引匿名消息源报道，美国情报机构对新加坡AI云服务公司Megaspeed的高管黄乐（Alice Huang）进行了约一年的监视，怀疑她可能为中国从事间谍活动。 她曾多次出现在英伟达CEO黄仁勋于新加坡地区商务晚宴的合影中；消息源称，美方担心她与黄仁勋关系过于密切，可能借机获取英伟达的产品计划，以及黄仁勋游说特朗普政府放宽对华先进技术出口的相关信息。 英伟达发言人向TechCrunch否认上述猜测，称CEO与客户会面属日常业务，公司每年与数千名客户高管交流；地区云客户只获得常规商业信息，不涉及英伟达商业机密，也不涉及任何国家安全信息。 《纽约时报》2025年还曾报道，美国商务部调查过Megaspeed，怀疑其转售受限芯片、帮助中国企业规避AI芯片出口管制。 上述间谍指控均来自匿名消息源，尚未获公开证实。",
+   "signal": "芯片出口管制的间谍焦虑升温",
+   "point": "《纽约时报》：美方监视该高管约一年",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+   "date": "2026-10-29T16:42:32.000Z",
+   "time": "00:42",
+   "date_md": "10-30"
+  },
+  {
    "title_zh": "Dream获1700万美元种子轮融资",
    "summary": "曾在Palantir共事十年的斯坦福室友Andy Alder与Arjun Mather创办Dream，开发面向建筑设计与工程的世界模型，并以1700万美元种子轮结束隐身状态，本轮由Andreessen Horowitz领投，SV Angel、XYZ和Zigg Capital参与。 Dream称其模型以真实物理和建筑规范为基础，训练数据取自全美许可档案中逾1亿平方英尺的建筑数据，能生成考虑管线、暖通等内部构件的结构精确设计，创始人把这一思路称为“结构认知”。 公司明确把目标对准Autodesk的AutoCAD与Revit等传统AEC工具。 据创始人介绍，产品已开始向AEC从业者与开发商销售，用于方案构思与成本估算，并在得克萨斯州和加利福尼亚州的10个在建项目中部署。 该赛道已有Motif、Snaptrude、Arcol等创业公司，创始人称Dream是唯一能瞬间设计整栋建筑的世界模型，此为公司自身说法。",
    "signal": "世界模型开始切入传统AEC软件",

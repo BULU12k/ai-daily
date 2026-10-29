@@ -1825,6 +1825,33 @@
    "date_md": "10-29"
   },
   {
+   "title_zh": "苹果平台开源语音与决策模型包",
+   "summary": "Hugging Face 博客介绍 AnySpeechRecognizer 与 AnyDecisionModel 两个 Swift 包，延续 AnyLanguageModel 的思路，让开发者在苹果平台用相似 API 更换底层模型。 AnySpeechRecognizer 沿用 macOS 26/iOS 26 的 SpeechAnalyzer 接口，除苹果默认引擎外可选 NVIDIA Parakeet v3（覆盖 25 种欧洲语言并自动判定语种）、Moondream 微调的 Parakeet Ultra、纯英文 Parakeet Unified，以及阿里 Qwen3-ASR（0.6B/1.7B，支持 30 种语言与 22 种汉语方言），并加入说话人分离。 作者在 M4 Max Mac Studio、macOS 27.0.1 上测得 Parakeet 转写 1 小时音频约 20–40 秒，实时输入约 1.5–2.5 分钟，内存约 100 MB；Qwen3-ASR 更慢、需数 GB 内存，更适合文件转写。",
+   "signal": "端侧推理走向可插拔多引擎",
+   "point": "Parakeet 转写 1 小时音频约 20–40 秒",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_excerpts",
+   "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+   "evidence_paragraphs": [
+    "P5",
+    "P14",
+    "P15",
+    "P16",
+    "P18",
+    "P19",
+    "P28",
+    "P31",
+    "P32",
+    "P49"
+   ],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/anydecisionmodel",
+   "date": "2026-10-29T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "10-29"
+  },
+  {
    "title_zh": "微软首次公布Azure季度营收",
    "summary": "微软在周三公布的季度财报中首次以美元金额披露Azure收入：7—9月季度营收332亿美元，同比增长48%。 这一数字比分析师预期的323亿美元高出约8.5亿美元，48%的增速也高于首席财务官Amy Hood此前给出的44%—45%指引。 Azure目前占微软当季923亿美元总营收约36%，按公司自己的口径是规模最大、增长最快的产品线。 同日发布财报的Alphabet称，谷歌云同季度营收307亿美元，Azure略高于该数字；但据TechCrunch计算，谷歌云同比约翻倍，增速约为Azure的两倍。 Azure现被归入微软本季度新设的“智能体与基础设施”部门，该部门营收768亿美元，同比增长25%。 亚马逊将于周四公布财报。",
    "signal": "云业务营收进入直接对比时代",

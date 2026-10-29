@@ -1,8 +1,30 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 20:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-29 20:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-29-2030-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Parakeet 转写 1 小时音频约 20–40 秒"
+  ],
+  "items": [
+    {
+      "title_zh": "苹果平台开源语音与决策模型包",
+      "summary": "Hugging Face 博客介绍 AnySpeechRecognizer 与 AnyDecisionModel 两个 Swift 包，延续 AnyLanguageModel 的思路，让开发者在苹果平台用相似 API 更换底层模型。 AnySpeechRecognizer 沿用 macOS 26/iOS 26 的 SpeechAnalyzer 接口，除苹果默认引擎外可选 NVIDIA Parakeet v3（覆盖 25 种欧洲语言并自动判定语种）、Moondream 微调的 Parakeet Ultra、纯英文 Parakeet Unified，以及阿里 Qwen3-ASR（0.6B/1.7B，支持 30 种语言与 22 种汉语方言），并加入说话人分离。 作者在 M4 Max Mac Studio、macOS 27.0.1 上测得 Parakeet 转写 1 小时音频约 20–40 秒，实时输入约 1.5–2.5 分钟，内存约 100 MB；Qwen3-ASR 更慢、需数 GB 内存，更适合文件转写。",
+      "content_basis": "article_excerpts",
+      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+      "degraded": false,
+      "signal": "端侧推理走向可插拔多引擎",
+      "point": "Parakeet 转写 1 小时音频约 20–40 秒",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/anydecisionmodel",
+      "date_md": "10-29"
+    }
+  ]
 }

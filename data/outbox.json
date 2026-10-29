@@ -1,8 +1,43 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 21:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-29 22:00 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-29-2200-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "语音人工智能领域炙手可热，随着更多商业模式通过合作和收购脱颖…",
+    "Alexa 增百项购物功能，12 个月 4 亿人使用"
+  ],
+  "items": [
+    {
+      "title_zh": "Deepgram 收购 Pipecat 制造商 Daily 以加强其语音人工智能基础设施",
+      "summary": "语音人工智能领域炙手可热，随着更多商业模式通过合作和收购脱颖而出，顶级企业正在努力巩固自己的地位。 Deepgram 是最新采取此类举措的公司：该公司周四表示，正在收购 Daily，后者是最受欢迎的开源语音人工智能基础设施之一 Pipecat 的制造商和维护者。 根据 PitchBook 的数据，Daily 迄今为止已从 Tiger Global、Highfield Capital、Nat Friedman、Lachy Groom 和 Kevin Weil 等投资者那里筹集了超过 6200 万美元的资金。 今年早些时候，Deepgram 通过 1.3 亿美元的 C 轮融资达到了独角兽的地位。 顺便说一句，两家公司在 2016 年属于同一 Y Combinator 批次。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "语音人工智能领域炙手可热，随着更多商业模式通过合作和收购脱颖…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+      "date_md": "10-29"
+    },
+    {
+      "title_zh": "Alexa 新增百余项购物功能",
+      "summary": "亚马逊在假日购物季前为 Alexa 增加 100 多项购物相关功能，覆盖清单与订阅管理、修改配送指令、处理支付问题以及回答 Prime 订阅疑问。 用户可通过语音创建清单、查看与增删条目，也能让 Alexa 把某件商品的配送周期从每月一次改为每三个月一次，或更改收货地址、补充放置位置说明。 用户还可询问 Prime 与 Audible 订阅情况以及账单、支付相关问题。 亚马逊称今年已陆续推出购物助手等多项 AI 购物功能，并披露今年以来使用智能体功能的用户数增长 8 倍，过去 12 个月超过 4 亿消费者用 Alexa 进行购物。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "语音助手转向账户与交易操作",
+      "point": "Alexa 增百项购物功能，12 个月 4 亿人使用",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-subscriptions-and-update-delivery-instructions/",
+      "date_md": "10-29"
+    }
+  ]
 }

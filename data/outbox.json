@@ -1,62 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 02:00 · 3条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 2,
-      "file": "docs/poster/2026-10-30-0200-p1.png",
-      "count": 2
-    },
-    {
-      "index": 2,
-      "total": 2,
-      "file": "docs/poster/2026-10-30-0200-p2.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Granola上线免费Mac听写，不限字数",
-    "OpenAI新版模型规范提出五项核心价值",
-    "Ropes & Gray用AI分组文件并生成尽调摘要"
-  ],
-  "items": [
-    {
-      "title_zh": "Granola上线听写功能，与Wispr互攻腹地",
-      "summary": "以会议记录工具起家的Granola上线听写功能：在Mac上按下Fn键即可开口说话，工具会清理并格式化语音，最终文本可落入任意应用，用来写笔记、输入提示词或回复邮件和消息。 该功能目前仅支持Mac，公司称将很快登陆iOS和Windows，且不限字数、免费使用。 这与Wispr此前的动作方向相反——以听写见长的Wispr几个月前刚推出会议记录功能。 Granola与Wispr的估值分别为15亿美元和20亿美元；前者聚焦会议相关自动化与笔记，后者正通过研究实验室自建模型、探索不同的人机交互界面。 Fireflies、Speechify、Monologue等其他语音创业公司也已从单一功能转向会议记录加听写的多能应用，而今年早些时候的主流思路还是把一个功能做深。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "语音AI工具正从单点走向功能融合",
-      "point": "Granola上线免费Mac听写，不限字数",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
-      "date_md": "10-30"
-    },
-    {
-      "title_zh": "OpenAI更新模型规范，列出五项核心价值",
-      "summary": "OpenAI发布更新版Model Spec（模型规范）。 据其订阅简介，新版规范列出五项核心价值，用以引导能力更强的AI走向稳健判断、尊重人的自主性，并忠实于人类意图。 由于原文页面返回403、正文不可获取，规范的具体条款、五项价值的完整表述以及相较上一版改动了什么，目前无法核实。 以上信息仅来自官方简介，不代表已读全文。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "模型行为准则成为竞争议题",
-      "point": "OpenAI新版模型规范提出五项核心价值",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/updated-model-spec",
-      "date_md": "10-30"
-    },
-    {
-      "title_zh": "律所Ropes & Gray用AI做交易尽职调查",
-      "summary": "据OpenAI博客订阅简介，律所Ropes & Gray正与OpenAI合作开发用于交易尽职调查的AI。 其流程是先用AI对文件进行分组，并生成摘要与报告，再由律师审阅，之后才向客户提供建议。 由于原文页面返回403、正文不可获取，所用模型、部署规模、准确率与节省工时的具体数据均无法确认。 该简介强调的是律师审阅环节仍在流程之内，AI并未替代最终判断。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "律所把尽调初筛环节交给AI",
-      "point": "Ropes & Gray用AI分组文件并生成尽调摘要",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/ropes-gray-ai-diligence",
-      "date_md": "10-29"
-    }
-  ]
+  "headline": "AI日报 10-30 02:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

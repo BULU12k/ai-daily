@@ -1,75 +1,8 @@
 {
   "date": "2026-10-29",
   "pushed": false,
-  "headline": "AI日报 10-29 18:31 · 6条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 2,
-      "file": "docs/poster/2026-10-29-1831-p1.png",
-      "count": 2
-    },
-    {
-      "index": 2,
-      "total": 2,
-      "file": "docs/poster/2026-10-29-1831-p2.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "商汤大装置以9.4%份额居私有化MaaS第二",
-    "AI安全从刹车片转为规模化加速器",
-    "Genspark接入70多个模型做视频Agent",
-    "PSI称AI辅助解决5道量子开放问题"
-  ],
-  "items": [
-    {
-      "title_zh": "商汤大装置居私有化MaaS第二",
-      "summary": "IDC报告显示，2026年上半年中国MaaS市场规模达106.3亿元，同比增长近9倍；其中大模型私有化市场为28.8亿元，同比增长108.4%。 商汤大装置以9.4%的份额再次位居该私有化市场第二。 IDC指出，客户关注点正从单点模型能力转向平台的完整能力，数据安全、业务定制、自主可控与信创适配缺一不可，工程化交付与长期运维成为项目成败关键。 商汤方面称，其通过FDE模式深入产业一线，在“云宇星空大模型”项目中实现业务处理时长缩短60%、人均产出效率提升70%，并形成“1天明确价值、2天Demo验证、30天稳定上线”的交付法则。 该文由商汤提供，相关效果数据为其自述。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "私有化MaaS转向平台交付",
-      "point": "商汤大装置以9.4%份额居私有化MaaS第二",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506550.html",
-      "date_md": "10-29"
-    },
-    {
-      "title_zh": "AI安全是规模化应用加速器",
-      "summary": "文章提出，AI安全不是AI发展的“刹车片”，而是AI从试点走向规模化应用的“加速器”。 随着AI从生成内容走向自主行动、从单模型走向多智能体、从数字世界走向物理世界，风险从“说错了”升级为“做错了”，并沿任务链、权限链和工具链扩散。 文章认为，AI安全已扩展为基础设施、数据、模型、智能体与系统、应用与业务、社会与国家安全六个层面，需要贯穿数据、开发、部署、运行和退出的全生命周期。 文章还提出“AI高质量规模化应用=有效性×可靠性×安全性”，并建议将AI安全纳入国家AI基础能力、推动安全能力内生化、攻关智能体安全、培育产业增长点、建设公共基础设施，同时探索商业保险分担剩余风险。 这是评论文章，未给出具体市场规模数据。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "安全成AI规模化前置条件",
-      "point": "AI安全从刹车片转为规模化加速器",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506544.html",
-      "date_md": "10-29"
-    },
-    {
-      "title_zh": "Genspark推出视频Agent工作台",
-      "summary": "Genspark发布视频Agent工作台Media Studio，接入20多家厂商的70多个模型版本，由大语言模型担任“导演”，调用Seedance 2.5、Kling、Veo生成视频，GPT Image、Nano Banana生成图像，ElevenLabs等生成音频。 实测中，作者用奥特曼和Dario的照片生成rap视频，第一版为480p，定稿后可升级1080p；知识讲解片采用code-to-video路线，代码渲染不收集分，旁白和少量氛围镜头另计费。 其“故事圣经”功能可把一句主题扩展成短剧，系统将5场戏拆成84个镜头、组成12个视频单元，并自动返修；但成片后半段出现音画不同步、跳帧等问题。 跑完3个案例，初始5万积分约花费4.5万。 以上为实测体验，产品效果可能因任务而异。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "多模型编排降低视频门槛",
-      "point": "Genspark接入70多个模型做视频Agent",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506478.html",
-      "date_md": "10-29"
-    },
-    {
-      "title_zh": "PSI称AI辅助突破5道量子难题",
-      "summary": "新成立的Physical Superintelligence（PSI）宣称，其自研AI科研系统Emmy在量子信息理论的5个开放问题上取得成果，相关论文、Lean形式化证明和验证代码已在GitHub公开供审查。 5道题来自1999年建立的OQP目录，涉及纠缠提纯、量子场论、高维量子通信、量子信道容量和量子因果律，其中3题在本世纪初已被收录。 PSI称Emmy将宏大问题拆解为可验证的数学子假设，再交由Lean、符号计算引擎和高精度验证代码筛查，只有Lean代码编译通过才视为逻辑上成立。 该公司今年9月1日才公开亮相，已完成5800万美元种子轮融资，领投方为Breakthrough Energy Ventures；成果是否获学界认可仍需同行审查。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI开始介入基础物理证明",
-      "point": "PSI称AI辅助解决5道量子开放问题",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506477.html",
-      "date_md": "10-29"
-    }
-  ]
+  "headline": "AI日报 10-29 19:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

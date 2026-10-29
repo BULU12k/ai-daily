@@ -2415,6 +2415,30 @@
  ],
  "2026-10-30": [
   {
+   "title_zh": "Meta低调上线AI穿搭应用",
+   "summary": "Meta 低调推出一款名为 Style Sketch 的 AI 穿搭应用，目前仅面向印度尼西亚、新加坡和泰国，提供 iOS 与 Android 版本。 应用可连接 Instagram，用用户已发布的照片生成虚拟衣橱，也支持手动拍照、录制短视频或从相册上传添加单品。 随后它会基于衣橱与个人风格给出搭配建议，并让用户在“按体型和肤色匹配的写实模型”上试穿。 用户还可选定某件单品，据此生成新的搭配方案；输入目的地、行程天数与计划活动后，应用会给出结合天气预报和日程的逐日穿搭计划。 该应用由社交媒体顾问 Matt Navarra 首先发现，Meta 未回应置评请求，也未说明是否会扩大上线范围。 市场上已有 Alta 等创业公司和 Google Photos 提供数字化衣橱功能，Meta 的差异更多在于与 Instagram 的整合，以及近期密集推出 Waddle World、Pocket、Vibes 等 AI 应用的整体节奏。",
+   "signal": "Meta以社交衣柜切入穿搭",
+   "point": "Style Sketch在东南亚三国低调上线",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P6",
+    "P9",
+    "P10"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+   "date": "2026-10-29T19:14:36.000Z",
+   "time": "03:14",
+   "date_md": "10-30"
+  },
+  {
    "title_zh": "Granola上线听写功能，与Wispr互攻腹地",
    "summary": "以会议记录工具起家的Granola上线听写功能：在Mac上按下Fn键即可开口说话，工具会清理并格式化语音，最终文本可落入任意应用，用来写笔记、输入提示词或回复邮件和消息。 该功能目前仅支持Mac，公司称将很快登陆iOS和Windows，且不限字数、免费使用。 这与Wispr此前的动作方向相反——以听写见长的Wispr几个月前刚推出会议记录功能。 Granola与Wispr的估值分别为15亿美元和20亿美元；前者聚焦会议相关自动化与笔记，后者正通过研究实验室自建模型、探索不同的人机交互界面。 Fireflies、Speechify、Monologue等其他语音创业公司也已从单一功能转向会议记录加听写的多能应用，而今年早些时候的主流思路还是把一个功能做深。",
    "signal": "语音AI工具正从单点走向功能融合",

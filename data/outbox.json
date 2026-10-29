@@ -1,29 +1,29 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 03:30 · 1条新知",
+  "headline": "AI日报 10-30 04:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-30-0330-p1.png",
+      "file": "docs/poster/2026-10-30-0400-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "Style Sketch在东南亚三国低调上线"
+    "交易企业价值153亿美元，股权对价76亿"
   ],
   "items": [
     {
-      "title_zh": "Meta低调上线AI穿搭应用",
-      "summary": "Meta 低调推出一款名为 Style Sketch 的 AI 穿搭应用，目前仅面向印度尼西亚、新加坡和泰国，提供 iOS 与 Android 版本。 应用可连接 Instagram，用用户已发布的照片生成虚拟衣橱，也支持手动拍照、录制短视频或从相册上传添加单品。 随后它会基于衣橱与个人风格给出搭配建议，并让用户在“按体型和肤色匹配的写实模型”上试穿。 用户还可选定某件单品，据此生成新的搭配方案；输入目的地、行程天数与计划活动后，应用会给出结合天气预报和日程的逐日穿搭计划。 该应用由社交媒体顾问 Matt Navarra 首先发现，Meta 未回应置评请求，也未说明是否会扩大上线范围。 市场上已有 Alta 等创业公司和 Google Photos 提供数字化衣橱功能，Meta 的差异更多在于与 Instagram 的整合，以及近期密集推出 Waddle World、Pocket、Vibes 等 AI 应用的整体节奏。",
+      "title_zh": "Thrive以76亿美元股权收购ADT",
+      "summary": "Thrive Holdings周四宣布收购安防公司ADT，价格为每股10美元、约合76亿美元股权对价；ADT称计入其他因素后交易企业总价值为153亿美元。 Thrive Holdings是从Josh Kushner旗下风投Thrive Capital分拆出的私募股权公司，OpenAI既是其合作方也是投资方，公司称目前持有逾75家企业，思路是长期持有并用AI改造这些公司。 按其说法，OpenAI向这些公司提供AI模型与技术，并派驻被称为“前置部署工程师”的人员。 双方未公布将推出哪些AI安防产品，只表示ADT将成为Thrive Holdings智能家居安防业务的基础，并计划投入资金、发布新品。 这一领域近期动作频繁：苹果与LG、施耐德电气合作推出智能家居与家庭安防产品，亚马逊也更新了含AI家用摄像头的智能家居产品线。 交易的具体交割条件与时间表未在文中披露。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "Meta以社交衣柜切入穿搭",
-      "point": "Style Sketch在东南亚三国低调上线",
+      "signal": "AI改造传统安防进入并购阶段",
+      "point": "交易企业价值153亿美元，股权对价76亿",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+      "link": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
       "date_md": "10-30"
     }
   ]

@@ -2457,6 +2457,22 @@
    "date": "2026-10-29T16:21:00.000Z",
    "time": "00:21",
    "date_md": "10-30"
+  },
+  {
+   "title_zh": "OpenAI用分层监控发现模型失准",
+   "summary": "OpenAI 在订阅简介中称，其采用分层监控来检测前沿模型的失准，以及智能体的未授权行为。 这样做的目的是让响应人员能在事件升级前介入。 由于原文无法访问，监控具体分为哪些层级、使用什么检测指标、误报率如何以及适用哪些模型，简介均未说明，相关效果也不能据此确认。",
+   "signal": "模型失准监控覆盖智能体越权",
+   "point": "OpenAI称以分层监控检测模型失准与越权行为",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+   "date": "2026-10-29T09:00:00.000Z",
+   "time": "17:00",
+   "date_md": "10-29"
   }
  ]
 }

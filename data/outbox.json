@@ -1,30 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 08:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-30-0800-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "AWS营收同比增39%，2026资本开支2200亿美元"
-  ],
-  "items": [
-    {
-      "title_zh": "AWS称五至十年内营收可达万亿美元",
-      "summary": "亚马逊CEO安迪·贾西在季度财报电话会上重申，AWS有望在未来五到十年成为年营收达1万亿美元的业务。 他披露AWS当前年化营收规模为1840亿美元，本季度营收同比增长39%，为连续第六个季度稳步增长。 贾西预计2027年和2028年AWS营收增速都将超过40%。 为支撑扩张，亚马逊预计2026年现金资本开支约2200亿美元，其中大部分投向AWS，并将在2027年显著增加。 尽管公司称这是AI驱动的“一生一次”机会，投资者仍担忧投入回报，财报电话会后亚马逊股价盘后下跌约6%。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI云扩张与资本开支担忧并存",
-      "point": "AWS营收同比增39%，2026资本开支2200亿美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-      "date_md": "10-30"
-    }
-  ]
+  "headline": "AI日报 10-30 08:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

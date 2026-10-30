@@ -2415,6 +2415,29 @@
  ],
  "2026-10-30": [
   {
+   "title_zh": "AI数据中心能否像汽车一样量产",
+   "summary": "Runware 正试图把模块化 AI 数据中心做成流水线产品。 这家公司此前推出工厂预制的 Sonic Inference Pod，如今计划在罗马尼亚的工厂按汽车生产线方式组装，目标到 2028 年实现日产 30 兆瓦数据中心容量，约合每月近 1 吉瓦；按此速度，其年产量接近美国今年预计新增的约 10 吉瓦数据中心电力。 公司称目前已有两座工厂，第二座预计明年初投运，并从明年起逐步提升产量。 其模块运抵现场后 48 小时内完成安装与调试（不含建造时间），单台建造周期将从三周缩短到一天；客户可自备 GPU 并按月支付设备与运维费用，电力与网络另行计费。 Runware 累计融资超过 6000 万美元，正用去年 12 月的 5000 万美元 A 轮完成新厂建设，并计划启动 B 轮；它称 Sonic 对外开放一个月已获得 10 亿美元意向，对应逾 20 兆瓦容量。 报道同时提示执行风险：规模化制造需要人员、库存与供应链支撑，电动车公司 Arrival 的经历是前车之鉴；其泵、风扇等部件来自德国，网络仍依赖英伟达。",
+   "signal": "数据中心竞争转向工厂量产",
+   "point": "目标2028年日产30兆瓦容量",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P3",
+    "P5",
+    "P6",
+    "P8",
+    "P10"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+   "date": "2026-10-30T13:00:00.000Z",
+   "time": "21:00",
+   "date_md": "10-30"
+  },
+  {
    "title_zh": "英伟达开源H3视频增强，最高支持4K",
    "summary": "英伟达与麻省理工学院研究人员组成的 Efficient-Large-Model 团队在 Hugging Face 发布了视频增强项目 Open-H3-Regenerate-2K 的模型权重，配套推理代码已在 NVlabs/Sana 仓库开放。 该方案基于 MiniMax H3，把低分辨率视频草稿重新生成为高分辨率画面，支持 2560×1440 的 2K 输出，最高可实现 3840×2160 的原生 4K 重生成。 需要说明的是，MiniMax 官方 H3-Regenerate-2K 模块仍仅通过 API 提供服务，此次开放的是高分辨率重生成环节可自行部署的实现。 训练阶段冻结 H3 Transformer 主干与视频 VAE 参数，只训练新增的细化 LoRA；推理时与 LightX2V FL2VA Turbo、LMS Sharp 等社区适配器合并，经三步去噪重生成细节，并借助潜空间放大器、SoL-Engine 稀疏注意力与快速 VAE 解码器提速。",
    "signal": "开源细化模块补齐4K重生成环节",

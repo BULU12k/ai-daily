@@ -2952,6 +2952,46 @@
  ],
  "2026-10-31": [
   {
+   "title_zh": "Nemotron万圣节内容暂无法确认",
+   "summary": "该条目来自 Hugging Face Blog，仅有标题“nemotron-halloween”，正文与简介均为空。 页面元数据标注发布时间为2026年10月30日，但没有可核验的事件、数字或技术细节。 因此无法判断是否涉及模型发布、功能更新或其他内容，需补充原文后再处理。",
+   "signal": "原文缺失，无法判断信号",
+   "point": "仅有标题，正文为空无法核验",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+   "date": "2026-10-30T17:57:24.000Z",
+   "time": "01:57",
+   "date_md": "10-31"
+  },
+  {
+   "title_zh": "Zest上线短信AI餐厅管家",
+   "summary": "Zest 近日推出短信内 AI 餐厅管家，用户发送短信即可获得餐厅推荐、查询空位并预订餐桌。 该功能调用用户经 Plaid 导入的信用卡餐饮消费记录，结合本人及朋友偏好生成建议，还可加入群聊、综合多人口味并发起投票后直接订位。 预订通过 OpenTable、Resy 和 SevenRooms 等连接服务完成。 Zest 成立于2024年11月，曾获 Alexis Ohanian 的776和 Steve Jang 的Kindred Ventures 180万美元 pre-seed 投资。 TechCrunch 测试称推荐与订位基本可用，但公司目前用户规模为数千名早期用户，并计划把服务扩展到餐厅以外。",
+   "signal": "餐厅发现入口转向短信对话",
+   "point": "Zest短信管家可订位，曾获180万美元",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P4",
+    "P6",
+    "P7",
+    "P9",
+    "P10",
+    "P11"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+   "date": "2026-10-30T17:47:12.000Z",
+   "time": "01:47",
+   "date_md": "10-31"
+  },
+  {
    "title_zh": "谷歌首颗数据中心卫星上线",
    "summary": "谷歌Suncatcher项目的原型太空数据中心已上线并与地面通信。 该卫星本月初随SpaceX猎鹰9号火箭与100多艘航天器一同发射，搭载一颗Google TPU，发电功率最高1千瓦；但受功耗限制，TPU每次只能开机约20分钟，增加了天地通信的难度。 地面工程师本周发出首个提示，让预装的DeepMind Gemma 4模型写一首关于太空的俳句，谷歌称卫星目前运行正常。 后续测试将考察芯片在热应力和空间辐射下的表现；地面实验显示，辐射对推理负载影响较小，对训练影响更大。 若验证可行，谷歌计划2027年再发射两颗搭载该芯片的卫星，支持更高功率和星间光链路。",
    "signal": "太空推理算力进入在轨验证",

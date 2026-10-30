@@ -1,43 +1,30 @@
 {
   "date": "2026-10-31",
   "pushed": false,
-  "headline": "AI日报 10-31 02:00 · 2条新知",
+  "headline": "AI日报 10-31 02:30 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-31-0200-p1.png",
-      "count": 2
+      "file": "docs/poster/2026-10-31-0230-p1.png",
+      "count": 1
     }
   ],
   "points": [
-    "仅有标题，正文为空无法核验",
-    "Zest短信管家可订位，曾获180万美元"
+    "OpenAI 将遵从共享 robots.txt 训练偏好信号"
   ],
   "items": [
     {
-      "title_zh": "Nemotron万圣节内容暂无法确认",
-      "summary": "该条目来自 Hugging Face Blog，仅有标题“nemotron-halloween”，正文与简介均为空。 页面元数据标注发布时间为2026年10月30日，但没有可核验的事件、数字或技术细节。 因此无法判断是否涉及模型发布、功能更新或其他内容，需补充原文后再处理。",
+      "title_zh": "OpenAI 支持网站表达训练偏好",
+      "summary": "OpenAI 在博客中表示，将遵从一种共享的 robots.txt 信号，让网站运营者能够向参与该机制的 AI 服务商表达其内容在模型训练方面的偏好。 该做法把训练偏好写入网站已有的 robots.txt 文件，由参与的服务商统一读取并遵照执行，从而减少逐家协商的成本。 目前公开信息未说明信号的具体字段格式、生效时间、参与服务商名单，也未说明偏好声明与实际训练行为之间如何核验。 本条仅依据订阅简介，原文无法访问，细节有待官方文档补充。",
       "content_basis": "feed_description",
-      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
       "degraded": false,
-      "signal": "原文缺失，无法判断信号",
-      "point": "仅有标题，正文为空无法核验",
-      "source": "Hugging Face Blog",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "date_md": "10-31"
-    },
-    {
-      "title_zh": "Zest上线短信AI餐厅管家",
-      "summary": "Zest 近日推出短信内 AI 餐厅管家，用户发送短信即可获得餐厅推荐、查询空位并预订餐桌。 该功能调用用户经 Plaid 导入的信用卡餐饮消费记录，结合本人及朋友偏好生成建议，还可加入群聊、综合多人口味并发起投票后直接订位。 预订通过 OpenTable、Resy 和 SevenRooms 等连接服务完成。 Zest 成立于2024年11月，曾获 Alexis Ohanian 的776和 Steve Jang 的Kindred Ventures 180万美元 pre-seed 投资。 TechCrunch 测试称推荐与订位基本可用，但公司目前用户规模为数千名早期用户，并计划把服务扩展到餐厅以外。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "餐厅发现入口转向短信对话",
-      "point": "Zest短信管家可订位，曾获180万美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-      "date_md": "10-31"
+      "signal": "训练数据授权走向标准化协商",
+      "point": "OpenAI 将遵从共享 robots.txt 训练偏好信号",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "date_md": "10-30"
     }
   ]
 }

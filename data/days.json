@@ -3111,6 +3111,22 @@
    "date_md": "10-30"
   },
   {
+   "title_zh": "OpenAI 支持网站表达训练偏好",
+   "summary": "OpenAI 在博客中表示，将遵从一种共享的 robots.txt 信号，让网站运营者能够向参与该机制的 AI 服务商表达其内容在模型训练方面的偏好。 该做法把训练偏好写入网站已有的 robots.txt 文件，由参与的服务商统一读取并遵照执行，从而减少逐家协商的成本。 目前公开信息未说明信号的具体字段格式、生效时间、参与服务商名单，也未说明偏好声明与实际训练行为之间如何核验。 本条仅依据订阅简介，原文无法访问，细节有待官方文档补充。",
+   "signal": "训练数据授权走向标准化协商",
+   "point": "OpenAI 将遵从共享 robots.txt 训练偏好信号",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "date": "2026-10-30T09:30:00.000Z",
+   "time": "17:30",
+   "date_md": "10-30"
+  },
+  {
    "title_zh": "OpenAI发布安全报告，新增青少年保护",
    "summary": "据OpenAI博客的订阅简介，OpenAI发布社区安全报告，并宣布为青少年增加新的保护措施。 公司称正在加强ChatGPT中的暴力预防，包括扩大防护机制、更早介入风险情形。 OpenAI还表示作出新的公共安全报告承诺。 由于原文页面无法访问，目前只能依据简介获悉上述方向，具体防护规则、适用范围、执行时间和效果数据均未披露。 这些措施是否覆盖所有用户、如何判定风险、是否引入人工审核等关键细节，简介未说明。",
    "signal": "ChatGPT安全转向事前干预",

@@ -1,30 +1,8 @@
 {
   "date": "2026-10-31",
   "pushed": false,
-  "headline": "AI日报 10-31 07:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-31-0700-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "隐私助手Ollie将于11月6日停运"
-  ],
-  "items": [
-    {
-      "title_zh": "隐私AI助手Ollie将停运",
-      "summary": "主打隐私保护的AI助手Ollie宣布将于11月6日停止服务。 联合创始人兼CEO比尔·列侬在X上表示，公司曾以小型团队做出个人助手，但最终未能跟上行业节奏。 Ollie今年9月曾向TechCrunch介绍由Khosla Ventures领投的750万美元种子轮，产品采用订阅制，连接用户邮箱和日历，并提供预约、备餐和账单支付等功能。 Ollie也是较早获得SOC 2隐私合规标准的应用之一。 列侬称，随着Muse、Instinct等进入市场，Ollie更难脱颖而出、增长并筹集所需资金；用户将陆续收到数据导出和退款指引。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "隐私卖点难抵竞争与融资压力",
-      "point": "隐私助手Ollie将于11月6日停运",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
-      "date_md": "10-31"
-    }
-  ]
+  "headline": "AI日报 10-31 07:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

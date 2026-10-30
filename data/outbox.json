@@ -1,8 +1,30 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 09:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-30 09:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-30-0930-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "美国首例人文主义者获免用AI职场豁免"
+  ],
+  "items": [
+    {
+      "title_zh": "人文主义者获职场AI使用豁免",
+      "summary": "美国肯塔基大学行政人员、非有神论人文主义者戴维·杜尔曼近日获得职场宗教豁免，可以不在工作中使用AI。 据美国人文主义者协会（AHA）与TechCrunch报道，他是首位获得此类便利的人文主义者。 杜尔曼认为，人成为道德主体的途径是主动运用自己的心智，过度依赖AI会削弱这一能力；他还在AHA的声明中提到AI影响人们谋生、带来环境代价，并替代和挪用人类创造力。 他的岗位职责是协助研究人员申请经费，目前并未被要求使用AI，但同事与领导层曾建议员工试用这类工具，因此他提前申请豁免，以防建议日后变成强制要求。 肯塔基大学发言人表示，学校逐案审核宗教便利申请，综合考虑员工岗位职责与具体情况，此次认定可在不影响其履行核心职能的前提下提供便利，并称随着技术与职责变化，便利安排可能被重新评估。 AHA的一名律师指出，对AI与人的尊严的担忧存在于多种信仰与传统之中，非有神论者同样受到职场法律保护。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "职场AI争议正转向劳工权利",
+      "point": "美国首例人文主义者获免用AI职场豁免",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+      "date_md": "10-30"
+    }
+  ]
 }

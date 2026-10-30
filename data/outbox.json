@@ -1,43 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 15:00 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-30-1500-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "1.3B模型三榜登顶，100页解析仅101秒",
-    "Fable 5.5曝光，新一代Opus跑分略高"
-  ],
-  "items": [
-    {
-      "title_zh": "1.3B国产模型登顶文档解析三榜",
-      "summary": "国产开源文档解析模型OXR参数量仅1.3B，在OmniDocBench（97.18）、olmOCR-Bench（87.84）和DocParsingBench（87.76）三个榜单均列第一；官方称整套评测流程与代码已全量开源、可复现。 模型可一次处理表格、公式、代码块、化学方程式、印章等13类文档元素，输出结构化Markdown或LaTeX。 在单张RTX PRO 6000上，端到端解析100页文档耗时101秒。 训练上的关键是后训练阶段引入面向文档解析的递归自我改进（RSI）：由通用多模态模型把样本分为正确、错误、不确定三类，经归因聚类后生成新数据回流训练，以减少对人工标注的依赖。 架构上，独立轻量模型负责版面分析，主模型承担内容识别与阅读顺序判断。 文章称其在GitHub已获1.1K+ Star，官方提供免注册免费API并支持本地部署；上述效果主要来自团队自测与作者上手体验。",
-      "content_basis": "article_excerpts",
-      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
-      "degraded": false,
-      "signal": "垂直小模型用自进化替代人工标注",
-      "point": "1.3B模型三榜登顶，100页解析仅101秒",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506686.html",
-      "date_md": "10-30"
-    },
-    {
-      "title_zh": "曝Claude两款新模型进入测试",
-      "summary": "据X和Discord社区爆料，Anthropic两款新Claude模型已进入早期测试：Fable 5.5与下一代Opus。 Azure模型目录曾短暂出现claude-fable-5-5条目，随后被删除，但截图已在网络流传。 网友放出的实测图中，鹈鹕骑自行车场景出现鹈鹕叼鱼、车轮光影与沙滩车辙等细节；游戏手柄对比则显示Fable 5.5比Opus 5.5细节更多。 另有开发者在基准测试平台发现代号Obsidian 3的模型，跑分略高于现行Opus 5.5。 文章将密集发布与Anthropic的IPO进程联系：公司已向美国SEC公开提交S-1招股书，市场讨论估值在1.5万亿至2万亿美元之间。 有消息人士称新模型最快一至两周内发布，目前均未获官方确认。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "上市前夕，模型发布节奏加快",
-      "point": "Fable 5.5曝光，新一代Opus跑分略高",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506674.html",
-      "date_md": "10-30"
-    }
-  ]
+  "headline": "AI日报 10-30 15:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

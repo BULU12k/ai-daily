@@ -1,62 +1,8 @@
 {
   "date": "2026-10-31",
   "pushed": false,
-  "headline": "AI日报 10-31 06:00 · 3条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 2,
-      "file": "docs/poster/2026-10-31-0600-p1.png",
-      "count": 2
-    },
-    {
-      "index": 2,
-      "total": 2,
-      "file": "docs/poster/2026-10-31-0600-p2.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "英特尔暴跌28%，美政府持股缩水120亿美元",
-    "传Anthropic获BB级评级，融资成本上升",
-    "OpenAI称合理使用利于AI训练创新"
-  ],
-  "items": [
-    {
-      "title_zh": "英特尔股价暴跌约28%",
-      "summary": "英特尔上周五股价暴跌约28%，为该公司史上最差单日表现之一，触发点是第四季度业绩指引低于预期：公司预计营收150亿至160亿美元，而分析师此前预期约170亿美元。 公司同时警告毛利率将从43%降至37%，并因资本开支高企预计不会产生正现金流。 据CNBC报道，美国政府所持约10%股份的市值因此缩水120亿美元；但英特尔股价年内仍上涨逾70%，政府与英伟达的持股整体仍处于浮盈状态。 英特尔CEO陈立武在电话会上称，AI产业大量占用内存等零部件推高整机价格，客户已就PC需求放缓发出信号。 亮点是数据中心业务营收同比增长78%，但该业务受制于晶圆产能与外部客户拓展，仍需与台积电竞争，亚利桑那州一座新厂已投产，下一座预计2028年才能上线。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI抢内存反噬PC需求",
-      "point": "英特尔暴跌28%，美政府持股缩水120亿美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-      "date_md": "10-31"
-    },
-    {
-      "title_zh": "Anthropic预计获高垃圾级评级",
-      "summary": "据《金融时报》报道，Anthropic在首次公开募股后预计将获得信用评级机构给出的高收益“垃圾级”评级。 报道称，作为近期一笔630亿美元芯片融资交易的锚定投资者，黑石已向该交易参与方表示，预计这家AI实验室IPO后将拿到“高”垃圾级评级，即BB区间、投机级中的最高一档；而黑石此前的说法相反，称其在2027年前将获得投资级评级。 Anthropic与黑石均拒绝置评。 该评级目前只是预测，但高垃圾级意味着发债融资成本更高、难度更大，而该公司过去12个月签下大量算力协议、支出激增，已引发投资者担忧。 Anthropic本周正式提交上市申请。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "巨额算力开支推高融资成本",
-      "point": "传Anthropic获BB级评级，融资成本上升",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
-      "date_md": "10-31"
-    },
-    {
-      "title_zh": "OpenAI摘录意见书支持合理使用",
-      "summary": "本条原文无法访问（HTTP 403），以下仅依据订阅简介，信息可能不完整。 简介显示，OpenAI公开了创作者、学者、无障碍倡导者与法律专家等提交给法庭的意见书节选，内容关于“合理使用”如何支撑AI训练与创新。 这些材料属于法庭意见书摘录，并非判决结果，也不等同于新的授权协议；具体案件、法域及各方主张细节无法从简介中确认。 可以确定的是，OpenAI正借外部声音在版权争议中为AI训练的抗辩造势，但法律效果仍取决于法院裁决。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "版权之争转向法庭意见动员",
-      "point": "OpenAI称合理使用利于AI训练创新",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/fair-use-benefits-everyone",
-      "date_md": "10-30"
-    }
-  ]
+  "headline": "AI日报 10-31 06:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

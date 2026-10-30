@@ -1,8 +1,43 @@
 {
   "date": "2026-10-31",
   "pushed": false,
-  "headline": "AI日报 10-31 05:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 10-31 05:30 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-10-31-0530-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "万圣节临期装扮：AI助手、PHP漏洞",
+    "四大科技巨头今年资本开支超7400亿美元"
+  ],
+  "items": [
+    {
+      "title_zh": "科技宅的万圣节临期装扮指南",
+      "summary": "TechCrunch 在万圣节前发布一份“临期”科技主题装扮清单，全部用现成衣物和道具拼凑，并标注了不同费力程度。 清单包括把“递归式自我改进”演成新年决心里的自己——抱着《原子习惯》、瑜伽垫和大水瓶，中途借口“去做心理治疗”离场。 另有模仿 Meta 与 OpenAI 新推出的“可爱得令人不安”的 AI 助手头像，以及戴上贴了红色圆片的眼镜、扮演“正在未经同意拍摄你的人”。 其余创意包括扎克伯格常穿的宽松黑 T 恤并写上“Aut Zuck aut nihil”（意为“要么扎克，要么一无所有”）、印着“已达用量上限”通知的纸板，以及只写“PHP”的 T 恤配整晚真情流露；最后还有生物黑客布莱恩·约翰逊及其自称的“GLP-Bryan”情侣装。 文中提及的 Meta、OpenAI 助手头像与 AI 发现的 PHP 漏洞均为背景引用，文章本身不含新的事实报道，属娱乐性内容。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI热词成万圣节装扮素材",
+      "point": "万圣节临期装扮：AI助手、PHP漏洞",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+      "date_md": "10-31"
+    },
+    {
+      "title_zh": "AI支出热潮开始出现裂痕",
+      "summary": "过去两周，Alphabet、亚马逊、Meta 与微软公布今年合计逾 7400 亿美元的资本开支计划，主要投向数据中心与芯片；此前投资者多视其为增长信心信号，如今则转向担忧自由现金流为负、债务上升与回报不足。 周五纳斯达克指数跌 2.9%，英伟达跌 4%、博通跌逾 5%、高通跌 11%；Alphabet 周四单日跌 12%，创最差单日表现，市值蒸发 5000 亿美元。 Alphabet 三季度自由现金流为负 91 亿美元，连续第二个季度为负，全年资本开支预计最高 2050 亿美元；搜索广告增速降至 12%，为五个季度最低。 亚马逊过去 12 个月自由现金流为负 424 亿美元，去年同期为正 148 亿美元；Meta 三季度为负 21 亿美元，全年资本开支指引最高 1450 亿美元。 微软是唯一自由现金流为正的公司，为 186 亿美元，资本开支 452 亿美元，低于 500 亿美元预期，称延迟源于第三方供应而非主动收缩。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "算力豪赌遭现金流与债务拷问",
+      "point": "四大科技巨头今年资本开支超7400亿美元",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "date_md": "10-31"
+    }
+  ]
 }

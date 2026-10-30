@@ -1,30 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 22:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-30-2230-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "11月4日波士顿办会，一票可免费带一人"
-  ],
-  "items": [
-    {
-      "title_zh": "TechCrunch峰会推主题式配对社交",
-      "summary": "TechCrunch 宣布，2026 年 Founder Summit 将于 11 月 4 日在波士顿 SoWa Power Station 举办，现场社交环节由 Braindate 提供支持，参会者可预约一对一或小组会谈。 主办方称，这种方式让参会者围绕自己真正想讨论的议题约人，例如融资策略、招聘难题、产品市场契合和企业销售，而不必依赖现场偶遇。 日程分设 Build 与 Impact 两个舞台并配小型圆桌：Bessemer Venture Partners 的 Kent Bennett 谈产品市场契合，True Ventures 的 Dave Balter 与 Edisyl 讨论什么样的路演能换来下一次会面，Toast 联合创始人 Steve Fredette 分享规模化与应对市场变化。 门票目前最高可省 100 美元，并可免费携带一位同行者；通票包含分论坛、圆桌、Braindate 社交、展区与会后资料。 以上均为主办方推广信息，最终议程与嘉宾以其公布为准。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "会议社交从偶遇转向议题预约",
-      "point": "11月4日波士顿办会，一票可免费带一人",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
-      "date_md": "10-30"
-    }
-  ]
+  "headline": "AI日报 10-30 23:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

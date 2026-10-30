@@ -2415,6 +2415,29 @@
  ],
  "2026-10-30": [
   {
+   "title_zh": "英伟达开源H3视频增强，最高支持4K",
+   "summary": "英伟达与麻省理工学院研究人员组成的 Efficient-Large-Model 团队在 Hugging Face 发布了视频增强项目 Open-H3-Regenerate-2K 的模型权重，配套推理代码已在 NVlabs/Sana 仓库开放。 该方案基于 MiniMax H3，把低分辨率视频草稿重新生成为高分辨率画面，支持 2560×1440 的 2K 输出，最高可实现 3840×2160 的原生 4K 重生成。 需要说明的是，MiniMax 官方 H3-Regenerate-2K 模块仍仅通过 API 提供服务，此次开放的是高分辨率重生成环节可自行部署的实现。 训练阶段冻结 H3 Transformer 主干与视频 VAE 参数，只训练新增的细化 LoRA；推理时与 LightX2V FL2VA Turbo、LMS Sharp 等社区适配器合并，经三步去噪重生成细节，并借助潜空间放大器、SoL-Engine 稀疏注意力与快速 VAE 解码器提速。",
+   "signal": "开源细化模块补齐4K重生成环节",
+   "point": "单卡B200处理5秒视频从87.26秒降至22.45秒",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/506743.html",
+   "date": "2026-10-30T07:31:11.000Z",
+   "time": "15:31",
+   "date_md": "10-30"
+  },
+  {
    "title_zh": "1.3B国产模型登顶文档解析三榜",
    "summary": "国产开源文档解析模型OXR参数量仅1.3B，在OmniDocBench（97.18）、olmOCR-Bench（87.84）和DocParsingBench（87.76）三个榜单均列第一；官方称整套评测流程与代码已全量开源、可复现。 模型可一次处理表格、公式、代码块、化学方程式、印章等13类文档元素，输出结构化Markdown或LaTeX。 在单张RTX PRO 6000上，端到端解析100页文档耗时101秒。 训练上的关键是后训练阶段引入面向文档解析的递归自我改进（RSI）：由通用多模态模型把样本分为正确、错误、不确定三类，经归因聚类后生成新数据回流训练，以减少对人工标注的依赖。 架构上，独立轻量模型负责版面分析，主模型承担内容识别与阅读顺序判断。 文章称其在GitHub已获1.1K+ Star，官方提供免注册免费API并支持本地部署；上述效果主要来自团队自测与作者上手体验。",
    "signal": "垂直小模型用自进化替代人工标注",

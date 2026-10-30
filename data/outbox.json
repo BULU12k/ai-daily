@@ -1,29 +1,29 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 21:30 · 1条新知",
+  "headline": "AI日报 10-30 22:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-30-2130-p1.png",
+      "file": "docs/poster/2026-10-30-2200-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "11月4日波士顿举办，门票最高省100美元"
+    "日均约300万单，代理下单仅数百单"
   ],
   "items": [
     {
-      "title_zh": "创业峰会五天后开幕，设双舞台",
-      "summary": "TechCrunch 创始人峰会将于 11 月 4 日在波士顿 SoWa Power Station 举行，距文章发布仅剩五天。 主办方称现场设 Build 与 Impact 两个分舞台：前者覆盖分销策略、融资趋势、AI 领域新机会与路演技巧；后者聚焦产品市场契合、首轮融资后的扩张节奏、企业级合作关系，以及在硅谷之外打造公司的经验。 活动另设小规模圆桌，议题包括进入门槛较高的行业、在 A 轮前拿下大企业客户、减少 AI 幻觉、用 AI 帮助精简团队与规模更大的公司竞争等。 票务方面，文章称现在报名最高可省 100 美元，并可获赠第二张门票。 以上均为活动议程与主办方宣传内容，尚无嘉宾具体观点或会议成果披露。",
+      "title_zh": "DoorDash称AI代理下单仅数百单",
+      "summary": "DoorDash在第三季度财报电话会上披露，来自Muse、Instinct、Fo等第三方AI代理的订单目前累计只有“数百单”；作为对照，公司在2025年报告中标称日均完成约300万次配送。 CEO Tony Xu回应分析师提问时称，代理下单仍是一个“非常动态”的领域，既不该“对抗地心引力”，也不该自我误判，目前绝大多数用户仍通过DoorDash自家应用下单。 公司表示希望了解代理下单的使用场景，并与第三方代理开发商建立关系，还提到未来可能在这些代理内投放广告。 DoorDash也已自建相关能力：9月上线的文字下单代理、7月推出的CLI代理、6月上线的Ask DoorDash聊天机器人，以及面向企业订餐、允许其他聊天机器人调用下单的MCP。 行业层面，亚马逊一直在封堵此类个人代理，沃尔玛则对其开放，以从竞争对手处争取订单。 电话会未披露代理订单的品类构成与增长数据。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "创业大会把AI落地列为核心议题",
-      "point": "11月4日波士顿举办，门票最高省100美元",
+      "signal": "代理下单尚未成规模，仍是试水",
+      "point": "日均约300万单，代理下单仅数百单",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
+      "link": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
       "date_md": "10-30"
     }
   ]

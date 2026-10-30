@@ -1,30 +1,8 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 17:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-10-30-1700-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "单卡B200处理5秒视频从87.26秒降至22.45秒"
-  ],
-  "items": [
-    {
-      "title_zh": "英伟达开源H3视频增强，最高支持4K",
-      "summary": "英伟达与麻省理工学院研究人员组成的 Efficient-Large-Model 团队在 Hugging Face 发布了视频增强项目 Open-H3-Regenerate-2K 的模型权重，配套推理代码已在 NVlabs/Sana 仓库开放。 该方案基于 MiniMax H3，把低分辨率视频草稿重新生成为高分辨率画面，支持 2560×1440 的 2K 输出，最高可实现 3840×2160 的原生 4K 重生成。 需要说明的是，MiniMax 官方 H3-Regenerate-2K 模块仍仅通过 API 提供服务，此次开放的是高分辨率重生成环节可自行部署的实现。 训练阶段冻结 H3 Transformer 主干与视频 VAE 参数，只训练新增的细化 LoRA；推理时与 LightX2V FL2VA Turbo、LMS Sharp 等社区适配器合并，经三步去噪重生成细节，并借助潜空间放大器、SoL-Engine 稀疏注意力与快速 VAE 解码器提速。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "开源细化模块补齐4K重生成环节",
-      "point": "单卡B200处理5秒视频从87.26秒降至22.45秒",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506743.html",
-      "date_md": "10-30"
-    }
-  ]
+  "headline": "AI日报 10-30 17:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

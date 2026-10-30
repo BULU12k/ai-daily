@@ -1,29 +1,29 @@
 {
   "date": "2026-10-30",
   "pushed": false,
-  "headline": "AI日报 10-30 21:00 · 1条新知",
+  "headline": "AI日报 10-30 21:30 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-10-30-2100-p1.png",
+      "file": "docs/poster/2026-10-30-2130-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "目标2028年日产30兆瓦容量"
+    "11月4日波士顿举办，门票最高省100美元"
   ],
   "items": [
     {
-      "title_zh": "AI数据中心能否像汽车一样量产",
-      "summary": "Runware 正试图把模块化 AI 数据中心做成流水线产品。 这家公司此前推出工厂预制的 Sonic Inference Pod，如今计划在罗马尼亚的工厂按汽车生产线方式组装，目标到 2028 年实现日产 30 兆瓦数据中心容量，约合每月近 1 吉瓦；按此速度，其年产量接近美国今年预计新增的约 10 吉瓦数据中心电力。 公司称目前已有两座工厂，第二座预计明年初投运，并从明年起逐步提升产量。 其模块运抵现场后 48 小时内完成安装与调试（不含建造时间），单台建造周期将从三周缩短到一天；客户可自备 GPU 并按月支付设备与运维费用，电力与网络另行计费。 Runware 累计融资超过 6000 万美元，正用去年 12 月的 5000 万美元 A 轮完成新厂建设，并计划启动 B 轮；它称 Sonic 对外开放一个月已获得 10 亿美元意向，对应逾 20 兆瓦容量。 报道同时提示执行风险：规模化制造需要人员、库存与供应链支撑，电动车公司 Arrival 的经历是前车之鉴；其泵、风扇等部件来自德国，网络仍依赖英伟达。",
+      "title_zh": "创业峰会五天后开幕，设双舞台",
+      "summary": "TechCrunch 创始人峰会将于 11 月 4 日在波士顿 SoWa Power Station 举行，距文章发布仅剩五天。 主办方称现场设 Build 与 Impact 两个分舞台：前者覆盖分销策略、融资趋势、AI 领域新机会与路演技巧；后者聚焦产品市场契合、首轮融资后的扩张节奏、企业级合作关系，以及在硅谷之外打造公司的经验。 活动另设小规模圆桌，议题包括进入门槛较高的行业、在 A 轮前拿下大企业客户、减少 AI 幻觉、用 AI 帮助精简团队与规模更大的公司竞争等。 票务方面，文章称现在报名最高可省 100 美元，并可获赠第二张门票。 以上均为活动议程与主办方宣传内容，尚无嘉宾具体观点或会议成果披露。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "数据中心竞争转向工厂量产",
-      "point": "目标2028年日产30兆瓦容量",
+      "signal": "创业大会把AI落地列为核心议题",
+      "point": "11月4日波士顿举办，门票最高省100美元",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "link": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
       "date_md": "10-30"
     }
   ]

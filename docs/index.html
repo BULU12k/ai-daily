@@ -31,9 +31,15 @@ footer { margin-top: 40px; color: var(--sub); font-size: 13px; }
   <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
   <p class="src"><span class="tag">TechCrunch AI</span>00:12<a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/" target="_blank" rel="noopener">原文链接 ↗</a></p>
 </div>
+<div class="card">
+  <h2>DeepSeek公开Agent底层架构</h2>
+  <p>DeepSeek公开了《Super-agent：迈向更自主的Agent系统》一文，披露Personal Agent的底层架构思路，并附上GitHub原型链接。 按其描述，该架构设想让Agent在无人@或下指令时主动发现Bug、定位问题并提交修复PR，还能跨IM、GitHub等平台延续同一任务上下文。 系统分为Router与Worker两层：Router负责接收消息、分配任务和维护全局上下文，Worker负责并行执行，并可订阅PR评论等后续消息以减少转发。 为支持长期运行，DeepSeek设计了规则加模型的两级消息过滤、异步ReAct Loop、云端与本地分离的状态保存，以及独立Watchdog监控故障和无效循环；其中异步ReAct Loop已在DeepSeek Harness中实现但尚未默认开启。 初步实验在约300条消息、20项请求的环境下进行，Super-agent任务完成时间中位数12.4分钟、95分位15.7分钟，传统单Session方案在中性提示下95分位为29.5分钟；但取消事件直通后，Router决策次数增加约30%、缓存读取Token增加约37%。</p>
+  <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
+  <p class="src"><span class="tag">量子位</span>21:49<a href="https://www.qbitai.com/2026/10/506904.html" target="_blank" rel="noopener">原文链接 ↗</a></p>
+</div>
 <h2 style="font-size:20px;margin-top:36px">往期</h2>
 <ul class="dates">
-<li><a href="daily/2026-11-01.html">2026-11-01</a> · 1 条</li>
+<li><a href="daily/2026-11-01.html">2026-11-01</a> · 2 条</li>
 <li><a href="daily/2026-10-31.html">2026-10-31</a> · 0 条</li>
 <li><a href="daily/2026-10-30.html">2026-10-30</a> · 0 条</li>
 <li><a href="daily/2026-10-29.html">2026-10-29</a> · 0 条</li>

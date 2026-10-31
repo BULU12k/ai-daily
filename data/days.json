@@ -3438,6 +3438,35 @@
    "date": "2026-10-31T16:12:55.000Z",
    "time": "00:12",
    "date_md": "11-01"
+  },
+  {
+   "title_zh": "DeepSeek公开Agent底层架构",
+   "summary": "DeepSeek公开了《Super-agent：迈向更自主的Agent系统》一文，披露Personal Agent的底层架构思路，并附上GitHub原型链接。 按其描述，该架构设想让Agent在无人@或下指令时主动发现Bug、定位问题并提交修复PR，还能跨IM、GitHub等平台延续同一任务上下文。 系统分为Router与Worker两层：Router负责接收消息、分配任务和维护全局上下文，Worker负责并行执行，并可订阅PR评论等后续消息以减少转发。 为支持长期运行，DeepSeek设计了规则加模型的两级消息过滤、异步ReAct Loop、云端与本地分离的状态保存，以及独立Watchdog监控故障和无效循环；其中异步ReAct Loop已在DeepSeek Harness中实现但尚未默认开启。 初步实验在约300条消息、20项请求的环境下进行，Super-agent任务完成时间中位数12.4分钟、95分位15.7分钟，传统单Session方案在中性提示下95分位为29.5分钟；但取消事件直通后，Router决策次数增加约30%、缓存读取Token增加约37%。",
+   "signal": "智能体竞争转向长期自主运行",
+   "point": "Super-agent任务中位耗时12.4分钟",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P5",
+    "P6",
+    "P18",
+    "P20",
+    "P32",
+    "P34",
+    "P35",
+    "P37",
+    "P38",
+    "P44",
+    "P46",
+    "P48"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/10/506904.html",
+   "date": "2026-10-31T13:49:44.000Z",
+   "time": "21:49",
+   "date_md": "10-31"
   }
  ]
 }

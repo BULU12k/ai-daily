@@ -24,13 +24,19 @@ footer { margin-top: 40px; color: var(--sub); font-size: 13px; }
 </style><style id="poster-gallery-style">.poster-gallery{margin:24px 0}.poster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.poster-tile{margin:0;padding:12px;background:var(--card,#181b22);border:1px solid var(--line,#2a2f3a);border-radius:12px}.poster-tile img{display:block;width:100%;height:210px;object-fit:contain;background:#fff;border-radius:6px}.poster-tile [hidden]{display:none}.poster-tile figcaption{margin-top:10px;font-size:14px}.poster-tile a{display:block}.poster-empty{color:var(--sub,#9aa0a6)}</style></head>
 <body><div class="wrap">
 <header class="site"><h1>AI 前沿时讯日报</h1><p>每天高频班次的 AI 领域要闻速览：发生了什么，为什么重要。</p></header>
-<p class="meta">日报日期 2026-11-01（Asia/Shanghai）· 共 1 条 · 生成时间 00:15</p>
-<!-- POSTER-GALLERY:START --><section class="poster-gallery" aria-label="当天全部海报"><h2>当天海报 · 1 张</h2><section class="poster-batch"><h3>00:15 班次</h3><div class="poster-grid"><figure class="poster-tile"><a href="../poster-reader.html?file=2026-11-01-0015-p1.png"><img src="../poster/thumbs/2026-11-01-0015-p1-33adeaa54de1eb90d54672eacbd0ffdfc9a1f6f6432ffd96c9087285b98ade86.png" loading="lazy" decoding="async" alt="2026-11-01 00:15 第 1 页海报" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>缩略图加载失败，点此查看海报</span></a><figcaption>第 1 页 · <a href="../poster-reader.html?file=2026-11-01-0015-p1.png">放大阅读</a></figcaption></figure></div></section></section><!-- POSTER-GALLERY:END -->
+<p class="meta">日报日期 2026-11-01（Asia/Shanghai）· 共 2 条 · 生成时间 03:00</p>
+<!-- POSTER-GALLERY:START --><section class="poster-gallery" aria-label="当天全部海报"><h2>当天海报 · 2 张</h2><section class="poster-batch"><h3>00:15 班次</h3><div class="poster-grid"><figure class="poster-tile"><a href="../poster-reader.html?file=2026-11-01-0015-p1.png"><img src="../poster/thumbs/2026-11-01-0015-p1-33adeaa54de1eb90d54672eacbd0ffdfc9a1f6f6432ffd96c9087285b98ade86.png" loading="lazy" decoding="async" alt="2026-11-01 00:15 第 1 页海报" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>缩略图加载失败，点此查看海报</span></a><figcaption>第 1 页 · <a href="../poster-reader.html?file=2026-11-01-0015-p1.png">放大阅读</a></figcaption></figure></div></section><section class="poster-batch"><h3>03:00 班次</h3><div class="poster-grid"><figure class="poster-tile"><a href="../poster-reader.html?file=2026-11-01-0300-p1.png"><img src="../poster/thumbs/2026-11-01-0300-p1-c778ce3d7957f7f92449105713472154b3d8c6d0995b9abcc0a2c1d189b44f93.png" loading="lazy" decoding="async" alt="2026-11-01 03:00 第 1 页海报" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>缩略图加载失败，点此查看海报</span></a><figcaption>第 1 页 · <a href="../poster-reader.html?file=2026-11-01-0300-p1.png">放大阅读</a></figcaption></figure></div></section></section><!-- POSTER-GALLERY:END -->
 <div class="card">
   <h2>OpenAI据称下调融资目标</h2>
   <p>据多家媒体报道，OpenAI最新一轮融资未达预期。 此前有报道称其计划以1.4万亿美元估值融资300亿美元，后估值预期降至1.25万亿美元；《金融时报》称，公司现已把融资目标下调至200亿美元，且首次交割金额预计更低。 该轮融资将由阿联酋投资者牵头，后续面向富裕个人的零售发行可能把总额补足到200亿美元。 《华尔街日报》补充称，目前已锁定110亿美元，部分大型投资者反应“冷淡”。 报道将融资遇冷部分归因于时机不佳：华尔街对AI基础设施重投入的疑虑升温，科技股出现明显抛售。</p>
   <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
   <p class="src"><span class="tag">TechCrunch AI</span>00:12<a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/" target="_blank" rel="noopener">原文链接 ↗</a></p>
+</div>
+<div class="card">
+  <h2>DeepSeek公开Agent底层架构</h2>
+  <p>DeepSeek公开了《Super-agent：迈向更自主的Agent系统》一文，披露Personal Agent的底层架构思路，并附上GitHub原型链接。 按其描述，该架构设想让Agent在无人@或下指令时主动发现Bug、定位问题并提交修复PR，还能跨IM、GitHub等平台延续同一任务上下文。 系统分为Router与Worker两层：Router负责接收消息、分配任务和维护全局上下文，Worker负责并行执行，并可订阅PR评论等后续消息以减少转发。 为支持长期运行，DeepSeek设计了规则加模型的两级消息过滤、异步ReAct Loop、云端与本地分离的状态保存，以及独立Watchdog监控故障和无效循环；其中异步ReAct Loop已在DeepSeek Harness中实现但尚未默认开启。 初步实验在约300条消息、20项请求的环境下进行，Super-agent任务完成时间中位数12.4分钟、95分位15.7分钟，传统单Session方案在中性提示下95分位为29.5分钟；但取消事件直通后，Router决策次数增加约30%、缓存读取Token增加约37%。</p>
+  <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
+  <p class="src"><span class="tag">量子位</span>21:49<a href="https://www.qbitai.com/2026/10/506904.html" target="_blank" rel="noopener">原文链接 ↗</a></p>
 </div>
 <footer><a href="../index.html">← 返回往期</a> ｜ 手机推送：订阅 ntfy 主题 <code>ai-daily-f02c73ab</code></footer>
 </div></body></html>

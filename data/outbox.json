@@ -1,62 +1,8 @@
 {
   "date": "2026-10-31",
   "pushed": false,
-  "headline": "AI日报 10-31 17:00 · 3条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 2,
-      "file": "docs/poster/2026-10-31-1700-p1.png",
-      "count": 2
-    },
-    {
-      "index": 2,
-      "total": 2,
-      "file": "docs/poster/2026-10-31-1700-p2.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "都已经装上12GB的内存颗粒了，干吗还要限制在8GB？",
-    "700TOPS，NPU利用率98.7%，带宽降80%",
-    "Ultra取消5小时限制，周额度仍为Pro的10倍"
-  ],
-  "items": [
-    {
-      "title_zh": "你的8G iPad里有12G内存！库克走了但他的刀法追着我砍",
-      "summary": "都已经装上12GB的内存颗粒了，干吗还要限制在8GB？ 目前拆机照片和颗粒编号能够支持的，是部分M4 iPad Pro使用的内存封装标称容量合计12GB。 至于额外的4GB能否正常启用、苹果是否主动进行了软件限制，以及背后究竟有什么商业考量，尚无确凿证据。 更巧的是，当年根据拆机图片推算，这款机器的内存颗粒标称容量合计12GB，恰好比系统实际可用的容量多出4GB。 8GB版本依然支持大量Apple Intelligence功能，受影响的主要是前面提到的“更高级的”部分特定能力。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "都已经装上12GB的内存颗粒了，干吗还要限制在8GB？",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506884.html",
-      "date_md": "10-31"
-    },
-    {
-      "title_zh": "新芯航途发布700TOPS智驾芯片",
-      "summary": "成立两年多的芯片公司新芯航途首次正式对外亮相，发布车规芯片X7 Ultra，算力700 TOPS。 官方称其量化模型输出与FP32基准模型相似度超过99.99%，NPU计算利用率达98.7%，对比行业旗舰产品内存带宽消耗降低80%、能效提升100%。 芯片采用超大核NPU架构与面向LayerNorm、Softmax等高频算子的专用引擎，集成每秒可处理2000万点的激光雷达加速器，摄像头链路处理稳定性提升100%，SoC达ASIL-B、内置MCU达ASIL-D。 公司强调这是行业首次用真实量产智驾大模型而非实验室基准来评测芯片，测试所用为Momenta的R7世界模型。 新芯航途与Momenta没有直接股权关系，仅创始团队成员间接持股；首款产品X7已在上汽大众新车上量产。 以上指标均为公司口径，尚无第三方验证。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "芯片评测转向真实量产大模型",
-      "point": "700TOPS，NPU利用率98.7%，带宽降80%",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506866.html",
-      "date_md": "10-31"
-    },
-    {
-      "title_zh": "Claude最高档取消5小时使用限制",
-      "summary": "Anthropic宣布调整Claude订阅计划：原Max 5x和Max 20x分别更名为Max和Ultra，月费维持100美元和200美元不变。 200美元的Ultra档取消5小时使用窗口限制，已通过验证的现有用户可在每周额度内连续使用；每周额度仍为Pro用户的10倍，并未提高。 新账号需先通过账号验证，系统依据账号与支付历史自动完成，用户可在设置中的用量页面确认5小时进度条是否消失。 Claude订阅产品负责人Mike Overell解释，原“20倍”指单个5小时窗口内为Pro的20倍，后来新增的每周额度只有10倍，命名容易引起误解，并为此前的沟通问题道歉。 今年6月《华尔街日报》曾报道有消费者起诉Anthropic，指其高价订阅的额度宣传具有误导性。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "限时额度战转向按周总量竞争",
-      "point": "Ultra取消5小时限制，周额度仍为Pro的10倍",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/10/506855.html",
-      "date_md": "10-31"
-    }
-  ]
+  "headline": "AI日报 10-31 17:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

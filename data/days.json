@@ -2952,6 +2952,30 @@
  ],
  "2026-10-31": [
   {
+   "title_zh": "英伟达拟担保Nscale数据中心债务",
+   "summary": "据The Information报道，彭博社随后跟进报道：英伟达正洽谈为Nscale位于弗吉尼亚州、拟供Anthropic使用的数据中心提供数十亿美元债务融资担保。 该安排属于余值担保：若Nscale拖欠建设款，英伟达将临时接管设施，并协助寻找买家和新租户。 据Nscale的IPO文件，Anthropic已为项目首栋建筑签署446亿美元合同，首栋规模460兆瓦，预计采用英伟达下一代Vera Rubin芯片；双方还在讨论约450亿美元的第二栋交易。 Nscale正寻求以最高350亿美元估值上市，但截至8月仅运行约2.5万枚先进AI芯片，计划部署近50万枚。 英伟达此前对云厂商的支持多覆盖租赁和芯片采购，而非建设；其已向新云厂商和大客户提供约1700亿美元投资与信贷支持，包括9月对Nscale的10亿美元可转换融资。 目前交易仍在洽谈，尚未最终确定。",
+   "signal": "数据中心融资风险转向芯片商",
+   "point": "英伟达拟为Nscale数据中心担保数十亿美元债务",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P8"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+   "date": "2026-10-31T01:20:05.000Z",
+   "time": "09:20",
+   "date_md": "10-31"
+  },
+  {
    "title_zh": "隐私AI助手Ollie将停运",
    "summary": "主打隐私保护的AI助手Ollie宣布将于11月6日停止服务。 联合创始人兼CEO比尔·列侬在X上表示，公司曾以小型团队做出个人助手，但最终未能跟上行业节奏。 Ollie今年9月曾向TechCrunch介绍由Khosla Ventures领投的750万美元种子轮，产品采用订阅制，连接用户邮箱和日历，并提供预约、备餐和账单支付等功能。 Ollie也是较早获得SOC 2隐私合规标准的应用之一。 列侬称，随着Muse、Instinct等进入市场，Ollie更难脱颖而出、增长并筹集所需资金；用户将陆续收到数据导出和退款指引。",
    "signal": "隐私卖点难抵竞争与融资压力",

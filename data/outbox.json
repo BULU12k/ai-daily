@@ -1,8 +1,30 @@
 {
   "date": "2026-11-01",
   "pushed": false,
-  "headline": "AI日报 11-01 05:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-01 05:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-01-0530-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "法官驳回xAI撤诉，涉35台燃气轮机"
+  ],
+  "items": [
+    {
+      "title_zh": "xAI数据中心污染诉讼获准推进",
+      "summary": "美国联邦法官驳回了xAI要求撤销全国有色人种协进会（NAACP）诉讼的动议。 该诉讼由南方环境法律中心代表NAACP提起，指控xAI在孟菲斯郊外的Colossus数据中心安装并运行至少35台燃气轮机及其他空气污染源，却始终未取得所需的施工前或运营空气许可，违反《清洁空气法》。 xAI主张这些涡轮机属于移动设备、可免于许可要求，并称原告不具备起诉资格。 法官Debra M. Brown在裁决中认定，原告依《清洁空气法》享有法定起诉资格，涉案燃气轮机在密西西比州实施计划下不属于“移动源”，公民诉讼条款也不违反宪法第二条或私人再授权原则。 NAACP环境与气候正义负责人Abre' Connor称这是追责行动中的又一次胜利；本月早些时候，司法部提出的类似撤诉动议同样被驳回。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "数据中心环保合规压力上升",
+      "point": "法官驳回xAI撤诉，涉35台燃气轮机",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "date_md": "11-01"
+    }
+  ]
 }

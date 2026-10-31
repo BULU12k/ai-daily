@@ -1,8 +1,30 @@
 {
   "date": "2026-11-01",
   "pushed": false,
-  "headline": "AI日报 11-01 00:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-01 00:15 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-01-0015-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "OpenAI融资目标由300亿降至200亿美元"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI据称下调融资目标",
+      "summary": "据多家媒体报道，OpenAI最新一轮融资未达预期。 此前有报道称其计划以1.4万亿美元估值融资300亿美元，后估值预期降至1.25万亿美元；《金融时报》称，公司现已把融资目标下调至200亿美元，且首次交割金额预计更低。 该轮融资将由阿联酋投资者牵头，后续面向富裕个人的零售发行可能把总额补足到200亿美元。 《华尔街日报》补充称，目前已锁定110亿美元，部分大型投资者反应“冷淡”。 报道将融资遇冷部分归因于时机不佳：华尔街对AI基础设施重投入的疑虑升温，科技股出现明显抛售。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI巨额融资遇冷，估值承压",
+      "point": "OpenAI融资目标由300亿降至200亿美元",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+      "date_md": "11-01"
+    }
+  ]
 }

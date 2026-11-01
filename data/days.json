@@ -3668,5 +3668,32 @@
    "date_md": "10-31"
   }
  ],
- "2026-11-02": []
+ "2026-11-02": [
+  {
+   "title_zh": "AI高管言论被指脱离普通人",
+   "summary": "TechCrunch的Equity播客讨论了科技公司CEO近期关于AI的言论为何常被批脱离普通人。 例子包括Dazzle AI CEO Marissa Mayer用AI帮写女儿学校作业描述、OpenAI CEO Sam Altman建议家长为孩子通勤制作个性化播客并称难以想象没有ChatGPT的育儿，以及Meta CEO扎克伯格称通过AI满足社交和恋爱需求会越来越可接受。 嘉宾Amanda Silberling认为这既是营销问题也是产品问题：高管常把订机票、订餐厅当作痛点，却未必是普通人的核心需求；行业还推动用AI优化人际互动，如AI礼宾让双方的AI先约会。 她承认约会效率低，但把择偶决定外包给电脑并不人性，也未必说明AI更了解你。 节目还提到部分人重新用翻盖手机、买CD，反映对算法主导的反感。",
+   "signal": "AI高管叙事与用户脱节",
+   "point": "多位CEO称AI可代劳育儿与社交，遭质疑",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_excerpts",
+   "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P12",
+    "P13",
+    "P16",
+    "P17",
+    "P18",
+    "P19",
+    "P24"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+   "date": "2026-11-01T20:57:58.000Z",
+   "time": "04:57",
+   "date_md": "11-02"
+  }
+ ]
 }

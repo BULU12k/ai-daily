@@ -3670,6 +3670,28 @@
  ],
  "2026-11-02": [
   {
+   "title_zh": "OpenAI拟把数据中心改名算力园区",
+   "summary": "据Axios报道，OpenAI正筹备在美国周二中期选举之后展开一轮公关攻势。 公司首席全球事务官Chris Lehane称，中期选举只是“预告片”，他预计AI将成为2028年总统大选的核心议题。 为此OpenAI提出多项主张：为AI设置“限速”、让公众感受到AI在日常生活中的赋能、推动美国参与制定全球标准，以及把数据中心重新包装为“AI算力园区”。 Lehane把围绕数据中心的争论形容为“良好且健康”，认为社区应要求企业担责，并真正从项目中获得变革性收益；报道提到，亚马逊和微软此前已表示，将在与地方政府的谈判中不再使用保密协议。 上述内容均来自Axios的转述，OpenAI尚未公布具体执行时间表。",
+   "signal": "算力扩张遇阻，公关话术先行",
+   "point": "OpenAI拟将数据中心改称“AI算力园区”",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+   "date": "2026-11-01T21:55:23.000Z",
+   "time": "05:55",
+   "date_md": "11-02"
+  },
+  {
    "title_zh": "AI高管言论被指脱离普通人",
    "summary": "TechCrunch的Equity播客讨论了科技公司CEO近期关于AI的言论为何常被批脱离普通人。 例子包括Dazzle AI CEO Marissa Mayer用AI帮写女儿学校作业描述、OpenAI CEO Sam Altman建议家长为孩子通勤制作个性化播客并称难以想象没有ChatGPT的育儿，以及Meta CEO扎克伯格称通过AI满足社交和恋爱需求会越来越可接受。 嘉宾Amanda Silberling认为这既是营销问题也是产品问题：高管常把订机票、订餐厅当作痛点，却未必是普通人的核心需求；行业还推动用AI优化人际互动，如AI礼宾让双方的AI先约会。 她承认约会效率低，但把择偶决定外包给电脑并不人性，也未必说明AI更了解你。 节目还提到部分人重新用翻盖手机、买CD，反映对算法主导的反感。",
    "signal": "AI高管叙事与用户脱节",

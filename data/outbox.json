@@ -1,30 +1,8 @@
 {
   "date": "2026-11-01",
   "pushed": false,
-  "headline": "AI日报 11-01 21:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-01-2130-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Anthropic改提示词，禁止Claude复刻游戏"
-  ],
-  "items": [
-    {
-      "title_zh": "Claude禁止游戏复刻引发争议",
-      "summary": "Anthropic技术人员确认，已在Opus 5.5模型的系统提示词中加入两句话，引导Claude不要“重新创建一个属于别人的特定游戏”；Claude Code随后出现明确规则：可以创建原创游戏、特定类型游戏以及使用用户自有设计和素材制作的游戏，但不得复刻已存在的特定游戏，即使改名或称其为原创也不行。 这一限制的背景是9月22日发布的Opus 5.5在代码能力上大幅提升：逆向工程与反编译门槛明显降低，出现了在浏览器中运行《GTA 5》，以及越狱PS5运行《光环2》《塞尔达》等案例。 独立工作室Alliance Arts因此取消了新游戏《醉酒女神反流》的公开试玩，担心试玩内容被喂给AI后，克隆版本抢在正式版前上线。 有用户称，用免费的Claude Opus 4.6仅凭一句提示词，不到两小时就做出了功能完整的宝可梦克隆游戏。 批评者认为，该禁令只能约束Claude自身，把任务拆解成看不出上下文的具体技术需求后仍可绕过；同时Claude Code的GitHub issue页面出现大量原创开发者的投诉，称项目写到一半被判定为“疑似复刻现有游戏”而中止。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "提示词禁令难堵游戏克隆潮",
-      "point": "Anthropic改提示词，禁止Claude复刻游戏",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/11/507038.html",
-      "date_md": "11-01"
-    }
-  ]
+  "headline": "AI日报 11-01 22:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

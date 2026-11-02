@@ -1,29 +1,29 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 06:00 · 1条新知",
+  "headline": "AI日报 11-03 06:30 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-03-0600-p1.png",
+      "file": "docs/poster/2026-11-03-0630-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "Squarespace 是一家帮助客户建立和托管自己网站的网…"
+    "Anthropic：尚无模型达RSI门槛，但称即将"
   ],
   "items": [
     {
-      "title_zh": "网络主机 Squarespace 解雇了 19% 的员工",
-      "summary": "Squarespace 是一家帮助客户建立和托管自己网站的网络公司，该公司将裁员约五分之一，此举将影响数百个工作岗位。 Squarespace 的公关专家 Jeff Seedman 向 TechCrunch 证实了此次裁员。 “Squarespace is restructuring its organization and reducing its global workforce by approximately 19%, representing around 300 employees,” said Seedman.去年，网络主机竞争对手 Wix 以 8000 万美元收购了 Base44。 类似的产品，如 Lovable，已经引起了投资者的极大兴趣； Lovable 在 8 月份筹集了 4 亿美元的 C 轮融资，该公司估值达到 133 亿美元。",
+      "title_zh": "Anthropic称接近递归自我改进",
+      "summary": "Anthropic在修订后的S-1A文件中，除披露收入大幅增长、支出同步上升的财务数据外，还在风险因素部分发出警告：公司可能即将满足其《负责任扩展政策》(RSP)对“可归因于AI的显著加速进展”的定义，也就是通常所说的递归自我改进(RSI)。 文件称，公司已用AI辅助研发并开发出新模型，且曾在事后才意识到模型能力出现跃升；触发该判断的依据是内部估算与对未来模型的预期，而非现有模型。 Anthropic同时强调，目前没有任何模型跨过这一门槛，并承诺在可预见的未来保持人类对前沿模型研发的监督，正考虑据此更新RSP。 文章指出，S-1兼具披露与营销功能，此类表述也可能带有宣传成分；但Claude今年在编程、数学和网络安全方面的能力确有大幅提升。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "Squarespace 是一家帮助客户建立和托管自己网站的网…",
+      "degraded": false,
+      "signal": "前沿实验室把自我改进列入风险披露",
+      "point": "Anthropic：尚无模型达RSI门槛，但称即将",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+      "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
       "date_md": "11-03"
     }
   ]

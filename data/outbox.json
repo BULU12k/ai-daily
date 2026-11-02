@@ -1,8 +1,43 @@
 {
   "date": "2026-11-02",
   "pushed": false,
-  "headline": "AI日报 11-02 21:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-02 22:01 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-02-2201-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "ChatGPT聊天与工作标签将合并，额度共用",
+    "商汤SenseNova 6.8 Flash限时免费"
+  ],
+  "items": [
+    {
+      "title_zh": "ChatGPT将合并聊天与工作标签",
+      "summary": "OpenAI 正计划将 ChatGPT 体验中的 Chat 和 Work 标签页合并，已通过邮件告知用户。 合并初期将先向部分用户开放以收集反馈，之后再广泛推出。 合并后，用户可在同一处带着文件和插件让 ChatGPT 建网站、制作演示文稿或在网页上执行任务，同时审阅并指导其工作；Codex 在桌面端仍保持独立体验。 此外，ChatGPT 与 Codex 将共用同一 token 额度池，OpenAI 称多数用户不受影响，但部分用户可能需更频繁等待额度重置。 竞品 Anthropic 已在 9 月将 Claude 的聊天与 Cowork 功能合并到同一界面。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "聊天与工作入口合并，额度共池",
+      "point": "ChatGPT聊天与工作标签将合并，额度共用",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+      "date_md": "11-02"
+    },
+    {
+      "title_zh": "商汤发布多模态智能体日日新6.8",
+      "summary": "商汤科技发布多模态智能体模型日日新 SenseNova 6.8 Flash，主打“委派智能”——用户只给目标，AI 自行走完全流程，人只负责验收，目前限时免费。 官方评测显示，该模型在办公自动化、多步骤协作、数据分析基准 TeamBench 和 DataAnalysis2.0 上排名第一，在 AutomationBench、WorkbuddyBench、RaccoonPPTBench v2 和 BrowseComp 上排名第二；长期记忆方面，BEAM 128K 上与 GPT 6 Luna 并列第一，LongMemEval-S 与 PersonaMem-v2 上仅次于 Claude 5.5 Haiku。 实测中，它在小浣熊客户端完成了 3D 动态网页、12 秒可循环海报、22 秒 SVG 动画和动态 PPT 生成。 智能办公场景下，它凭借长期记忆主动提醒用户一个月前的培训材料仍在引用已被更正的数据（58% 改为 48%），并生成修订稿与清单，是否采纳由用户决定。 评测成绩来自商汤官方，实际表现仍受任务复杂度与使用环境影响。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "委派智能体主打全流程交付",
+      "point": "商汤SenseNova 6.8 Flash限时免费",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/507277.html",
+      "date_md": "11-02"
+    }
+  ]
 }

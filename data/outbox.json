@@ -1,8 +1,43 @@
 {
   "date": "2026-11-02",
   "pushed": false,
-  "headline": "AI日报 11-02 23:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-02 23:30 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-02-2330-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "OpenAI推电网保护计划，细节未披露",
+    "据水基金会称，美国数据中心每年使用 17 至 190…"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI推出电网保护计划",
+      "summary": "OpenAI 宣布启动 Grid Protectors Program（电网保护计划），称将与电力公用事业公司合作，帮助未来的算力园区在接入大负荷用电时支撑电网可靠性，并保护居民电费不被推高。 目前可获取的信息仅来自订阅简介，原文页面无法访问，因此计划覆盖范围、合作方名单、启动时间与具体运作机制均未披露。 该计划把 OpenAI 的算力扩张与电网侧责任放在同一表述中，但能否落地、以何种方式分担电网成本，尚待细节公布后才能判断。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "算力扩张开始绑定电网责任",
+      "point": "OpenAI推电网保护计划，细节未披露",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/grid-protectors-program",
+      "date_md": "11-02"
+    },
+    {
+      "title_zh": "Omen AI 以 1600 万美元收购 Aquatic Labs，增加液体专业知识",
+      "summary": "据水基金会称，美国数据中心每年使用 17 至 190 亿加仑的水来冷却热运行的芯片，预计未来五年这一数字将增加两倍。 对于投入数十亿美元来应对扩大人工智能规模挑战的投资者来说，这是一个昂贵且政治上棘手的提议。 Omen AI 于 2024 年成立，就是为了解决这个问题。 继 6 月份筹集了 3100 万美元的 A 轮融资后，Omen 目前正以 1600 万美元的现金加股票交易收购竞争对手 Aquatic Labs。 Adams 希望看到他们的技术在数据中心之外也产生影响，他告诉 TechCrunch，“水进入数据中心，然后流出并倒入市政水中，你希望整个过程以尽可能安全和负责任的方式发生 - 这意味着你必须测量东西。 ”\n人工智能公司曾估计，到 2030 年，人工智能基础设施的支出将高达 4 万亿美元，但一些投资者对这一扩建持怀疑态度，导致超大规模企业股票最近几天暴跌。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "据水基金会称，美国数据中心每年使用 17 至 190…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+      "date_md": "11-02"
+    }
+  ]
 }

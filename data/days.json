@@ -3944,6 +3944,28 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "纽约时报起诉Brave抓取并转售内容",
+   "summary": "《纽约时报》周一在曼哈顿联邦法院起诉隐私浏览器公司Brave，指控其抓取该报受版权保护的内容，并把这些内容分发给诉讼中点名的Anthropic、Perplexity、Mistral、xAI和Cohere等AI公司。 同一天，《每日新闻》《芝加哥论坛报》和《奥兰多哨兵报》也就类似指控提起诉讼。 诉状称，Brave用身份不明的爬虫建立了超过300亿个网页的索引，使出版商无法屏蔽；起诉书还将其比作“窃取内容的窃贼”和向第三方出售内容的“AI销赃者”。 诉讼同时针对Brave绕过付费墙的浏览器功能，以及屏蔽出版商广告却销售自家广告的做法。 据私募市场追踪机构数据，成立于2015年的Brave迄今融资约2.5亿美元；《纽约时报》寻求禁令与损害赔偿，Brave暂未回应置评请求。 该报此前已就类似指控起诉OpenAI和Perplexity。",
+   "signal": "版权诉讼转向抓取中间商",
+   "point": "纽约时报诉Brave，涉300亿网页索引",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+   "date": "2026-11-02T19:19:17.000Z",
+   "time": "03:19",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "42AI行为预测模型融资6250万美元",
    "summary": "以色列初创公司42AI结束隐身状态，称已累计获得6250万美元种子资金，用于开发可预测个人决策的“行为世界模型”。 该模型不依靠历史行为外推，而是把客服通话情绪、KYC、转账和交易等交互转成数学特征，输入基于Transformer的世界模型，输出不同情境下的决策概率，再由另一个语言模型生成解释。 公司称训练数据包括数千人的心理测评、逾200万人的政府与生物样本库数据，客户数据已覆盖近3000万人；目前约10家大型券商用它管理流动性、保证金与套保敞口，收入在“七位数”美元级别。 42AI宣称交易预测准确率98%，但CEO澄清这一数字衡量的是交易流是否落在预测区间；交易方向与成交量的F1分数为0.8至0.85。 局限在于模型拿不到一个人的全部经历，缺失情境（如听朋友建议改变交易）会拉低准确率，进入新领域还需按该领域规则重新训练。 资金来自创始人与Infinity Group，后者由CEO之父创办并任董事长，并非全部来自外部投资人。",
    "signal": "行为建模被券商用于风控与套保",
@@ -4002,6 +4024,22 @@
    "link": "https://openai.com/index/lifeval",
    "date": "2026-11-02T09:00:00.000Z",
    "time": "17:00",
+   "date_md": "11-02"
+  },
+  {
+   "title_zh": "Qodo为Codex代码审查补上下文",
+   "summary": "据OpenAI博客的订阅简介，代码审查工具Qodo把公司内部知识与编码规范接入Codex，帮助开发者在提交拉取请求（pull request）之前，跨多个代码仓库发现P0级问题。 简介称其目标是把企业自有上下文带入AI代码审查环节，让高优先级缺陷在合并前暴露。 由于原文链接返回HTTP 403、正文不可读，接入方式、支持的仓库范围、缺陷检出准确率与可用时间等细节均无法核实，以上内容仅为订阅简介所述，未读到全文。",
+   "signal": "AI代码审查向企业上下文延伸",
+   "point": "Qodo把企业规范接入Codex，抓P0缺陷",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/qodo-codex-plugin",
+   "date": "2026-11-02T00:00:00.000Z",
+   "time": "08:00",
    "date_md": "11-02"
   }
  ]

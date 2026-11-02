@@ -1,8 +1,30 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 05:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-03 06:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-03-0600-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Squarespace 是一家帮助客户建立和托管自己网站的网…"
+  ],
+  "items": [
+    {
+      "title_zh": "网络主机 Squarespace 解雇了 19% 的员工",
+      "summary": "Squarespace 是一家帮助客户建立和托管自己网站的网络公司，该公司将裁员约五分之一，此举将影响数百个工作岗位。 Squarespace 的公关专家 Jeff Seedman 向 TechCrunch 证实了此次裁员。 “Squarespace is restructuring its organization and reducing its global workforce by approximately 19%, representing around 300 employees,” said Seedman.去年，网络主机竞争对手 Wix 以 8000 万美元收购了 Base44。 类似的产品，如 Lovable，已经引起了投资者的极大兴趣； Lovable 在 8 月份筹集了 4 亿美元的 C 轮融资，该公司估值达到 133 亿美元。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "Squarespace 是一家帮助客户建立和托管自己网站的网…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+      "date_md": "11-03"
+    }
+  ]
 }

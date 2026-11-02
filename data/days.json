@@ -3944,6 +3944,22 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "网络主机 Squarespace 解雇了 19% 的员工",
+   "summary": "Squarespace 是一家帮助客户建立和托管自己网站的网络公司，该公司将裁员约五分之一，此举将影响数百个工作岗位。 Squarespace 的公关专家 Jeff Seedman 向 TechCrunch 证实了此次裁员。 “Squarespace is restructuring its organization and reducing its global workforce by approximately 19%, representing around 300 employees,” said Seedman.去年，网络主机竞争对手 Wix 以 8000 万美元收购了 Base44。 类似的产品，如 Lovable，已经引起了投资者的极大兴趣； Lovable 在 8 月份筹集了 4 亿美元的 C 轮融资，该公司估值达到 133 亿美元。",
+   "signal": "—",
+   "point": "Squarespace 是一家帮助客户建立和托管自己网站的网…",
+   "by_llm": false,
+   "degraded": true,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+   "date": "2026-11-02T19:25:59.000Z",
+   "time": "03:25",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "纽约时报起诉Brave抓取并转售内容",
    "summary": "《纽约时报》周一在曼哈顿联邦法院起诉隐私浏览器公司Brave，指控其抓取该报受版权保护的内容，并把这些内容分发给诉讼中点名的Anthropic、Perplexity、Mistral、xAI和Cohere等AI公司。 同一天，《每日新闻》《芝加哥论坛报》和《奥兰多哨兵报》也就类似指控提起诉讼。 诉状称，Brave用身份不明的爬虫建立了超过300亿个网页的索引，使出版商无法屏蔽；起诉书还将其比作“窃取内容的窃贼”和向第三方出售内容的“AI销赃者”。 诉讼同时针对Brave绕过付费墙的浏览器功能，以及屏蔽出版商广告却销售自家广告的做法。 据私募市场追踪机构数据，成立于2015年的Brave迄今融资约2.5亿美元；《纽约时报》寻求禁令与损害赔偿，Brave暂未回应置评请求。 该报此前已就类似指控起诉OpenAI和Perplexity。",
    "signal": "版权诉讼转向抓取中间商",

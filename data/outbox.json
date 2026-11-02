@@ -1,8 +1,30 @@
 {
   "date": "2026-11-02",
   "pushed": false,
-  "headline": "AI日报 11-02 13:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-02 13:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-02-1330-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "GPT-6.2灰度仅限500美元Pro套餐"
+  ],
+  "items": [
+    {
+      "title_zh": "GPT-6.2与Claude新模型同日曝光",
+      "summary": "11月初，OpenAI的GPT-6.2-Astra与Anthropic的Claude Mythos 5.5在同一天传出消息。 据量子位报道，部分用户的模型列表中出现GPT-6.2-Astra，且确实可以调用：有用户约20%的Astra请求被路由到6.2，另一位用户100%的请求都发到了6.2；灰度资格基本限于每月500美元的Pro套餐。 Claude方面，Mythos 5.5短暂出现在官网前端代码中，数小时后被移除，据称该版本面向生物学研究和网络安全场景。 此外，HuggingFace上出现一个声称是Mythos泄露权重的仓库，报道判断其为真的可能性不高，但已有5000多人下载。 上述灰度范围与版本定位均来自零星用户观察和前端代码，并非官方发布。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "两家新模型同期试水，竞争节奏加快",
+      "point": "GPT-6.2灰度仅限500美元Pro套餐",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/507082.html",
+      "date_md": "11-02"
+    }
+  ]
 }

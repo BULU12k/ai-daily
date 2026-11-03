@@ -3944,6 +3944,31 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "海马云押注AI生产力系统",
+   "summary": "文章以海马云旗下RunningHub为例，称AI应用竞争正从模型参数转向由算力、工具链与数据构成的“生产力系统”。 据SimilarWeb数据，RunningHub今年3月至9月全站访问量增长266%；海马云CTO今年7月称平台月Token消耗达9万亿。 海马云称其以69个计算节点、6 EFLOPS算力池做异构GPU池化与“渲推一体”调度，整体算力利用率比行业常见水平高70%。 其RH系列后训练模型覆盖4K超分、视频生成提速与多镜头一致性，并称H3 Lightning把5秒视频生成从6分钟降至28.7秒；MiniMax正通过RunningHub采购H3 RH Enhanced。 平台还称约60%模型调用由智能路由完成，原文为节选，上述效果与运营数据多来自公司介绍，仍需独立验证。",
+   "signal": "模型趋同，生产力系统成壁垒",
+   "point": "月Token消耗9万亿，访问量增266%",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_excerpts",
+   "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+   "evidence_paragraphs": [
+    "P9",
+    "P17",
+    "P18",
+    "P30",
+    "P31",
+    "P32",
+    "P34",
+    "P53"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/507448.html",
+   "date": "2026-11-03T11:13:49.000Z",
+   "time": "19:13",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "Heimstaden 正在利用人工智能改变住宅房地产管理",
    "summary": "了解 Heimstaden 如何使用 OpenAI 的 ChatGPT Enterprise 和 Codex 来转变整个欧洲的物业管理、削减成本并赋予员工权力。",
    "signal": "—",

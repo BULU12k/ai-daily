@@ -4622,5 +4622,46 @@
    "time": "08:00",
    "date_md": "11-02"
   }
+ ],
+ "2026-11-04": [
+  {
+   "title_zh": "同一模型下CUGA等框架如何选用",
+   "summary": "该条目来自 Hugging Face 博客的订阅列表，可见标题为《Same Model, Different Harness: CUGA, Hermes, and Deep Agents — When to Pick CUGA? 》。 由于缺少可信的单篇文章元数据，原文正文与简介均未能获取，目前只有标题可供参考。 仅从标题推测，文章可能讨论在同一底层模型之上，CUGA、Hermes 与 Deep Agents 三种框架或运行环境的差异，以及选择 CUGA 的适用场景；但具体对比维度、测试数据和结论均无法核实。 本条目因此不作进一步推断。",
+   "signal": "原文缺失，内容无法核实",
+   "point": "仅有标题，正文缺失无法核实",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/ibm-research/cuga-harness",
+   "date": "2026-11-03T15:57:39.000Z",
+   "time": "23:57",
+   "date_md": "11-03"
+  },
+  {
+   "title_zh": "苹果新规：约会与AI伴侣应用限18+",
+   "summary": "苹果在周一向开发者发布的公告中表示，将调整 App Store 政策，要求所有提供约会或恋爱关系功能的应用标注 18+ 年龄分级，以限制未成年人使用此类应用，以及涉及“性内容或浪漫内容”的 AI 伴侣。 自 11 月 16 日起，开发者须填写新的内容描述项，使应用的年龄分级反映其实际功能。 苹果称，此举延续其此前保护未成年人的措施，包括在全球推出年龄验证技术、增加家长控制与儿童安全功能。 新规可能对 Character.AI、Replika 等主打 AI 伴侣（朋友、恋人、幻想角色）的应用影响更大，这类产品用户偏年轻；xAI 去年也推出可解锁 NSFW 内容的 3D 动画 AI 伴侣。 据文章引用数据，截至去年夏天，App Store 与 Google Play 上头部 AI 伴侣应用全球下载量已达 2.2 亿次。 此外，应用若向他人或群组共享用户真实位置，也须在分级中标注；在巴西，提供家庭位置共享的应用可向司法与公共安全部申请官方评级。",
+   "signal": "AI伴侣应用被纳入成人分级监管",
+   "point": "苹果：约会与AI伴侣应用须标18+，11月16日生效",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+   "date": "2026-11-03T15:38:27.000Z",
+   "time": "23:38",
+   "date_md": "11-03"
+  }
  ]
 }

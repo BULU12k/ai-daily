@@ -1,8 +1,30 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 09:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-03 09:29 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-03-0929-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "YC的Tan年花20万美元token，成本仍是普及瓶颈"
+  ],
+  "items": [
+    {
+      "title_zh": "YC掌门人年花20万美元买token",
+      "summary": "Y Combinator CEO Garry Tan 在播客《The Builders》中透露，他每年在 AI token 上的花费约为 10 万至 20 万美元，用于大量工作项目和编程任务。 他把自建的 23 个 Claude Code 技能集 gstack 发布到 GitHub，希望帮助他人了解智能体能做什么。 他表示自己的智能体读取了全部邮件、Dropbox 文件和 Apple Notes，其中还包括长达 20 年的心理治疗笔记，并帮他处理日常事务与生活安排。 YC 内部还有一个名为 Stray Light 的智能体，掌握公司迄今投资过的每位创始人、所有来信和申请材料的上下文。 他认为，个人 AI 智能体要成为主流，前提是成本下降，并称自己目前的花费是“并非人人都能负担的特权”；对于由大型科技公司控制的免费智能体，他也持保留态度。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "个人智能体普及仍受成本制约",
+      "point": "YC的Tan年花20万美元token，成本仍是普及瓶颈",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "date_md": "11-03"
+    }
+  ]
 }

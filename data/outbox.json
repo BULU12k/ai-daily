@@ -1,62 +1,8 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 22:30 · 3条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 2,
-      "file": "docs/poster/2026-11-03-2230-p1.png",
-      "count": 2
-    },
-    {
-      "index": 2,
-      "total": 2,
-      "file": "docs/poster/2026-11-03-2230-p2.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "11月4日波士顿举行，单票最高省100美元",
-    "明日9点开门，此前单票最高省100美元",
-    "施耐德上海试点拣选效率达人工2倍"
-  ],
-  "items": [
-    {
-      "title_zh": "TechCrunch创始人峰会明日开幕",
-      "summary": "TechCrunch创始人峰会2026将于11月4日在波士顿SoWa Power Station举行，为期一天，面向创始人与投资人。 议程分为两个主舞台：Build Stage聚焦分发、融资、团队搭建与路演等公司构建环节；Impact Stage讨论产品市场契合、规模化时机、企业客户关系与长期增长。 现场还设有小组圆桌，名为So You Think You Can Pitch? 的现场路演环节，以及Braindate一对一约谈和闭幕酒会。 票价方面，单张最多可省100美元，并可获赠第二张，团体套票最高优惠30%。 本文为活动推广，仅提供选段，未披露各场次的具体嘉宾结论与内容细节。",
-      "content_basis": "article_excerpts",
-      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
-      "degraded": false,
-      "signal": "创投会议的卖点转向小圆桌",
-      "point": "11月4日波士顿举行，单票最高省100美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
-      "date_md": "11-03"
-    },
-    {
-      "title_zh": "创始人峰会明日开门，优惠截止",
-      "summary": "TechCrunch创始人峰会将于11月4日在波士顿SoWa Power Station举行，主办方提示门票优惠在美东时间当天上午9点开门前截止，此前购买更便宜。 现行票价方案为：单张最多省100美元，携带合伙人或联合创始人可获赠第二张，4至12人团体优惠15%，13人及以上优惠30%。 会议设Build Stage与Impact Stage两个舞台，前者讲融资、分发、团队与路演，后者谈产品市场契合、规模化时机、企业客户与长期增长，另设小圆桌、现场路演比赛、Braindate约谈和闭幕酒会。 文章以促报名为主，未给出各场次的具体结论与嘉宾观点细节。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "线下创投活动靠限时折扣抢客",
-      "point": "明日9点开门，此前单票最高省100美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
-      "date_md": "11-03"
-    },
-    {
-      "title_zh": "极智嘉发布24/7自主智能仓计划",
-      "summary": "极智嘉（Geek+）发布《24/7自主智能仓计划》，提出让AI接管整仓调度运营，实现7×24小时自主运行并在真实业务中持续学习，路线分三步：用具身智能补齐复杂拣选等人工环节、以AI闭环实现自主决策与动态调整、依托全球交付能力规模化复制。 技术层面，公司自研Gravity统一具身智能框架与Gravity 4D具身世界模型，宣称可支持跨任务泛化、动态抗干扰、长程任务执行与自然语言纠偏；系统层面由RMS、WES、IOP三大系统，加上监控、数据分析、部署配置三类AI Agent构成“仓库大脑”。 公司披露，在施耐德电气上海物流中心试点中，无人拣选工作站效率为人工的2倍、准确率超过99.99%；极智嘉称已连续7年位居AMR市占率第一，覆盖40多个国家和地区、超1000家客户，累计部署机器人超8.1万台。 上述效果均为公司口径，7×24小时全自主运行尚无大规模第三方验证数据。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "仓储竞争从单机转向整仓智能",
-      "point": "施耐德上海试点拣选效率达人工2倍",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/11/507507.html",
-      "date_md": "11-03"
-    }
-  ]
+  "headline": "AI日报 11-03 23:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

@@ -1,8 +1,30 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 03:31 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 04:01 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-04-0401-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Fal融资13亿美元，估值达160亿"
+  ],
+  "items": [
+    {
+      "title_zh": "AI推理初创Fal估值翻倍至160亿美元",
+      "summary": "总部位于旧金山的AI模型托管与推理公司Fal完成13亿美元融资，由Bessemer Venture Partners领投，英伟达、Sound Ventures和T. Rowe Price参投，公司估值达160亿美元，为今年4月80亿美元估值的两倍。 Fal同时公布E轮与F轮，两轮合计融资16.5亿美元，其中较早一轮由红杉资本领投。 公司主要托管并运行已训练完成的视频、图像和音频模型，需求尤其来自使用开源模型的客户；据彭博报道，Fal今年早些时候的年化收入已超过8亿美元。 同类推理服务商Baseten、Fireworks AI和Modal也在快速扩张并高价融资，但据多名了解相关财务的人士说法，由于购买或租赁算力成本高，这类公司的毛利率仍然偏薄。 Fal由前Coinbase机器学习负责人Burkay Gur与前亚马逊开发者Gorkem Yurtseven于2021年共同创立。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "推理需求推高估值，毛利仍薄",
+      "point": "Fal融资13亿美元，估值达160亿",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "date_md": "11-04"
+    }
+  ]
 }

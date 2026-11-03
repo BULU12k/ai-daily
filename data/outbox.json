@@ -1,8 +1,43 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 02:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 03:01 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-04-0301-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "Netflix在美推出AI发现页，按心情推荐",
+    "了解 ChatGPT 和 Codex…"
+  ],
+  "items": [
+    {
+      "title_zh": "Netflix推出AI发现标签页",
+      "summary": "Netflix于周二宣布上线新的“AI Discover”标签页，用户可在其中尝试新的找片方式。 该标签页下的首个实验功能允许用户按当下心情、观看偏好、可用时长以及新片与热门内容来挑选主题，主题包括“轻松一点”“吓吓我”“家庭电影夜”“快速观看”等，选定后即给出匹配推荐。 用户还可进一步缩小主题范围，或选择“换个方向”重新开始；每个片名旁设有“调整推荐”按钮，可保存喜欢的推荐或排除不想再被推荐的片子。 Netflix称该功能由一套新建的智能层驱动，能实时响应用户输入并持续学习，并把这一标签页定位为“试验厨房”，先在小范围试功能再决定是否并入主体验。 该功能目前在美国面向使用英文界面、受支持的电视设备用户开始推送，未来数周将扩大范围；有权限的用户会在电视顶部导航栏看到带红色宝石图标和“新”标签的“Discover”按钮。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "推荐入口从滚动片库转向按心情选择",
+      "point": "Netflix在美推出AI发现页，按心情推荐",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+      "date_md": "11-04"
+    },
+    {
+      "title_zh": "加速物理世界的工程",
+      "summary": "了解 ChatGPT 和 Codex 如何帮助工程师加速物理世界中的 CAD、PCB 设计、仿真和其他工作流程。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": true,
+      "signal": "—",
+      "point": "了解 ChatGPT 和 Codex…",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "date_md": "11-03"
+    }
+  ]
 }

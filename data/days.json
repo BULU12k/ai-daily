@@ -4625,6 +4625,30 @@
  ],
  "2026-11-04": [
   {
+   "title_zh": "Netflix推出AI发现标签页",
+   "summary": "Netflix于周二宣布上线新的“AI Discover”标签页，用户可在其中尝试新的找片方式。 该标签页下的首个实验功能允许用户按当下心情、观看偏好、可用时长以及新片与热门内容来挑选主题，主题包括“轻松一点”“吓吓我”“家庭电影夜”“快速观看”等，选定后即给出匹配推荐。 用户还可进一步缩小主题范围，或选择“换个方向”重新开始；每个片名旁设有“调整推荐”按钮，可保存喜欢的推荐或排除不想再被推荐的片子。 Netflix称该功能由一套新建的智能层驱动，能实时响应用户输入并持续学习，并把这一标签页定位为“试验厨房”，先在小范围试功能再决定是否并入主体验。 该功能目前在美国面向使用英文界面、受支持的电视设备用户开始推送，未来数周将扩大范围；有权限的用户会在电视顶部导航栏看到带红色宝石图标和“新”标签的“Discover”按钮。",
+   "signal": "推荐入口从滚动片库转向按心情选择",
+   "point": "Netflix在美推出AI发现页，按心情推荐",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P4",
+    "P5",
+    "P7",
+    "P8",
+    "P9"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+   "date": "2026-11-03T18:42:16.000Z",
+   "time": "02:42",
+   "date_md": "11-04"
+  },
+  {
    "title_zh": "Anthropic 仍在努力解决计算经济学问题",
    "summary": "主要人工智能实验室的财务状况存在很多谜团，随着 Anthropic 逐步走向 IPO，我们开始得到一些答案。 特别是，该公司终于披露了更多有关计算经济学的信息，以及 Anthropic 飙升的收入中有多少被计算成本损失了。 该文件是上周发布的 S-1 的更新，但该文件的财务披露仅涵盖今年 6 月 30 日，新数据将披露结果延长到一个额外的季度，即 9 月 30 日。 总体而言，Anthropic 的季度表现不错：收入达到 170 亿美元，高于上一季度的 115 亿美元，表明持续增长。 自 2025 年初以来，它一直在稳步增长，上个季度达到略高于 2 倍的峰值，然后回落至 1.72 倍\n许多迹象表明，计算利润的这种变化更多的是昙花一现，而不是长期问题，但它仍然告诉我们有关运营大型实验室业务的重要信息。",
    "signal": "—",
@@ -4731,6 +4755,22 @@
    "link": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
    "date": "2026-11-03T15:38:27.000Z",
    "time": "23:38",
+   "date_md": "11-03"
+  },
+  {
+   "title_zh": "加速物理世界的工程",
+   "summary": "了解 ChatGPT 和 Codex 如何帮助工程师加速物理世界中的 CAD、PCB 设计、仿真和其他工作流程。",
+   "signal": "—",
+   "point": "了解 ChatGPT 和 Codex…",
+   "by_llm": false,
+   "degraded": true,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+   "date": "2026-11-03T12:00:00.000Z",
+   "time": "20:00",
    "date_md": "11-03"
   },
   {

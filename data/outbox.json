@@ -1,29 +1,29 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 05:30 · 1条新知",
+  "headline": "AI日报 11-04 06:01 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-04-0530-p1.png",
+      "file": "docs/poster/2026-11-04-0601-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "美商业收入9.84亿首超政府9.53亿"
+    "Ballistic拟分两只基金募4.9亿美元"
   ],
   "items": [
     {
-      "title_zh": "Palantir营收首破20亿美元",
-      "summary": "Palantir公布第三季度财报，营收同比增长96%至23.1亿美元，首次突破20亿美元，并高于分析师预期的21.8亿美元；调整后每股收益0.44美元，高于预期的0.41美元，公司还上调了全年营收指引。 美国商业收入达9.84亿美元，同比增长148%，首次超过美国政府部门收入的9.53亿美元。 公司称企业客户看重的是能在不向外部AI实验室共享数据与业务流程的前提下运行前沿模型、定制训练开放权重模型的软件，以及长期提供的“前置部署”工程服务。 但财报也透出企业销售放缓的迹象：当季美国企业合同总价值为14.6亿美元，低于上一季度创纪录的21.3亿美元，且企业更倾向先签短期试用合同。 CEO卡普在电话会上称合同期限变短、但之后可大幅扩展，并将美国商业收入指引上调至超过35.59亿美元、对应增速至少143%。",
+      "title_zh": "Ballistic拟募资4.9亿美元",
+      "summary": "据TechCrunch查阅监管文件，网络安全风投机构Ballistic Ventures正寻求通过两只新基金募资4.9亿美元：第三只旗舰基金目标3.6亿美元，与2024年上一只基金规模相同；另有Ballistic Ventures Fund B目标1.3亿美元。 申报时两只基金均未记录任何销售。 该机构2021年底成立，创始团队包括Ted Schlein、Barmak Meftah和Roger Thornton，曾投资Talon、Pangea等公司。 此前其2022年首只基金为3亿美元，2024年第二只旗舰基金为3.6亿美元，Fund A约1.3亿美元。 融资背景是AI带来的网安需求升温：JPMorgan报告引用PitchBook数据称，2025年美国网络安全初创企业融资115亿美元，为2022年以来最高；截至今年5月，AI赋能公司约占美国网安风投交易的72%，2019年为36%。 微软年度数字防御报告则警告，黑客正更多利用AI实施钓鱼、社会工程和恶意软件开发，攻击更快、规模更大，但许多底层手法未变。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "企业AI试用短约化，续约率待验证",
-      "point": "美商业收入9.84亿首超政府9.53亿",
+      "signal": "AI攻防升级，网安风投回暖",
+      "point": "Ballistic拟分两只基金募4.9亿美元",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+      "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
       "date_md": "11-04"
     }
   ]

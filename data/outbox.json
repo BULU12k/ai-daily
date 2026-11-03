@@ -1,30 +1,8 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 07:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-04-0700-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "FlashProve 开源：密码学验证模型身份"
-  ],
-  "items": [
-    {
-      "title_zh": "Anthropic 研发模型身份验证系统",
-      "summary": "Anthropic 周二发布博客，介绍其正在研发的开源系统 FlashProve，目标是验证一段输出究竟由哪个 AI 模型生成。 研究人员称，这套机制提供“可验证推理”，即用密码学证明给出数学意义上的保证，让用户确认收到的回答确实来自自己以�为在用的那个模型。 其原理类似加密邮件签名：模型厂商需为每个发布的模型提供“指纹”，事后可与具体输出匹配并做密码学验证；即便冒充者就是研发并运营该模型的实验室本身，系统也设计为能够识别。 研究人员举例称，这可防止 AI 公司为压缩成本偷偷换成更便宜的模型，或为抬高跑分换成更贵的模型，也可用于核实第三方“某任务由前沿模型完成”的说法。 关键在于，指纹不暴露模型权重，因此闭源商用模型同样适用，且系统设计轻量，验证可在本地设备上完成。 目前团队已公开技术规范和部分代码（GitHub 开源），研究仍在进行，Anthropic 及其他实验室均无部署计划，官方称这属于阶段性进展，而非完整研究议程。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "模型身份走向密码学可验证",
-      "point": "FlashProve 开源：密码学验证模型身份",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
-      "date_md": "11-04"
-    }
-  ]
+  "headline": "AI日报 11-04 07:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

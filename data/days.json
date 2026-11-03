@@ -4794,6 +4794,22 @@
    "date_md": "11-03"
   },
   {
+   "title_zh": "思科联手OpenAI构建自适应防御",
+   "summary": "思科将网络智能与OpenAI模型结合，用于加强企业安全防护，并称借此构建更具自适应性的防御能力。 所谓“以机器速度防御”，指安全系统应对自动化攻击时的响应节奏，但订阅简介未给出具体响应时延、拦截率等指标。 原文未说明所用模型的具体形态、部署方式、适用客户范围与限制条件，也未披露任何实测效果或客户案例。 以上信息仅来自订阅简介，原文因HTTP 403无法访问，细节有待核实。",
+   "signal": "安全防御转向模型驱动",
+   "point": "思科结合OpenAI模型强化企业安全",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/cisco-cyber",
+   "date": "2026-11-03T08:00:00.000Z",
+   "time": "16:00",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "CWE-bench v2：更大的覆盖范围、质量和透明度",
    "summary": "CWE-bench 旨在测试前沿网络能力的极限。 在我们不断追求共线 AI 发展的过程中，CWE-bench v2 开放了一组包含 100 个任务的公共任务，任何人都可以运行并评估其模型。 这 100 项任务涵盖 91 个不同的 CWE，涵盖广泛的漏洞类别。 开放权重模型，来自数据集页面：\n所有评估的模型，包括仅 API 的模型：\n在评估的 11 个模型中，Gemini 4 Argon 以 67.8% pass@1 和 81.0% pass@4 领先，仅领先于 Claude Opus 5.5（67.3% pass@1、78.0% pass@4）。 然而，即使是领先者每次尝试也会失败 19%，因此长尾问题还远未得到解决。",
    "signal": "—",
@@ -4805,6 +4821,22 @@
    "evidence_paragraphs": [],
    "source": "Hugging Face Blog",
    "link": "https://huggingface.co/blog/cwe-bench",
+   "date": "2026-11-03T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "11-03"
+  },
+  {
+   "title_zh": "OpenAI任命首席企业事务官",
+   "summary": "OpenAI宣布任命Jill Hazelbaker为首席企业事务官（Chief Corporate Affairs Officer），负责公司全球传播与企业定位工作。 订阅简介显示，她将以该身份加入公司，统领对外沟通与整体企业形象事务。 原文未披露任命生效时间、汇报对象、具体职责边界，也未提及她此前供职机构与相关履历。 该信息仅来自订阅简介，原文因HTTP 403无法访问，更多细节尚未确认。",
+   "signal": "OpenAI补强对外沟通体系",
+   "point": "OpenAI新设首席企业事务官一职",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
    "date": "2026-11-03T00:00:00.000Z",
    "time": "08:00",
    "date_md": "11-03"

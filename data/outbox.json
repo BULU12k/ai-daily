@@ -1,8 +1,62 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 01:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 01:31 · 3条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 2,
+      "file": "docs/poster/2026-11-04-0131-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-11-04-0131-p2.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "主要人工智能实验室的财务状况存在很多谜团，随着…",
+    "了解 Google Antigravity…",
+    "CWE-bench 旨在测试前沿网络能力的极限。"
+  ],
+  "items": [
+    {
+      "title_zh": "Anthropic 仍在努力解决计算经济学问题",
+      "summary": "主要人工智能实验室的财务状况存在很多谜团，随着 Anthropic 逐步走向 IPO，我们开始得到一些答案。 特别是，该公司终于披露了更多有关计算经济学的信息，以及 Anthropic 飙升的收入中有多少被计算成本损失了。 该文件是上周发布的 S-1 的更新，但该文件的财务披露仅涵盖今年 6 月 30 日，新数据将披露结果延长到一个额外的季度，即 9 月 30 日。 总体而言，Anthropic 的季度表现不错：收入达到 170 亿美元，高于上一季度的 115 亿美元，表明持续增长。 自 2025 年初以来，它一直在稳步增长，上个季度达到略高于 2 倍的峰值，然后回落至 1.72 倍\n许多迹象表明，计算利润的这种变化更多的是昙花一现，而不是长期问题，但它仍然告诉我们有关运营大型实验室业务的重要信息。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "主要人工智能实验室的财务状况存在很多谜团，随着…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+      "date_md": "11-04"
+    },
+    {
+      "title_zh": "使用 Google Antigravity 进行代理化学信息学",
+      "summary": "了解 Google Antigravity 和我们的化学信息学技能如何加速药物发现工作流程、搜索化合物并提出新型刚性大环化合物。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：未提取到可信文章正文（结构变化或仅简介）；仅依据订阅简介，信息可能不完整",
+      "degraded": true,
+      "signal": "—",
+      "point": "了解 Google Antigravity…",
+      "source": "Google DeepMind Blog",
+      "link": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "date_md": "11-04"
+    },
+    {
+      "title_zh": "CWE-bench v2：更大的覆盖范围、质量和透明度",
+      "summary": "CWE-bench 旨在测试前沿网络能力的极限。 在我们不断追求共线 AI 发展的过程中，CWE-bench v2 开放了一组包含 100 个任务的公共任务，任何人都可以运行并评估其模型。 这 100 项任务涵盖 91 个不同的 CWE，涵盖广泛的漏洞类别。 开放权重模型，来自数据集页面：\n所有评估的模型，包括仅 API 的模型：\n在评估的 11 个模型中，Gemini 4 Argon 以 67.8% pass@1 和 81.0% pass@4 领先，仅领先于 Claude Opus 5.5（67.3% pass@1、78.0% pass@4）。 然而，即使是领先者每次尝试也会失败 19%，因此长尾问题还远未得到解决。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "CWE-bench 旨在测试前沿网络能力的极限。",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/cwe-bench",
+      "date_md": "11-03"
+    }
+  ]
 }

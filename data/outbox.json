@@ -1,8 +1,30 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 06:15 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 06:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-04-0630-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "并网约需7年，xAI已装8台改装喷气发动机"
+  ],
+  "items": [
+    {
+      "title_zh": "数据中心改用退役喷气发动机发电",
+      "summary": "据《纽约时报》周二报道，由于并网和采购新燃气轮机都要排队数年，部分AI数据中心开始把退役客机上的发动机改装成燃气发电机组，自建电源。 Rystad Energy分析师Audun Martinsen表示，关键在于尽快拿到电，用喷气发动机改装机组可让数据中心在24个月内投运；相比之下，国际能源署数据显示，在弗吉尼亚北部接入100兆瓦电网容量约需7年。 电力延期已在影响项目：因当地电力公司称最早要到2030年代初才能提供足够电力，微软上月退出了Nscale位于英国Loughton数据中心的锚定客户身份。 xAI已在密西西比安装8台改装喷气发动机机组，为孟菲斯Colossus 2数据中心供电，设备来自ProEnergy翻新的GE发动机；OpenAI于2025年在得州Abilene首个Stargate站点使用燃气轮机，承建方Crusoe在4月订购了13台ProEnergy改装机组，但在9月放弃了以12.5亿美元向Boom Supersonic购买29台燃气轮机的交易。 报道同时指出这类机组的代价：效率低于常规燃气电厂机组、排放更高，发出同等功率需要更多台数，可能只是短期方案。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "电网排队太久，自发电成算力标配",
+      "point": "并网约需7年，xAI已装8台改装喷气发动机",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+      "date_md": "11-04"
+    }
+  ]
 }

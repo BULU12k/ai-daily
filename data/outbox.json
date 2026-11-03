@@ -1,30 +1,8 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 08:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-03-0800-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "OpenAI 推出 Git 兼容后端 Pando"
-  ],
-  "items": [
-    {
-      "title_zh": "OpenAI 自建 Git 兼容后端 Pando",
-      "summary": "OpenAI 在工程博客发布文章，介绍其自研的 Git 兼容后端 Pando，称其面向 Codex 所支撑的开发规模而设计。 按订阅简介的表述，Pando 的定位是“Git 兼容后端”，即在不改变现有 Git 使用方式的前提下承接更大体量的代码仓库与协作负载，动机指向 Codex 带来的开发量增长。 需要说明的是，该条仅能获取订阅简介，原文因 HTTP 403 无法读取，因此 Pando 的具体架构、性能指标、与现有托管方案的对比基线、是否开源或对外开放、上线时间等关键信息均未披露，上述描述仅限于简介层面的定位，不能视为已验证的能力。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "AI 编码正倒逼代码基础设施自研",
-      "point": "OpenAI 推出 Git 兼容后端 Pando",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/scaling-git-at-openai",
-      "date_md": "11-02"
-    }
-  ]
+  "headline": "AI日报 11-03 08:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

@@ -3944,6 +3944,22 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "Heimstaden 正在利用人工智能改变住宅房地产管理",
+   "summary": "了解 Heimstaden 如何使用 OpenAI 的 ChatGPT Enterprise 和 Codex 来转变整个欧洲的物业管理、削减成本并赋予员工权力。",
+   "signal": "—",
+   "point": "了解 Heimstaden 如何使用 OpenAI 的…",
+   "by_llm": false,
+   "degraded": true,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/heimstaden",
+   "date": "2026-11-03T08:00:00.000Z",
+   "time": "16:00",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "苹果手表音频智能功能开启测试",
    "summary": "苹果在 iOS 27.3 开发者测试版中开始推送 Apple Watch 的“Audio Intelligence”音频智能功能，共四项可选功能，面向 Apple Watch Series 12 与 Apple Watch Ultra 4。 其中声音识别可帮助听障用户辨别警笛、警报、门铃等声音，识曲功能调用 Shazam 返回歌名与歌手。 争议更大的是两项监听对话的功能：Live Rewind 双击数码表冠后可查看过去 15 秒对话的文字片段，不保存则 30 秒后自动删除，也可存入随 iOS 27 提供的独立 Siri 应用；Siri Recaps 把对话整理成一句摘要加若干要点，苹果称不识别说话人、不保存原始音频、也不做逐字转写，未确认的记录会在 7 天内自动删除。 按苹果说法，音频先进入手表安全隔区内的专用缓冲区，经 iPhone 端侧模型转成去掉语气词的文本，再加密送往 Private Cloud Compute 生成摘要，摘要随后立即从云端删除，公司称这些功能不影响手表与手机续航。",
    "signal": "苹果以端侧加密回应录音争议",

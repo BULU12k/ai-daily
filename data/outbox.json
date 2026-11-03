@@ -1,8 +1,30 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 18:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-03 18:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-03-1830-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "了解 Heimstaden 如何使用 OpenAI 的…"
+  ],
+  "items": [
+    {
+      "title_zh": "Heimstaden 正在利用人工智能改变住宅房地产管理",
+      "summary": "了解 Heimstaden 如何使用 OpenAI 的 ChatGPT Enterprise 和 Codex 来转变整个欧洲的物业管理、削减成本并赋予员工权力。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": true,
+      "signal": "—",
+      "point": "了解 Heimstaden 如何使用 OpenAI 的…",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/heimstaden",
+      "date_md": "11-03"
+    }
+  ]
 }

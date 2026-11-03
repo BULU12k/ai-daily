@@ -1,30 +1,8 @@
 {
   "date": "2026-11-03",
   "pushed": false,
-  "headline": "AI日报 11-03 10:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-03-1000-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "苹果CFO点名第三方AI应用存在增收机会"
-  ],
-  "items": [
-    {
-      "title_zh": "苹果暗示靠第三方AI应用增收",
-      "summary": "苹果服务业务仍处历史高位，但增长承压。 在周一财报电话会上，首席财务官Kevan Parekh谈到AI时表示，AI为顾客升级换机提供了有说服力的理由，同时在第三方应用与合作关系以及第一方业务上都存在机会，但他没有说明第三方应用方面的机会具体指什么。 路透同日报道称，投资者猜测苹果可能通过在App Store分发第三方AI代理并抽取分成来获利。 背景是App Store在多国面临监管与法律压力：第三方估算显示，美国佣金收入曾下滑18%，巴西和日本在推出新规后也出现下降；Epic Games的诉讼则迫使苹果允许应用引导用户使用外部支付。 Parekh称9月季度App Store表现与去年同期相近，付费订阅数量创下纪录、第三方应用订阅实现两位数增长，但手游逆风预计延续到夏季季度；公司预计12月季度服务收入增长8%至9%，这一展望已计入第三方授权等环比逆风。 苹果未回应TechCrunch的置评请求。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "佣金承压，苹果寻AI新抽成",
-      "point": "苹果CFO点名第三方AI应用存在增收机会",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "date_md": "11-03"
-    }
-  ]
+  "headline": "AI日报 11-03 10:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

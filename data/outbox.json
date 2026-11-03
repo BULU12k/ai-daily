@@ -1,30 +1,8 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 06:01 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-04-0601-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Ballistic拟分两只基金募4.9亿美元"
-  ],
-  "items": [
-    {
-      "title_zh": "Ballistic拟募资4.9亿美元",
-      "summary": "据TechCrunch查阅监管文件，网络安全风投机构Ballistic Ventures正寻求通过两只新基金募资4.9亿美元：第三只旗舰基金目标3.6亿美元，与2024年上一只基金规模相同；另有Ballistic Ventures Fund B目标1.3亿美元。 申报时两只基金均未记录任何销售。 该机构2021年底成立，创始团队包括Ted Schlein、Barmak Meftah和Roger Thornton，曾投资Talon、Pangea等公司。 此前其2022年首只基金为3亿美元，2024年第二只旗舰基金为3.6亿美元，Fund A约1.3亿美元。 融资背景是AI带来的网安需求升温：JPMorgan报告引用PitchBook数据称，2025年美国网络安全初创企业融资115亿美元，为2022年以来最高；截至今年5月，AI赋能公司约占美国网安风投交易的72%，2019年为36%。 微软年度数字防御报告则警告，黑客正更多利用AI实施钓鱼、社会工程和恶意软件开发，攻击更快、规模更大，但许多底层手法未变。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI攻防升级，网安风投回暖",
-      "point": "Ballistic拟分两只基金募4.9亿美元",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-      "date_md": "11-04"
-    }
-  ]
+  "headline": "AI日报 11-04 06:15 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

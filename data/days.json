@@ -3944,6 +3944,52 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "苹果手表音频智能功能开启测试",
+   "summary": "苹果在 iOS 27.3 开发者测试版中开始推送 Apple Watch 的“Audio Intelligence”音频智能功能，共四项可选功能，面向 Apple Watch Series 12 与 Apple Watch Ultra 4。 其中声音识别可帮助听障用户辨别警笛、警报、门铃等声音，识曲功能调用 Shazam 返回歌名与歌手。 争议更大的是两项监听对话的功能：Live Rewind 双击数码表冠后可查看过去 15 秒对话的文字片段，不保存则 30 秒后自动删除，也可存入随 iOS 27 提供的独立 Siri 应用；Siri Recaps 把对话整理成一句摘要加若干要点，苹果称不识别说话人、不保存原始音频、也不做逐字转写，未确认的记录会在 7 天内自动删除。 按苹果说法，音频先进入手表安全隔区内的专用缓冲区，经 iPhone 端侧模型转成去掉语气词的文本，再加密送往 Private Cloud Compute 生成摘要，摘要随后立即从云端删除，公司称这些功能不影响手表与手机续航。",
+   "signal": "苹果以端侧加密回应录音争议",
+   "point": "Apple Watch测试15秒回听与对话摘要",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P5",
+    "P8",
+    "P10",
+    "P13",
+    "P19"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
+   "date": "2026-11-03T07:20:00.000Z",
+   "time": "15:20",
+   "date_md": "11-03"
+  },
+  {
+   "title_zh": "OceanBase获世界互联网大会奖项",
+   "summary": "11 月 3 日，2026 世界互联网大会在浙江乌镇开幕，蚂蚁集团孵化的数据库企业 OceanBase 获得大会“杰出贡献奖”。 该奖 2024 年设立，本届有 230 余家企业申报、覆盖近 20 个国家和地区，最终 15 家获奖，OceanBase 与云深处科技等获成长潜力类奖项，这也是 OceanBase 继 2022 年世界互联网领先科技成果奖后再获大会奖项。 据 OceanBase 介绍，其 2026 年发布湖库一体 AI 数据库，把数据库与数据湖能力并入统一架构，统一管理结构化、半结构化与非结构化数据，并已形成涵盖 AI 数据库、AI 湖库、DataPilot 的产品体系，在蚂蚁阿福、灵光、理想汽车等数十家客户场景落地。 公司称 2025 年海外营收同比增长 200%，按 Omdia 报告以 2025 年收入计位居亚洲及大洋洲分布式数据库市场第一，全球客户超过 4000 家。 需注意，该报道由蚂蚁提供、量子位授权转载，奖项数据与客户案例均出自企业一方。",
+   "signal": "国产数据库向AI数据底座延伸",
+   "point": "OceanBase获奖，海外营收增200%",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P5",
+    "P6",
+    "P9"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/507405.html",
+   "date": "2026-11-03T05:59:05.000Z",
+   "time": "13:59",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "小米获乌镇双奖，披露机器人进展",
    "summary": "11月3日，小米披露其在2026世界互联网大会（11月2日至5日于乌镇举行）获两项奖：小米集团获“杰出贡献奖”创新突破类奖项，机器人团队“面向规模化落地的通用机器人操作基座模型关键技术”获“领先科技奖”。 据小米方面信息，杰出贡献奖今年有全球230余家企业申报、最终15家获奖；领先科技奖征集到43个国家和地区430余项成果，最终20项入围。 工业场景上，小米人形机器人在汽车工厂中控台侧盖板排序工站首次挑战8小时作业，满足工站全天生产需求，实现作业异常自主纠偏与产线系统级协同，初步完成产线级作业能力验证；此前2026年3月其在自攻螺母上件工站连续作业3小时、双侧安装成功率90.2%，7月提升至98%。 家庭场景上，基于Xiaomi-Robotics-1预训练模型搭建的Agent系统在小米青年公寓启动试运营，完成连续超30分钟、覆盖3个房间、50余项任务的长程验证。 小米方面称该模型基于10万小时真实操作数据预训练，在RoboCasa365、RoboDojo等榜单位列全球第一，此为公司披露口径；本文由小米提供、量子位获授权转载。",
    "signal": "工厂数据反哺具身基座模型",
@@ -4157,6 +4203,31 @@
    "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
    "date": "2026-11-03T00:35:52.000Z",
    "time": "08:35",
+   "date_md": "11-03"
+  },
+  {
+   "title_zh": "新测试用缩小模型提前拦截缺陷",
+   "summary": "Hugging Face 在博客中披露，2026 年 7 月 30 日 Transformers 为 T5 启用 PyTorch 的 SDPA 注意力路径后，UMT5 的解码器可以“看到”未来的 token，训练时等于提前偷看要预测的答案；程序没有报错，缺陷在主干分支存留近两个月，直到 9 月 28 日才修复。 由于完整集成测试需要加载真实检查点并占用大量 GPU，无法在每个 PR 上运行，团队提出“模型集成契约”（MIC）：按真实检查点配置缩小出 fixture 模型，配一段可运行的用法示例和人工审核的基线输出，在廉价 CPU 上跑快速集成测试。 文中举例，UMT5 fixture 权重为 66MB，原检查点为 1,227MB；Llama 4 Scout 由 1086 亿参数缩至 4470 万，视觉栈 34 层减为 2 层、语言栈 48 层减为 4 层。",
+   "signal": "缩小模型进CI，提前抓回归缺陷",
+   "point": "UMT5缺陷在主干潜伏近两个月",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_excerpts",
+   "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+   "evidence_paragraphs": [
+    "P1",
+    "P6",
+    "P11",
+    "P22",
+    "P24",
+    "P34",
+    "P46",
+    "P49"
+   ],
+   "source": "Hugging Face Blog",
+   "link": "https://huggingface.co/blog/transformers-mic",
+   "date": "2026-11-03T00:00:00.000Z",
+   "time": "08:00",
    "date_md": "11-03"
   },
   {

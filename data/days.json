@@ -3944,6 +3944,29 @@
  ],
  "2026-11-03": [
   {
+   "title_zh": "苹果暗示靠第三方AI应用增收",
+   "summary": "苹果服务业务仍处历史高位，但增长承压。 在周一财报电话会上，首席财务官Kevan Parekh谈到AI时表示，AI为顾客升级换机提供了有说服力的理由，同时在第三方应用与合作关系以及第一方业务上都存在机会，但他没有说明第三方应用方面的机会具体指什么。 路透同日报道称，投资者猜测苹果可能通过在App Store分发第三方AI代理并抽取分成来获利。 背景是App Store在多国面临监管与法律压力：第三方估算显示，美国佣金收入曾下滑18%，巴西和日本在推出新规后也出现下降；Epic Games的诉讼则迫使苹果允许应用引导用户使用外部支付。 Parekh称9月季度App Store表现与去年同期相近，付费订阅数量创下纪录、第三方应用订阅实现两位数增长，但手游逆风预计延续到夏季季度；公司预计12月季度服务收入增长8%至9%，这一展望已计入第三方授权等环比逆风。 苹果未回应TechCrunch的置评请求。",
+   "signal": "佣金承压，苹果寻AI新抽成",
+   "point": "苹果CFO点名第三方AI应用存在增收机会",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P7",
+    "P8"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+   "date": "2026-11-03T01:49:52.000Z",
+   "time": "09:49",
+   "date_md": "11-03"
+  },
+  {
    "title_zh": "YC掌门人年花20万美元买token",
    "summary": "Y Combinator CEO Garry Tan 在播客《The Builders》中透露，他每年在 AI token 上的花费约为 10 万至 20 万美元，用于大量工作项目和编程任务。 他把自建的 23 个 Claude Code 技能集 gstack 发布到 GitHub，希望帮助他人了解智能体能做什么。 他表示自己的智能体读取了全部邮件、Dropbox 文件和 Apple Notes，其中还包括长达 20 年的心理治疗笔记，并帮他处理日常事务与生活安排。 YC 内部还有一个名为 Stray Light 的智能体，掌握公司迄今投资过的每位创始人、所有来信和申请材料的上下文。 他认为，个人 AI 智能体要成为主流，前提是成本下降，并称自己目前的花费是“并非人人都能负担的特权”；对于由大型科技公司控制的免费智能体，他也持保留态度。",
    "signal": "个人智能体普及仍受成本制约",

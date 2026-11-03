@@ -1,8 +1,43 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 00:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 00:55 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-04-0055-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "Palette 让小模型按自有设计语言做幻灯片",
+    "限制 AI 即失去 Google 搜索，明年默认关闭"
+  ],
+  "items": [
+    {
+      "title_zh": "小模型按设计语言生成演示文稿",
+      "summary": "Hugging Face 博客介绍了一个名为 Palette 的项目，目标是用小模型按用户自身的设计语言来生成演示文稿（decks）。 目前可获取的仅是订阅简介，缺少正文与选段，因此模型规模、训练方式、评测结果与可用范围均无法核实。 该条目信息有限，暂不宜据此判断其效果。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "小模型切入设计风格定制",
+      "point": "Palette 让小模型按自有设计语言做幻灯片",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "date_md": "11-04"
+    },
+    {
+      "title_zh": "学校禁用 AI 或连带失去搜索",
+      "summary": "Google 于周二宣布，从明年起对 K-12 学生默认关闭 AI 工具，只有学校管理员主动开启后才会启用，涉及 Gemini、NotebookLM、Gemini in Classroom 和 Google Search。 Google 表示，这一调整是在征询学校、教师、研究者和政策制定者意见后作出的。 问题在于 AI 功能已深度整合进搜索：Google 教育副总裁 Chris Phillips 对《纽约时报》表示，“搜索与 AI 已深度融合”，若学校选择完全限制 AI，学生将无法使用搜索，并会看到学校设置的不可用提示。 对学校而言，这构成取舍：教师可能不希望学生用搜索中的 AI 概览完成作业，但仍希望学生能检索资料。 Google 称将在变更生效前数月向学校公布具体细节。 此次调整与 Guided Learning 在学校上线同步宣布，该工具定位类似 AI 导师，强调帮助建立理解而非直接给答案。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI 与搜索捆绑，学校难分拆",
+      "point": "限制 AI 即失去 Google 搜索，明年默认关闭",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+      "date_md": "11-04"
+    }
+  ]
 }

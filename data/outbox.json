@@ -1,43 +1,8 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-04 23:30 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-04-2330-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "OpenAI 将收购 Pierre Computer…",
-    "GPT-5.6 Cyber 上线 AWS 政务云"
-  ],
-  "items": [
-    {
-      "title_zh": "OpenAI 将收购 Pierre Computer Company, Inc.",
-      "summary": "OpenAI 将收购 Pierre Computer Company，扩展 Codex 用于构建、理解和审查代码的工具。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": true,
-      "signal": "—",
-      "point": "OpenAI 将收购 Pierre Computer…",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/openai-to-acquire-pierre",
-      "date_md": "11-04"
-    },
-    {
-      "title_zh": "Daybreak Red 登陆政务云",
-      "summary": "Daybreak Red 已在 AWS GovCloud（美国东部）上线，向获批客户提供 GPT-5.6 Cyber。 该服务通过 Amazon Bedrock 交付，用于经授权的网络安全工作。 订阅简介未披露价格、配额、合规认证范围或具体可用客户名单。 由于原文无法访问，尚不能确认该模型在政务云中的数据处理方式与审计细节。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "安全模型进入政务云",
-      "point": "GPT-5.6 Cyber 上线 AWS 政务云",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/daybreak-red-aws-govcloud",
-      "date_md": "11-04"
-    }
-  ]
+  "headline": "AI日报 11-05 00:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

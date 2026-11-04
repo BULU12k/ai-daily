@@ -1,30 +1,8 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 11:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-04-1130-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "召回精度最高提升45.7%，时延降97%"
-  ],
-  "items": [
-    {
-      "title_zh": "openJiuwen推出视听双流记忆",
-      "summary": "openJiuwen AgentMemory 0.2.0上线OmniMem-Lens多模态记忆能力，试图解决Agent处理长视频时按固定时间窗切分导致的证据碎片化、关键信息被淹没的问题。 该方案用视觉画面切换和语音转写两条轨迹交叉定位事件边界，把视频按“真实事件”而非固定秒数切分，并用三层记忆单元分层存储；记忆离线构建，在线提问时先做文本/向量检索，必要时再调取原始视频帧。 团队公布的对比显示，配合Qwen3-VL-8B使用时，EgoLife-QA召回精度最高提升45.7%，Video-MME-L提升8%、LVbench提升6.4%；LVbench在线时延由34.5秒降至1.72秒，最高降97%。 这些结果来自团队选取的三个长视频问答评测集，实际部署效果仍需更多场景验证。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "长视频记忆转向事件级组织",
-      "point": "召回精度最高提升45.7%，时延降97%",
-      "source": "量子位",
-      "link": "https://www.qbitai.com/2026/11/507533.html",
-      "date_md": "11-04"
-    }
-  ]
+  "headline": "AI日报 11-04 12:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

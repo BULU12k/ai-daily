@@ -1,8 +1,43 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 05:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-05 05:30 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-05-0530-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "OpenAI高管提五项主张，对标新政",
+    "Meta收购Conductor，金额未披露"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI高管提议新政式AI政策议程",
+      "summary": "OpenAI全球事务负责人克里斯·莱汉发表长文，把AI对经济的重塑与罗斯福新政相类比，呼吁政治人物不要只对反AI情绪和数据中心争议做口头回应，而要提出一条让民众分享AI收益的\"第三条路\"，并列出五项政策优先事项，涵盖劳动者保护、教育、AI安全与数据中心建设。 文章发表于中期选举之后，民主党因选民对生活成本不满而赢得国会控制权。 AI Now研究所的凯特·布伦南对TechCrunch表示，这一表态与OpenAI去年以加速AI发展、减少监管障碍、扩张基础设施为重点的议程相比出现明显转向。 不过文章多数提议仍有利于扩大AI应用和扩建算力设施，在防止AI收益集中方面缺少硬性约束：税码部分只提出鼓励劳动者学习AI技能、便利创业者融资、探索员工持股与利润分享，而非强制分享AI所创造的财富或由企业承担岗位被替代的成本。 在数据中心问题上，莱汉强调其带来的建筑岗位与地方税收，并警告支持暂停建设的政客可能危及美国对中国的领先地位。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI政策游说转向民生叙事",
+      "point": "OpenAI高管提五项主张，对标新政",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+      "date_md": "11-05"
+    },
+    {
+      "title_zh": "Meta收购AI编程初创公司Conductor",
+      "summary": "Meta已收购AI编程初创公司Conductor，交易金额未披露，Meta向TechCrunch确认了收购但拒绝提供更多细节。 Conductor成立于2024年，核心产品到去年夏天才正式上线，做法是让用户把多个AI代理部署到并行工作区，在云端、本地或手机上协同处理同一项目中相互隔离的部分，这些代理并非自研，而来自Anthropic、OpenAI等主要实验室。 创始人兼CEO查理·霍尔茨在博客中称公司将加入Meta，并预告\"明年初\"会推出新的界面产品。 他同时说明，Conductor的核心功能在此之前仍按原样运行，但云服务将于11月20日关停，之后公司会开始删除用户的云端数据。 Meta近几个月在AI上加速追赶：8月推出自有编程代理Muse Code，近期称Muse代理服务用户已超过1000万，过去一年还收购了包括Moltbook在内的多个AI相关项目。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "大厂抢购多智能体编程团队",
+      "point": "Meta收购Conductor，金额未披露",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "date_md": "11-05"
+    }
+  ]
 }

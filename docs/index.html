@@ -26,6 +26,12 @@ footer { margin-top: 40px; color: var(--sub); font-size: 13px; }
 <header class="site"><h1>AI 前沿时讯日报</h1><p>每天高频班次的 AI 领域要闻速览：发生了什么，为什么重要。</p></header>
 <h2 style="font-size:20px">最新一期：2026-11-04</h2>
 <div class="card">
+  <h2>openJiuwen推出视听双流记忆</h2>
+  <p>openJiuwen AgentMemory 0.2.0上线OmniMem-Lens多模态记忆能力，试图解决Agent处理长视频时按固定时间窗切分导致的证据碎片化、关键信息被淹没的问题。 该方案用视觉画面切换和语音转写两条轨迹交叉定位事件边界，把视频按“真实事件”而非固定秒数切分，并用三层记忆单元分层存储；记忆离线构建，在线提问时先做文本/向量检索，必要时再调取原始视频帧。 团队公布的对比显示，配合Qwen3-VL-8B使用时，EgoLife-QA召回精度最高提升45.7%，Video-MME-L提升8%、LVbench提升6.4%；LVbench在线时延由34.5秒降至1.72秒，最高降97%。 这些结果来自团队选取的三个长视频问答评测集，实际部署效果仍需更多场景验证。</p>
+  <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
+  <p class="src"><span class="tag">量子位</span>10:49<a href="https://www.qbitai.com/2026/11/507533.html" target="_blank" rel="noopener">原文链接 ↗</a></p>
+</div>
+<div class="card">
   <h2>Anthropic 研发模型身份验证系统</h2>
   <p>Anthropic 周二发布博客，介绍其正在研发的开源系统 FlashProve，目标是验证一段输出究竟由哪个 AI 模型生成。 研究人员称，这套机制提供“可验证推理”，即用密码学证明给出数学意义上的保证，让用户确认收到的回答确实来自自己以�为在用的那个模型。 其原理类似加密邮件签名：模型厂商需为每个发布的模型提供“指纹”，事后可与具体输出匹配并做密码学验证；即便冒充者就是研发并运营该模型的实验室本身，系统也设计为能够识别。 研究人员举例称，这可防止 AI 公司为压缩成本偷偷换成更便宜的模型，或为抬高跑分换成更贵的模型，也可用于核实第三方“某任务由前沿模型完成”的说法。 关键在于，指纹不暴露模型权重，因此闭源商用模型同样适用，且系统设计轻量，验证可在本地设备上完成。 目前团队已公开技术规范和部分代码（GitHub 开源），研究仍在进行，Anthropic 及其他实验室均无部署计划，官方称这属于阶段性进展，而非完整研究议程。</p>
   <p class="src">依据：可提取原文正文 · 可提取正文；不含交互图表、图片或付费隐藏内容</p>
@@ -126,7 +132,7 @@ footer { margin-top: 40px; color: var(--sub); font-size: 13px; }
 </div>
 <h2 style="font-size:20px;margin-top:36px">往期</h2>
 <ul class="dates">
-<li><a href="daily/2026-11-04.html">2026-11-04</a> · 16 条</li>
+<li><a href="daily/2026-11-04.html">2026-11-04</a> · 17 条</li>
 <li><a href="daily/2026-11-03.html">2026-11-03</a> · 0 条</li>
 <li><a href="daily/2026-11-02.html">2026-11-02</a> · 0 条</li>
 <li><a href="daily/2026-11-01.html">2026-11-01</a> · 0 条</li>

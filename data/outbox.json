@@ -1,8 +1,30 @@
 {
   "date": "2026-11-04",
   "pushed": false,
-  "headline": "AI日报 11-04 21:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-04 21:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-04-2130-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "今日9点开幕，设AI机会与GraphRAG专场"
+  ],
+  "items": [
+    {
+      "title_zh": "TechCrunch创始人峰会开幕",
+      "summary": "TechCrunch Founder Summit 2026 于当地时间 11 月 4 日上午 9 点在波士顿 SoWa Power Station 开幕，面向创始人与投资人，全天议程围绕融资、产品市场契合、企业增长与 AI 创新展开。 主办方提示，门票折扣在 9 点开门时结束，此前注册最多可省 100 美元，并可获赠第二张门票。 分论坛与圆桌从上午 10 点持续至下午 4 点半，AI 相关场次包括 Techable Ventures 的 Amulya Vishwanath 主讲“下一代 AI 机会：还有什么没被建造”，以及“GraphRAG 实践：用知识图谱抑制幻觉”“小而强：AI 如何让小团队跑赢巨头”等圆桌。 下午 4 点半至 6 点半设闭幕酒会供参会者对接。 该文为会议推广稿，除议程与票价信息外，未披露上述 AI 议题的具体内容或结论。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI议题贯穿创业峰会全场",
+      "point": "今日9点开幕，设AI机会与GraphRAG专场",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
+      "date_md": "11-04"
+    }
+  ]
 }

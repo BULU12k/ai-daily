@@ -1,30 +1,8 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 07:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-05-0700-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "AI政治行动委员会中期选举投入数百万美元，结果分化"
-  ],
-  "items": [
-    {
-      "title_zh": "AI政治行动委员会中期选举投入数百万美元",
-      "summary": "支持与反对AI行业的政治行动委员会在中期选举投入数百万美元，结果分化。 American Mission与Building the Future合计花480万美元支持南卡罗来纳州参议员候选人Darline Graham，她仍落败；American Mission另为两名共和党众议员候选人各投入逾50万美元，二人均败选。 LTF的民主党组织Think Big支持的佛罗里达州众议员Jared Moskowitz则成功连任。 Anthropic支持的Public First在部分共和党选战失利，但向支持加州州参议员Scott Wiener的PAC捐了300万美元，后者在发稿时领先。 Guardrails Alliance花逾100万美元反对Jimmy Gomez和Aaron Flint，两人落败，并以30万美元支持击败Gomez的Angela Gonzales-Torres。 LTF称初选更有效，已在初选投入2738万美元，包括800万美元反对Alex Bores；双方核心分歧是建立全国AI框架还是保留州级监管。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI政治资金难换选举胜果",
-      "point": "AI政治行动委员会中期选举投入数百万美元，结果分化",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
-      "date_md": "11-05"
-    }
-  ]
+  "headline": "AI日报 11-05 07:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

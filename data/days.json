@@ -4625,6 +4625,22 @@
  ],
  "2026-11-04": [
   {
+   "title_zh": "OpenAI 将收购 Pierre Computer Company, Inc.",
+   "summary": "OpenAI 将收购 Pierre Computer Company，扩展 Codex 用于构建、理解和审查代码的工具。",
+   "signal": "—",
+   "point": "OpenAI 将收购 Pierre Computer…",
+   "by_llm": false,
+   "degraded": true,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/openai-to-acquire-pierre",
+   "date": "2026-11-04T14:30:00.000Z",
+   "time": "22:30",
+   "date_md": "11-04"
+  },
+  {
    "title_zh": "TechCrunch创始人峰会开幕",
    "summary": "TechCrunch Founder Summit 2026 于当地时间 11 月 4 日上午 9 点在波士顿 SoWa Power Station 开幕，面向创始人与投资人，全天议程围绕融资、产品市场契合、企业增长与 AI 创新展开。 主办方提示，门票折扣在 9 点开门时结束，此前注册最多可省 100 美元，并可获赠第二张门票。 分论坛与圆桌从上午 10 点持续至下午 4 点半，AI 相关场次包括 Techable Ventures 的 Amulya Vishwanath 主讲“下一代 AI 机会：还有什么没被建造”，以及“GraphRAG 实践：用知识图谱抑制幻觉”“小而强：AI 如何让小团队跑赢巨头”等圆桌。 下午 4 点半至 6 点半设闭幕酒会供参会者对接。 该文为会议推广稿，除议程与票价信息外，未披露上述 AI 议题的具体内容或结论。",
    "signal": "AI议题贯穿创业峰会全场",
@@ -4722,6 +4738,22 @@
    "link": "https://www.qbitai.com/2026/11/507567.html",
    "date": "2026-11-04T08:49:12.000Z",
    "time": "16:49",
+   "date_md": "11-04"
+  },
+  {
+   "title_zh": "Daybreak Red 登陆政务云",
+   "summary": "Daybreak Red 已在 AWS GovCloud（美国东部）上线，向获批客户提供 GPT-5.6 Cyber。 该服务通过 Amazon Bedrock 交付，用于经授权的网络安全工作。 订阅简介未披露价格、配额、合规认证范围或具体可用客户名单。 由于原文无法访问，尚不能确认该模型在政务云中的数据处理方式与审计细节。",
+   "signal": "安全模型进入政务云",
+   "point": "GPT-5.6 Cyber 上线 AWS 政务云",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/daybreak-red-aws-govcloud",
+   "date": "2026-11-04T07:00:00.000Z",
+   "time": "15:00",
    "date_md": "11-04"
   },
   {

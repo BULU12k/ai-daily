@@ -1,29 +1,42 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 03:00 · 1条新知",
+  "headline": "AI日报 11-05 03:30 · 2条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-05-0300-p1.png",
-      "count": 1
+      "file": "docs/poster/2026-11-05-0330-p1.png",
+      "count": 2
     }
   ],
   "points": [
-    "Hugging Face政策负责人谈开源模型取舍"
+    "Hugging Face高管谈开源模型变现与中国竞争",
+    "谷歌校园AI政策引反弹，DuckDuckGo抢位"
   ],
   "items": [
     {
-      "title_zh": "开源AI模型的成本、风险与取舍",
-      "summary": "TechCrunch 的 Equity 播客采访了 Hugging Face 首席政策官兼战略高级副总裁 Irene Solaiman，讨论企业在开源 AI 模型上构建应用前需要了解的成本、风险与取舍。 节目议题包括：企业、政府和初创公司为何因降低成本而转向开源模型，何时使用最强模型并不划算，以及模型免费时谁在赚钱。 节目还讨论，美国为何可能需要英伟达这类资金雄厚的参与者打造开源前沿模型，以与中国开源模型竞争；以及若中国模型成为全球默认选项，美国将面临什么风险。 近期针对开源 AI 平台的攻击，也让如何在不封闭生态的前提下保障安全成为难题。 上述内容来自节目议题介绍，未展开具体案例或数据。",
+      "title_zh": "Hugging Face谈开源模型如何变现",
+      "summary": "开源模型正走向主流，企业、政府和创业公司看重的是更低成本、更强控制力与更高灵活性。 TechCrunch的Equity播客本期邀请Hugging Face首席政策官兼战略高级副总裁艾琳·索莱曼，讨论创业公司在基于开源模型开发产品前需要了解的事项，包括如何选择工具与基础设施，以及围绕开源AI未来的取舍。 节目还提出两个问题：模型能力越来越强且更易获取时，企业如何获取价值；在中国开源模型取得进展的背景下，美国厂商能否跟上。 需要说明的是，本文仅为播客节目介绍，未给出具体数据、案例或结论。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": false,
-      "signal": "开源模型竞争转向生态与安全",
-      "point": "Hugging Face政策负责人谈开源模型取舍",
+      "signal": "开源竞争焦点转向价值获取",
+      "point": "Hugging Face高管谈开源模型变现与中国竞争",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
+      "link": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+      "date_md": "11-05"
+    },
+    {
+      "title_zh": "DuckDuckGo趁谷歌AI争议争学校用户",
+      "summary": "谷歌近日告知学校可以关闭Gemini，但同时表示若关闭其他AI功能，学校将一并失去谷歌搜索，这一做法引发教育界反弹。 DuckDuckGo随即向学校推介自家搜索引擎：创始人兼CEO加布里埃尔·温伯格在X上给出把默认搜索引擎切换为DuckDuckGo的文档链接，并称可联系获取帮助；首席公共事务官卡米尔·巴兹巴兹则批评谷歌“向学童强推AI”。 谷歌随后澄清，Gemini、Gemini Notebook与搜索将默认关闭，学校可逐项开启，并称此举是给学校更多选择而非更少。 按谷歌往年公布的数据，学校中约有5000万台Chromebook，Google Classroom全球用户超过1.5亿。 DuckDuckGo自身也提供Duck.ai聊天界面等AI功能，但允许在搜索和浏览器设置中关闭，并设有专门关闭AI回答、AI生成图片与AI功能推荐的站点；公司称今年早些时候应用安装量增长30%。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "强推AI默认设置反噬平台信任",
+      "point": "谷歌校园AI政策引反弹，DuckDuckGo抢位",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
       "date_md": "11-05"
     }
   ]

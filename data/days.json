@@ -5098,6 +5098,27 @@
  ],
  "2026-11-05": [
   {
+   "title_zh": "Nothing首款AI原生设备12月发货",
+   "summary": "Nothing CEO裴宇（Carl Pei）在X上宣布，公司首款“AI原生”产品将于12月发货，但没有公布具体日期和售价。 他称这是一款“生产力工具”，没有新屏幕，也不可能做成应用，并强调它延续了Nothing产品一贯的个性与设计。 裴宇同时淡化了它与AI可穿戴设备的关联，称业界都在寻找“iPhone时刻”——吊坠、胸针、眼镜、伴游设备，但他对这一时刻有自己的判断。 Nothing此前曾表示计划推出AI智能眼镜和集成AI的耳机，这款设备的具体形态仍不明确。",
+   "signal": "无屏非应用的AI硬件路线待验证",
+   "point": "Nothing首款AI原生设备定于12月发货",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+   "date": "2026-11-04T22:13:16.000Z",
+   "time": "06:13",
+   "date_md": "11-05"
+  },
+  {
    "title_zh": "Uber单周AI代理仅完成4次叫车",
    "summary": "Uber在第三季度财报电话会上称，在10月万圣节所在的最繁忙一周，平台通过AI代理完成的叫车仅4次；同期Uber与Uber Eats合计约3.2亿次出行和订单，其中由AI代理下的Uber Eats订单也只有500单。 CEO科斯罗萨西称这项业务“非常早期、牵引力非常有限”，但希望未来增长。 作为对照，DoorDash上周在财报电话会上表示，迄今仅收到数百单AI代理订单，多数用户仍通过其应用下单。 Uber还称，其应用内平均叫车耗时50秒，复购常点餐食约需90秒，暗示AI代理未必节省时间；公司预计主要AI助手数量会从约8个增至10个以上。",
    "signal": "AI代理下单仍处极早期",
@@ -5322,6 +5343,38 @@
    "date": "2026-11-04T16:13:23.000Z",
    "time": "00:13",
    "date_md": "11-05"
+  },
+  {
+   "title_zh": "OpenAI流水线自动修补Linux内核漏洞",
+   "summary": "据OpenAI博客订阅简介，OpenAI搭建了一条自主流水线，能够发现、验证并生成补丁，用于修复Linux内核中的本地权限提升漏洞，数量为948个。 简介未说明漏洞发现与补丁生成的具体方法、验证标准，也未说明这些补丁是否已被上游社区采纳。 由于原文不可访问，上述细节无法核实，仅能确认该项目的目标规模为948个漏洞。",
+   "signal": "AI自动挖掘并修复内核漏洞成新范式",
+   "point": "OpenAI流水线为948个Linux内核漏洞生成补丁",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "date": "2026-11-04T08:00:00.000Z",
+   "time": "16:00",
+   "date_md": "11-04"
+  },
+  {
+   "title_zh": "DevRev用GPT-6.1 Sol驱动自助服务",
+   "summary": "据OpenAI博客订阅简介，DevRev将GPT-6.1 Sol用于其Computer与Operator产品，为企业服务场景提供自主自助服务能力。 简介称该方案在推理能力、响应速度与成本之间取得平衡，但未披露具体性能指标、成本降幅或客户部署规模。 由于原文不可访问，模型能力与效果说法均来自订阅简介，缺乏可核实的细节。",
+   "signal": "企业服务转向推理与成本平衡的智能体",
+   "point": "DevRev以GPT-6.1 Sol支撑自助服务智能体",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/devrev-enterprise-self-service",
+   "date": "2026-11-04T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "11-04"
   }
  ]
 }

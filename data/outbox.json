@@ -1,30 +1,8 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 02:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-05-0200-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Dharma 抽取器主张任意文档直出 JSON 字段"
-  ],
-  "items": [
-    {
-      "title_zh": "Dharma：文档转 JSON 字段",
-      "summary": "据订阅源标题，Dharma Field Extractor 的定位是“任意文档输入、结构化字段以 JSON 输出”，即把非结构化文档直接转换为可入库的字段数据。 目前仅能获取标题与发布时间（2026年11月4日），缺少正文与简介，无法确认其支持的文件格式、字段模板的定义方式、所用模型方案及抽取准确率。 此类工具的实用价值通常取决于两点：复杂版式与扫描件的解析稳定性，以及输出字段能否按用户自定义结构约束。 上述细节均待原文披露后才能判断。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "结构化抽取趋向即插即用",
-      "point": "Dharma 抽取器主张任意文档直出 JSON 字段",
-      "source": "Hugging Face Blog",
-      "link": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-      "date_md": "11-05"
-    }
-  ]
+  "headline": "AI日报 11-05 02:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

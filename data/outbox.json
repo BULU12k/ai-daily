@@ -1,29 +1,29 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 23:00 · 1条新知",
+  "headline": "AI日报 11-05 23:30 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-05-2300-p1.png",
+      "file": "docs/poster/2026-11-05-2330-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "Aina智能戒指399美元起，2027年1月发货"
+    "Dropbox 以 3.5 亿美元收购云技术公司…"
   ],
   "items": [
     {
-      "title_zh": "Aina发布带屏摇杆智能戒指",
-      "summary": "硬件初创公司Aina发布一款智能戒指，配备屏幕、摇杆、麦克风和扬声器，早鸟价为399美元，早鸟期结束后为499美元，计划2027年1月开始发货，周四开启预售。 用户可通过麦克风记录笔记、向AI代理发送提示、设置提醒，并在Mac上使用Wispr Flow或Aina自带的听写引擎进行语音输入；摇杆和手势可根据Mac或手机屏幕内容触发操作，也能控制音乐和Apple TV等设备。 Aina曾在7月融资550万美元，此前做过三键控制器Mirage，此次把戒指定位为AI及非AI应用的控制器。 TechCrunch记者试用数日后称，它像“戒指形态的智能手表”，可收通知、回复、显示会议并叫Uber，但不少软件功能仍在完善。 市场上已有Pebble Index 01、Sandbar Stream、Oasis和Natura等同类产品，Aina试图以更多控件和功能形成差异。",
+      "title_zh": "Dropbox 以 3.5 亿美元收购 Tigris Data，以加强其人工智能基础设施",
+      "summary": "Dropbox 以 3.5 亿美元收购云技术公司 Tigris Data，大力进军人工智能基础设施领域，这似乎是该公司迄今为止规模最大的收购。 周四宣布的这项交易预计将加强 Dropbox 的人工智能基础设施能力，并支持 DBX Agent Cloud 的开发，DBX Agent Cloud 是一个新的存储平台，旨在帮助企业和开发人员构建人工智能模型和代理。 Dropbox 通过电子邮件告诉 TechCrunch，该交易预计将于 2026 年第四季度完成。 据《华尔街日报》报道，该公司上个月已在全球裁员 9%。 首次推出适用于美国、英国和澳大利亚符合条件的标准版和高级版客户，并计划于 2027 年提供更广泛的可用性。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "智能戒指争当AI代理入口",
-      "point": "Aina智能戒指399美元起，2027年1月发货",
+      "degraded": true,
+      "signal": "—",
+      "point": "Dropbox 以 3.5 亿美元收购云技术公司…",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
       "date_md": "11-05"
     }
   ]

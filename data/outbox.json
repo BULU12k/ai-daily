@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 01:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 02:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-0200-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Claude接入银行账户查询，仅只读，美国本周Beta"
+  ],
+  "items": [
+    {
+      "title_zh": "Claude 推出个人财务工具",
+      "summary": "Anthropic 周四宣布为 Claude 推出名为「个人财务」的新工具，用户可通过 Plaid 连接银行与信用卡账户，再向 Claude 提问自己的收支情况。 该工具为只读权限，不能转移、管理或投资用户资金。 Anthropic 称它能用日常语言解释余额与交易，并按房租水电、餐饮、购物等类别汇总月度支出，还能标记重复扣款、意外费用和持续上涨的账单，并解释 APR 等概念、计算过去一年支付的利息。 Claude 可读取的信息限于银行名称、账户名称与类型、账号后四位、余额、信用额度以及最多两年的交易记录；公司称用户在该模块中的对话不会被用于训练模型。 该功能本周以 Beta 形式向美国 Pro、Max 和 Ultra 订阅用户推送。 此前 OpenAI 的 ChatGPT 已于 5 月推出类似工具，Claude 在这一方向上属于追赶。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI助手争夺个人财务入口",
+      "point": "Claude接入银行账户查询，仅只读，美国本周Beta",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+      "date_md": "11-06"
+    }
+  ]
 }

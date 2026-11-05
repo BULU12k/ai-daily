@@ -1,43 +1,8 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 04:00 · 2条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-06-0400-p1.png",
-      "count": 2
-    }
-  ],
-  "points": [
-    "Meta向全美用户开放Muse视频通话",
-    "英伟达发布Cosmos 3开源世界模型"
-  ],
-  "items": [
-    {
-      "title_zh": "Meta向全美开放Muse视频通话",
-      "summary": "Meta于周四宣布，其消费级AI助手Muse的语音与视频通话功能Muse Voice已向美国所有用户开放。 该功能在9月的Connect开发者大会上首次亮相，由Muse Realtime Avatar与Muse Realtime Voice两项新模型驱动数字人形象与用户实时对话。 与其他竞品的语音通话不同，Muse提供可自定义的动画形象（昵称Jolly），用户可改成人物、动物或其他角色；Meta称形象说话时会配合与对话语气相符的细微表情和手势。 公司认为这种拟人化能增强用户与AI助手的连接感，但目前未公布使用数据或效果评估。 该功能已在移动端、网页和Mac上线，后续将扩展到AI眼镜与年底前推出的“Muse Charm”类拓麻歌子硬件。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "AI助手拟人化，为硬件铺路",
-      "point": "Meta向全美用户开放Muse视频通话",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-      "date_md": "11-06"
-    },
-    {
-      "title_zh": "英伟达发布Cosmos 3世界模型",
-      "summary": "据Hugging Face博客的订阅信息，英伟达发布新一代Cosmos 3开源模型，定位为交互式世界模拟。 由于原文正文不可用，目前仅有标题与订阅简介可供核对，模型参数量、开源许可、训练数据、评测基准与具体发布时间等关键信息均无法确认，也无法判断其与上一代Cosmos模型的性能差异。 本条仅记录该发布动作，具体能力边界需以官方技术博客或模型卡为准。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "世界模型开源赛道再添一员",
-      "point": "英伟达发布Cosmos 3开源世界模型",
-      "source": "Hugging Face Blog",
-      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "date_md": "11-06"
-    }
-  ]
+  "headline": "AI日报 11-06 04:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

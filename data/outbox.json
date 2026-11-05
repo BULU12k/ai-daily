@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 06:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 07:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-0700-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Airbnb AI旅行代理2027上半年推出"
+  ],
+  "items": [
+    {
+      "title_zh": "Airbnb AI旅行代理2027年上线",
+      "summary": "Airbnb在周四发布的第三季度股东信和财报电话会上宣布，其自研AI旅行代理将于2027年上半年向消费者推出，此前公司仅表示会在“下一年”上线。 该代理不是纯聊天机器人，而是按用户需求实时组合地图、照片、比价、日历和行程等数百种旅行专用界面组件，Chesky称体验“有点像生成式UI”。 公司称其覆盖预订前后，包括修改订单、支付问题、退款、重新预订和24小时安全支持，且未来将扩展到房源、酒店、服务和体验。 Airbnb援引数据称80%旅客享受研究行程，Chesky据此认为通用代理未必适合旅行规划。 同期Q3营收同比增长19%至48.7亿美元，并将2026年营收增速预期从十几%区间的中段上调至高位。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "旅行AI代理转向生成式界面",
+      "point": "Airbnb AI旅行代理2027上半年推出",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "date_md": "11-06"
+    }
+  ]
 }

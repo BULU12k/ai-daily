@@ -1,42 +1,42 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 03:30 · 2条新知",
+  "headline": "AI日报 11-06 04:00 · 2条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-06-0330-p1.png",
+      "file": "docs/poster/2026-11-06-0400-p1.png",
       "count": 2
     }
   ],
   "points": [
-    "Meta总裁迪娜·鲍威尔·麦考密克(Dina…",
-    "初创公司 Charge Robotics…"
+    "Meta向全美用户开放Muse视频通话",
+    "英伟达发布Cosmos 3开源世界模型"
   ],
   "items": [
     {
-      "title_zh": "Meta 警告称，选举对数据中心的强烈反对可能会使人工智能扩张变得更加困难",
-      "summary": "Meta总裁迪娜·鲍威尔·麦考密克(Dina Powell McCormick)表示，民主党在中期选举中获胜将使公司建设数据中心变得更加困难，并补充说该行业“没有做得像我们需要的那样好来解释这些投资的好处。 ”\n这位 Meta 高管在周三的《华尔街日报》科技会议上发表讲话时指出，对数据中心的强烈反对——这在这个选举季的投票中非常重要——也与人们对人工智能技术的整体感受有关。 “人工智能的可见表现是数据中心，人们可以说，‘我不希望这个出现在我的社区中，’”她解释道。 这位高管还赞扬了 Meta 在构建数据中心方面的经验，称该公司已经这样做了 20 年，因为提供社交网络领域的产品需要大量的计算能力。 她说，如今，该公司在 23 个州设有数据中心，其中 5 个（包括德克萨斯州的一个）计划建设为 1 吉瓦或以上的项目。 Meta 将希望寄托在其人工智能投资上，尤其是其消费者人工智能代理 Muse，其用户规模远远超过目前的 1000 万，成为一家服务于数十亿人的企业。",
+      "title_zh": "Meta向全美开放Muse视频通话",
+      "summary": "Meta于周四宣布，其消费级AI助手Muse的语音与视频通话功能Muse Voice已向美国所有用户开放。 该功能在9月的Connect开发者大会上首次亮相，由Muse Realtime Avatar与Muse Realtime Voice两项新模型驱动数字人形象与用户实时对话。 与其他竞品的语音通话不同，Muse提供可自定义的动画形象（昵称Jolly），用户可改成人物、动物或其他角色；Meta称形象说话时会配合与对话语气相符的细微表情和手势。 公司认为这种拟人化能增强用户与AI助手的连接感，但目前未公布使用数据或效果评估。 该功能已在移动端、网页和Mac上线，后续将扩展到AI眼镜与年底前推出的“Muse Charm”类拓麻歌子硬件。",
       "content_basis": "article_body",
       "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "Meta总裁迪娜·鲍威尔·麦考密克(Dina…",
+      "degraded": false,
+      "signal": "AI助手拟人化，为硬件铺路",
+      "point": "Meta向全美用户开放Muse视频通话",
       "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "link": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
       "date_md": "11-06"
     },
     {
-      "title_zh": "OpenAI 发布了新的网络安全模型。够了吗？",
-      "summary": "初创公司 Charge Robotics 的首席技术官兼联合创始人 Max Justicz 使用 OpenAI 模型发现了一个严重漏洞，如果被利用，黑客可能会控制运行 Ubuntu（一种广泛使用的基于 Linux 的开源操作系统）的服务器。 Justicz 对网络安全有兴趣，之前在同一代码库中发现了一个漏洞，他告诉 TechCrunch，他使用 7 月份发布的 GPT 5.6 Sol 发现了这个问题，通过人工智能制造商的 Daybreak Blue 程序，该程序使网络安全防御者能够访问强大的前沿模型。 Justicz 说：“我实际上只是将 ChatGPT 瞄准了相同的代码主体，并说‘我发现了这个错误，该错误几年前就被修复了，请找出错误或更严重的错误’，然后它在 2 小时内就回来了。 ”除了 Daybreak 的模型访问之外，OpenAI 还宣布了一项 10 亿美元的计划，以支持该计划中从事电网或供水系统等关键基础设施工作的网络安全专业人员。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "初创公司 Charge Robotics…",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+      "title_zh": "英伟达发布Cosmos 3世界模型",
+      "summary": "据Hugging Face博客的订阅信息，英伟达发布新一代Cosmos 3开源模型，定位为交互式世界模拟。 由于原文正文不可用，目前仅有标题与订阅简介可供核对，模型参数量、开源许可、训练数据、评测基准与具体发布时间等关键信息均无法确认，也无法判断其与上一代Cosmos模型的性能差异。 本条仅记录该发布动作，具体能力边界需以官方技术博客或模型卡为准。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "世界模型开源赛道再添一员",
+      "point": "英伟达发布Cosmos 3开源世界模型",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
       "date_md": "11-06"
     }
   ]

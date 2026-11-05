@@ -5098,6 +5098,30 @@
  ],
  "2026-11-05": [
   {
+   "title_zh": "Box联手英伟达推内容检索系统",
+   "summary": "Box在开发者大会上展示 Box Content Retrieval，将英伟达 Nemotron 嵌入系统接入其产品核心，利用嵌入生成的元数据帮助智能体更有效地回答查询。 Box称该功能可带来更快、更准确且成本更低的查询；英伟达生成式AI软件副总裁 Kari Briski 对 TechCrunch 预计，查询速度提升至4倍，错误减少20%，令牌用量减少90%。 该功能将面向 Box Enterprise Advance 客户，计划明年初推出。 Box CEO Aaron Levie 表示，系统不再让智能体逐份阅读文档，而是返回与查询最相关的文档片段。 Nemotron 的嵌入不止关键词，可映射底层概念，适用于律师查找条款和判例等场景。 不过模型虽可免费获取，系统仍高度依赖 Box 既有元数据和权限控制，从零复现并不容易。",
+   "signal": "检索层成企业智能体竞争焦点",
+   "point": "Box检索宣称快4倍、错误少20%、省90%令牌",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P7",
+    "P8"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+   "date": "2026-11-05T14:00:00.000Z",
+   "time": "22:00",
+   "date_md": "11-05"
+  },
+  {
    "title_zh": "YC初创设百万美元材料科学奖",
    "summary": "曾参与YC 2026年春季营的旧金山初创公司Discovered Materials宣布设立总额100万美元的奖池，征集AI模型解决材料科学五个开放难题。 公司邀请多所高校学者拟定问题，涵盖铜氧化物超导理论、硅与二氧化硅界面结构预测、晶粒结构与热性质映射、光照改变材料行为的理论，以及改进密度泛函理论（DFT）的数值方法。 宣布前，公司让前沿实验室的AI智能体联网并自主工作数天，但每个问题均未有明显进展。 公司主业是用AI寻找先进芯片材料，与芯片巨头合作研究，并称找到工业可用材料的时间表已比原计划一年有所提前。",
    "signal": "AI材料科学亟需可验证目标",

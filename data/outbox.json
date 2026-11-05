@@ -1,8 +1,30 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 22:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-05 22:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-05-2230-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Box检索宣称快4倍、错误少20%、省90%令牌"
+  ],
+  "items": [
+    {
+      "title_zh": "Box联手英伟达推内容检索系统",
+      "summary": "Box在开发者大会上展示 Box Content Retrieval，将英伟达 Nemotron 嵌入系统接入其产品核心，利用嵌入生成的元数据帮助智能体更有效地回答查询。 Box称该功能可带来更快、更准确且成本更低的查询；英伟达生成式AI软件副总裁 Kari Briski 对 TechCrunch 预计，查询速度提升至4倍，错误减少20%，令牌用量减少90%。 该功能将面向 Box Enterprise Advance 客户，计划明年初推出。 Box CEO Aaron Levie 表示，系统不再让智能体逐份阅读文档，而是返回与查询最相关的文档片段。 Nemotron 的嵌入不止关键词，可映射底层概念，适用于律师查找条款和判例等场景。 不过模型虽可免费获取，系统仍高度依赖 Box 既有元数据和权限控制，从零复现并不容易。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "检索层成企业智能体竞争焦点",
+      "point": "Box检索宣称快4倍、错误少20%、省90%令牌",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "date_md": "11-05"
+    }
+  ]
 }

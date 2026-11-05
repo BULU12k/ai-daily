@@ -5098,6 +5098,51 @@
  ],
  "2026-11-05": [
   {
+   "title_zh": "苹果下调工程团队AI每日预算",
+   "summary": "彭博社11月5日报道，苹果已在10月下调工程团队的每日AI使用额度，从300美元降到200美元，部分额度还将进一步降至每天100美元；在工程部门之外，苹果正考虑把每日上限压到25美元。 苹果对此未予置评。 报道称，今年早些时候企业普遍鼓励员工尽量多用AI，随后账单到期，开始转向配额管理。 其背景是AI构建与运行成本，与它带来的生产率提升之间仍存在难以量化的落差。 上述数字均来自彭博社转述的信源，具体执行范围未获苹果确认。",
+   "signal": "AI用量从扩张转向成本约束",
+   "point": "苹果工程团队AI日预算从300降至200美元",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P4",
+    "P5"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+   "date": "2026-11-05T01:26:22.000Z",
+   "time": "09:26",
+   "date_md": "11-05"
+  },
+  {
+   "title_zh": "VAST发布V·STAR人才计划",
+   "summary": "据量子位报道，VAST（三启万物）近日发布新一期V·STAR顶尖人才计划，开放3D生成基础模型、三维理解与智能体、世界模型三个研究方向，面向2027届本、硕、博毕业生及非应届实习生，工作地包括北京、杭州、上海、深圳与海外远程。 文中称公司半年内获得约50亿元融资，入选者可获数据、算力与协作支持，薪酬突破传统校招职级限制，特别优秀者上不封顶，并配长期期权。 技术方面，Tripo P系列底层Nexus框架将顶点与拓扑生成解耦，相关论文7月被SIGGRAPH收录；8月发布的P2.0支持原生四边面拓扑，可在数秒内生成面数可控、部件可拆分的三维对象。 10月开源的实时交互渲染器EdenLive，按官方测试可在单张GPU上以超过24帧/秒生成720P画面，并支持分钟级连续生成；团队也承认更长时一致性、控制精度与实时性成本仍是待解课题。 融资与性能数据均来自公司自述及招聘宣传，未获第三方验证。",
+   "signal": "3D与世界模型人才争夺前移校园",
+   "point": "VAST开放3D与世界模型方向，半年融资约50亿",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P7",
+    "P8",
+    "P34",
+    "P35",
+    "P42",
+    "P81",
+    "P85"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/507675.html",
+   "date": "2026-11-05T00:41:34.000Z",
+   "time": "08:41",
+   "date_md": "11-05"
+  },
+  {
    "title_zh": "AI政治行动委员会中期选举投入数百万美元",
    "summary": "支持与反对AI行业的政治行动委员会在中期选举投入数百万美元，结果分化。 American Mission与Building the Future合计花480万美元支持南卡罗来纳州参议员候选人Darline Graham，她仍落败；American Mission另为两名共和党众议员候选人各投入逾50万美元，二人均败选。 LTF的民主党组织Think Big支持的佛罗里达州众议员Jared Moskowitz则成功连任。 Anthropic支持的Public First在部分共和党选战失利，但向支持加州州参议员Scott Wiener的PAC捐了300万美元，后者在发稿时领先。 Guardrails Alliance花逾100万美元反对Jimmy Gomez和Aaron Flint，两人落败，并以30万美元支持击败Gomez的Angela Gonzales-Torres。 LTF称初选更有效，已在初选投入2738万美元，包括800万美元反对Alex Bores；双方核心分歧是建立全国AI框架还是保留州级监管。",
    "signal": "AI政治资金难换选举胜果",

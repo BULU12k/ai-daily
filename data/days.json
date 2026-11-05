@@ -5786,6 +5786,29 @@
  ],
  "2026-11-06": [
   {
+   "title_zh": "OpenAI称2027年或具备上市条件",
+   "summary": "OpenAI联合创始人兼总裁Greg Brockman在《华尔街日报》科技会议上表示，公司到2027年可能具备上市条件；当被问及明年是否准备好IPO时，他回答“我想是的”。 他回顾称，今年一、二季度“相当艰难”，在智能体编程这一方向上OpenAI“甚至不在讨论范围内”：Anthropic的Claude Code已取得市场份额，而自家Codex少有人提及。 此后团队埋头执行，第三季度年化收入环比增长70%，其中企业业务规模翻倍。 企业客户目前贡献公司大部分收入，此前这部分占比仅约30%；他强调消费端收入并未萎缩，仍在增长。 他提到与摩根大通的合作为近期签约的例证，并称一年前外界普遍把OpenAI看作消费公司，质疑其对企业市场的投入。",
+   "signal": "企业业务撑起IPO时间表",
+   "point": "OpenAI Q3年化收入环比增70%，企业业务过半",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P4",
+    "P6",
+    "P7",
+    "P8"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+   "date": "2026-11-05T18:02:27.000Z",
+   "time": "02:02",
+   "date_md": "11-06"
+  },
+  {
    "title_zh": "Claude 推出个人财务工具",
    "summary": "Anthropic 周四宣布为 Claude 推出名为「个人财务」的新工具，用户可通过 Plaid 连接银行与信用卡账户，再向 Claude 提问自己的收支情况。 该工具为只读权限，不能转移、管理或投资用户资金。 Anthropic 称它能用日常语言解释余额与交易，并按房租水电、餐饮、购物等类别汇总月度支出，还能标记重复扣款、意外费用和持续上涨的账单，并解释 APR 等概念、计算过去一年支付的利息。 Claude 可读取的信息限于银行名称、账户名称与类型、账号后四位、余额、信用额度以及最多两年的交易记录；公司称用户在该模块中的对话不会被用于训练模型。 该功能本周以 Beta 形式向美国 Pro、Max 和 Ultra 订阅用户推送。 此前 OpenAI 的 ChatGPT 已于 5 月推出类似工具，Claude 在这一方向上属于追赶。",
    "signal": "AI助手争夺个人财务入口",

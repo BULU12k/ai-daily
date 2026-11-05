@@ -1,30 +1,8 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 20:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-05-2000-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "上市募资 4.65 亿美元，上半年收入仅 17.4 万"
-  ],
-  "items": [
-    {
-      "title_zh": "Agility 上市成首家纯人形机器人公司",
-      "summary": "人形机器人公司 Agility 通过 SPAC 反向并购登陆纳斯达克，成为首家以人形机器人为主业的上市公司，并从散户与私募投资者处募得 4.65 亿美元新资本。 公司 2015 年从俄勒冈州立大学分拆，主打在工业场景搬运重物，Digit 已部署在包括 Schaeffler、GXO、丰田加拿大制造与 Mercado Libre 在内的 9 家客户处，仅在 GXO 一处物流设施就搬运了逾 10 万个料箱。 不过商业化规模仍小：2026 年上半年营收仅 17.4 万美元且主要来自关联方，同期亏损 3.62 亿美元。 公司称新一代 Digit 5 已获得 30 家客户共 3 亿美元的计划合同，该机型可在人身旁安全工作，不再局限于隔离工作单元，原型将在 CES 2027 展示、2027 年底广泛供货。 客户需先支付 50 万美元做现场概念验证，2026 年 5 月仅有 4 家签约；机器人抓取放置准确率为 98%，但仍缺乏复杂操作能力，公司也未承诺本轮募资足以实现自我造血。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "人形机器人进入财报考验期",
-      "point": "上市募资 4.65 亿美元，上半年收入仅 17.4 万",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
-      "date_md": "11-05"
-    }
-  ]
+  "headline": "AI日报 11-05 20:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

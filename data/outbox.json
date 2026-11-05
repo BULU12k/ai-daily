@@ -1,30 +1,8 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 10:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-05-1000-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "近八成选民反对社区建数据中心"
-  ],
-  "items": [
-    {
-      "title_zh": "中期选举后数据中心政治压力上升",
-      "summary": "美国11月3日中期选举后，民主党全面控制国会，共和党仍掌控白宫，数据中心反对情绪成为政治力量。 NBC出口民调显示，超过半数受访者认为AI弊大于利，近80%反对在自家社区建设数据中心，近60%称数据中心是投票的关键或主要因素。 俄亥俄州Meta曾计划建设约70万平方英尺设施的县已通过数据中心禁令，多个州反对快速扩建的候选人胜选，尽管支持AI的超级政治行动委员会投入数百万美元。 摩根士丹利和高盛分别预计俄亥俄、佐治亚和得州建设可能受阻；Sanders与Ocasio-Cortez提出的全国暂停新建数据中心法案仍可能遭否决。 报道还提到xAI孟菲斯数据中心使用燃气轮机，以及亚马逊在加州吉尔罗伊利用45年历史的分区法规建站、地方官员签署保密协议等争议。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "数据中心成选举议题，地方阻力增强",
-      "point": "近八成选民反对社区建数据中心",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-      "date_md": "11-05"
-    }
-  ]
+  "headline": "AI日报 11-05 10:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

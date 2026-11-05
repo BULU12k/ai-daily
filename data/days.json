@@ -6055,6 +6055,22 @@
    "date": "2026-11-05T08:48:32.000Z",
    "time": "16:48",
    "date_md": "11-05"
+  },
+  {
+   "title_zh": "Merge 用 OpenAI 技术开发内部工具",
+   "summary": "据 OpenAI 博客的订阅简介，Merge 借助 GPT-6 Astra、ChatGPT 与 Codex 等 OpenAI 技术，用于审查产品代码并支持市场推广工作。 其团队还把 AI 用于筹划高管晚宴、准备销售更新等业务事务。 以上信息仅来自简介，原文页面返回 403 无法获取，因此缺少具体使用规模、效果数据与部署方式等细节。",
+   "signal": "企业把AI嵌入研发与销售流程",
+   "point": "Merge 用 GPT-6 Astra 与 Codex…",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/merge-builds-with-openai",
+   "date": "2026-11-05T08:00:00.000Z",
+   "time": "16:00",
+   "date_md": "11-05"
   }
  ]
 }

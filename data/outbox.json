@@ -1,30 +1,8 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 00:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-06-0030-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "7654页数学库转为1600万行Lean代码"
-  ],
-  "items": [
-    {
-      "title_zh": "Axiom形式化验证Stacks数学库",
-      "summary": "Axiom Math于周三宣布，其AI智能体已完成对Stacks Project的形式化验证。 该数学资料库由哥伦比亚大学数学家Johan de Jong于2005年发起，靠数学家持续贡献扩充，内容从本科代数一直延伸到代数、几何与数论的前沿成果，被同行视为人工编写规模最大的数学文献之一。 团队把约7654页内容转写为约1600万行Lean代码，由证明助手逐行检查，并在这一体量下保持了定理与定义之间相互依赖关系的完整。 公司称这填补了形式化数学中的一大空白——代数几何此前几乎无可依托的检查基础，研究者现在可以在此基础上验证新工作。 Axiom由25岁的斯坦福数学博士辍学生Carina Hong于2025年3月创立，今年3月完成Menlo Ventures领投的2亿美元A轮融资，文章称其估值为16亿美元。 技术路径上，公司自研了擅长数学的模型，并给智能体较松散的分层结构、让它们并行运行并自行认领任务。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "数学形式化或成AI可信底座",
-      "point": "7654页数学库转为1600万行Lean代码",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-      "date_md": "11-06"
-    }
-  ]
+  "headline": "AI日报 11-06 01:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

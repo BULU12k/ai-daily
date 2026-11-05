@@ -1,30 +1,8 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 23:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-05-2330-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Dropbox 以 3.5 亿美元收购云技术公司…"
-  ],
-  "items": [
-    {
-      "title_zh": "Dropbox 以 3.5 亿美元收购 Tigris Data，以加强其人工智能基础设施",
-      "summary": "Dropbox 以 3.5 亿美元收购云技术公司 Tigris Data，大力进军人工智能基础设施领域，这似乎是该公司迄今为止规模最大的收购。 周四宣布的这项交易预计将加强 Dropbox 的人工智能基础设施能力，并支持 DBX Agent Cloud 的开发，DBX Agent Cloud 是一个新的存储平台，旨在帮助企业和开发人员构建人工智能模型和代理。 Dropbox 通过电子邮件告诉 TechCrunch，该交易预计将于 2026 年第四季度完成。 据《华尔街日报》报道，该公司上个月已在全球裁员 9%。 首次推出适用于美国、英国和澳大利亚符合条件的标准版和高级版客户，并计划于 2027 年提供更广泛的可用性。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": true,
-      "signal": "—",
-      "point": "Dropbox 以 3.5 亿美元收购云技术公司…",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-      "date_md": "11-05"
-    }
-  ]
+  "headline": "AI日报 11-05 23:43 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

@@ -1,8 +1,43 @@
 {
   "date": "2026-11-05",
   "pushed": false,
-  "headline": "AI日报 11-05 18:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-05 19:01 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-05-1901-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "OpenAI发布两份AI基建政策文件",
+    "65MB端侧语音模型两周下载超20万次"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI发布AI基建政策蓝图",
+      "summary": "OpenAI 宣布推出名为“国家社区契约”（National Community Compact）和“算力园区政策蓝图”（Compute Campus Policy Blueprint）的两份文件。 公司称，这两份文件旨在保护当地资源、创造就业岗位，并为负责任的 AI 基础设施建设提供指引。 原文页面返回 403，文件的具体条款、适用范围、适用地区与落地时间均无法核实，以上内容仅来自订阅简介，信息可能不完整。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "算力扩张开始附带社区条件",
+      "point": "OpenAI发布两份AI基建政策文件",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "date_md": "11-05"
+    },
+    {
+      "title_zh": "端侧语音模型Phonon登顶多项榜单",
+      "summary": "Phonon 是一个可在本地设备运行的小型开源语音合成模型，不需要服务器和网络，用户输入的文本不会离开设备。 此次发布两个规格，体积分别约 65MB 和 75MB，合计覆盖英语、法语、德语、西班牙语和葡萄牙语，内置音色超过 100 种，并能处理电话号码、日期和编码等常见难点。 其中 Phonon 31m 只支持英语，采用 Apache 2.0 许可，可用于商业产品；Phonon 40m 覆盖五种语言，采用 CC BY-NC 非商用许可。 模型沿用 Pocket TTS 系列，用 flow matching 生成音频，官方称训练初期数值不稳定，需多种技巧才能在五种语言上稳定出结果。 在 Hugging Face 开放 TTS 排行榜上，其可懂度在德语和西班牙语中排第一，在全部评测语言中进入前三，官方称同榜对手模型体积最高达其 100 倍；在 CPU 流式场景的首帧音频延迟一项中居首。 发布两周内下载量超过 20 万次。",
+      "content_basis": "article_excerpts",
+      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+      "degraded": false,
+      "signal": "端侧小模型开始挑战云端语音",
+      "point": "65MB端侧语音模型两周下载超20万次",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/phonon-tts",
+      "date_md": "11-05"
+    }
+  ]
 }

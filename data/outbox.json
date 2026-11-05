@@ -1,30 +1,43 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 03:00 · 1条新知",
+  "headline": "AI日报 11-06 03:30 · 2条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-06-0300-p1.png",
-      "count": 1
+      "file": "docs/poster/2026-11-06-0330-p1.png",
+      "count": 2
     }
   ],
   "points": [
-    "隆重推出 GPT-6 Cyber​​，这是 OpenAI…"
+    "Meta总裁迪娜·鲍威尔·麦考密克(Dina…",
+    "初创公司 Charge Robotics…"
   ],
   "items": [
     {
-      "title_zh": "GPT-6 Cyber​​：推进一致的网络安全代理的前沿",
-      "summary": "隆重推出 GPT-6 Cyber​​，这是 OpenAI 的网络安全模型，用于查找可利用的漏洞并开发修复程序，并经过培训以保持在授权范围内。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "title_zh": "Meta 警告称，选举对数据中心的强烈反对可能会使人工智能扩张变得更加困难",
+      "summary": "Meta总裁迪娜·鲍威尔·麦考密克(Dina Powell McCormick)表示，民主党在中期选举中获胜将使公司建设数据中心变得更加困难，并补充说该行业“没有做得像我们需要的那样好来解释这些投资的好处。 ”\n这位 Meta 高管在周三的《华尔街日报》科技会议上发表讲话时指出，对数据中心的强烈反对——这在这个选举季的投票中非常重要——也与人们对人工智能技术的整体感受有关。 “人工智能的可见表现是数据中心，人们可以说，‘我不希望这个出现在我的社区中，’”她解释道。 这位高管还赞扬了 Meta 在构建数据中心方面的经验，称该公司已经这样做了 20 年，因为提供社交网络领域的产品需要大量的计算能力。 她说，如今，该公司在 23 个州设有数据中心，其中 5 个（包括德克萨斯州的一个）计划建设为 1 吉瓦或以上的项目。 Meta 将希望寄托在其人工智能投资上，尤其是其消费者人工智能代理 Muse，其用户规模远远超过目前的 1000 万，成为一家服务于数十亿人的企业。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
       "degraded": true,
       "signal": "—",
-      "point": "隆重推出 GPT-6 Cyber​​，这是 OpenAI…",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/introducing-gpt-6-cyber",
-      "date_md": "11-05"
+      "point": "Meta总裁迪娜·鲍威尔·麦考密克(Dina…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "date_md": "11-06"
+    },
+    {
+      "title_zh": "OpenAI 发布了新的网络安全模型。够了吗？",
+      "summary": "初创公司 Charge Robotics 的首席技术官兼联合创始人 Max Justicz 使用 OpenAI 模型发现了一个严重漏洞，如果被利用，黑客可能会控制运行 Ubuntu（一种广泛使用的基于 Linux 的开源操作系统）的服务器。 Justicz 对网络安全有兴趣，之前在同一代码库中发现了一个漏洞，他告诉 TechCrunch，他使用 7 月份发布的 GPT 5.6 Sol 发现了这个问题，通过人工智能制造商的 Daybreak Blue 程序，该程序使网络安全防御者能够访问强大的前沿模型。 Justicz 说：“我实际上只是将 ChatGPT 瞄准了相同的代码主体，并说‘我发现了这个错误，该错误几年前就被修复了，请找出错误或更严重的错误’，然后它在 2 小时内就回来了。 ”除了 Daybreak 的模型访问之外，OpenAI 还宣布了一项 10 亿美元的计划，以支持该计划中从事电网或供水系统等关键基础设施工作的网络安全专业人员。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": true,
+      "signal": "—",
+      "point": "初创公司 Charge Robotics…",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+      "date_md": "11-06"
     }
   ]
 }

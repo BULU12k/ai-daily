@@ -5944,6 +5944,22 @@
    "date_md": "11-06"
   },
   {
+   "title_zh": "澳洲高校将ChatGPT引入教学",
+   "summary": "据OpenAI博客的订阅简介，澳大利亚多所高校正在扩大ChatGPT的使用范围，并把AI工具引入教学与学习环节，目标是让学生为AI普及后的劳动力市场做好准备。 简介未说明涉及哪些具体院校、覆盖多少学生，也未披露OpenAI与校方的合作形式、付费方式或数据使用条款。 该简介同样没有给出教学效果的评估数据，因此目前无法判断这类做法对学习成果的实际影响。 上述内容仅来自订阅简介，原文因链接返回403而未能获取，细节有待核实。",
+   "signal": "高校把AI工具纳入教学环节",
+   "point": "澳高校扩大ChatGPT使用，推动AI进课堂",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "date": "2026-11-05T17:00:00.000Z",
+   "time": "01:00",
+   "date_md": "11-06"
+  },
+  {
    "title_zh": "Axiom形式化验证Stacks数学库",
    "summary": "Axiom Math于周三宣布，其AI智能体已完成对Stacks Project的形式化验证。 该数学资料库由哥伦比亚大学数学家Johan de Jong于2005年发起，靠数学家持续贡献扩充，内容从本科代数一直延伸到代数、几何与数论的前沿成果，被同行视为人工编写规模最大的数学文献之一。 团队把约7654页内容转写为约1600万行Lean代码，由证明助手逐行检查，并在这一体量下保持了定理与定义之间相互依赖关系的完整。 公司称这填补了形式化数学中的一大空白——代数几何此前几乎无可依托的检查基础，研究者现在可以在此基础上验证新工作。 Axiom由25岁的斯坦福数学博士辍学生Carina Hong于2025年3月创立，今年3月完成Menlo Ventures领投的2亿美元A轮融资，文章称其估值为16亿美元。 技术路径上，公司自研了擅长数学的模型，并给智能体较松散的分层结构、让它们并行运行并自行认领任务。",
    "signal": "数学形式化或成AI可信底座",

@@ -1,30 +1,8 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 23:00 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-06-2300-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "亚马逊推 Alexa 短信购物，先向部分美国用户开放"
-  ],
-  "items": [
-    {
-      "title_zh": "亚马逊上线 Alexa 短信购物功能",
-      "summary": "亚马逊11月6日宣布，将上线通过短信与 Alexa 对话的购物功能：部分美国用户会收到启用邀请，也可加入候补名单，未来数周逐步扩大范围。 用户可用自然语言搜索商品、加入购物车并完成购买，还能管理清单、跟踪价格、在网页上搜索商品、比较产品、查询订单状态，或上传商品或穿搭照片寻找相似商品。 亚马逊称 Alexa 会逐步学习用户偏好并给出推荐。 该功能推出前，亚马逊曾在9月阻止 Meta 的 Muse 查询其网站，时点紧邻假日购物季。",
-      "content_basis": "article_body",
-      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
-      "degraded": false,
-      "signal": "电商平台自建代理入口",
-      "point": "亚马逊推 Alexa 短信购物，先向部分美国用户开放",
-      "source": "TechCrunch AI",
-      "link": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-      "date_md": "11-06"
-    }
-  ]
+  "headline": "AI日报 11-06 23:30 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

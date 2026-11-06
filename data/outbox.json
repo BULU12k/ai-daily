@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 20:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 21:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-2100-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "1000万美元种子轮，Studio含1万3D环境"
+  ],
+  "items": [
+    {
+      "title_zh": "Physicl获1000万美元种子轮",
+      "summary": "Physicl 完成 1000 万美元种子轮融资，投资方为 Inovia Capital。 创始人兼 CEO Alex de Vigan 曾用十年创办 nfinite，为品牌和零售商生成电商 3D 商品模型；生成式 AI 冲击原有业务后，他把那套把杂乱、不完整的真实信息转成高保真 3D 的流程，转向机器人训练。 据其描述，物理 AI 模型靠视频训练收益有限，靠遥操作采集数据又昂贵，而仿真世界要忠实还原物理规律并不容易。 Physicl 推出 Studio，内含 1 万个 3D 环境和 10 万个资产，可针对杯子放在杂乱台面或处于阴影中等困难边缘案例生成合成数据。 世界模型公司 SpAItial 作为早期客户，用它提升上周发布的 Echo-3 的保真度。 de Vigan 承认这一赛道尚年轻、边界模糊，Physicl 想做持续生成合成数据的工具链，而非单纯的数据供应商。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "仿真数据成机器人训练新战场",
+      "point": "1000万美元种子轮，Studio含1万3D环境",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+      "date_md": "11-06"
+    }
+  ]
 }

@@ -1,8 +1,30 @@
 {
   "date": "2026-11-07",
   "pushed": false,
-  "headline": "AI日报 11-07 06:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-07 07:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-07-0700-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "新轮已募110亿美元，估值1.25万亿美元"
+  ],
+  "items": [
+    {
+      "title_zh": "OpenAI新轮融资已募110亿美元",
+      "summary": "据彭博社报道，OpenAI在一轮尚未关闭的新融资中已募得110亿美元，对应估值1.25万亿美元。 该轮融资预计在未来数周内完成，总规模可能约200亿美元。 相比之下，彭博社9月底曾报道OpenAI计划在该轮募集300亿美元，目前披露的金额明显低于这一目标。 OpenAI未回应TechCrunch的置评请求。 同在当天，彭博社还报道称，Anthropic IPO的潜在买家预期估值最低或至1.1万亿美元，低于约一个月前投资者预期的2万亿美元。 OpenAI此前曾暗示今年启动上市，随后推迟，外界预计其可能在明年某个时点IPO。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "融资目标缩水，AI估值预期松动",
+      "point": "新轮已募110亿美元，估值1.25万亿美元",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "date_md": "11-07"
+    }
+  ]
 }

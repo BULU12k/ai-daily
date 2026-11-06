@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 17:43 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 18:00 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-1800-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "ASR榜新增埃及与尼日利亚英语私有集"
+  ],
+  "items": [
+    {
+      "title_zh": "开放ASR榜新增埃及与尼日利亚英语",
+      "summary": "Hugging Face 的 Open ASR Leaderboard 宣布与 Liva AI 合作，新增埃及和尼日利亚两种英语口音的私有评测数据，目标是减少刷榜空间并提升评测可信度。 此前该榜已加入 Appen 和 DataOceanAI 的 11 个切分，覆盖五种口音，并与 Voice Arena 增加了印度口音英语私有集。 新增口音后，榜单将按 Kachru 三圈模型提供更细分组：美国与非美国（英国、澳大利亚、加拿大、印度、尼日利亚、埃及），以及内圈与外围/扩展圈对比。 官方称未来口音增多后，会再拆分外围与扩展圈。 据文章介绍，Liva AI 通过消费产品收集多模态交互数据，并围绕模型缺口设计采集。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "ASR评测转向口音覆盖与防刷分",
+      "point": "ASR榜新增埃及与尼日利亚英语私有集",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "date_md": "11-06"
+    }
+  ]
 }

@@ -1,8 +1,30 @@
 {
   "date": "2026-11-07",
   "pushed": false,
-  "headline": "AI日报 11-07 01:16 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-07 01:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-07-0130-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "41项数据中心公投中40项支持加码限制"
+  ],
+  "items": [
+    {
+      "title_zh": "美中期选举后AI业或临严监管",
+      "summary": "美国中期选举中民主党取得历史性胜利，TechCrunch认为这可能改变科技行业。 文章称，本周二共有41项与数据中心相关的公投措施，除一项外，多数选民投票支持对数据中心开发施加更多限制。 即便数据中心未直接列入公投，也成为重要议题；新当选的民主党州长和国会议员可能支持额外监管。 TechCrunch的Equity播客讨论了选举对科技业的影响，涉及数据中心（OpenAI已在尝试重塑其表述）以及政府对大型科技公司审查趋严。 文章未给出具体立法细节，更多是趋势判断。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "数据中心公投成监管风向标",
+      "point": "41项数据中心公投中40项支持加码限制",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "date_md": "11-07"
+    }
+  ]
 }

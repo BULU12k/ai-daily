@@ -5809,6 +5809,22 @@
    "date_md": "11-06"
   },
   {
+   "title_zh": "Cult.fit 用 Codex 帮团队建工具",
+   "summary": "OpenAI 博客的订阅简介显示，印度健身与健康服务平台 Cult.fit 正在使用 Codex，帮助不同职能团队构建工具、加快工作节奏，并改变工作开展方式。 简介没有说明具体部署规模、使用团队数量、工具类型或效率提升数据，因此无法判断实际落地效果。 该条原文因 HTTP 403 无法获取，以上信息仅来自订阅简介，可能不完整。",
+   "signal": "AI编程工具向业务团队渗透",
+   "point": "Cult.fit 用 Codex 帮跨职能团队建工具",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/cultfit-builds-with-codex",
+   "date": "2026-11-05T20:00:00.000Z",
+   "time": "04:00",
+   "date_md": "11-06"
+  },
+  {
    "title_zh": "Meta向全美开放Muse视频通话",
    "summary": "Meta于周四宣布，其消费级AI助手Muse的语音与视频通话功能Muse Voice已向美国所有用户开放。 该功能在9月的Connect开发者大会上首次亮相，由Muse Realtime Avatar与Muse Realtime Voice两项新模型驱动数字人形象与用户实时对话。 与其他竞品的语音通话不同，Muse提供可自定义的动画形象（昵称Jolly），用户可改成人物、动物或其他角色；Meta称形象说话时会配合与对话语气相符的细微表情和手势。 公司认为这种拟人化能增强用户与AI助手的连接感，但目前未公布使用数据或效果评估。 该功能已在移动端、网页和Mac上线，后续将扩展到AI眼镜与年底前推出的“Muse Charm”类拓麻歌子硬件。",
    "signal": "AI助手拟人化，为硬件铺路",

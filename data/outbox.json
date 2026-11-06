@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 14:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 14:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-1430-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "派拓网络拟5亿美元现金收购Clutch"
+  ],
+  "items": [
+    {
+      "title_zh": "派拓网络拟5亿美元收购Clutch",
+      "summary": "知情人士称，Palo Alto Networks正洽谈以5亿美元现金加里程碑付款收购AI代理安全公司Clutch Security；Clutch专注于管理AI代理对企业系统的访问权限，双方均未回应置评请求。 Clutch成立约三年，2025年1月完成Lightspeed与SignalFire领投的2000万美元A轮融资时估值8500万美元，目前年度经常性收入接近1000万美元，按此计算交易估值约为ARR的50倍。 若交易完成，这将是Palo Alto Networks今年第七笔收购，延续其通过并购补强技术的策略。 该高溢价并非孤例：TechCrunch此前报道，云安全公司Upwind拒绝了DataDog约40倍ARR的收购报价。 Clutch的同行也相继被收购，Cyera以10亿美元收购Oasis Security，Cisco则以约4亿美元收购Astrix。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI代理安全并购溢价达50倍ARR",
+      "point": "派拓网络拟5亿美元现金收购Clutch",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "date_md": "11-06"
+    }
+  ]
 }

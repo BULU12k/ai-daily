@@ -6610,6 +6610,22 @@
    "date": "2026-11-06T08:00:00.000Z",
    "time": "16:00",
    "date_md": "11-06"
+  },
+  {
+   "title_zh": "OpenAI发布湿实验AI基准",
+   "summary": "OpenAI 在博客订阅简介中介绍 BioBasicsBench，这是一项包含 100 个任务的基准，用于衡量 AI 智能体解读原始实验数据、处理日常湿实验室科研任务的能力。 简介仅给出任务数量和测评方向，未披露任务构成、评分方式、参与模型及具体成绩。 由于原文当前无法访问，上述信息来自订阅简介，完整方法与结果仍需以原文为准。",
+   "signal": "AI科研评测转向湿实验",
+   "point": "BioBasicsBench含100项湿实验任务",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "date": "2026-11-06T00:00:00.000Z",
+   "time": "08:00",
+   "date_md": "11-06"
   }
  ]
 }

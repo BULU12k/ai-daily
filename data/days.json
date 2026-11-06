@@ -6485,6 +6485,27 @@
  ],
  "2026-11-07": [
   {
+   "title_zh": "美国中期选举或改写AI监管格局",
+   "summary": "TechCrunch 旗下 Equity 播客本期讨论美国中期选举对科技行业的影响。 周二投票中，与数据中心相关的公投议案共有41项；除一项外，其余各项均由多数选民支持对数据中心开发施加更多限制。 即便数据中心未直接列入选票，也成为重要议题，新当选的民主党州长与国会议员可能支持更多监管。 节目还提到 OpenAI 正试图为数据中心重塑形象，以及大型科技公司可能面临更强的政府审查。 此外，节目讨论了其他话题：谷歌首个卫星数据中心、设计软件公司 Canva 与建站公司 Squarespace 的裁员是否应归因于 AI、Marvell 以1150亿美元收购 Lumentum，以及 CrowdStrike 收购两家 AI 安全初创公司。 以上为播客节目内容预告，具体报道细节未在正文中展开。",
+   "signal": "数据中心成选举议题，监管压力上升",
+   "point": "41项数据中心公投，仅1项未收紧限制",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P1",
+    "P2",
+    "P3",
+    "P7"
+   ],
+   "source": "TechCrunch AI",
+   "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+   "date": "2026-11-06T18:00:00.000Z",
+   "time": "02:00",
+   "date_md": "11-07"
+  },
+  {
    "title_zh": "美中期选举后AI业或临严监管",
    "summary": "美国中期选举中民主党取得历史性胜利，TechCrunch认为这可能改变科技行业。 文章称，本周二共有41项与数据中心相关的公投措施，除一项外，多数选民投票支持对数据中心开发施加更多限制。 即便数据中心未直接列入公投，也成为重要议题；新当选的民主党州长和国会议员可能支持额外监管。 TechCrunch的Equity播客讨论了选举对科技业的影响，涉及数据中心（OpenAI已在尝试重塑其表述）以及政府对大型科技公司审查趋严。 文章未给出具体立法细节，更多是趋势判断。",
    "signal": "数据中心公投成监管风向标",
@@ -6525,6 +6546,22 @@
    "link": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
    "date": "2026-11-06T15:54:47.000Z",
    "time": "23:54",
+   "date_md": "11-06"
+  },
+  {
+   "title_zh": "OpenAI与Hacktron合作排查系统漏洞",
+   "summary": "OpenAI 在官方博客宣布与安全公司 Hacktron 合作，在其系统内查找漏洞；但这条公告目前只能看到订阅简介，原文返回 HTTP 403，无法访问。 按简介描述，双方将测试 OpenAI 与第三方服务之间的连接，并借助前沿 AI 强化防御能力。 合作的具体范围、时间安排、是否设有漏洞赏金或披露机制、覆盖对象是模型、API 还是内部基础设施，均未在可见信息中说明。 以上内容仅来自简介，信息可能不完整。",
+   "signal": "模型厂商引入外部攻防测试",
+   "point": "OpenAI联手Hacktron测试第三方连接",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/index/partnering-with-hacktron",
+   "date": "2026-11-06T08:00:00.000Z",
+   "time": "16:00",
    "date_md": "11-06"
   }
  ]

@@ -1,8 +1,43 @@
 {
   "date": "2026-11-07",
   "pushed": false,
-  "headline": "AI日报 11-07 02:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-07 02:30 · 2条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-07-0230-p1.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "41项数据中心公投，仅1项未收紧限制",
+    "OpenAI联手Hacktron测试第三方连接"
+  ],
+  "items": [
+    {
+      "title_zh": "美国中期选举或改写AI监管格局",
+      "summary": "TechCrunch 旗下 Equity 播客本期讨论美国中期选举对科技行业的影响。 周二投票中，与数据中心相关的公投议案共有41项；除一项外，其余各项均由多数选民支持对数据中心开发施加更多限制。 即便数据中心未直接列入选票，也成为重要议题，新当选的民主党州长与国会议员可能支持更多监管。 节目还提到 OpenAI 正试图为数据中心重塑形象，以及大型科技公司可能面临更强的政府审查。 此外，节目讨论了其他话题：谷歌首个卫星数据中心、设计软件公司 Canva 与建站公司 Squarespace 的裁员是否应归因于 AI、Marvell 以1150亿美元收购 Lumentum，以及 CrowdStrike 收购两家 AI 安全初创公司。 以上为播客节目内容预告，具体报道细节未在正文中展开。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "数据中心成选举议题，监管压力上升",
+      "point": "41项数据中心公投，仅1项未收紧限制",
+      "source": "TechCrunch AI",
+      "link": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "OpenAI与Hacktron合作排查系统漏洞",
+      "summary": "OpenAI 在官方博客宣布与安全公司 Hacktron 合作，在其系统内查找漏洞；但这条公告目前只能看到订阅简介，原文返回 HTTP 403，无法访问。 按简介描述，双方将测试 OpenAI 与第三方服务之间的连接，并借助前沿 AI 强化防御能力。 合作的具体范围、时间安排、是否设有漏洞赏金或披露机制、覆盖对象是模型、API 还是内部基础设施，均未在可见信息中说明。 以上内容仅来自简介，信息可能不完整。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "模型厂商引入外部攻防测试",
+      "point": "OpenAI联手Hacktron测试第三方连接",
+      "source": "OpenAI Blog",
+      "link": "https://openai.com/index/partnering-with-hacktron",
+      "date_md": "11-06"
+    }
+  ]
 }

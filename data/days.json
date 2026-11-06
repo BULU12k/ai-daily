@@ -6071,6 +6071,22 @@
    "date": "2026-11-05T08:00:00.000Z",
    "time": "16:00",
    "date_md": "11-05"
+  },
+  {
+   "title_zh": "Flipsnack借ChatGPT广告提升注册",
+   "summary": "据OpenAI博客的订阅简介，Flipsnack把ChatGPT广告投放的重点放在引导用户试用产品上，而不是只做品牌曝光。 结果显示，其产品注册量增长，同时单次注册成本下降。 由于原文无法访问，投放预算、统计周期、注册增幅和成本降幅等关键数据均未披露，无法判断这一效果的具体规模。 该案例只能作为方向性参考，不能据此推算投资回报率或行业平均水平。",
+   "signal": "广告效果转向试用转化",
+   "point": "Flipsnack注册增长，单次注册成本下降",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "feed_description",
+   "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
+   "evidence_paragraphs": [],
+   "source": "OpenAI Blog",
+   "link": "https://openai.com/ads/customers/flipsnack",
+   "date": "2026-11-05T00:45:15.000Z",
+   "time": "08:45",
+   "date_md": "11-05"
   }
  ]
 }

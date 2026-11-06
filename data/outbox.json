@@ -1,29 +1,29 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 07:30 · 1条新知",
+  "headline": "AI日报 11-06 08:00 · 1条新知",
   "pages": [
     {
       "index": 1,
       "total": 1,
-      "file": "docs/poster/2026-11-06-0730-p1.png",
+      "file": "docs/poster/2026-11-06-0800-p1.png",
       "count": 1
     }
   ],
   "points": [
-    "Merge 用 GPT-6 Astra 与 Codex…"
+    "Flipsnack注册增长，单次注册成本下降"
   ],
   "items": [
     {
-      "title_zh": "Merge 用 OpenAI 技术开发内部工具",
-      "summary": "据 OpenAI 博客的订阅简介，Merge 借助 GPT-6 Astra、ChatGPT 与 Codex 等 OpenAI 技术，用于审查产品代码并支持市场推广工作。 其团队还把 AI 用于筹划高管晚宴、准备销售更新等业务事务。 以上信息仅来自简介，原文页面返回 403 无法获取，因此缺少具体使用规模、效果数据与部署方式等细节。",
+      "title_zh": "Flipsnack借ChatGPT广告提升注册",
+      "summary": "据OpenAI博客的订阅简介，Flipsnack把ChatGPT广告投放的重点放在引导用户试用产品上，而不是只做品牌曝光。 结果显示，其产品注册量增长，同时单次注册成本下降。 由于原文无法访问，投放预算、统计周期、注册增幅和成本降幅等关键数据均未披露，无法判断这一效果的具体规模。 该案例只能作为方向性参考，不能据此推算投资回报率或行业平均水平。",
       "content_basis": "feed_description",
       "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
       "degraded": false,
-      "signal": "企业把AI嵌入研发与销售流程",
-      "point": "Merge 用 GPT-6 Astra 与 Codex…",
+      "signal": "广告效果转向试用转化",
+      "point": "Flipsnack注册增长，单次注册成本下降",
       "source": "OpenAI Blog",
-      "link": "https://openai.com/index/merge-builds-with-openai",
+      "link": "https://openai.com/ads/customers/flipsnack",
       "date_md": "11-05"
     }
   ]

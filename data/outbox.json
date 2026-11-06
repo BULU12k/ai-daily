@@ -1,30 +1,8 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 09:30 · 1条新知",
-  "pages": [
-    {
-      "index": 1,
-      "total": 1,
-      "file": "docs/poster/2026-11-06-0930-p1.png",
-      "count": 1
-    }
-  ],
-  "points": [
-    "Cult.fit 用 Codex 帮跨职能团队建工具"
-  ],
-  "items": [
-    {
-      "title_zh": "Cult.fit 用 Codex 帮团队建工具",
-      "summary": "OpenAI 博客的订阅简介显示，印度健身与健康服务平台 Cult.fit 正在使用 Codex，帮助不同职能团队构建工具、加快工作节奏，并改变工作开展方式。 简介没有说明具体部署规模、使用团队数量、工具类型或效率提升数据，因此无法判断实际落地效果。 该条原文因 HTTP 403 无法获取，以上信息仅来自订阅简介，可能不完整。",
-      "content_basis": "feed_description",
-      "content_note": "原文不可用：原文HTTP 403；仅依据订阅简介，信息可能不完整",
-      "degraded": false,
-      "signal": "AI编程工具向业务团队渗透",
-      "point": "Cult.fit 用 Codex 帮跨职能团队建工具",
-      "source": "OpenAI Blog",
-      "link": "https://openai.com/index/cultfit-builds-with-codex",
-      "date_md": "11-06"
-    }
-  ]
+  "headline": "AI日报 11-06 10:00 · 0条新知",
+  "pages": [],
+  "points": [],
+  "items": []
 }

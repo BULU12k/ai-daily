@@ -1,8 +1,30 @@
 {
   "date": "2026-11-06",
   "pushed": false,
-  "headline": "AI日报 11-06 22:00 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-06 22:30 · 1条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 1,
+      "file": "docs/poster/2026-11-06-2230-p1.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "ToyBlocks 提出机器人学习受控评测环境"
+  ],
+  "items": [
+    {
+      "title_zh": "ToyBlocks：机器人学习的受控评测环境",
+      "summary": "本条仅有标题与来源信息，正文未获取，以下仅依据标题作有限说明。 标题显示，ToyBlocks 被定位为一个“受控世界”，用途涵盖机器人学习与评测两个环节，即在同一套环境里训练并比较不同策略。 标题未披露环境的具体构成、任务数量、仿真或真机条件，也没有给出任何基准成绩或开源安排，因此无法判断其规模与可用性。 上述内容需待正文或项目页面确认。",
+      "content_basis": "feed_description",
+      "content_note": "原文不可用：缺少可信单篇文章元数据或标题，未把列表当正文；仅依据订阅简介，信息可能不完整",
+      "degraded": false,
+      "signal": "机器人学习仍缺统一评测基准",
+      "point": "ToyBlocks 提出机器人学习受控评测环境",
+      "source": "Hugging Face Blog",
+      "link": "https://huggingface.co/blog/allenai/toyblocks",
+      "date_md": "11-06"
+    }
+  ]
 }

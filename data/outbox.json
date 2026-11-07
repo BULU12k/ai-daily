@@ -1,8 +1,75 @@
 {
   "date": "2026-11-07",
   "pushed": false,
-  "headline": "AI日报 11-07 18:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-07 19:01 · 4条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 2,
+      "file": "docs/poster/2026-11-07-1901-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-11-07-1901-p2.png",
+      "count": 2
+    }
+  ],
+  "points": [
+    "Pando让推送耗时降八成，OpenAI拟购Pierre",
+    "OpenAI首笔110亿美元到账，估值1.25万亿美元",
+    "皮尤：超1/3网页文本有AI编辑痕迹",
+    "MoWorld2.0达70FPS，成本仅GPU三成"
+  ],
+  "items": [
+    {
+      "title_zh": "GitHub频故障，AI公司转向自建托管",
+      "summary": "11月3日至4日，GitHub连续出现故障，影响Git操作以及合并请求等服务。 Axios称OpenAI拟收购代码托管工具公司Pierre，交易仍待监管批准等交割条件；OpenAI已在11月2日公开内部Git后端Pando，称一次推送的中位耗时降低近八成。 Cursor的Origin允许开发者在Cursor内建仓、审阅和合并，Anthropic则把主代码库迁往自研Scion，披露日合并量从5月约2500项增至9月逾3万项。 GitHub表示今年新增400万个CPU核心和160PB高速存储，并推动并行更新与读写资源分离。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI编程量激增，代码托管被迫重做",
+      "point": "Pando让推送耗时降八成，OpenAI拟购Pierre",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508449.html",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "OpenAI首笔110亿美元融资到账",
+      "summary": "彭博社报道，OpenAI已完成新一轮融资首笔110亿美元交割，估值1.25万亿美元；整轮最高或达200亿美元，剩余部分预计数周内完成。 此次首笔投资者包括Coatue和普信集团，软银、红杉、Founders Fund、Andreessen Horowitz等也参与。 相比9月底以1.4万亿美元估值融资至少300亿美元的原计划，本轮规模和估值目标均有下调。 OpenAI同期还参与前沿模型论坛的网络安全越狱评级框架，并与Ligo推出100道真实实验题的BioBasicsBench。 11月6日，OpenAI发布基于GPT-6 Astra训练的GPT-6 Cyber，称在Firefox发现81个此前未知高危漏洞，目前仅向受控的Daybreak Red客户开放。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI融资热降温，估值预期回调",
+      "point": "OpenAI首笔110亿美元到账，估值1.25万亿美元",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508344.html",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "为去AI味，人类开始故意写烂文章",
+      "summary": "文章称，随着AI生成文本普及，部分写作者为避开AI检测器，开始故意加入错别字、语病和不规则表达，以显得更像真人。 中国互联网络信息中心10月报告显示，我国7亿AI用户中约2.8亿用AI处理文本；皮尤7月抽取49万个ChatGPT发布后的网页文本，超过三分之一出现明显AI生成编辑痕迹。 AI检测器主要依据困惑度和突发度，但只承诺统计近似，标准对人类近似黑箱。 报道列举，美国小说家Mia Ballard作品被检出78.3%AI写作比例后，阿歇特取消美国版发行；尼日利亚作家Jerry Falade因争议失去200万美元出版交易。 美国作家协会则推出并扩展“Human Authored”认证标识，供作者声明人类创作。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "AI检测器正反向规训人类写作",
+      "point": "皮尤：超1/3网页文本有AI编辑痕迹",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508330.html",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "魔芯发布4D世界模型MoWorld2.0",
+      "summary": "11月4日，魔芯科技在乌镇世界互联网大会发布MoWorld 2.0，称在前代空间生成与实时交互基础上，将重力、弹力、浮力、光照、柔体、流体、刚体、形塑体、热力等十余种物理要素纳入同一模型，用于模拟物体运动、碰撞与环境变化。 模型生成场景可输出为3D/4D高斯资产，继续编辑、渲染和调用。 团队称通过与华为昇腾NPU协同优化，实时视频推理速度从上一代最高50 FPS提升至约70 FPS，提升约40%，推理成本最低为同规模GPU方案的30%。 10月华为新机发布的“摸小宠”已使用该模型：云端生成4D资产，约6亿参数端侧模型在昇腾训练、部署到麒麟芯片手机推理。 魔芯2021年成立，今年完成5轮融资共20亿元，估值近百亿元。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "国产算力撑起4D世界模型实时交互",
+      "point": "MoWorld2.0达70FPS，成本仅GPU三成",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508236.html",
+      "date_md": "11-07"
+    }
+  ]
 }

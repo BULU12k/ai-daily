@@ -6485,6 +6485,79 @@
  ],
  "2026-11-07": [
   {
+   "title_zh": "GitHub频故障，AI公司转向自建托管",
+   "summary": "11月3日至4日，GitHub连续出现故障，影响Git操作以及合并请求等服务。 Axios称OpenAI拟收购代码托管工具公司Pierre，交易仍待监管批准等交割条件；OpenAI已在11月2日公开内部Git后端Pando，称一次推送的中位耗时降低近八成。 Cursor的Origin允许开发者在Cursor内建仓、审阅和合并，Anthropic则把主代码库迁往自研Scion，披露日合并量从5月约2500项增至9月逾3万项。 GitHub表示今年新增400万个CPU核心和160PB高速存储，并推动并行更新与读写资源分离。",
+   "signal": "AI编程量激增，代码托管被迫重做",
+   "point": "Pando让推送耗时降八成，OpenAI拟购Pierre",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P4",
+    "P5",
+    "P10",
+    "P20",
+    "P25",
+    "P39",
+    "P51",
+    "P59",
+    "P78"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/508449.html",
+   "date": "2026-11-07T09:38:56.000Z",
+   "time": "17:38",
+   "date_md": "11-07"
+  },
+  {
+   "title_zh": "OpenAI首笔110亿美元融资到账",
+   "summary": "彭博社报道，OpenAI已完成新一轮融资首笔110亿美元交割，估值1.25万亿美元；整轮最高或达200亿美元，剩余部分预计数周内完成。 此次首笔投资者包括Coatue和普信集团，软银、红杉、Founders Fund、Andreessen Horowitz等也参与。 相比9月底以1.4万亿美元估值融资至少300亿美元的原计划，本轮规模和估值目标均有下调。 OpenAI同期还参与前沿模型论坛的网络安全越狱评级框架，并与Ligo推出100道真实实验题的BioBasicsBench。 11月6日，OpenAI发布基于GPT-6 Astra训练的GPT-6 Cyber，称在Firefox发现81个此前未知高危漏洞，目前仅向受控的Daybreak Red客户开放。",
+   "signal": "AI融资热降温，估值预期回调",
+   "point": "OpenAI首笔110亿美元到账，估值1.25万亿美元",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P5",
+    "P6",
+    "P16",
+    "P22",
+    "P43",
+    "P59",
+    "P82",
+    "P92"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/508344.html",
+   "date": "2026-11-07T08:11:25.000Z",
+   "time": "16:11",
+   "date_md": "11-07"
+  },
+  {
+   "title_zh": "为去AI味，人类开始故意写烂文章",
+   "summary": "文章称，随着AI生成文本普及，部分写作者为避开AI检测器，开始故意加入错别字、语病和不规则表达，以显得更像真人。 中国互联网络信息中心10月报告显示，我国7亿AI用户中约2.8亿用AI处理文本；皮尤7月抽取49万个ChatGPT发布后的网页文本，超过三分之一出现明显AI生成编辑痕迹。 AI检测器主要依据困惑度和突发度，但只承诺统计近似，标准对人类近似黑箱。 报道列举，美国小说家Mia Ballard作品被检出78.3%AI写作比例后，阿歇特取消美国版发行；尼日利亚作家Jerry Falade因争议失去200万美元出版交易。 美国作家协会则推出并扩展“Human Authored”认证标识，供作者声明人类创作。",
+   "signal": "AI检测器正反向规训人类写作",
+   "point": "皮尤：超1/3网页文本有AI编辑痕迹",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P30",
+    "P31",
+    "P37",
+    "P40",
+    "P50"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/508330.html",
+   "date": "2026-11-07T07:59:28.000Z",
+   "time": "15:59",
+   "date_md": "11-07"
+  },
+  {
    "title_zh": "硅谷华人团队推出超级智能体Comma",
    "summary": "量子位报道称，DeepSeek Harness团队近日发文提出下一代Super-agent架构设想：一个拥有连续上下文、可自主调度多个Agent并行工作、7×24小时在线的超级智能体，并提出连续、高效、主动、持久四项标准；文中援引其观察称，普通人通常只能同时跟进3至5个活跃会话，人的注意力成为瓶颈。 报道同时称，硅谷华人团队AFK AI的产品Comma已按“单Router+多Worker”思路落地：2026年4月28日公开前身Bridge，6月3日上线固定主对话与任务委派机制，9月30日正式开源，并公开了基于Lean形式化验证的安全机制。 Comma依托自研分布式Agent运行框架Salix，通过连接器接入微信、Signal、iMessage、Linear等渠道，支持安全自部署与BYOK，并把长期状态存放在模型上下文之外；它还会记录任务结果、人工修改与验收反馈作为训练信号，迭代专属小模型，文中举例称v3曾把退款请求误判为Bug，学习人工纠正后的v4能正确归为账单问题。 需要说明的是，上述能力描述与使用体验来自厂商介绍和作者实测，文章未给出第三方评测或规模化运行数据。",
    "signal": "Agent竞争转入调度与记忆层",
@@ -6540,6 +6613,31 @@
    "link": "https://www.qbitai.com/2026/11/508244.html",
    "date": "2026-11-07T03:43:55.000Z",
    "time": "11:43",
+   "date_md": "11-07"
+  },
+  {
+   "title_zh": "魔芯发布4D世界模型MoWorld2.0",
+   "summary": "11月4日，魔芯科技在乌镇世界互联网大会发布MoWorld 2.0，称在前代空间生成与实时交互基础上，将重力、弹力、浮力、光照、柔体、流体、刚体、形塑体、热力等十余种物理要素纳入同一模型，用于模拟物体运动、碰撞与环境变化。 模型生成场景可输出为3D/4D高斯资产，继续编辑、渲染和调用。 团队称通过与华为昇腾NPU协同优化，实时视频推理速度从上一代最高50 FPS提升至约70 FPS，提升约40%，推理成本最低为同规模GPU方案的30%。 10月华为新机发布的“摸小宠”已使用该模型：云端生成4D资产，约6亿参数端侧模型在昇腾训练、部署到麒麟芯片手机推理。 魔芯2021年成立，今年完成5轮融资共20亿元，估值近百亿元。",
+   "signal": "国产算力撑起4D世界模型实时交互",
+   "point": "MoWorld2.0达70FPS，成本仅GPU三成",
+   "by_llm": true,
+   "degraded": false,
+   "content_basis": "article_body",
+   "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+   "evidence_paragraphs": [
+    "P7",
+    "P13",
+    "P28",
+    "P44",
+    "P49",
+    "P52",
+    "P54",
+    "P70"
+   ],
+   "source": "量子位",
+   "link": "https://www.qbitai.com/2026/11/508236.html",
+   "date": "2026-11-07T03:31:44.000Z",
+   "time": "11:31",
    "date_md": "11-07"
   },
   {

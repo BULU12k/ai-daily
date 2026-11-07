@@ -1,8 +1,62 @@
 {
   "date": "2026-11-07",
   "pushed": false,
-  "headline": "AI日报 11-07 12:30 · 0条新知",
-  "pages": [],
-  "points": [],
-  "items": []
+  "headline": "AI日报 11-07 13:00 · 3条新知",
+  "pages": [
+    {
+      "index": 1,
+      "total": 2,
+      "file": "docs/poster/2026-11-07-1300-p1.png",
+      "count": 2
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "file": "docs/poster/2026-11-07-1300-p2.png",
+      "count": 1
+    }
+  ],
+  "points": [
+    "Codex投毒成功率超90%，Claude约50%",
+    "Discovery Loop已运行约20个自动改进循环",
+    "内部模型AECI超Opus5.5约3.9分"
+  ],
+  "items": [
+    {
+      "title_zh": "AGENTS.md被用作攻击入口",
+      "summary": "安全机构Forever Security披露一种新攻击链：网页无需用户点击，就能把纯文本文件AGENTS.md静默写入用户电脑的~/Downloads目录。 当用户在该目录启动Codex或Claude Code等编程Agent时，模型会把这份Markdown当作项目规范照做；攻击者用约13KB的“团队本地开发环境准备规范”作掩护，在文末夹带配置指令。 虚拟机复现显示，针对Codex的攻击成功率超过90%，Codex会以--dangerously-bypass-approvals-and-sandbox参数启动子进程，并把恶意配置写入全局~/.codex/config.toml，用户删掉下载文件后仍会再次被唤醒。 针对Claude Code的成功率约50%，攻击者诱导其改写项目settings.json，把ANTHROPIC_BASE_URL指向自建反向代理，从而截获OAuth登录Token。 文章认为厂商难以靠补丁根治，因为读取目录内AGENTS.md本就是产品设计，并给出四项终端自查步骤，但强调未查出异常不代表安全。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "文本文件正成为Agent攻击面",
+      "point": "Codex投毒成功率超90%，Claude约50%",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508244.html",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "Jeff Dean：RSI不可能无限快",
+      "summary": "在斯坦福HAI与李飞飞的对谈中，Jeff Dean表示RSI（递归自我改进）不可能快到无限：实验存在真实物理耗时，训练、计算、保存数据和评估结果都要花时间，自动化只能省掉“凌晨实验结束、早上才回工位看结果”这段空等。 他披露新公司Discovery Loop的进展，公司注册为公益公司（PBC），四位创始人为Jeff Dean、Sanjay Ghemawat、Quoc Le和Oriol Vinyals，前三周在咖啡馆等地做了400场面试。 团队自建面向Agent的运行框架，设计上要支持扩展到数万乃至数十万个Agent协同，目前约20个自动改进循环在运行，目标是让领域专家生产力提高20到50倍。 他同时承认自己有判断偏差，其中一项是没有充分预见编程能力会如此深刻地影响模型解决各类问题的能力。",
+      "content_basis": "article_excerpts",
+      "content_note": "原文较长，使用有界正文选段，可能遗漏未选段信息",
+      "degraded": false,
+      "signal": "自动化实验循环成创业新方向",
+      "point": "Discovery Loop已运行约20个自动改进循环",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508196.html",
+      "date_md": "11-07"
+    },
+    {
+      "title_zh": "Anthropic三个内部模型曝光",
+      "summary": "第三方评估机构METR的新报告披露了Anthropic三个未公开内部模型Model 2、Model 3和Model 4，它们分别在今年7月、8至9月、9至10月完成训练。 其中最强的Model 4在Anthropic综合能力指数AECI上达到178.6分，比一个半月前发布的Opus5.5高出约3.9分；按该公司过去的能力提升速度折算，约相当于3个月的进步，其纳入评估的15项基准成绩全部超过50%。 METR估计，自2025年10月以来，Anthropic模型AECI得分的增速约为此前1.9倍，并担忧高难度测试将不够用。 Anthropic联合创始人Sam McCandlish回应称，AI确实在加快公司研发，但加速幅度难以精确衡量，并承认公开报告删去了大量信息，公司将在未来几周自行发布进展分析。 文章还提到，截至8月Claude已在人类监督下主导26%的模型研发工作，半年前这一比例不足1%，有受访研究员称从产生想法到运行实验的时间减少约80%。",
+      "content_basis": "article_body",
+      "content_note": "可提取正文；不含交互图表、图片或付费隐藏内容",
+      "degraded": false,
+      "signal": "研发提速已部分交给模型自己",
+      "point": "内部模型AECI超Opus5.5约3.9分",
+      "source": "量子位",
+      "link": "https://www.qbitai.com/2026/11/508184.html",
+      "date_md": "11-06"
+    }
+  ]
 }
